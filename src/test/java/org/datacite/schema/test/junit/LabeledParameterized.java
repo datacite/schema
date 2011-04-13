@@ -75,6 +75,8 @@ public class LabeledParameterized extends Suite {
                 private final int fParameterSetNumber;
 
                 private final List<Object[]> fParameterList;
+                
+                private Object testObject;
 
                 TestClassRunnerForParameters(Class<?> type,
                                 List<Object[]> parameterList, int i) throws InitializationError {
@@ -85,8 +87,9 @@ public class LabeledParameterized extends Suite {
 
                 @Override
                 public Object createTest() throws Exception {
-                        return getTestClass().getOnlyConstructor().newInstance(
+                        testObject = getTestClass().getOnlyConstructor().newInstance(
                                         computeParams());
+                        return testObject;
                 }
 
                 private Object[] computeParams() throws Exception {
@@ -108,7 +111,7 @@ public class LabeledParameterized extends Suite {
                 @Override
                 protected String testName(final FrameworkMethod method) {
                         return String.format("%s[%s]", method.getName(),
-                                        fParameterSetNumber);
+                                        testObject);
                 }
 
                 @Override

@@ -50,4 +50,9 @@ public class BasicTest {
             data.add(new Object[] { schemaDir });
         return data;
     }
+    
+    @Override
+    public String toString() {
+        return schemaDir.directory.toString();
+    }
 }

@@ -51,4 +51,11 @@ public class ValidationTest {
                 data.add(new Object[] { schemaDir, example });
         return data;
     }
+
+    @Override
+    public String toString() {
+        return example.toString();
+    }
+    
+    
 }
