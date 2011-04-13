@@ -8,12 +8,12 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import org.datacite.schema.test.junit.LabeledParameterized;
+import org.datacite.schema.test.junit.LabeledParameterized.Parameters;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
 
-@RunWith(Parameterized.class)
+@RunWith(LabeledParameterized.class)
 public class BasicTest {
 
     private SchemaDirectory schemaDir;

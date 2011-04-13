@@ -12,12 +12,12 @@ import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.Validator;
 
+import org.datacite.schema.test.junit.LabeledParameterized;
+import org.datacite.schema.test.junit.LabeledParameterized.Parameters;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
 
-@RunWith(Parameterized.class)
+@RunWith(LabeledParameterized.class)
 public class ValidationTest {
 
     private SchemaDirectory schemaDir;

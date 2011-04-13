@@ -1,4 +1,4 @@
-package org.junit.runners;
+package org.datacite.schema.test.junit;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -11,6 +11,8 @@ import java.util.List;
 
 import org.junit.runner.Runner;
 import org.junit.runner.notification.RunNotifier;
+import org.junit.runners.BlockJUnit4ClassRunner;
+import org.junit.runners.Suite;
 import org.junit.runners.model.FrameworkMethod;
 import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.Statement;
@@ -58,7 +60,7 @@ import org.junit.runners.model.TestClass;
  * <code>&#064;Parameters</code> method.
  * </p>
  */
-public class Parameterized extends Suite {
+public class LabeledParameterized extends Suite {
         /**
          * Annotation for a method which provides parameters to be injected into the
          * test class constructor by <code>Parameterized</code>
@@ -125,7 +127,7 @@ public class Parameterized extends Suite {
         /**
          * Only called reflectively. Do not use programmatically.
          */
-        public Parameterized(Class<?> klass) throws Throwable {
+        public LabeledParameterized(Class<?> klass) throws Throwable {
                 super(klass, Collections.<Runner>emptyList());
                 List<Object[]> parametersList= getParametersList(getTestClass());
                 for (int i= 0; i < parametersList.size(); i++)
