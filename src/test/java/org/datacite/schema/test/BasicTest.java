@@ -29,9 +29,14 @@ public class BasicTest {
 
     @Test
     public void testHasSchema() throws Exception {
+        schemaDir.getSchemaFile();
+    }
+
+    @Test
+    public void testHasValidSchema() throws Exception {
         schemaDir.getSchema();
     }
-    
+
     @Test
     public void testHasExamples() {
         assertFalse(schemaDir.getExamples().isEmpty());

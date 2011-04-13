@@ -2,6 +2,7 @@ package org.datacite.schema.test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -11,13 +12,13 @@ import javax.xml.XMLConstants;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 
+import org.apache.commons.io.filefilter.SuffixFileFilter;
 import org.xml.sax.SAXException;
 
 public class SchemaDirectory {
 
     public final static String SCHEMAS_BASE_DIR = "schema/";
     public final static String EXAMPLE_DIR = "example/";
-    public final static String XSD_NAME = "metadata.xsd";
 
     File directory;
 
@@ -28,13 +29,20 @@ public class SchemaDirectory {
     public String getName() {
         return directory.getName();
     }
-    
+
     private File getFile(String fileName) {
         return new File(directory, fileName);
     }
 
-    private File getSchemaFile() {
-        return getFile(XSD_NAME);
+    public File getSchemaFile() {
+        FilenameFilter xsdFilter = new SuffixFileFilter(".xsd");
+        File[] files = directory.listFiles(xsdFilter);
+        if (files.length == 0)
+            throw new RuntimeException("no xsd found for " + getName());
+        else if (files.length > 1)
+            throw new RuntimeException("more than one xsd found for " + getName());
+        else
+            return files[0];
     }
 
     public Schema getSchema() throws SAXException {

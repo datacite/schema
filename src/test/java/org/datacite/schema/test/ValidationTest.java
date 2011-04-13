@@ -34,7 +34,7 @@ public class ValidationTest {
     }
 
     @Test
-    public void testValidation() throws Exception {
+    public void testExample() throws Exception {
         Schema schema = schemaDir.getSchema();
         Validator validator = schema.newValidator();
         Source source = new StreamSource(example);
