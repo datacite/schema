@@ -7,13 +7,13 @@
 	 IsDocumentedBy/Documents and isCompiledBy/Compiles; changes type of property "Date" from xs:date to xs:string. FZ, TIB
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/namespace" targetNamespace="http://datacite.org/schema/namespace" elementFormDefault="qualified" xml:lang="EN">
-	<xs:include schemaLocation="datacite-titleType-v2.xsd"/>
-	<xs:include schemaLocation="datacite-contributorType-v2.xsd"/>
-	<xs:include schemaLocation="datacite-dateType-v2.xsd"/>
-	<xs:include schemaLocation="datacite-resourceType-v2.xsd"/>
-	<xs:include schemaLocation="datacite-relationType-v2.xsd"/>
-	<xs:include schemaLocation="datacite-relatedIdentifierType-v2.xsd"/>
-	<xs:include schemaLocation="datacite-descriptionType-v2.xsd"/>
+	<xs:include schemaLocation="include/datacite-titleType-v2.xsd"/>
+	<xs:include schemaLocation="include/datacite-contributorType-v2.xsd"/>
+	<xs:include schemaLocation="include/datacite-dateType-v2.xsd"/>
+	<xs:include schemaLocation="include/datacite-resourceType-v2.xsd"/>
+	<xs:include schemaLocation="include/datacite-relationType-v2.xsd"/>
+	<xs:include schemaLocation="include/datacite-relatedIdentifierType-v2.xsd"/>
+	<xs:include schemaLocation="include/datacite-descriptionType-v2.xsd"/>
 	<xs:element name="resource">
 		<xs:annotation>
 			<xs:documentation>
