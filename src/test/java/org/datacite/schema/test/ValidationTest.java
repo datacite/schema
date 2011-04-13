@@ -1,7 +1,5 @@
 package org.datacite.schema.test;
 
-import static org.datacite.schema.test.Utils.pr;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -12,6 +10,7 @@ import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.Validator;
 
+import org.datacite.schema.SchemaDirectory;
 import org.datacite.schema.test.junit.LabeledParameterized;
 import org.datacite.schema.test.junit.LabeledParameterized.Parameters;
 import org.junit.Test;
@@ -26,11 +25,6 @@ public class ValidationTest {
     public ValidationTest(SchemaDirectory schemaDir, File example) {
         this.schemaDir = schemaDir;
         this.example = example;
-    }
-
-    @Test
-    public void showName() throws Exception {
-        pr(example);
     }
 
     @Test

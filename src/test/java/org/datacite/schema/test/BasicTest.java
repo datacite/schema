@@ -1,13 +1,12 @@
 package org.datacite.schema.test;
 
-import static org.datacite.schema.test.Utils.pr;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import org.datacite.schema.SchemaDirectory;
 import org.datacite.schema.test.junit.LabeledParameterized;
 import org.datacite.schema.test.junit.LabeledParameterized.Parameters;
 import org.junit.Test;
@@ -20,11 +19,6 @@ public class BasicTest {
 
     public BasicTest(SchemaDirectory schemaDir) {
         this.schemaDir = schemaDir;
-    }
-
-    @Test
-    public void showName() {
-        pr(schemaDir);
     }
 
     @Test
@@ -53,6 +47,6 @@ public class BasicTest {
     
     @Override
     public String toString() {
-        return schemaDir.directory.toString();
+        return schemaDir.getDirectory().toString();
     }
 }

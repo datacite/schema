@@ -1,4 +1,4 @@
-package org.datacite.schema.test;
+package org.datacite.schema;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -24,6 +24,10 @@ public class SchemaDirectory {
 
     public SchemaDirectory(File directory) throws FileNotFoundException {
         this.directory = directory;
+    }
+    
+    public File getDirectory() {
+        return directory;
     }
 
     public String getName() {

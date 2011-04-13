@@ -105,7 +105,7 @@ public class LabeledParameterized extends Suite {
 
                 @Override
                 protected String getName() {
-                        return String.format("[%s]", fParameterSetNumber);
+                        return String.format("[%s]", testObject);
                 }
 
                 @Override
