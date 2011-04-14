@@ -7,7 +7,7 @@
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="Accepted"/>
-			<xs:enumeration value="Available "/>
+			<xs:enumeration value="Available"/>
 			<xs:enumeration value="Copyrighted"/>
 			<xs:enumeration value="Created"/>
 			<xs:enumeration value="EndDate"/>
