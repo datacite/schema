@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    color: #666666;
+}
+
+h1,h2,h3 {
+    color: #0084B9;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 50px;
+}
+
+h1 img {
+    vertical-align: middle;
+}
+a:link {
+	color: #0084B8;
+}
+
+a:active {
+	color: #0084B8;
+}
+
+a:visited {
+	color: #0084B8;
+}
+
+a:hover {
+	color: #77C9EA;
+}
+
