@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Version 1.0 - Created 2011-01-13 - FZ, TIB, Germany -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://datacite.org/schema/namespace" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://datacite.org/schema/kernel-2.1" elementFormDefault="qualified">
 	<xs:simpleType name="contributorType">
 		<xs:annotation>
 			<xs:documentation>The type of contributor of the resource.</xs:documentation>

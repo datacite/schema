@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Version 1.0 - Created 2011-01-13 - FZ, TIB, Germany -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns="http://datacite.org/schema/namespace" targetNamespace="http://datacite.org/schema/namespace">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns="http://datacite.org/schema/kernel-2.1" targetNamespace="http://datacite.org/schema/kernel-2.1">
 	<xs:simpleType name="relationType">
 		<xs:annotation>
 			<xs:documentation>Description of the relationship of the resource being registered (A) and the related resource (B).</xs:documentation>
