@@ -10,18 +10,18 @@ There is also a small maven project to test the schemas for consistency.
 Schemas
 -------
 
-Each schema has its own folder under `/schema` e.g. `/schema/kernel-2.0/`. 
-This directory is allowed to contain only one xsd.
-The directory structure is as follow:
+Each schema has its own folder under `/www/meta`
+e.g. `/www/meta/kernel-2.0/`.  This directory is allowed to contain
+only one xsd.  The directory structure is as follow:
 
-    /schema/{schema-name}/{filename}.xsd   root xsd
-    /schema/{schema-name}/include/         referenced xsd's
-    /schema/{schema-name}/example/         example xml files
-    /schema/{schema-name}/doc/             documentation (pdf's)
+    /www/meta/{schema-name}/{filename}.xsd   root xsd
+    /www/meta/{schema-name}/include/         referenced xsd's
+    /www/meta/{schema-name}/example/         example xml files
+    /www/meta/{schema-name}/doc/             documentation (pdf's)
     
-The `/schema` directory will be published (as root) at http://schema.datacite.org, e.g.
+The `/www` directory will be published (as root) at http://schema.datacite.org, e.g.
 
-    http://schema.datacite.org/kernel-2.0/metadata.xsd
+    http://schema.datacite.org/meta/kernel-2.0/metadata.xsd
 
 Tests
 -----

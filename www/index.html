@@ -1,21 +1,42 @@
 <html>
 <head>
-<title>DataCite Schemas</title>
-<link rel="stylesheet" type="text/css" href="main.css">
+<title>DataCite Schemas repository</title>
+<link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-<h1><img
-  src="https://api.datacite.org/resources/images/dc-logo.gif"> Schema</h1>
+<h1><img src="https://api.datacite.org/resources/images/dc-logo.gif"> DataCite metadata schema repository </img></h1>
 
-This is the home for schemas created for DataCite purposes.
+<h2>Current version</h2>
 
-<h2>Metadata Store (MDS)</h2>
+<p>The preferred schema as of 9th May 2011 is <a href="meta/kernel-2.1">DataCite
+Metadata Kernel 2.1</a></p>
 
-<p>For the <a href="https://api.datacite.org">Metadatastore</a> the
-currently preferred schema is <a href="meta/kernel-2.1">DataCite
-Metadata Kernel 2.1</a>.</p>
+<h2>Deprication notification</h2>
 
-<p><a href="meta">Show a list of all available schemas</a></p>
+<p><a href="meta/kernel-2.0">DataCite
+Metadata Kernel Version 2.0</a> will be retired on 1st Aug 2011. After this date <a href="https://mds.datacite.org">MDS</a> will not accept documents based on this version.</p>
+
+<h2>Versioning</h2>
+
+<p><a href="meta">Each available version of a schema</a> is a subdirectory containing a set of files. Those files constitute single metadata version. There are all the required xsd files, a sample xml file and a pdf documentation. The files don't reference any other files outside of their version subdirectory.</p>
+
+<p>For our <a href="https://mds.datacite.org">Metadata store</a> all versions hosted on this site are valid although only one version is considered <em>preferred</em> at any given moment of time. Please note that each version has a different XML namespace.</p>
+
+<p>Each incoming to <a href="https://mds.datacite.org">Metadata store</a> XML document should indicate schema location in the root element.</p>
+
+<h2>Help</h2>
+<p>If you have questions please ask at <a href="http://groups.google.com/group/datacite-developers"> Developers groups</a> or contact 
+<script>
+  var m_ = "mailto:";
+  var a_ = "@";
+  var d_ = ".";
+  var t_ = 'tech' + a_ + 'datacite' + d_ + 'org';
+  document.write('<a href="' + m_ + t_ +'">'+ t_ +'</a>');
+</script>
+</p>
+
+<h2>Source code</h2>
+<p>This project is hosted on <a href="https://github.com/datacite/schema">GitHub</a></p>
 
 </body>
 </html>
