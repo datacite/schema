@@ -1,5 +1,7 @@
 package org.datacite.schema.test;
 
+import static org.junit.Assert.assertEquals;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -11,10 +13,12 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.Validator;
 
 import org.datacite.schema.SchemaDirectory;
+import org.datacite.schema.SchemaUtils;
 import org.datacite.schema.test.junit.LabeledParameterized;
 import org.datacite.schema.test.junit.LabeledParameterized.Parameters;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.w3c.dom.Document;
 
 @RunWith(LabeledParameterized.class)
 public class ValidationTest {
@@ -28,11 +32,27 @@ public class ValidationTest {
     }
 
     @Test
-    public void testExample() throws Exception {
+    public void testExampleValid() throws Exception {
         Schema schema = schemaDir.getSchema();
         Validator validator = schema.newValidator();
         Source source = new StreamSource(example);
         validator.validate(source);
+    }
+    
+    @Test
+    public void testExampleSchemaLocation() throws Exception {
+        Document doc = SchemaUtils.getDocument(example);
+        String schemaLocation = SchemaUtils.getSchemaLocation(doc);
+        String expectedSchemaLocation = schemaDir.getExpectedSchemaLocation();
+        assertEquals(expectedSchemaLocation, schemaLocation);
+    }
+
+    @Test
+    public void testExampleNamespace() throws Exception {
+        Document doc = SchemaUtils.getDocument(example);
+        String namespace = SchemaUtils.getNamespace(doc);
+        String expectedNamespace = schemaDir.getExpectedSchemaNamespace();
+        assertEquals(expectedNamespace, namespace);
     }
 
 

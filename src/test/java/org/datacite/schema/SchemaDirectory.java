@@ -19,6 +19,9 @@ public class SchemaDirectory {
 
     public final static String SCHEMAS_BASE_DIR = "www/meta";
     public final static String EXAMPLE_DIR = "example/";
+    
+    public final static String SCHEMA_SERVER_BASE_URL = "http://schema.datacite.org";
+    public final static String SCHEMA_NAMESPACE_BASE = "http://datacite.org/schema/";
 
     File directory;
 
@@ -54,6 +57,16 @@ public class SchemaDirectory {
         File schemaFile = getSchemaFile();
         Schema schema = schemaFactory.newSchema(schemaFile);
         return schema;
+    }
+    
+    public String getExpectedSchemaLocation() {
+        String path = getSchemaFile().getPath();
+        String url = path.replaceFirst("www", SCHEMA_SERVER_BASE_URL);
+        return url;
+    }
+    
+    public String getExpectedSchemaNamespace() {
+        return SCHEMA_NAMESPACE_BASE + getName();
     }
 
     public List<File> getExamples() {
