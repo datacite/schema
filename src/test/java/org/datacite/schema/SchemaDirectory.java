@@ -19,16 +19,18 @@ public class SchemaDirectory {
 
     public final static String SCHEMAS_BASE_DIR = "www/meta";
     public final static String EXAMPLE_DIR = "example/";
-    
+
     public final static String SCHEMA_SERVER_BASE_URL = "http://schema.datacite.org";
     public final static String SCHEMA_NAMESPACE_BASE = "http://datacite.org/schema/";
+
+    public final static String SCHEMA_WITHOUT_NAMESPACE = "kernel-2.0";
 
     File directory;
 
     public SchemaDirectory(File directory) throws FileNotFoundException {
         this.directory = directory;
     }
-    
+
     public File getDirectory() {
         return directory;
     }
@@ -58,15 +60,18 @@ public class SchemaDirectory {
         Schema schema = schemaFactory.newSchema(schemaFile);
         return schema;
     }
-    
+
     public String getExpectedSchemaLocation() {
         String path = getSchemaFile().getPath();
         String url = path.replaceFirst("www", SCHEMA_SERVER_BASE_URL);
         return url;
     }
-    
+
     public String getExpectedSchemaNamespace() {
-        return SCHEMA_NAMESPACE_BASE + getName();
+        if (getName().equals(SCHEMA_WITHOUT_NAMESPACE))
+            return null;
+        else
+            return SCHEMA_NAMESPACE_BASE + getName();
     }
 
     public List<File> getExamples() {
