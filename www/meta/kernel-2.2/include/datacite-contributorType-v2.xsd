@@ -9,13 +9,20 @@
 			<xs:enumeration value="ContactPerson"/>
 			<xs:enumeration value="DataCollector"/>
 			<xs:enumeration value="DataManager"/>
+			<xs:enumeration value="Distributor"/>
 			<xs:enumeration value="Editor"/>
+			<xs:enumeration value="Funder"/>
 			<xs:enumeration value="HostingInstitution"/>
+			<xs:enumeration value="Producer"/>
 			<xs:enumeration value="ProjectLeader"/>
 			<xs:enumeration value="ProjectMember"/>
 			<xs:enumeration value="RegistrationAgency"/>
 			<xs:enumeration value="RegistrationAuthority"/>
+			<xs:enumeration value="RelatedPerson"/>
+			<xs:enumeration value="RightsHolder"/>
 			<xs:enumeration value="Researcher"/>
+			<xs:enumeration value="Sponsor"/>
+			<xs:enumeration value="Supervisor"/>
 			<xs:enumeration value="WorkPackageLeader"/>
 		</xs:restriction>
 	</xs:simpleType>

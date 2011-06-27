@@ -18,6 +18,7 @@
 			<xs:enumeration value="LSID"/>
 			<xs:enumeration value="PURL"/>
 			<xs:enumeration value="UPC"/>
+			<xs:enumeration value="URL"/>
 			<xs:enumeration value="URN"/>
 		</xs:restriction>
 	</xs:simpleType>
