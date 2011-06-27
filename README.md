@@ -26,14 +26,11 @@ The `/www` directory will be published (as root) at http://schema.datacite.org, 
 Tests
 -----
 
-There a tests to check the directory structure, existence of examples,
+There are tests to check the directory structure, existence of examples,
 validity of the schemas, and validity of the examples.  
 
 You can execute the tests via
 
     mvn test
-
-
-
 
    
