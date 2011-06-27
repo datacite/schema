@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Version 1.0 - Created 2011-01-13 - FZ, TIB, Germany -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns="http://datacite.org/schema/kernel-2.1" targetNamespace="http://datacite.org/schema/kernel-2.1">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-2.2" targetNamespace="http://datacite.org/schema/kernel-2.2" elementFormDefault="qualified">
 	<xs:simpleType name="relatedIdentifierType">
 		<xs:annotation>
 			<xs:documentation>The type of the RelatedIdentifier.</xs:documentation>
