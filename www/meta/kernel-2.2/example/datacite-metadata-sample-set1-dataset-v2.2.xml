@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns="http://datacite.org/schema/kernel-2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-2.2 http://schema.datacite.org/meta/kernel-2.2/metadata.xsd">
+	<identifier identifierType="DOI">10.5072/001</identifier>
+	<creators>
+		<creator>
+			<creatorName>Smith, John</creatorName>
+		</creator>
+	</creators>
+	<titles>
+		<title>Drilling Core 1</title>
+		<title titleType="Subtitle">A dataset</title>
+	</titles>
+	<publisher>TIB</publisher>
+	<publicationYear>2009</publicationYear>
+	<resourceType resourceTypeGeneral="Dataset"/>
+	<relatedIdentifiers>
+		<relatedIdentifier relatedIdentifierType="DOI" relationType="IsCitedBy">10.5072/002</relatedIdentifier>
+		<relatedIdentifier relatedIdentifierType="DOI" relationType="IsOriginalFormOf">10.5072/004</relatedIdentifier>
+	</relatedIdentifiers>
+	<sizes>
+		<size>4 MB</size>
+	</sizes>
+	<version>1</version>
+</resource>
