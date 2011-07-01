@@ -19,8 +19,8 @@
 			<contributorName>Technische Informationsbibliothek (TIB)</contributorName>
 		</contributor>
 	</contributors>
-	<resourceType resourceTypeGeneral="Film"/>
 	<language>ger</language>
+	<resourceType resourceTypeGeneral="Film"/>
 	<formats>
 		<format>MP4</format>
 	</formats>
