@@ -24,7 +24,7 @@
 			<xs:documentation>No content in this wrapper element.</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
-			<xs:sequence>
+			<xs:all>
 				<!--REQUIRED FIELDS-->
 				<xs:element name="identifier">
 					<xs:annotation>
@@ -285,7 +285,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-			</xs:sequence>
+			</xs:all>
 		</xs:complexType>
 	</xs:element>
 	<!-- TYPE DECLARATIONS -->
