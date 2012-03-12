@@ -8,7 +8,7 @@
 	 2011-06-27 v2.2: namespace: kernel-2.2, additions to controlled lists "resourceType", "contributorType", "relatedIdentifierType", and "descriptionType". Removal of intermediate include-files.
      2012-03 v2.3: namespace: kernel-2.3; delete LastMetadataUpdate & MetadateVersionNumber; additions to controlled lists "relationType" & "descriptionType"; allow arbitrary order of elements; allow optional wrapper elements to be empty; include xml:lang attribute for title and description; include attribute schemeURI in creator, contributor & subject -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-2.3" targetNamespace="http://datacite.org/schema/kernel-2.3" elementFormDefault="qualified" xml:lang="EN">
-<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2009/01/xml.xsd"/>
 	<xs:include schemaLocation="include/datacite-titleType-v3.xsd"/>
 	<xs:include schemaLocation="include/datacite-contributorType-v3.xsd"/>
 	<xs:include schemaLocation="include/datacite-dateType-v3.xsd"/>
