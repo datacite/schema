@@ -6,7 +6,7 @@
 	 2011-03-17 Release of v2.1: added a namespace; mandatory properties got minLength; changes in the definitions of relationTypes
 	 IsDocumentedBy/Documents and isCompiledBy/Compiles; changes type of property "Date" from xs:date to xs:string. FZ, TIB
 	 2011-06-27 v2.2: namespace: kernel-2.2, additions to controlled lists "resourceType", "contributorType", "relatedIdentifierType", and "descriptionType". Removal of intermediate include-files.
-     2012-03 v2.3: namespace: kernel-2.3,
+     2012-03 v2.3: namespace: kernel-2.3; delete LastMetadataUpdate & MetadateVersionNumber; additions to controlled lists "relationType" & "descriptionType";
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-2.3" targetNamespace="http://datacite.org/schema/kernel-2.3" elementFormDefault="qualified" xml:lang="EN">
 	<xs:include schemaLocation="include/datacite-titleType-v3.xsd"/>
@@ -286,9 +286,6 @@
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
-			<xs:attribute name="lastMetadataUpdate" type="xs:date" use="optional"/>
-			<xs:attribute name="metadataVersionNumber" type="xs:integer" use="optional"/>
-			<!--ADMINISTRATIVE FIELDS-->
 		</xs:complexType>
 	</xs:element>
 	<!-- TYPE DECLARATIONS -->
