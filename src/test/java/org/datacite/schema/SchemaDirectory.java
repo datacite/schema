@@ -46,7 +46,7 @@ public class SchemaDirectory {
     }
     
     private List<File> getFiles(String directory) {
-        return SchemaUtils.getFiles(getFile(directory));
+        return Utils.getFiles(getFile(directory));
     }
 
     public File getSchemaFile() {

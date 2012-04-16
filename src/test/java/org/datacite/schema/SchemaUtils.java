@@ -59,13 +59,4 @@ public class SchemaUtils {
         }
         return null;
     }
-    
-    public static List<File> getFiles(File directory) {
-        File[] files = directory.listFiles();
-        if (files == null)
-            return Collections.EMPTY_LIST;
-        List<File> list = Arrays.asList(files);
-        return list;
-    }
-
 }
