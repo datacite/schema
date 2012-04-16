@@ -52,7 +52,12 @@ public class BasicTest {
     public void testHasExamples() {
         assertFalse(schemaDir.getExamples().isEmpty());
     }
-    
+
+    @Test
+    public void testHasDocumentation() {
+        assertFalse(schemaDir.getDocs().isEmpty());
+    }
+
     @Parameters
     public static Collection<Object[]> data() {
         Collection<Object[]> data = new ArrayList<Object[]>();

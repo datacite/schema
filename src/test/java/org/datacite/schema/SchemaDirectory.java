@@ -19,6 +19,7 @@ public class SchemaDirectory {
 
     public final static String SCHEMAS_BASE_DIR = "www/meta";
     public final static String EXAMPLE_DIR = "example/";
+    public final static String DOC_DIR = "doc/";
 
     public final static String SCHEMA_SERVER_BASE_URL = "http://schema.datacite.org";
     public final static String SCHEMA_NAMESPACE_BASE = "http://datacite.org/schema/";
@@ -77,6 +78,15 @@ public class SchemaDirectory {
     public List<File> getExamples() {
         File exampleDir = getFile(EXAMPLE_DIR);
         File[] files = exampleDir.listFiles();
+        if (files == null)
+            return Collections.EMPTY_LIST;
+        List<File> list = Arrays.asList(files);
+        return list;
+    }
+    
+    public List<File> getDocs() {
+        File docDir = getFile(DOC_DIR);
+        File[] files = docDir.listFiles();
         if (files == null)
             return Collections.EMPTY_LIST;
         List<File> list = Arrays.asList(files);
