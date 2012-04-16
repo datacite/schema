@@ -6,11 +6,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 import org.apache.commons.exec.CommandLine;
 import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang.StringUtils;
 import org.datacite.schema.test.junit.LabeledParameterized;
 import org.datacite.schema.test.junit.LabeledParameterized.Parameters;
 import org.junit.Test;
@@ -45,10 +49,20 @@ public class HtmlTest {
     public static Collection<Object[]> data() {
         File directory = new File("www/");
         Collection<Object[]> data = new ArrayList<Object[]>();
-        Collection<File> files = FileUtils.listFiles(directory, new String[] { "html" }, true);
+        List<File> files = (List<File>) FileUtils.listFiles(directory, new String[] { "html" }, true);
+        sortFileList(files);
         for (File file : files)
             data.add(new Object[] { file });
         return data;
+    }
+    
+    private static void sortFileList(List<File> files) {
+        Collections.sort(files, new Comparator<File>() {
+            @Override
+            public int compare(File file1, File file2) {
+                return file1.compareTo(file2);
+            }
+        });
     }
     
     @Override
