@@ -43,6 +43,10 @@ public class SchemaDirectory {
     private File getFile(String fileName) {
         return new File(directory, fileName);
     }
+    
+    private List<File> getFiles(String directory) {
+        return SchemaUtils.getFiles(getFile(directory));
+    }
 
     public File getSchemaFile() {
         FilenameFilter xsdFilter = new SuffixFileFilter(".xsd");
@@ -76,21 +80,11 @@ public class SchemaDirectory {
     }
 
     public List<File> getExamples() {
-        File exampleDir = getFile(EXAMPLE_DIR);
-        File[] files = exampleDir.listFiles();
-        if (files == null)
-            return Collections.EMPTY_LIST;
-        List<File> list = Arrays.asList(files);
-        return list;
+        return getFiles(EXAMPLE_DIR);
     }
     
     public List<File> getDocs() {
-        File docDir = getFile(DOC_DIR);
-        File[] files = docDir.listFiles();
-        if (files == null)
-            return Collections.EMPTY_LIST;
-        List<File> list = Arrays.asList(files);
-        return list;
+        return getFiles(DOC_DIR);
     }
 
     public static List<SchemaDirectory> getAllSchemaDirectories() {
