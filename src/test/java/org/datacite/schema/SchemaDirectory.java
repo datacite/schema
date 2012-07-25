@@ -19,6 +19,8 @@ public class SchemaDirectory {
 
     public final static String SCHEMAS_BASE_DIR = "www/meta";
     public final static String EXAMPLE_DIR = "example/";
+    public final static String DOC_DIR = "doc/";
+    public final static String INDEX_HTML = "index.html";
 
     public final static String SCHEMA_SERVER_BASE_URL = "http://schema.datacite.org";
     public final static String SCHEMA_NAMESPACE_BASE = "http://datacite.org/schema/";
@@ -41,6 +43,10 @@ public class SchemaDirectory {
 
     private File getFile(String fileName) {
         return new File(directory, fileName);
+    }
+    
+    private List<File> getFiles(String directory) {
+        return Utils.getFiles(getFile(directory));
     }
 
     public File getSchemaFile() {
@@ -75,12 +81,15 @@ public class SchemaDirectory {
     }
 
     public List<File> getExamples() {
-        File exampleDir = getFile(EXAMPLE_DIR);
-        File[] files = exampleDir.listFiles();
-        if (files == null)
-            return Collections.EMPTY_LIST;
-        List<File> list = Arrays.asList(files);
-        return list;
+        return getFiles(EXAMPLE_DIR);
+    }
+    
+    public List<File> getDocs() {
+        return getFiles(DOC_DIR);
+    }
+    
+    public File getIndexHtml() {
+        return getFile(INDEX_HTML);
     }
 
     public static List<SchemaDirectory> getAllSchemaDirectories() {

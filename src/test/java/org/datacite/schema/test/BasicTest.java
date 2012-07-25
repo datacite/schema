@@ -3,6 +3,7 @@ package org.datacite.schema.test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -52,7 +53,18 @@ public class BasicTest {
     public void testHasExamples() {
         assertFalse(schemaDir.getExamples().isEmpty());
     }
+
+    @Test
+    public void testHasDocumentation() {
+        assertFalse(schemaDir.getDocs().isEmpty());
+    }
     
+    @Test
+    public void testHasIndexHtml() {
+        assertTrue(schemaDir.getIndexHtml().exists());
+    }
+
+
     @Parameters
     public static Collection<Object[]> data() {
         Collection<Object[]> data = new ArrayList<Object[]>();

@@ -2,6 +2,9 @@ package org.datacite.schema;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
@@ -56,6 +59,4 @@ public class SchemaUtils {
         }
         return null;
     }
-    
-
 }
