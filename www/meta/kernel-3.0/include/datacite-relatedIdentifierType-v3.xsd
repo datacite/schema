@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Version 1.0 - Created 2011-01-13 - FZ, TIB, Germany
-     2012-03 v3: Addition of ID to simpleType element-->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-2.3" targetNamespace="http://datacite.org/schema/kernel-2.3" elementFormDefault="qualified">
+     2013-05 v3.0: Addition of ID to simpleType element; addition of value "PMID"-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-3.0" targetNamespace="http://datacite.org/schema/kernel-3.0" elementFormDefault="qualified">
 	<xs:simpleType name="relatedIdentifierType" id="relatedIdentifierType">
 		<xs:annotation>
 			<xs:documentation>The type of the RelatedIdentifier.</xs:documentation>
@@ -17,6 +17,7 @@
 			<xs:enumeration value="ISTC"/>
 			<xs:enumeration value="LISSN"/>
 			<xs:enumeration value="LSID"/>
+			<xs:enumeration value="PMID"/>
 			<xs:enumeration value="PURL"/>
 			<xs:enumeration value="UPC"/>
 			<xs:enumeration value="URL"/>
