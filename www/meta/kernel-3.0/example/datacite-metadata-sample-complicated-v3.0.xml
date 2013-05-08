@@ -26,10 +26,6 @@
 			<nameIdentifier nameIdentifierScheme="ORCID">456xyz</nameIdentifier>
 		</contributor>
 	</contributors>
-	<dates>
-		<date dateType="StartDate">2009-04-29</date>
-		<date dateType="EndDate">2010-01-05</date>
-	</dates>
 	<language>GER</language>
 	<resourceType resourceTypeGeneral="Text">Monograph</resourceType>
 	<alternateIdentifiers>
