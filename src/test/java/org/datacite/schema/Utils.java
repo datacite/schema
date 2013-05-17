@@ -1,19 +1,16 @@
 package org.datacite.schema;
 
 import java.io.File;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
+
 public class Utils {
 
     public static List<File> getFiles(File directory) {
-        File[] files = directory.listFiles();
-        if (files == null)
-            return Collections.EMPTY_LIST;
-        List<File> list = Arrays.asList(files);
-        return list;
+        return (List<File>) FileUtils.listFiles(directory, null, true);
     }
 
     public static void sortFileList(List<File> files) {
