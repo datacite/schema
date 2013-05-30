@@ -6,7 +6,7 @@
 	 2011-03-17 Release of v2.1: added a namespace; mandatory properties got minLength; changes in the definitions of relationTypes
 	 IsDocumentedBy/Documents and isCompiledBy/Compiles; changes type of property "Date" from xs:date to xs:string. FZ, TIB
 	 2011-06-27 v2.2: namespace: kernel-2.2, additions to controlled lists "resourceType", "contributorType", "relatedIdentifierType", and "descriptionType". Removal of intermediate include-files.
-     2013-05 v3.0: namespace: kernel-3.0; delete LastMetadataUpdate & MetadateVersionNumber; additions to controlled lists "contributorType", "dateType", "descriptionType", "relationType", "relatedIdentifierType" & "resourceType"; deletion of "StartDate" & "EndDate" from list "dateType" and "Film" from "resourceType";  allow arbitrary order of elements; allow optional wrapper elements to be empty; include xml:lang attribute for title, subject & description; include attribute schemeURI for nameIdentifier of creator, contributor & subject; added new attributes "relatedMetadataScheme" & "schemeURI" to resourceTypeGeneral; included new property "geoLocation" -->
+     2013-05 v3.0: namespace: kernel-3.0; delete LastMetadataUpdate & MetadateVersionNumber; additions to controlled lists "contributorType", "dateType", "descriptionType", "relationType", "relatedIdentifierType" & "resourceType"; deletion of "StartDate" & "EndDate" from list "dateType" and "Film" from "resourceType";  allow arbitrary order of elements; allow optional wrapper elements to be empty; include xml:lang attribute for title, subject & description; include attribute schemeURI for nameIdentifier of creator, contributor & subject; added new attributes "relatedMetadataScheme" & "schemeURI" to relatedIdentifier; included new property "geoLocation" -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-3.0" targetNamespace="http://datacite.org/schema/kernel-3.0" elementFormDefault="qualified" xml:lang="EN">
 	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2009/01/xml.xsd"/>
 	<xs:include schemaLocation="include/datacite-titleType-v3.xsd"/>
@@ -196,8 +196,6 @@
 							<xs:documentation>Use this attribute to choose the general type of the resource from the controlled list.</xs:documentation>
 						</xs:annotation>
 						<xs:attribute name="resourceTypeGeneral" type="resourceType" use="required"/>
-						<xs:attribute name="relatedMetadataScheme" use="optional"/>
-						<xs:attribute name="schemeURI" use="optional"/>
 					</xs:complexType>
 				</xs:element>
 				<xs:element name="alternateIdentifiers" minOccurs="0">
@@ -230,6 +228,8 @@
 										<xs:extension base="xs:string">
 											<xs:attribute name="relatedIdentifierType" type="relatedIdentifierType" use="required"/>
 											<xs:attribute name="relationType" type="relationType" use="required"/>
+											<xs:attribute name="relatedMetadataScheme" use="optional"/>
+											<xs:attribute name="schemeURI" use="optional"/>
 										</xs:extension>
 									</xs:simpleContent>
 								</xs:complexType>
@@ -333,9 +333,9 @@
 		<xs:restriction base="xs:token">
 			<xs:pattern value="[\d]{4}"/>
 		</xs:restriction>
-	<!-- definitions for geoLocation -->
+		<!-- definitions for geoLocation -->
 	</xs:simpleType>
-		<xs:simpleType name="point">
+	<xs:simpleType name="point">
 		<xs:restriction base="listOfDoubles">
 			<xs:minLength value="2"/>
 			<xs:maxLength value="2"/>
