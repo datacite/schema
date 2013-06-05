@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource xsi:schemaLocation="http://datacite.org/schema/kernel-3.0 http://schema.datacite.org/meta/kernel-3.0/metadata.xsd" xmlns="http://datacite.org/schema/kernel-3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<identifier identifierType="DOI">10.5284/1003496</identifier>
+<identifier identifierType="DOI">10.5072/1003496</identifier>
 <creators>
 		<creator>
 			<creatorName>Barton, T.</creatorName>
@@ -24,12 +24,15 @@
 	<alternateIdentifier alternateIdentifierType='ADS Grey Lit ID'>4335</alternateIdentifier>
 	<alternateIdentifier alternateIdentifierType='OASIS ID'>suatltd1-48159</alternateIdentifier>
 </alternateIdentifiers>
-<sizes><size>2 doc files, 1 pdf file, 1 jpg file</size></sizes>
+<sizes><size>Doc: 46 kb</size>
+<size>PDF: 750 kb</size>
+<size>JPG: 700 kb</size></sizes>
 <formats>
-	<format>DOC</format>
-	<format>PDF</format>
-	<format>JPG</format>
+	<format>application/msword</format>
+	<format>application/pdf</format>
+	<format>image/jpeg</format>
 </formats>
 <rights>License information available at http://archaeologydataservice.ac.uk/advice/termsOfUseAndAccess</rights>
 <descriptions><description descriptionType="Other">Unpublished fieldwork reports (Grey Literature Library)</description></descriptions>
+<geoLocations><geoLocation><geoLocationPlace>Stornoway, Western Isles, Scotland</geoLocationPlace></geoLocation></geoLocations>
 </resource>

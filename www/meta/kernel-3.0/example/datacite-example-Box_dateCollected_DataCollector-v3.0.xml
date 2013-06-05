@@ -7,7 +7,7 @@
         </creator>
     </creators>
     <titles>
-        <title>Temperature and Humidity in School Classrooms, Halifax, 1961-1962</title>
+        <title>Temperature and Humidity in School Classrooms, Ponhook Lake, N.S., 1961-1962</title>
     </titles>
     <publisher>National Research Council Canada</publisher>
     <publicationYear>1963</publicationYear>
@@ -15,7 +15,7 @@
         <subject subjectScheme="LCCN" schemeURI="http://lccn.loc.gov/sh85062931">Temperature</subject>
         <subject subjectScheme="LCCN" schemeURI="http://lccn.loc.gov/sh85133712">Humidity</subject>
         <subject subjectScheme="LCCN" schemeURI="http://lccn.loc.gov/sh88003345">Classrooms</subject>
-        <subject subjectScheme="LCCN" schemeURI="http://lccn.loc.gov/n82043571">Halifax (N.S.)</subject>
+        <subject>Ponhook Lake (N.S.)</subject>
     </subjects>
     <contributors>
         <contributor contributorType="DataCollector">
@@ -26,7 +26,7 @@
         <date dateType="Collected">1961-06-01/1962-10-12</date>
     </dates>
     <language>en</language>
-    <resourceType resourceTypeGeneral="Text"> report </resourceType>
+    <resourceType resourceTypeGeneral="Text">report</resourceType>
     <sizes>
         <size>10 p.</size>
     </sizes>
@@ -34,13 +34,14 @@
         <description descriptionType="Abstract">The Division has been taking records of temperatures
             and humidities in groups of houses at various locations in Canada over the past several
             years. This survey has more recently been extended to include schools. Records obtained
-            from classrooms in six schools in Halifax from June 1, 1961-October 12, 1962 are now reported.
+            from classrooms in six schools in Ponhook Lake, Nova Scotia from June 1, 1961-October 12, 1962 are now reported.
         </description>
     </descriptions>
+
     <geoLocations>
         <geoLocation>
-            <geoLocationBox>44.7167 -64.2 44.9667 -63.8</geoLocationBox>
-            <geoLocationPlace>Halifax, Nova Scotia</geoLocationPlace>
+            <geoLocationBox>-63.8 -64.2 44.9667 44.7167</geoLocationBox>
+            <geoLocationPlace>Ponhook Lake, Nova Scotia</geoLocationPlace>
         </geoLocation>
     </geoLocations>
 </resource>
