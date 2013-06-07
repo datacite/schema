@@ -27,7 +27,7 @@
     </contributors>
     <resourceType resourceTypeGeneral="Dataset"></resourceType>
     <relatedIdentifiers>
-        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsReferencedBy">10.1016/j.jalz.2012.05.911</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsReferencedBy">10.5072/j.jalz.2012.05.911</relatedIdentifier>
     </relatedIdentifiers>
        <descriptions>
         <description descriptionType="Abstract">This study replication data resource includes information referencing specific items in the Alzheimer's Disease Neuroimaging Initiative (ADNI) database that were used with the included analysis scripts (R statistical software) to reach conclusions presented in the referenced publication (DOI: 10.1016/j.jalz.2012.05.911).</description>

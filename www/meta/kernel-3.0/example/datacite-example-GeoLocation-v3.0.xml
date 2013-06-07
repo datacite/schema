@@ -28,7 +28,7 @@
 	<language>en</language>
 	<resourceType resourceTypeGeneral="Dataset"/>
 	<relatedIdentifiers>
-		<relatedIdentifier relatedIdentifierType="DOI" relationType="Continues">10.5072/relatedGeoPoint</relatedIdentifier>
+		<relatedIdentifier relatedIdentifierType="DOI" relationType="continues">10.5072/timeSeries</relatedIdentifier>
 	</relatedIdentifiers>
 	<sizes>
 		<size>4 datasets</size>
