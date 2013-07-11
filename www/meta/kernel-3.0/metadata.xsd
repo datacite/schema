@@ -191,11 +191,12 @@
 					<xs:annotation>
 						<xs:documentation>The type of a resource. You may enter an additional free text description.</xs:documentation>
 					</xs:annotation>
-					<xs:complexType mixed="true">
-						<xs:annotation>
-							<xs:documentation>Use this attribute to choose the general type of the resource from the controlled list.</xs:documentation>
-						</xs:annotation>
-						<xs:attribute name="resourceTypeGeneral" type="resourceType" use="required"/>
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:string">
+								<xs:attribute name="resourceTypeGeneral" type="resourceType" use="required"/>
+							</xs:extension>
+						</xs:simpleContent>
 					</xs:complexType>
 				</xs:element>
 				<xs:element name="alternateIdentifiers" minOccurs="0">
@@ -328,7 +329,7 @@
 	<!-- defines the value for a DOI: DOI must start with "10."  -->
 	<xs:simpleType name="doiType">
 		<xs:restriction base="xs:token">
-			<xs:pattern value="[1][0][/.].*"/>
+			<xs:pattern value="10\..+/.+"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<!-- defines value for mandatory fields -->
