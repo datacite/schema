@@ -240,7 +240,7 @@
 				<xs:element name="sizes" minOccurs="0">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="size" minOccurs="0" maxOccurs="unbounded">
+							<xs:element name="size" minOccurs="0" maxOccurs="unbounded" type="xs:string">
 								<xs:annotation>
 									<xs:documentation>Unstructures size information about the resource. </xs:documentation>
 								</xs:annotation>
@@ -251,7 +251,7 @@
 				<xs:element name="formats" minOccurs="0">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="format" minOccurs="0" maxOccurs="unbounded">
+							<xs:element name="format" minOccurs="0" maxOccurs="unbounded" type="xs:string">
 								<xs:annotation>
 									<xs:documentation>Technical format of the resource.</xs:documentation>
 									<xs:documentation>Use file extension or MIME type where possible.</xs:documentation>
@@ -266,11 +266,24 @@
 						<xs:documentation>Register a new DOI (or primary identifier) when the version of the resource changes to enable the citation of the exact version of a research dataset (or other resource). May be used in conjunction with properties 11 and 12 (AlternateIdentifier and RelatedIdentifier) to indicate various information updates.</xs:documentation>
 					</xs:annotation>
 				</xs:element>
-				<xs:element name="rights" minOccurs="0">
-					<xs:annotation>
-						<xs:documentation>Any rights information for this resource. Provide a rights management statement for the resource or reference a service providing such information. Include embargo information if applicable.
+				<xs:element name="rightsList" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="rights" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Any rights information for this resource. Provide a rights management statement for the resource or reference a service providing such information. Include embargo information if applicable.
 						</xs:documentation>
-					</xs:annotation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="licenseURI" use="optional"/>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
 				</xs:element>
 				<xs:element name="descriptions" minOccurs="0">
 					<xs:complexType>
