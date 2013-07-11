@@ -37,7 +37,7 @@
 		<format>PDF</format>
 	</formats>
 	<version>1</version>
-	<rights>Creative Commons License: Attribution-NonCommercial-NoDerivs 3.0 Unported</rights>
+	<rightsList> <rights rightsURI="http://creativecommons.org/licenses/by-nc-nd/3.0/deed">Creative Commons License: Attribution-NonCommercial-NoDerivs 3.0 Unported</rights></rightsList>
 	<descriptions>
 		<description descriptionType="SeriesInformation">Comparative Population Studies; Vol 38, No 1, 2013. ISSN 0076-7689</description>
 		<description descriptionType="Abstract">This paper validates the fertility histories of the German Generations and Gender Survey (GGS). 

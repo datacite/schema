@@ -277,7 +277,7 @@
 								<xs:complexType>
 									<xs:simpleContent>
 										<xs:extension base="xs:string">
-											<xs:attribute name="licenseURI" use="optional"/>
+											<xs:attribute name="rightsURI" use="optional"/>
 										</xs:extension>
 									</xs:simpleContent>
 								</xs:complexType>

@@ -32,7 +32,7 @@
 	<format>application/pdf</format>
 	<format>image/jpeg</format>
 </formats>
-<rights>License information available at http://archaeologydataservice.ac.uk/advice/termsOfUseAndAccess</rights>
+<rightsList> <rights rightsURI="http://archaeologydataservice.ac.uk/advice/termsOfUseAndAccess">Terms of Use and Access to ADS Resources</rights></rightsList>
 <descriptions><description descriptionType="Other">Unpublished fieldwork reports (Grey Literature Library)</description></descriptions>
 <geoLocations><geoLocation><geoLocationPlace>Stornoway, Western Isles, Scotland</geoLocationPlace></geoLocation></geoLocations>
 </resource>
