@@ -6,7 +6,7 @@
 	 2011-03-17 Release of v2.1: added a namespace; mandatory properties got minLength; changes in the definitions of relationTypes
 	 IsDocumentedBy/Documents and isCompiledBy/Compiles; changes type of property "Date" from xs:date to xs:string. FZ, TIB
 	 2011-06-27 v2.2: namespace: kernel-2.2, additions to controlled lists "resourceType", "contributorType", "relatedIdentifierType", and "descriptionType". Removal of intermediate include-files.
-     2013-05 v3.0: namespace: kernel-3.0; delete LastMetadataUpdate & MetadateVersionNumber; additions to controlled lists "contributorType", "dateType", "descriptionType", "relationType", "relatedIdentifierType" & "resourceType"; deletion of "StartDate" & "EndDate" from list "dateType" and "Film" from "resourceType";  allow arbitrary order of elements; allow optional wrapper elements to be empty; include xml:lang attribute for title, subject & description; include attribute schemeURI for nameIdentifier of creator, contributor & subject; added new attributes "relatedMetadataScheme" & "schemeURI" to relatedIdentifier; included new property "geoLocation" -->
+     2013-05 v3.0: namespace: kernel-3.0; delete LastMetadataUpdate & MetadateVersionNumber; additions to controlled lists "contributorType", "dateType", "descriptionType", "relationType", "relatedIdentifierType" & "resourceType"; deletion of "StartDate" & "EndDate" from list "dateType" and "Film" from "resourceType";  allow arbitrary order of elements; allow optional wrapper elements to be empty; include xml:lang attribute for title, subject & description; include attribute schemeURI for nameIdentifier of creator, contributor & subject; added new attributes "relatedMetadataScheme", "schemeURI" & "schemeType" to relatedIdentifier; included new property "geoLocation" -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-3" targetNamespace="http://datacite.org/schema/kernel-3" elementFormDefault="qualified" xml:lang="EN">
 	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2009/01/xml.xsd"/>
 	<xs:include schemaLocation="include/datacite-titleType-v3.xsd"/>
@@ -59,7 +59,7 @@
 												<xs:simpleContent>
 													<xs:extension base="nonemptycontentStringType">
 														<xs:attribute name="nameIdentifierScheme" use="required"/>
-														<xs:attribute name="schemeURI" use="optional"/>
+														<xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
 													</xs:extension>
 												</xs:simpleContent>
 											</xs:complexType>
@@ -120,7 +120,7 @@
 									<xs:simpleContent>
 										<xs:extension base="xs:string">
 											<xs:attribute name="subjectScheme" use="optional"/>
-											<xs:attribute name="schemeURI" use="optional"/>
+											<xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
 											<xs:attribute ref="xml:lang"/>
 										</xs:extension>
 									</xs:simpleContent>
@@ -151,7 +151,7 @@
 												<xs:simpleContent>
 													<xs:extension base="xs:string">
 														<xs:attribute name="nameIdentifierScheme" use="required"/>
-														<xs:attribute name="schemeURI" use="optional"/>
+														<xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
 													</xs:extension>
 												</xs:simpleContent>
 											</xs:complexType>
@@ -231,7 +231,8 @@
 											<xs:attribute name="relatedIdentifierType" type="relatedIdentifierType" use="required"/>
 											<xs:attribute name="relationType" type="relationType" use="required"/>
 											<xs:attribute name="relatedMetadataScheme" use="optional"/>
-											<xs:attribute name="schemeURI" use="optional"/>
+											<xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+											<xs:attribute name="schemeType" use="optional"/>
 										</xs:extension>
 									</xs:simpleContent>
 								</xs:complexType>
@@ -279,7 +280,7 @@ Use the complete title of a license and include version information if applicabl
 								<xs:complexType>
 									<xs:simpleContent>
 										<xs:extension base="xs:string">
-											<xs:attribute name="rightsURI" use="optional"/>
+											<xs:attribute name="rightsURI" type="xs:anyURI" use="optional"/>
 										</xs:extension>
 									</xs:simpleContent>
 								</xs:complexType>
