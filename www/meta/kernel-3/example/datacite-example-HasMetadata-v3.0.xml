@@ -35,7 +35,7 @@
     <language>eng</language>
 	<resourceType resourceTypeGeneral="Text">Experiment report</resourceType>
     <relatedIdentifiers>
-        <relatedIdentifier relatedIdentifierType="URL" relationType="HasMetadata" relatedMetadataScheme="ISA-Tab" schemeURI="http://isatab.sourceforge.net/docs/ISA-TAB_release-candidate-1_v1.0_24nov08.pdf">http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18695</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="HasMetadata" relatedMetadataScheme="ISA-Tab" schemeURI="http://isatab.sourceforge.net/docs/ISA-TAB_release-candidate-1_v1.0_24nov08.pdf" schemeType="Text">http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18695</relatedIdentifier>
     </relatedIdentifiers>
 	<sizes>
 		<size>183 ko</size>
