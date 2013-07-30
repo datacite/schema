@@ -17,6 +17,7 @@
 			<xs:enumeration value="Other"/>
 			<xs:enumeration value="Producer"/>
 			<xs:enumeration value="ProjectLeader"/>
+			<xs:enumeration value="ProjectManager"/>
 			<xs:enumeration value="ProjectMember"/>
 			<xs:enumeration value="RegistrationAgency"/>
 			<xs:enumeration value="RegistrationAuthority"/>
