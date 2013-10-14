@@ -39,7 +39,7 @@
     </descriptions>
     <geoLocations>
         <geoLocation>
-            <geoLocationBox>-63.8 -64.2 44.9667 44.7167</geoLocationBox>
+            <geoLocationBox>44.7167 -64.2 44.9667 -63.8 </geoLocationBox>
             <geoLocationPlace>Ponhook Lake, Nova Scotia</geoLocationPlace>
         </geoLocation>
     </geoLocations>

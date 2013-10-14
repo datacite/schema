@@ -43,7 +43,7 @@
 	</descriptions>
 	<geoLocations>
 		<geoLocation>
-			<geoLocationPoint>69.000000  -52.000000</geoLocationPoint>
+			<geoLocationPoint>-52.000000 69.000000 </geoLocationPoint>
 			<geoLocationPlace>Disko Bay</geoLocationPlace>
 		</geoLocation>
 	</geoLocations>
