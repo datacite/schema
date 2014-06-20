@@ -4,11 +4,11 @@
 	<creators>
 		<creator>
 			<creatorName>Kreyenfeld, Michaela</creatorName>
-			<nameIdentifier nameIdentifierScheme="ISNI">1422 4586 schemeURI="http://www.isni.org"</nameIdentifier>
+			<nameIdentifier nameIdentifierScheme="ISNI" schemeURI="http://www.isni.org">1422 4586</nameIdentifier>
 		</creator>
 		<creator>
 			<creatorName>Hornung, Anne</creatorName>
-			<nameIdentifier nameIdentifierScheme="ISNI">1422 4587 schemeURI="http://www.isni.org"</nameIdentifier>			
+			<nameIdentifier nameIdentifierScheme="ISNI" schemeURI="http://www.isni.org">1422 4587</nameIdentifier>			
 		</creator>
 	</creators>
 	<titles>
@@ -23,7 +23,7 @@
 	 <subject>Germany</subject>
 	 <subject>Mikrozensus</subject>
 	 <subject>Gender survey</subject>
-     <subject subjectScheme="GESIS">10300 Demography, Population Research subjectURI="http://www.gesis.org/classification</subject>
+	 <subject subjectScheme="GESIS">10300 Demography, Population Research subjectURI="http://www.gesis.org/classification</subject>
 	</subjects>
 	<language>eng</language>
 	<resourceType resourceTypeGeneral="Text">Article</resourceType>
