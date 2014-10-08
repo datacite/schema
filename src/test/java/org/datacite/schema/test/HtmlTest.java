@@ -13,10 +13,10 @@ import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
 import org.apache.commons.io.FileUtils;
 import org.datacite.schema.Utils;
-import org.datacite.schema.test.junit.LabeledParameterized;
-import org.datacite.schema.test.junit.LabeledParameterized.Parameters;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
 
 /**
  * Html Validator. Requires external program "tidy" (http://tidy.sourceforge.net/).
@@ -24,7 +24,7 @@ import org.junit.runner.RunWith;
  * @author peterss
  *
  */
-@RunWith(LabeledParameterized.class)
+@RunWith(Parameterized.class)
 public class HtmlTest {
 
     private File file;
@@ -44,7 +44,7 @@ public class HtmlTest {
     }
 
 
-    @Parameters
+    @Parameters(name="{0}")
     public static Collection<Object[]> data() {
         File directory = new File("www/");
         Collection<Object[]> data = new ArrayList<Object[]>();
@@ -55,8 +55,4 @@ public class HtmlTest {
         return data;
     }
     
-    @Override
-    public String toString() {
-        return file.toString();
-    }
 }

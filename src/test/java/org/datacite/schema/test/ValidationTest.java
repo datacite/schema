@@ -14,13 +14,13 @@ import javax.xml.validation.Validator;
 
 import org.datacite.schema.SchemaDirectory;
 import org.datacite.schema.SchemaUtils;
-import org.datacite.schema.test.junit.LabeledParameterized;
-import org.datacite.schema.test.junit.LabeledParameterized.Parameters;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
 import org.w3c.dom.Document;
 
-@RunWith(LabeledParameterized.class)
+@RunWith(Parameterized.class)
 public class ValidationTest {
 
     private SchemaDirectory schemaDir;
@@ -56,7 +56,7 @@ public class ValidationTest {
     }
 
 
-    @Parameters
+    @Parameters(name="{1}")
     public static Collection<Object[]> data() {
         Collection<Object[]> data = new ArrayList<Object[]>();
         List<SchemaDirectory> schemaDirs = SchemaDirectory.getAllSchemaDirectories();
@@ -65,11 +65,5 @@ public class ValidationTest {
                 data.add(new Object[] { schemaDir, example });
         return data;
     }
-
-    @Override
-    public String toString() {
-        return example.toString();
-    }
-    
     
 }

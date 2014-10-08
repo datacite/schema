@@ -11,14 +11,14 @@ import java.util.List;
 
 import org.datacite.schema.SchemaDirectory;
 import org.datacite.schema.SchemaUtils;
-import org.datacite.schema.test.junit.LabeledParameterized;
-import org.datacite.schema.test.junit.LabeledParameterized.Parameters;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-@RunWith(LabeledParameterized.class)
+@RunWith(Parameterized.class)
 public class BasicTest {
 
     private SchemaDirectory schemaDir;
@@ -65,7 +65,7 @@ public class BasicTest {
     }
 
 
-    @Parameters
+    @Parameters(name="{0}")
     public static Collection<Object[]> data() {
         Collection<Object[]> data = new ArrayList<Object[]>();
         List<SchemaDirectory> schemaDirs = SchemaDirectory.getAllSchemaDirectories();
@@ -73,9 +73,5 @@ public class BasicTest {
             data.add(new Object[] { schemaDir });
         return data;
     }
-    
-    @Override
-    public String toString() {
-        return schemaDir.getDirectory().toString();
-    }
+
 }
