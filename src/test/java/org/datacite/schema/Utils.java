@@ -1,6 +1,7 @@
 package org.datacite.schema;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -10,7 +11,10 @@ import org.apache.commons.io.FileUtils;
 public class Utils {
 
     public static List<File> getFiles(File directory) {
-        return (List<File>) FileUtils.listFiles(directory, null, true);
+        if (directory.isDirectory())
+            return (List<File>) FileUtils.listFiles(directory, null, true);
+        else
+            return new ArrayList<File>();
     }
 
     public static void sortFileList(List<File> files) {
