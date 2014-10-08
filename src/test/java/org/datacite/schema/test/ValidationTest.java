@@ -33,6 +33,15 @@ public class ValidationTest {
 
     @Test
     public void testExampleValid() throws Exception {
+        validate(schemaDir);
+    }
+    
+    @Test
+    public void testExampleValidToMajorSchema() throws Exception {
+        validate(schemaDir.getMajorSchema());
+    }
+    
+    private void validate(SchemaDirectory schemaDir) throws Exception {
         Schema schema = schemaDir.getSchema();
         Validator validator = schema.newValidator();
         Source source = new StreamSource(example);
@@ -54,7 +63,6 @@ public class ValidationTest {
         String expectedNamespace = schemaDir.getExpectedSchemaNamespace();
         assertEquals(expectedNamespace, namespace);
     }
-
 
     @Parameters(name="{1}")
     public static Collection<Object[]> data() {
