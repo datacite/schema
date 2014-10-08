@@ -36,6 +36,7 @@ public class HtmlTest {
     @Test
     public void testIndexHtmlIsValid() throws ExecuteException, IOException {
         CommandLine cmdLine = CommandLine.parse("tidy");
+        cmdLine.addArguments(new String[] {"-output", "/dev/null", "-quiet"});
         cmdLine.addArgument(file.getAbsolutePath());
         DefaultExecutor executor = new DefaultExecutor();
         int exitValue = executor.execute(cmdLine);
