@@ -17,7 +17,7 @@ import org.xml.sax.SAXException;
 
 public class SchemaDirectory {
 
-    public final static String SCHEMAS_BASE_DIR = "www/meta";
+    public final static String SCHEMAS_BASE_DIR = "www/meta/";
     public final static String EXAMPLE_DIR = "example/";
     public final static String DOC_DIR = "doc/";
     public final static String INDEX_HTML = "index.html";
@@ -31,6 +31,10 @@ public class SchemaDirectory {
 
     public SchemaDirectory(File directory) throws FileNotFoundException {
         this.directory = directory;
+    }
+    
+    public SchemaDirectory(String name) throws FileNotFoundException {
+        this(new File(SCHEMAS_BASE_DIR + name));
     }
 
     public File getDirectory() {
@@ -68,7 +72,12 @@ public class SchemaDirectory {
     }
 
     public String getExpectedSchemaLocation() {
-        String path = getSchemaFile().getPath();
+        String path;
+        try {
+            path = new SchemaDirectory(getRootName()).getSchemaFile().getPath();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException("error getting real schema path");
+        }
         String url = path.replaceFirst("www", SCHEMA_SERVER_BASE_URL);
         return url;
     }
@@ -77,7 +86,25 @@ public class SchemaDirectory {
         if (getName().equals(SCHEMA_WITHOUT_NAMESPACE))
             return null;
         else
-            return SCHEMA_NAMESPACE_BASE + getName();
+            return SCHEMA_NAMESPACE_BASE + getRootName();
+    }
+    
+    /*
+     * rootName is the name of the corresponding major schema version 
+     * if it exists explicitly  
+     * 
+     * example:
+     * 
+     * if major schema version 3 exists, then root of 3.1 is 3
+     * if major schema version 2 does not exists, then root of 2.1 is 2
+     */
+    public String getRootName() {
+        String rootName = getName().replaceFirst("\\.[0-9]+$", "");
+        File rootDir = new File(SCHEMAS_BASE_DIR + rootName);
+        if (rootDir.exists())
+            return rootName;
+        else
+            return getName();
     }
 
     public List<File> getExamples() {
