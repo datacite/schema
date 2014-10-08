@@ -3,6 +3,7 @@ package org.datacite.schema;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FilenameFilter;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -121,7 +122,8 @@ public class SchemaDirectory {
         List<SchemaDirectory> schemaDirectories = new ArrayList<SchemaDirectory>();
         for (File dir : dirs)
             try {
-                schemaDirectories.add(new SchemaDirectory(dir));
+                if (!Files.isSymbolicLink(dir.toPath()))
+                    schemaDirectories.add(new SchemaDirectory(dir));
             } catch (FileNotFoundException e) {
             }
         return schemaDirectories;
