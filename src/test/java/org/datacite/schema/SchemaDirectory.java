@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FilenameFilter;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 import javax.xml.XMLConstants;
@@ -31,6 +29,8 @@ public class SchemaDirectory {
 
     public SchemaDirectory(File directory) throws FileNotFoundException {
         this.directory = directory;
+        if (!directory.exists())
+            throw new FileNotFoundException(directory.getPath());
     }
     
     public SchemaDirectory(String name) throws FileNotFoundException {
@@ -73,11 +73,7 @@ public class SchemaDirectory {
 
     public String getExpectedSchemaLocation() {
         String path;
-        try {
-            path = new SchemaDirectory(getRootName()).getSchemaFile().getPath();
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException("error getting real schema path");
-        }
+        path = getMajorSchema().getSchemaFile().getPath();
         String url = path.replaceFirst("www", SCHEMA_SERVER_BASE_URL);
         return url;
     }
@@ -86,11 +82,11 @@ public class SchemaDirectory {
         if (getName().equals(SCHEMA_WITHOUT_NAMESPACE))
             return null;
         else
-            return SCHEMA_NAMESPACE_BASE + getRootName();
+            return SCHEMA_NAMESPACE_BASE + getMajorSchema().getName();
     }
     
     /*
-     * rootName is the name of the corresponding major schema version 
+     * retrieves the corresponding major schema directory 
      * if it exists explicitly  
      * 
      * example:
@@ -98,13 +94,13 @@ public class SchemaDirectory {
      * if major schema version 3 exists, then root of 3.1 is 3
      * if major schema version 2 does not exists, then root of 2.1 is 2
      */
-    public String getRootName() {
-        String rootName = getName().replaceFirst("\\.[0-9]+$", "");
-        File rootDir = new File(SCHEMAS_BASE_DIR + rootName);
-        if (rootDir.exists())
-            return rootName;
-        else
-            return getName();
+    public SchemaDirectory getMajorSchema() {
+        String majorName = getName().replaceFirst("\\.[0-9]+$", "");
+        try {
+            return new SchemaDirectory(majorName);
+        } catch (FileNotFoundException e) {
+            return this;
+        }
     }
 
     public List<File> getExamples() {
