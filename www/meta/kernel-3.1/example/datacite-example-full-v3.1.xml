@@ -34,7 +34,7 @@
     </alternateIdentifiers>
     <relatedIdentifiers>
         <relatedIdentifier relatedIdentifierType="URL" relationType="HasMetadata" relatedMetadataScheme="citeproc+json" schemeURI="https://github.com/citation-style-language/schema/raw/master/csl-data.json">http://data.datacite.org/application/citeproc+json/10.5072/example-full</relatedIdentifier>
-        <relatedIdentifier relatedIdentifierType="arXiv" relationType="isReviewedBy">arXiv:0706.0001</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="arXiv" relationType="IsReviewedBy">arXiv:0706.0001</relatedIdentifier>
     </relatedIdentifiers>
     <sizes>
         <size>3KB</size>
