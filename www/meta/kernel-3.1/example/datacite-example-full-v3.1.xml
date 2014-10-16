@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource xsi:schemaLocation="http://datacite.org/schema/kernel-3 metadata.xsd" xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<resource xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd" xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <identifier identifierType="DOI">10.5072/example-full</identifier>
     <creators>
         <creator>
@@ -15,7 +15,7 @@
     <publisher>DataCite</publisher>
     <publicationYear>2014</publicationYear>
     <subjects>
-        <subject xml:lang="en-us" schemeURI="http://dewey.info/" subjectScheme="dewey">000</subject>
+        <subject xml:lang="en-us" schemeURI="http://dewey.info/" subjectScheme="dewey">000 computer science</subject>
     </subjects>
     <contributors>
         <contributor contributorType="ProjectLeader">
@@ -34,7 +34,7 @@
     </alternateIdentifiers>
     <relatedIdentifiers>
         <relatedIdentifier relatedIdentifierType="URL" relationType="HasMetadata" relatedMetadataScheme="citeproc+json" schemeURI="https://github.com/citation-style-language/schema/raw/master/csl-data.json">http://data.datacite.org/application/citeproc+json/10.5072/example-full</relatedIdentifier>
-        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo">10.5438/0011</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="arXiv" relationType="isReviewedBy">arXiv:0706.0001</relatedIdentifier>
     </relatedIdentifiers>
     <sizes>
         <size>3KB</size>
