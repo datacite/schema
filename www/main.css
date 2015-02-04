@@ -1,10 +1,10 @@
 body {
     font-family: sans-serif;
-    color: #666666;
+    color: #333333;
 }
 
 h1,h2,h3 {
-    color: #0084B9;
+    color: #00a0df;
 }
 
 h1 {
@@ -16,15 +16,15 @@ h1 img {
     vertical-align: middle;
 }
 a:link {
-	color: #0084B8;
+	color: #00a0df;
 }
 
 a:active {
-	color: #0084B8;
+	color: #00a0df;
 }
 
 a:visited {
-	color: #0084B8;
+	color: #00a0df;
 }
 
 a:hover {
