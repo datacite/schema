@@ -4,7 +4,7 @@ body {
 }
 
 h1,h2,h3 {
-    color: #00a0df;
+    color: #0094CF;
 }
 
 h1 {
@@ -16,15 +16,15 @@ h1 img {
     vertical-align: middle;
 }
 a:link {
-	color: #00a0df;
+	color: #0094CF;
 }
 
 a:active {
-	color: #00a0df;
+	color: #0094CF;
 }
 
 a:visited {
-	color: #00a0df;
+	color: #0094CF;
 }
 
 a:hover {

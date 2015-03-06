@@ -7,7 +7,7 @@
 		</creator>
 		<creator>
 			<creatorName>つまらないものですが</creatorName>
-			<nameIdentifier nameIdentifierScheme="ISNI" schemeURI="http://isni.org/isni">http://isni.org/isni/0000000134596520</nameIdentifier>
+			<nameIdentifier nameIdentifierScheme="ISNI" schemeURI="http://isni.org/isni/">0000000134596520</nameIdentifier>
 		</creator>
 	</creators>
 	<titles>
@@ -23,7 +23,7 @@
 	<contributors>
 		<contributor contributorType="DataCollector">
 			<contributorName>Doe, John</contributorName>
-			<nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org">0000-0001-5393-1421</nameIdentifier>
+			<nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0001-5393-1421</nameIdentifier>
 		</contributor>
 	</contributors>
 	<language>GER</language>
