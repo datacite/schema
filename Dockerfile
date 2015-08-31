@@ -1,7 +1,3 @@
-FROM datacite1/nginx
+FROM nginx:1.9.4
 
-VOLUME [ "/var/log/nginx/" ]
-
-EXPOSE 80
-
-COPY www /var/www/website
+COPY www /usr/share/nginx/html
