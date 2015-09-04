@@ -13,6 +13,7 @@ deploy:
     secure: "KI2OlnSmAzvqoRhzoEQjLY9AO77u5lFA97WlcSyDors/83b4oI3xZ5qSj+c1a5pM8CpLDtZkMFR3RJ0h62i1QnyfqZxK0XrefMJSmlSR6mdz5FXqgU+M7EzicA7O0JOlmQEYcX4Sf1xvasqj3ejA3ulzOjdfuKlwe8ktHaWftgk="
   bucket: schema.labs.datacite.org
   local_dir: www
+  acl: public_read
   skip_cleanup: true
   on:
     repo: datacite/schema
