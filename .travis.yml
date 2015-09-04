@@ -4,9 +4,7 @@ before_install:
 - wget http://www.htacg.org/binaries/binaries/tidy-4.9.23/tidy5-4.9.23-32bit.deb
 - sudo dpkg -i tidy5-4.9.23-32bit.deb
 - rm tidy5-4.9.23-32bit.deb
-
 script: mvn -Dtest=ValidationTest,BasicTest test -B
-
 deploy:
   provider: s3
   bucket: schema.labs.datacite.org
@@ -18,4 +16,4 @@ deploy:
     branch: labs
 env:
   global:
-    secure: A+jST7CBxLM2DgPY7aSO83+5EHW1DBe4s5dGki/ijZB8hFbByiYGO/d7vA391PNDR0w+p+xs42rDBmOhrLWEV2F91vj9bEqPjZlyITl9KjBWKqScvfRmRCHjs2Ocjov1zeaQLBul9fxOGHIRQozQmWWi+ImlryuTVw8BtTh0HtQ=
+    secure: bGXFGra/kod+y4APfZdNZ0X/T0Ziu4uFDeTH6GzzPJGmMIlLsXOca1XtPkIWkRi1BYTt0v2zdaDMEeBAHXUJ9WDlnX+cWXOoBa6t3lHBQvRaD5I99r/a45AG5B49AR40fVemOeTRsw62c2unrTXUiz8lpWnconlu7w6RLHyaATw=
