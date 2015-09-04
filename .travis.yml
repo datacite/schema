@@ -7,6 +7,7 @@ before_install:
 script: mvn -Dtest=ValidationTest,BasicTest test -B
 deploy:
   provider: s3
+  access_key_id:
   bucket: schema.labs.datacite.org
   endpoint: schema.labs.datacite.org.s3-website-us-east-1.amazonaws.com
   local_dir: www
@@ -16,5 +17,4 @@ deploy:
     branch: labs
 env:
   global:
-  - secure: bGXFGra/kod+y4APfZdNZ0X/T0Ziu4uFDeTH6GzzPJGmMIlLsXOca1XtPkIWkRi1BYTt0v2zdaDMEeBAHXUJ9WDlnX+cWXOoBa6t3lHBQvRaD5I99r/a45AG5B49AR40fVemOeTRsw62c2unrTXUiz8lpWnconlu7w6RLHyaATw=
-  - secure: eteUL0xvcELUJ8kGTT6RTwXQQeNCQnI/uoJg03nbuyq9gs07cWBdjjooLVMmVJbhSBF0BNDTtaiy6K7YXN8p/SvjK5Sn3qcOBfpY/2RuIbbZKikgfQ7nrYUibv3LATiGS1bZBU8qjrFMbVUy1FwvaCA1rAbSI3niFrxEJSrkNFQ=
+    secure: OR3WAkLKPBAN3Tf4PCDFoAv0MzlfU5h4Uj1vEebLaxiJPP6ZEGa3jYJfRkMrXS6fSXVa220r9gASEwUfcD4DgUf8aUGoIxp+vtNBZRsd8FzrDZiuYDNsupCkvg5h16oMzphK+anJOH97VwqU70aUCMH5CRTY7tA5pVRGiQdU3wY=
