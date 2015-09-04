@@ -1,0 +1,16 @@
+language: java
+jdk: oraclejdk8
+
+deploy:
+  provider: s3
+  access_key_id:
+    secure: OrScYBEfZQN/oJewVeUNH6/lZMCcrqJUW6qHxVfD1g5qnSwXJBObQr+QLRozh6dnYtZOSDl6Xs9aJnbdTK2SxDrOGOPquJmmzT6hA4WSgNBqPLNLguOX0I55/i5fsZ1P+k/XCfB8Ap9RLeG6PcYn0ktQgHI8AmZg69kMpv1kjXc=
+  secret_access_key:
+    secure: CTYQKf/DneE8tDujAWJ78w+89QDTWEhXhYkXATQvWchgPQbAQ/qdHtVtNUaBQKQHXh+cmXmzhFPt7FLogPFHsefRx2jHjgqtToa1YtaqDcSNdeH74iAuAyPb5nPAGdgMYCglB/MtODRW6vfAJl2/l0Ta7qKr1QKyLoMgI4NdHZE=
+  bucket: schema.labs.datacite.org
+  endpoint: schema.labs.datacite.org.s3-website-us-east-1.amazonaws.com
+  local_dir: www
+  acl: public_read
+  on:
+    repo: datacite/schema
+    branch: labs
