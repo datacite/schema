@@ -16,4 +16,5 @@ deploy:
     branch: labs
 env:
   global:
-    secure: bGXFGra/kod+y4APfZdNZ0X/T0Ziu4uFDeTH6GzzPJGmMIlLsXOca1XtPkIWkRi1BYTt0v2zdaDMEeBAHXUJ9WDlnX+cWXOoBa6t3lHBQvRaD5I99r/a45AG5B49AR40fVemOeTRsw62c2unrTXUiz8lpWnconlu7w6RLHyaATw=
+  - secure: bGXFGra/kod+y4APfZdNZ0X/T0Ziu4uFDeTH6GzzPJGmMIlLsXOca1XtPkIWkRi1BYTt0v2zdaDMEeBAHXUJ9WDlnX+cWXOoBa6t3lHBQvRaD5I99r/a45AG5B49AR40fVemOeTRsw62c2unrTXUiz8lpWnconlu7w6RLHyaATw=
+  - secure: eteUL0xvcELUJ8kGTT6RTwXQQeNCQnI/uoJg03nbuyq9gs07cWBdjjooLVMmVJbhSBF0BNDTtaiy6K7YXN8p/SvjK5Sn3qcOBfpY/2RuIbbZKikgfQ7nrYUibv3LATiGS1bZBU8qjrFMbVUy1FwvaCA1rAbSI3niFrxEJSrkNFQ=
