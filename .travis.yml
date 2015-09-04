@@ -8,6 +8,9 @@ script: mvn -Dtest=ValidationTest,BasicTest test -B
 deploy:
   provider: s3
   access_key_id:
+    secure: "Wuoa+4ldUffSQFDko8H99W7R/w5IbItEbdw1hrsxNm2OJwEGAG1nZDOP7MArUXlbKImmY1FsTHWLrcdAiq52skazZMrtlZ3T3YDrAIpUYeyobGL6EM5TjKEIwhkXM95vnhEFiFzWoru9D7XZsnQjvB+7+Ck8Bs+tmSccriKd50c="
+  secret_access_key:
+    secure: "KI2OlnSmAzvqoRhzoEQjLY9AO77u5lFA97WlcSyDors/83b4oI3xZ5qSj+c1a5pM8CpLDtZkMFR3RJ0h62i1QnyfqZxK0XrefMJSmlSR6mdz5FXqgU+M7EzicA7O0JOlmQEYcX4Sf1xvasqj3ejA3ulzOjdfuKlwe8ktHaWftgk="
   bucket: schema.labs.datacite.org
   endpoint: schema.labs.datacite.org.s3-website-us-east-1.amazonaws.com
   local_dir: www
@@ -15,6 +18,3 @@ deploy:
   on:
     repo: datacite/schema
     branch: labs
-env:
-  global:
-    secure: OR3WAkLKPBAN3Tf4PCDFoAv0MzlfU5h4Uj1vEebLaxiJPP6ZEGa3jYJfRkMrXS6fSXVa220r9gASEwUfcD4DgUf8aUGoIxp+vtNBZRsd8FzrDZiuYDNsupCkvg5h16oMzphK+anJOH97VwqU70aUCMH5CRTY7tA5pVRGiQdU3wY=
