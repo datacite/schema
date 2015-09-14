@@ -1,0 +1,3 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns="http://datacite.org/schema/kernel-2.1" targetNamespace="http://datacite.org/schema/kernel-2.1">
+	<xs:include schemaLocation="datacite-relatedIdentifierType-v1.1.xsd"/>
+</xs:schema>

@@ -1,0 +1,68 @@
+# Build settings
+markdown: pandoc
+highlighter: pygments
+gems:
+  - jekyll-pandoc
+  - jemoji
+
+exclude:
+  - README.md
+  - LICENCE
+  - Gemfile
+  - Gemfile.lock
+  - .travis.yml
+  - pom.xml
+  - src
+
+# Site settings
+title: "DataCite Metadata Schema"
+
+email: support@datacite.org
+logo: "/assets/images/logo-small.png"
+
+name: 'DataCite'
+author: 'DataCite'
+author_image: "/assets/images/author.jpg"
+
+permalink: /:title/
+paginate:	10
+
+url: "http://schema.labs.datacite.org" # the base hostname & protocol for your site
+baseurl: ""
+#used to display twitter cards
+twitter_handle: '@datacite'
+
+#fill in disqus shortname to use disqus
+disqus: datacite
+
+#fill in tracking id
+google_analytics: UA-22806196-7
+
+# social icons and sharing options
+social:
+  - icon:	twitter
+    url:	https://twitter.com/datacite
+    desc: Follow DataCite on Twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+
+  - icon:  facebook
+    url: https://facebook.com/???
+    desc: Connect with DataCite on Facebook
+    share_url: https://www.facebook.com/sharer.php
+    share_title: ?t=
+    share_link: "&amp;u="
+
+  - icon:	github
+    url:	https://github.com/datacite
+    desc:	Visit DataCite on Github
+    share_url:
+    share_title:
+    share_link:
+
+pandoc:
+  extensions:
+    - normalize
+    - smart
+    - mathjax

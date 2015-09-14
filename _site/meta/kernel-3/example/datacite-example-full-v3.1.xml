@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd" xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <identifier identifierType="DOI">10.5072/example-full</identifier>
+    <creators>
+        <creator>
+            <creatorName>Miller, Elizabeth</creatorName>
+            <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-5000-0007</nameIdentifier>
+            <affiliation>DataCite</affiliation>
+        </creator>
+    </creators>
+    <titles>
+        <title xml:lang="en-us">Full DataCite XML Example</title>
+        <title xml:lang="en-us" titleType="Subtitle">Demonstration of DataCite Properties.</title>
+    </titles>
+    <publisher>DataCite</publisher>
+    <publicationYear>2014</publicationYear>
+    <subjects>
+        <subject xml:lang="en-us" schemeURI="http://dewey.info/" subjectScheme="dewey">000 computer science</subject>
+    </subjects>
+    <contributors>
+        <contributor contributorType="ProjectLeader">
+            <contributorName>Starr, Joan</contributorName>
+            <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-7285-027X</nameIdentifier>
+            <affiliation>California Digital Library</affiliation>
+        </contributor>
+    </contributors>
+    <dates>
+        <date dateType="Updated">2014-10-17</date>
+    </dates>
+    <language>en-us</language>
+    <resourceType resourceTypeGeneral="Software">XML</resourceType>
+    <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URL">http://schema.datacite.org/schema/meta/kernel-3.1/example/datacite-example-full-v3.1.xml</alternateIdentifier>
+    </alternateIdentifiers>
+    <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="HasMetadata" relatedMetadataScheme="citeproc+json" schemeURI="https://github.com/citation-style-language/schema/raw/master/csl-data.json">http://data.datacite.org/application/citeproc+json/10.5072/example-full</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="arXiv" relationType="IsReviewedBy">arXiv:0706.0001</relatedIdentifier>
+    </relatedIdentifiers>
+    <sizes>
+        <size>3KB</size>
+    </sizes>
+    <formats>
+        <format>application/xml</format>
+    </formats>
+    <version>3.1</version>
+    <rightsList>
+        <rights rightsURI="http://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</rights>
+    </rightsList>
+    <descriptions>
+        <description xml:lang="en-us" descriptionType="Abstract">
+            XML example of all DataCite Metadata Schema v3.1 properties.
+        </description>
+    </descriptions>
+    <geoLocations>
+        <geoLocation>
+            <geoLocationPoint>31.233 -67.302</geoLocationPoint>
+            <geoLocationBox>41.090 -71.032  42.893 -68.211</geoLocationBox>
+            <geoLocationPlace>Atlantic Ocean</geoLocationPlace>
+        </geoLocation>
+    </geoLocations>
+</resource>

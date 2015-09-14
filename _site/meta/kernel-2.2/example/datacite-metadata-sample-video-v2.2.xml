@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns="http://datacite.org/schema/kernel-2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-2.2 http://schema.datacite.org/meta/kernel-2.2/metadata.xsd">
+	<identifier identifierType="DOI">10.5072/sampleTIB</identifier>
+	<creators>
+		<creator>
+			<creatorName>Hanebutt, Katrin</creatorName>
+		</creator>
+	</creators>
+	<titles>
+		<title>Die TIB – Fünf Jahrzehnte Vorsprung, der Wissen schafft</title>
+	</titles>
+	<publisher>Technische Informationsbibliothek (TIB)</publisher>
+	<publicationYear>2009</publicationYear>
+	<contributors>
+		<contributor contributorType="Producer">
+			<contributorName>TVNGroup Film &amp; TV Produktion; TV-Production</contributorName>
+		</contributor>
+		<contributor contributorType="Distributor">
+			<contributorName>Technische Informationsbibliothek (TIB)</contributorName>
+		</contributor>
+	</contributors>
+	<language>ger</language>
+	<resourceType resourceTypeGeneral="Film"/>
+	<formats>
+		<format>MP4</format>
+	</formats>
+	<rights>Sonderfall</rights>
+	<descriptions>
+		<description descriptionType="Abstract">Machen Sie sich selbst ein Bild von der TIB - der weltweit größten Spezialbibliothek für Technik und Naturwissenschaften.</description>
+	</descriptions>
+</resource>
