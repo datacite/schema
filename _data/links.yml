@@ -9,12 +9,21 @@ labs_links:
    url: http://search.labs.datacite.org
    icon: search
 production_links:
+ - name: Blog
+   url: http://blog.datacite.org
+   icon: rss
  - name: Homepage
    url: http://www.datacite.org
    icon: globe
  - name: MDS
    url: http://mds.datacite.org
    icon: database
+ - name: Schema
+   url: http://schema.datacite.org
+   icon: file-code-o
+ - name: Search
+   url: http://search.datacite.org
+   icon: search
  - name: Statistics
    url: http://stats.datacite.org
    icon: bar-chart
