@@ -9,44 +9,24 @@
         </button>
         <ul class='dropdown-menu dropdown-menu-right' role='menu'>
           <li class='dropdown-header'>DataCite Labs</li>
-          <li>
-            <a href='http://blog.labs.datacite.org'>
-              <i class='fa fa-rss fa-fw'></i>
-              Blog
-            </a>
-          </li>
-          <li>
-            <a href='http://schema.labs.datacite.org'>
-              <i class='fa fa-file-code-o fa-fw'></i>
-              Schema
-            </a>
-          </li>
-          <li>
-            <a href='http://search.labs.datacite.org'>
-              <i class='fa fa-search fa-fw'></i>
-              Search
-            </a>
-          </li>
+          {% for link in site.data.links.labs_links %}
+            <li>
+              <a href='{{ link.url }}'>
+                <i class='fa fa-{{ link.icon }} fa-fw'></i>
+                {{ link.name }}
+              </a>
+            </li>
+          {% endfor %}
           <li class='divider'></li>
           <li class='dropdown-header'>DataCite</li>
-          <li>
-            <a href='http://www.datacite.org'>
-              <i class='fa fa-globe fa-fw'></i>
-              Homepage
-            </a>
-          </li>
-          <li>
-            <a href='http://mds.datacite.org'>
-              <i class='fa fa-database fa-fw'></i>
-              MDS
-            </a>
-          </li>
-          <li>
-            <a href='http://stats.datacite.org'>
-              <i class='fa fa-bar-chart fa-fw'></i>
-              Stats
-            </a>
-          </li>
+          {% for link in site.data.links.production_links %}
+            <li>
+              <a href='{{ link.url }}'>
+                <i class='fa fa-{{ link.icon }} fa-fw'></i>
+                {{ link.name }}
+              </a>
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -54,7 +34,7 @@
 
   <div class='logo'>
     <a href='/'>
-      <img alt='Metadata Store' class='logo-small' src='/assets/images/logo-small.png'>
+      <img alt='{{ site.title }}' class='logo-small' src='/assets/images/logo-small.png'>
     </a>
   </div>
 </div>
