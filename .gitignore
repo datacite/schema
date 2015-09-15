@@ -1,4 +1,3 @@
-target/
-.classpath
-.project
-.settings
+_site
+.sass-cache
+.DS_Store
