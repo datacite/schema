@@ -13,6 +13,7 @@ exclude:
   - .travis.yml
   - pom.xml
   - src
+  - vendor
 
 # Site settings
 title: "DataCite Metadata Schema"
