@@ -53,98 +53,101 @@
   <body>
     <!-- header start -->
 
-<div class="header">
-  <div class='profile pull-right'>
-    <div class='btn-toolbar profile'>
-      <div class='btn-group' role='group'>
-        <button aria-expanded='false' aria-haspopup='true' class='btn btn-default dropdown-toggle' data-toggle='dropdown' role='button'>
-          <i class='fa fa-navicon'></i>
-        </button>
-        <ul class='dropdown-menu dropdown-menu-right' role='menu'>
-          <li class='dropdown-header'>DataCite Labs</li>
-          
-            <li>
-              <a href='http://blog.labs.datacite.org'>
-                <i class='fa fa-rss fa-fw'></i>
-                Blog
-              </a>
-            </li>
-          
-            <li>
-              <a href='http://schema.labs.datacite.org'>
-                <i class='fa fa-file-code-o fa-fw'></i>
-                Schema
-              </a>
-            </li>
-          
-            <li>
-              <a href='http://search.labs.datacite.org'>
-                <i class='fa fa-search fa-fw'></i>
-                Search
-              </a>
-            </li>
-          
-          <li class='divider'></li>
-          <li class='dropdown-header'>DataCite</li>
-          
-            <li>
-              <a href='http://blog.datacite.org'>
-                <i class='fa fa-rss fa-fw'></i>
-                Blog
-              </a>
-            </li>
-          
-            <li>
-              <a href='http://www.datacite.org'>
-                <i class='fa fa-globe fa-fw'></i>
-                Homepage
-              </a>
-            </li>
-          
-            <li>
-              <a href='http://mds.datacite.org'>
-                <i class='fa fa-database fa-fw'></i>
-                MDS
-              </a>
-            </li>
-          
-            <li>
-              <a href='http://schema.datacite.org'>
-                <i class='fa fa-file-code-o fa-fw'></i>
-                Schema
-              </a>
-            </li>
-          
-            <li>
-              <a href='http://search.datacite.org'>
-                <i class='fa fa-search fa-fw'></i>
-                Search
-              </a>
-            </li>
-          
-            <li>
-              <a href='http://stats.datacite.org'>
-                <i class='fa fa-bar-chart fa-fw'></i>
-                Statistics
-              </a>
-            </li>
-          
-        </ul>
+<header class="header">
+  <div class="container-fluid">
+    <div class='profile pull-right'>
+      <div class='btn-toolbar profile'>
+        <div class='btn-group' role='group'>
+          <button aria-expanded='false' aria-haspopup='true' class='btn btn-default dropdown-toggle' data-toggle='dropdown' role='button'>
+            <i class='fa fa-navicon'></i>
+          </button>
+          <ul class='dropdown-menu dropdown-menu-right' role='menu'>
+            <li class='dropdown-header'>DataCite Labs</li>
+            
+              <li>
+                <a href='http://blog.labs.datacite.org'>
+                  <i class='fa fa-rss fa-fw'></i>
+                  Blog
+                </a>
+              </li>
+            
+              <li>
+                <a href='http://schema.labs.datacite.org'>
+                  <i class='fa fa-file-code-o fa-fw'></i>
+                  Schema
+                </a>
+              </li>
+            
+              <li>
+                <a href='http://search.labs.datacite.org'>
+                  <i class='fa fa-search fa-fw'></i>
+                  Search
+                </a>
+              </li>
+            
+            <li class='divider'></li>
+            <li class='dropdown-header'>DataCite</li>
+            
+              <li>
+                <a href='http://blog.datacite.org'>
+                  <i class='fa fa-rss fa-fw'></i>
+                  Blog
+                </a>
+              </li>
+            
+              <li>
+                <a href='http://www.datacite.org'>
+                  <i class='fa fa-globe fa-fw'></i>
+                  Homepage
+                </a>
+              </li>
+            
+              <li>
+                <a href='http://mds.datacite.org'>
+                  <i class='fa fa-database fa-fw'></i>
+                  MDS
+                </a>
+              </li>
+            
+              <li>
+                <a href='http://schema.datacite.org'>
+                  <i class='fa fa-file-code-o fa-fw'></i>
+                  Schema
+                </a>
+              </li>
+            
+              <li>
+                <a href='http://search.datacite.org'>
+                  <i class='fa fa-search fa-fw'></i>
+                  Search
+                </a>
+              </li>
+            
+              <li>
+                <a href='http://stats.datacite.org'>
+                  <i class='fa fa-bar-chart fa-fw'></i>
+                  Statistics
+                </a>
+              </li>
+            
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class='logo'>
-    <a href='/'>
-      <img alt='DataCite Metadata Schema' class='logo-small' src='/assets/images/logo-small.png'>
-    </a>
+    <div class='logo'>
+      <a href='/'>
+        <img alt='DataCite Metadata Schema' class='logo-small' src='/assets/images/logo-small.png'>
+      </a>
+    </div>
   </div>
-</div>
+</header>
 
 <!-- header end -->
 
-    <div class="container-fluid">
-      <h1 id="datacite-metadata-schema-v-3.1">DataCite Metadata Schema v 3.1</h1>
+    <main>
+      <div class="container-fluid">
+        <h1 id="datacite-metadata-schema-v-3.1">DataCite Metadata Schema v 3.1</h1>
 <p><a href="metadata.xsd">DataCite Metadata Schema 3.1 XML Schema</a><br />
 <a href="http://doi.org/10.5438/0011" class="uri">http://doi.org/10.5438/0011</a></p>
 <h2 id="documentation">Documentation</h2>
@@ -152,127 +155,108 @@
 <a href="[http://doi.org/10.5438/0010]">http://doi.org/10.5438/0010</a></p>
 <h2 id="examples">Examples</h2>
 <ul>
-<li>
-<a href="example/datacite-example-full-v3.1.xml">Full DataCite XML Example</a>
-</li>
-<li>
-<a href="example/datacite-example-dataset-v3.0.xml">Example for a simple dataset</a>
-</li>
-<li>
-<a href="example/datacite-example-complicated-v3.0.xml">Example with complicated values</a>
-</li>
-<li>
-<a href="example/datacite-example-Box_dateCollected_DataCollector-v3.0.xml">Example with DataCollector as Contributor and a geoLocation box</a>
-</li>
-<li>
-<a href="example/datacite-example-GeoLocation-v3.0.xml">Example with GeoLocation</a>
-</li>
-<li>
-<a href="example/datacite-example-HasMetadata-v3.0.xml">Example with HasMetadata as related resource</a>
-</li>
-<li>
-<a href="example/datacite-example-relationTypeIsIdenticalTo-v3.0.xml">Example with IsIdenticalTo as related resource</a>
-</li>
-<li>
-<a href="example/datacite-example-ResearchGroup_Methods-v3.0.xml">Example with ResearchGroup as Contributor and Methods as Description</a>
-</li>
-<li>
-<a href="example/datacite-example-ResourceTypeGeneral_Collection-v3.0.xml">Example with Collection as ResourceType</a>
-</li>
-<li>
-<a href="example/datacite-example-video-v3.0.xml">Example with Video as ResourceType</a>
-</li>
-<li>
-<a href="example/datacite-example-workflow-v3.0.xml">Example for a workflow ResourceType</a>
-</li>
+<li><a href="&quot;example/datacite-example-full-v3.1.xml">Full DataCite XML Example</a></li>
+<li><a href="example/datacite-example-dataset-v3.0.xml">Example for a simple dataset</a></li>
+<li><a href="example/datacite-example-complicated-v3.0.xml">Example with complicated values</a></li>
+<li><a href="example/datacite-example-Box_dateCollected_DataCollector-v3.0.xml">Example with DataCollector as Contributor and a geoLocation box</a></li>
+<li><a href="example/datacite-example-GeoLocation-v3.0.xml">Example with GeoLocation</a></li>
+<li><a href="example/datacite-example-HasMetadata-v3.0.xml">Example with HasMetadata as related resource</a></li>
+<li><a href="example/datacite-example-relationTypeIsIdenticalTo-v3.0.xml">Example with IsIdenticalTo as related resource</a></li>
+<li><a href="example/datacite-example-ResearchGroup_Methods-v3.0.xml">Example with ResearchGroup as Contributor and Methods as Description</a></li>
+<li><a href="example/datacite-example-ResourceTypeGeneral_Collection-v3.0.xml">Example with Collection as ResourceType</a></li>
+<li><a href="example/datacite-example-video-v3.0.xml">Example with Video as ResourceType</a></li>
+<li><a href="example/datacite-example-workflow-v3.0.xml">Example for a workflow ResourceType</a></li>
 </ul>
 
-    </div>
+      </div>
+    </main>
     <!-- footer start -->
 
-<div class='row footer'>
-  <div class='col-md-2 col-md-offset-2'>
-    <h4>
-      <a href='https://www.datacite.org/about-datacite'>About DataCite</a>
-    </h4>
-    <ul>
-    
-      <li><a href='https://www.datacite.org/about-datacite/what-do-we-do'>What we do</a></li>
-    
-      <li><a href='https://www.datacite.org/about-datacite/board'>Board</a></li>
-    
-      <li><a href='https://www.datacite.org/about-datacite/staff'>Staff</a></li>
-    
-      <li><a href='https://www.datacite.org/about-datacite/members'>Members</a></li>
-    
-      <li><a href='https://www.datacite.org/resources'>Resources</a></li>
-    
-      <li><a href='https://www.datacite.org/about-datacite/working-groups'>Working groups</a></li>
-    
-      <li><a href='https://www.datacite.org/about-datacite/partners'>Partners</a></li>
-    
-      <li><a href='https://www.datacite.org/about-datacite/job-opportunities'>Job opportunities</a></li>
-    
-    </ul>
-  </div>
-  <div class='col-md-2'>
-    <h4>
-      <a href='https://www.datacite.org/services'>DataCite for You</a>
-    </h4>
-    <ul>
-    
-      <li><a href='https://www.datacite.org/services/cite-your-data.html'>Cite your data</a></li>
-    
-      <li><a href='https://www.datacite.org/services/format-your-citation.html'>Format your citations</a></li>
-    
-      <li><a href='https://www.datacite.org/services/find-repository.html'>Find a repository</a></li>
-    
-      <li><a href='https://www.datacite.org/services/find-dataset.html'>Find a dataset</a></li>
-    
-      <li><a href='https://www.datacite.org/services/get-your-doi-statistics.html'>Get your DOI statistics</a></li>
-    
-      <li><a href='https://www.datacite.org/services/content-negotiation.html'>Content negotiation</a></li>
-    
-      <li><a href='https://www.datacite.org/services/oai-provider.html'>OAI provider</a></li>
-    
-      <li><a href='https://www.datacite.org/services/metadata-store.html'>Metadata store</a></li>
-    
-      <li><a href='https://www.datacite.org/services/test-environment.html'>Test environment</a></li>
-    
-    </ul>
-  </div>
-  <div class='col-md-2'>
-    <h4>
-      <a href='https://www.datacite.org/participate'>Participate</a>
-    </h4>
-    <ul>
-    
-      <li><a href='https://www.datacite.org/participate/researchers'>Researchers</a></li>
-    
-      <li><a href='https://www.datacite.org/participate/research-organisations'>Research organizations</a></li>
-    
-      <li><a href='https://www.datacite.org/participate/libraries'>Libraries</a></li>
-    
-      <li><a href='https://www.datacite.org/participate/journal-editors'>Journal editors</a></li>
-    
-      <li><a href='https://www.datacite.org/participate/data-centres'>Data centres</a></li>
-    
-    </ul>
-  </div>
-  <div class='col-md-3 share-footer'>
-    <h4>Join us on</h4>
-    <a href='https://twitter.com/datacite'>
-      <i class='fa fa-twitter'></i>
-    </a>
-    <a href='https://www.facebook.com/datacite'>
-      <i class='fa fa-facebook'></i>
-    </a>
-    <a href='https://www.youtube.com/user/datacite'>
-      <i class='fa fa-youtube'></i>
-    </a>
-    <a href='https://www.linkedin.com/company/datacite'>
-      <i class='fa fa-linkedin'></i>
-    </a>
+<footer class='row footer'>
+  <div class="container-fluid">
+    <div class='col-md-3'>
+      <h4>
+        <a href='https://www.datacite.org/about-datacite'>About DataCite</a>
+      </h4>
+      <ul>
+      
+        <li><a href='https://www.datacite.org/about-datacite/what-do-we-do'>What we do</a></li>
+      
+        <li><a href='https://www.datacite.org/about-datacite/board'>Board</a></li>
+      
+        <li><a href='https://www.datacite.org/about-datacite/staff'>Staff</a></li>
+      
+        <li><a href='https://www.datacite.org/about-datacite/members'>Members</a></li>
+      
+        <li><a href='https://www.datacite.org/resources'>Resources</a></li>
+      
+        <li><a href='https://www.datacite.org/about-datacite/working-groups'>Working groups</a></li>
+      
+        <li><a href='https://www.datacite.org/about-datacite/partners'>Partners</a></li>
+      
+        <li><a href='https://www.datacite.org/about-datacite/job-opportunities'>Job opportunities</a></li>
+      
+      </ul>
+    </div>
+    <div class='col-md-3'>
+      <h4>
+        <a href='https://www.datacite.org/services'>DataCite for You</a>
+      </h4>
+      <ul>
+      
+        <li><a href='https://www.datacite.org/services/cite-your-data.html'>Cite your data</a></li>
+      
+        <li><a href='https://www.datacite.org/services/format-your-citation.html'>Format your citations</a></li>
+      
+        <li><a href='https://www.datacite.org/services/find-repository.html'>Find a repository</a></li>
+      
+        <li><a href='https://www.datacite.org/services/find-dataset.html'>Find a dataset</a></li>
+      
+        <li><a href='https://www.datacite.org/services/get-your-doi-statistics.html'>Get your DOI statistics</a></li>
+      
+        <li><a href='https://www.datacite.org/services/content-negotiation.html'>Content negotiation</a></li>
+      
+        <li><a href='https://www.datacite.org/services/oai-provider.html'>OAI provider</a></li>
+      
+        <li><a href='https://www.datacite.org/services/metadata-store.html'>Metadata store</a></li>
+      
+        <li><a href='https://www.datacite.org/services/test-environment.html'>Test environment</a></li>
+      
+      </ul>
+    </div>
+    <div class='col-md-3'>
+      <h4>
+        <a href='https://www.datacite.org/participate'>Participate</a>
+      </h4>
+      <ul>
+      
+        <li><a href='https://www.datacite.org/participate/researchers'>Researchers</a></li>
+      
+        <li><a href='https://www.datacite.org/participate/research-organisations'>Research organizations</a></li>
+      
+        <li><a href='https://www.datacite.org/participate/libraries'>Libraries</a></li>
+      
+        <li><a href='https://www.datacite.org/participate/journal-editors'>Journal editors</a></li>
+      
+        <li><a href='https://www.datacite.org/participate/data-centres'>Data centres</a></li>
+      
+      </ul>
+    </div>
+    <div class='col-md-3 share-footer'>
+      <h4>Join us on</h4>
+      <a href='https://twitter.com/datacite'>
+        <i class='fa fa-twitter'></i>
+      </a>
+      <a href='https://www.facebook.com/datacite'>
+        <i class='fa fa-facebook'></i>
+      </a>
+      <a href='https://www.youtube.com/user/datacite'>
+        <i class='fa fa-youtube'></i>
+      </a>
+      <a href='https://www.linkedin.com/company/datacite'>
+        <i class='fa fa-linkedin'></i>
+      </a>
+    </div>
   </div>
 </div>
 <!-- footer end -->

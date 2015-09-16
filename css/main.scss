@@ -37,12 +37,33 @@ $font-size-large: ceil(($font-size-base * 1.25));
 
 main {
   display: block;
-}
+  font-family: $font-family-serif;
+  font-size: $font-size-large;
 
+  h1, h2, h3, h4 {
+    font-family: $font-family-sans;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+  li {
+    line-height: $font-size-large * 1.5;
+  }
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   margin-bottom: 300px;
+
+  @include respond-to(992) {
+    margin-bottom: 750px;
+  }
 }
 
 pre,
@@ -86,6 +107,10 @@ pre {
 }
 .header {
   padding: .5em;
+
+  .container-fluid {
+    max-width: 1150px;
+  }
 }
 .profile {
   padding: .75em;
@@ -108,12 +133,9 @@ pre {
 .teaserimage {
   height: 500px;
   width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
   position: relative;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   overflow: hidden;
   .teaserimage-image {
     background-size: cover;
@@ -212,9 +234,6 @@ pre {
   }
   ul {
     padding-left: 1.2em;
-  }
-  li {
-    line-height: 24px;
   }
 
   article {
@@ -343,13 +362,21 @@ pre {
 .footer {
   position: absolute;
   bottom: 0;
-  height: 300px;
   width: 100%;
+  height: 300px;
   color: $inverse;
   font-weight: 300;
   background-color: #393939;
-  padding: 1em;
+  padding: 1em 0;
   margin: 0;
+
+  @include respond-to(992) {
+    height: 750px;
+  }
+
+  .container-fluid {
+    max-width: 1150px;
+  }
 
   h4, h5 {
     font-size: $font-size-large;

@@ -2,19 +2,18 @@
 layout: default
 ---
 
-# DataCite Metadata Schema v 3.1
+# DataCite Metadata Schema v 3.0
 
-[DataCite Metadata Schema 3.1 XML Schema](metadata.xsd)  
-[http://doi.org/10.5438/0011](http://doi.org/10.5438/0011)
+[DataCite Metadata Schema 3.0 XML Schema](metadata.xsd)  
+[http://doi.org/10.5438/0009](http://doi.org/10.5438/0009)
 
 ## Documentation
 
-[DataCite Metadata Schema 3.1](doc/DataCite-MetadataKernel_v3.1.pdf)  
-[http://doi.org/10.5438/0010]([http://doi.org/10.5438/0010])
+[DataCite Metadata Schema 3.0](doc/DataCite-MetadataKernel_v3.0.pdf)  
+[http://doi.org/10.5438/0008](http://doi.org/10.5438/0008)
 
 ## Examples
 
-* [Full DataCite XML Example](example/datacite-example-full-v3.1.xml)
 * [Example for a simple dataset](example/datacite-example-dataset-v3.0.xml)
 * [Example with complicated values](example/datacite-example-complicated-v3.0.xml)
 * [Example with DataCollector as Contributor and a geoLocation box](example/datacite-example-Box_dateCollected_DataCollector-v3.0.xml)

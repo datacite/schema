@@ -17,7 +17,7 @@ please contact us via our [Google discussion group](https://groups.google.com/fo
 
 For our [Metadata store](https://mds.datacite.org) all these versions are valid although only one version is considered <em>preferred</em> at any given moment of time. Starting with version 3.0 only major releases will have a new namespace.
 
-Each incoming to [Metadata store](https://mds.datacite.org) XML document should indicate schema location in the root element.
+Each incoming [Metadata store](https://mds.datacite.org) XML document should indicate the schema location in the root element.
 
 * [DataCite Metadata Schema 3 latest release](meta/kernel-3/index.html) (preferred)
 
