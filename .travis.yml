@@ -23,3 +23,5 @@ addons:
   artifacts: true
   s3_region: "us-east-1"
   debug: true
+  paths: _site
+  permissions: public_read
