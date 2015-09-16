@@ -4,8 +4,6 @@ rvm:
 
 env:
   global:
-    - ARTIFACTS_BUCKET=schema.labs.datacite.org
-    - ARTIFACTS_PATHS=/home/travis/build/datacite/schema/_site
     - secure: a0a3yKbHDcLo0Igtn+reXVQUBy16X42NCrPMa7i45dF1K+qweiewZTUYvxNJLwZKHCF3Cysoali9K6+mrLisQNLNky1FD1LDXSfBL1ueTel3FYfOnc4DmZvJ0P3mKsCjcbfYe0T8ihfJAy/MFG0/A88d/PXZ0eIj3koHi+unVp8=
 
 before_install:
@@ -17,7 +15,9 @@ script:
   - bundle exec jekyll build
 
 addons:
-  artifacts: true
-  s3_region: "us-east-1"
-  debug: true
-  permissions: public_read
+  artifacts:
+    bucket: schema.labs.datacite.org
+    paths: /home/travis/build/datacite/schema/_site
+    s3_region: "us-east-1"
+    debug: true
+    permissions: public_read
