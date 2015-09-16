@@ -1,5 +1,11 @@
 language: java
 jdk: oraclejdk8
+
+env:
+  global:
+    - ARTIFACTS_BUCKET=schema.labs.datacite.org
+    - secure: a0a3yKbHDcLo0Igtn+reXVQUBy16X42NCrPMa7i45dF1K+qweiewZTUYvxNJLwZKHCF3Cysoali9K6+mrLisQNLNky1FD1LDXSfBL1ueTel3FYfOnc4DmZvJ0P3mKsCjcbfYe0T8ihfJAy/MFG0/A88d/PXZ0eIj3koHi+unVp8=
+
 before_install:
 - wget http://www.htacg.org/binaries/binaries/tidy-4.9.23/tidy5-4.9.23-32bit.deb
 - sudo dpkg -i tidy5-4.9.23-32bit.deb
@@ -13,16 +19,7 @@ script:
 - mvn -Dtest=ValidationTest,BasicTest test -B
 - bundle exec jekyll build
 
-deploy:
-  provider: s3
-  access_key_id:
-    secure: "Wuoa+4ldUffSQFDko8H99W7R/w5IbItEbdw1hrsxNm2OJwEGAG1nZDOP7MArUXlbKImmY1FsTHWLrcdAiq52skazZMrtlZ3T3YDrAIpUYeyobGL6EM5TjKEIwhkXM95vnhEFiFzWoru9D7XZsnQjvB+7+Ck8Bs+tmSccriKd50c="
-  secret_access_key:
-    secure: "KI2OlnSmAzvqoRhzoEQjLY9AO77u5lFA97WlcSyDors/83b4oI3xZ5qSj+c1a5pM8CpLDtZkMFR3RJ0h62i1QnyfqZxK0XrefMJSmlSR6mdz5FXqgU+M7EzicA7O0JOlmQEYcX4Sf1xvasqj3ejA3ulzOjdfuKlwe8ktHaWftgk="
-  bucket: schema.labs.datacite.org
-  local_dir: _site
-  acl: public_read
-  skip_cleanup: true
-  on:
-    repo: datacite/schema
-    branch: labs
+addons:
+  artifacts: true
+  s3_region: "us-east-1"
+  debug: true
