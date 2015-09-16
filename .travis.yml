@@ -5,6 +5,7 @@ rvm:
 env:
   global:
     - ARTIFACTS_BUCKET=schema.labs.datacite.org
+    - ARTIFACTS_PATHS=/home/travis/build/datacite/schema/_site
     - secure: a0a3yKbHDcLo0Igtn+reXVQUBy16X42NCrPMa7i45dF1K+qweiewZTUYvxNJLwZKHCF3Cysoali9K6+mrLisQNLNky1FD1LDXSfBL1ueTel3FYfOnc4DmZvJ0P3mKsCjcbfYe0T8ihfJAy/MFG0/A88d/PXZ0eIj3koHi+unVp8=
 
 before_install:
@@ -19,5 +20,4 @@ addons:
   artifacts: true
   s3_region: "us-east-1"
   debug: true
-  paths: _site
   permissions: public_read
