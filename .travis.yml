@@ -17,7 +17,8 @@ script:
 addons:
   artifacts:
     bucket: schema.labs.datacite.org
-    paths: /home/travis/build/datacite/schema/_site
+    dest: .
+    paths: _site
     s3_region: "us-east-1"
-    debug: true
+    cache_control: "public, max-age=315360000"
     permissions: public_read
