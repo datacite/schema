@@ -1,19 +1,20 @@
 ---
 layout: default
 ---
-<h1>DataCite Metadata Schema v 2.2</h1>
 
-<h2>Schema Definition</h2>
+# DataCite Metadata Schema v2.2
 
-<p><a href="metadata.xsd">DataCite Metadata Schema 2.2 XML Schema</a><br/>
-doi:10.5438/0006</p>
+## Schema Definition
 
-<h2>Documentation</h2>
+[DataCite Metadata Schema 2.2 XML Schema](metadata.xsd)  
+[href://doi.org/10.5438/0006](href://doi.org/10.5438/0006)
 
-<p><a href="doc/DataCite-MetadataKernel_v2.2.pdf">DataCite Metadata Schema 2.2</a><br/>
-doi:10.5438/0005</p>
+Documentation
 
-<h2>Examples</h2>
+[DataCite Metadata Schema 2.2](doc/DataCite-MetadataKernel_v2.2.pdf)
+[href://doi.org/10.5438/0005](href://doi.org/10.5438/0005)
+
+Examples
 
 <ul>
   <li><a href="example/datacite-metadata-sample-v2.2.xml">DataCite Metadata Schema Version 2.2 example</a></li>

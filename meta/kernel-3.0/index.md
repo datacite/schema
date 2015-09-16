@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# DataCite Metadata Schema v 3.0
+# DataCite Metadata Schema v3.0
 
 [DataCite Metadata Schema 3.0 XML Schema](metadata.xsd)  
 [http://doi.org/10.5438/0009](http://doi.org/10.5438/0009)
