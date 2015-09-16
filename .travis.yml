@@ -13,6 +13,7 @@ before_install:
 
 script:
   - bundle exec jekyll build
+  - ls -l _site
 
 addons:
   artifacts:
@@ -22,3 +23,4 @@ addons:
     s3_region: us-east-1
     cache_control: public, max-age=315360000
     permissions: public_read
+    debug: true
