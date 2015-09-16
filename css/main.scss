@@ -131,12 +131,15 @@ pre {
   line-height: 1.5em;
 }
 .teaserimage {
-  height: 500px;
+  height: 1400px;
   width: 100%;
   max-width: 1150px;
-  margin: 0 auto;
+  margin: 0;
   position: relative;
   overflow: hidden;
+  @include respond-to(1200) {
+    height: 500px;
+  }
   .teaserimage-image {
     background-size: cover;
     position: absolute;
@@ -152,9 +155,9 @@ pre {
 
 .blog-header {
   position: absolute;
-  top: $font-size-base * 2;
-  left: 30%;
-  right: 30%;
+  top: $font-size-base * 2.5;
+  left: 10%;
+  right: 10%;
   z-index: 9;
   font-family: $font-family-sans;
   @include respond-to(800) {
@@ -309,15 +312,18 @@ pre {
 }
 
 .pagination {
-  float: right;
   color: gray;
   padding: $font-size-base * 3 0 0;
   font-size: $font-size-large;
+  .page-number {
+    margin-right: 32px;
+  }
   a {
-    color: #999999;
+    color: $link-color;
     text-decoration: none;
+    margin-right: 32px;
     &:hover {
-      color: #333333;
+      color: $link-hover-color;
     }
   }
 }

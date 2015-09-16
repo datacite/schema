@@ -230,12 +230,15 @@ pre {
   line-height: 1.5em; }
 
 .teaserimage {
-  height: 500px;
+  height: 1400px;
   width: 100%;
   max-width: 1150px;
-  margin: 0 auto;
+  margin: 0;
   position: relative;
   overflow: hidden; }
+  @media only screen and (max-width: 1200px) {
+    .teaserimage {
+      height: 500px; } }
   .teaserimage .teaserimage-image {
     background-size: cover;
     position: absolute;
@@ -249,9 +252,9 @@ pre {
 
 .blog-header {
   position: absolute;
-  top: 32px;
-  left: 30%;
-  right: 30%;
+  top: 40px;
+  left: 10%;
+  right: 10%;
   z-index: 9;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; }
   @media only screen and (max-width: 800px) {
@@ -376,15 +379,17 @@ pre {
   display: none; }
 
 .pagination {
-  float: right;
   color: gray;
   padding: 48px 0 0;
   font-size: 20px; }
+  .pagination .page-number {
+    margin-right: 32px; }
   .pagination a {
-    color: #999999;
-    text-decoration: none; }
+    color: #38a6cb;
+    text-decoration: none;
+    margin-right: 32px; }
     .pagination a:hover {
-      color: #333333; }
+      color: #067499; }
 
 .post-reading {
   line-height: 20px;
