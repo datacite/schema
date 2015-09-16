@@ -9,9 +9,9 @@ layout: default
 [DataCite Metadata Schema 2.2 XML Schema](metadata.xsd)  
 [href://doi.org/10.5438/0006](href://doi.org/10.5438/0006)
 
-Documentation
+## Documentation
 
-[DataCite Metadata Schema 2.2](doc/DataCite-MetadataKernel_v2.2.pdf)
+[DataCite Metadata Schema 2.2](doc/DataCite-MetadataKernel_v2.2.pdf)  
 [href://doi.org/10.5438/0005](href://doi.org/10.5438/0005)
 
 Examples
