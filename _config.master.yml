@@ -28,7 +28,7 @@ author_image: "/assets/images/author.jpg"
 
 permalink: /:title/
 
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "https://schema.datacite.org" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
 twitter_handle: '@datacite'
