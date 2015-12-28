@@ -1,26 +1,22 @@
 ---
 layout: default
+title: DataCite Metadata Schema 2.2
 ---
 
-# DataCite Metadata Schema v2.2
+# {{page.title}}
 
-## Schema Definition
+The {{page.title}} was released on {{ "2011-07-01" | date: "%B %-d, %Y" }}.
+Please refer to the documentation [@https://doi.org/10.5438/0005] and XML Schema [@https://doi.org/10.5438/0006],
+and see the examples below.
 
-[DataCite Metadata Schema 2.2 XML Schema](metadata.xsd)  
-[http://doi.org/10.5438/0006](http://doi.org/10.5438/0006)
+## Examples
 
-## Documentation
+* [Example](example/datacite-metadata-sample-v2.2.xml)
+* [Example article](example/datacite-metadata-sample-article-v2.2.xml)
+* [Example conference with relation (1)](example/datacite-metadata-sample-conference-related1-v2.2.xml)
+* [Example conference with relation (2)](example/datacite-metadata-sample-conference-related2-v2.2.xml)
+* [Example video](example/datacite-metadata-sample-video-v2.2.xml)
+* [Example 3D model](example/datacite-metadata-sample-3Dmodel-v2.2.xml)
 
-[DataCite Metadata Schema 2.2](doc/DataCite-MetadataKernel_v2.2.pdf)  
-[http://doi.org/10.5438/0005](http://doi.org/10.5438/0005)
+## References
 
-Examples
-
-<ul>
-  <li><a href="example/datacite-metadata-sample-v2.2.xml">DataCite Metadata Schema Version 2.2 example</a></li>
-  <li><a href="example/datacite-metadata-sample-article-v2.2.xml">DataCite Metadata Schema Version 2.2 example Article</a></li>
-  <li><a href="example/datacite-metadata-sample-conference-related1-v2.2.xml">DataCite Metadata Schema Version 2.2 example conference with relation (1)</a></li>
-  <li><a href="example/datacite-metadata-sample-conference-related2-v2.2.xml">DataCite Metadata Schema Version 2.2 example conference with relation (2)</a></li>
-  <li><a href="example/datacite-metadata-sample-video-v2.2.xml">DataCite Metadata Schema Version 2.2 example video</a></li>
-  <li><a href="example/datacite-metadata-sample-3Dmodel-v2.2.xml">DataCite Metadata Schema Version 2.2 example 3D model</a></li>
-</ul>

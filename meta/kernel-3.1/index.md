@@ -1,16 +1,13 @@
 ---
 layout: default
+title: DataCite Metadata Schema 3.1
 ---
 
-# DataCite Metadata Schema v3.1
+# {{page.title}}
 
-[DataCite Metadata Schema 3.1 XML Schema](metadata.xsd)  
-[http://doi.org/10.5438/0011](http://doi.org/10.5438/0011)
-
-## Documentation
-
-[DataCite Metadata Schema 3.1](doc/DataCite-MetadataKernel_v3.1.pdf)  
-[http://doi.org/10.5438/0010]([http://doi.org/10.5438/0010])
+The {{page.title}} was released on {{ "2014-10-16" | date: "%B %-d, %Y" }}.
+Please refer to the documentation [@https://doi.org/10.5438/0010] and XML Schema [@https://doi.org/10.5438/0011],
+and see the examples below.
 
 ## Examples
 
@@ -25,3 +22,5 @@ layout: default
 * [Example with Collection as ResourceType](example/datacite-example-ResourceTypeGeneral_Collection-v3.0.xml)
 * [Example with Video as ResourceType](example/datacite-example-video-v3.0.xml)
 * [Example for a workflow ResourceType](example/datacite-example-workflow-v3.0.xml)
+
+## References

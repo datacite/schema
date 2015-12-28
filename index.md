@@ -21,10 +21,10 @@ Each incoming [Metadata store](https://mds.datacite.org) XML document should ind
 
 * [DataCite Metadata Schema 3 latest release](meta/kernel-3/index.html) (preferred)
 
-* [DataCite Metadata Schema 3.1](meta/kernel-3.1/index.html) (released 2014-10-16)
-* [DataCite Metadata Schema 3.0](meta/kernel-3.0/index.html) (released 2013-07-24)
-* [DataCite Metadata Schema 2.2](meta/kernel-2.2/index.html) (released 2011-07-01)
-* [DataCite Metadata Schema 2.1](meta/kernel-2.1/index.html) (released 2011-03-28)
+* [DataCite Metadata Schema 3.1](meta/kernel-3.1/index.html) (released {{ "2014-10-16" | date: "%B %-d, %Y" }})
+* [DataCite Metadata Schema 3.0](meta/kernel-3.0/index.html) (released {{ "2013-07-24" | date: "%B %-d, %Y" }})
+* [DataCite Metadata Schema 2.2](meta/kernel-2.2/index.html) (released {{ "2011-07-01" | date: "%B %-d, %Y" }})
+* [DataCite Metadata Schema 2.1](meta/kernel-2.1/index.html) (released {{ "2011-03-28" | date: "%B %-d, %Y" }})
 
 ## Versioning
 
@@ -38,7 +38,7 @@ These versions are no longer accepted by the DataCite MDS.
 
 ## Help
 
-If you have questions please use the [contact form on datacite.org](http://www.datacite.org/contact).
+If you have questions please use the [DataCite contact form](http://www.datacite.org/contact).
 
 ## Source code
 
