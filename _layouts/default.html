@@ -3,11 +3,17 @@
   {% include head.html %}
   <body>
     {% include header.html %}
-    <main>
-      <div class="container-fluid">
-        {{ content }}
+    <div class='row'>
+      <div class='col-md-8'>
+        <div class="container-fluid">
+          <div class="panel panel-default">
+            <div class="panel-body post-content">
+              {{ content }}
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+    </div>
     {% include footer.html %}
     {% include javascripts.html %}
     {% include google_analytics.html %}

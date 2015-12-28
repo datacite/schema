@@ -1,44 +1,50 @@
 <!-- header start -->
 
-<header class="header">
-  <div class="container-fluid">
-    <div class='profile pull-right'>
-      <div class='btn-toolbar profile'>
-        <div class='btn-group' role='group'>
-          <button aria-expanded='false' aria-haspopup='true' class='btn btn-default dropdown-toggle' data-toggle='dropdown' role='button'>
-            <i class='fa fa-navicon'></i>
-          </button>
-          <ul class='dropdown-menu dropdown-menu-right' role='menu'>
-            <li class='dropdown-header'>DataCite Labs</li>
-            {% for link in site.data.links.labs_links %}
-              <li>
-                <a href='{{ link.url }}'>
-                  <i class='fa fa-{{ link.icon }} fa-fw'></i>
-                  {{ link.name }}
-                </a>
-              </li>
-            {% endfor %}
-            <li class='divider'></li>
-            <li class='dropdown-header'>DataCite</li>
-            {% for link in site.data.links.production_links %}
-              <li>
-                <a href='{{ link.url }}'>
-                  <i class='fa fa-{{ link.icon }} fa-fw'></i>
-                  {{ link.name }}
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
+<div class="header" id="navtop">
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header"
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <a class="navbar-brand" href="/">
+        <img class="logo" src="/assets/images/logo.png" />
+        <span class="logo">Data</span><span>Cite {{ site.title }}</span>
+      </a>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="account_menu_link"><i class='fa fa-th'></i> <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li class='dropdown-header'>DataCite Labs</li>
+              {% for link in site.data.links.labs_links %}
+                <li>
+                  <a href='{{ link.url }}'>
+                    <i class='fa fa-{{ link.icon }} fa-fw'></i>
+                    {{ link.name }}
+                  </a>
+                </li>
+              {% endfor %}
+              <li class='divider'></li>
+              <li class='dropdown-header'>DataCite</li>
+              {% for link in site.data.links.production_links %}
+                <li>
+                  <a href='{{ link.url }}'>
+                    <i class='fa fa-{{ link.icon }} fa-fw'></i>
+                    {{ link.name }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
-
-    <div class='logo'>
-      <a href='/'>
-        <img alt='{{ site.title }}' class='logo-small' src='/assets/images/logo-small.png'>
-      </a>
-    </div>
   </div>
-</header>
+</div>
 
 <!-- header end -->

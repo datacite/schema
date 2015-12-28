@@ -14,9 +14,10 @@ exclude:
   - pom.xml
   - src
   - vendor
+  - assets/jquery/*
 
 # Site settings
-title: "DataCite Metadata Schema"
+title: "Metadata Schema"
 
 email: support@datacite.org
 logo: "/assets/images/logo-small.png"
@@ -33,36 +34,32 @@ baseurl: ""
 twitter_handle: '@datacite'
 
 #fill in disqus shortname to use disqus
-disqus: datacite
+#disqus: datacite
 
 #fill in tracking id
 google_analytics: UA-22806196-8
 
-# social icons and sharing options
-social:
-  - icon:	twitter
-    url:	https://twitter.com/datacite
-    desc: Follow DataCite on Twitter
-    share_url: http://twitter.com/share
-    share_title: ?text=
-    share_link: "&amp;url="
+# Build settings
+markdown: pandoc
+highlighter: pygments
+gems:
+  - jekyll-pandoc
+  - jemoji
 
-  - icon:  facebook
-    url: https://facebook.com/???
-    desc: Connect with DataCite on Facebook
-    share_url: https://www.facebook.com/sharer.php
-    share_title: ?t=
-    share_link: "&amp;u="
-
-  - icon:	github
-    url:	https://github.com/datacite
-    desc:	Visit DataCite on Github
-    share_url:
-    share_title:
-    share_link:
+exclude:
+  - README.md
+  - LICENCE
+  - Gemfile
+  - Gemfile.lock
+  - .travis.yml
+  - vendor
+  - assets/jquery/*
 
 pandoc:
   extensions:
     - normalize
     - smart
     - mathjax
+    - csl: _styles/apa.csl
+    - bibliography: bibliography/references.bib
+
