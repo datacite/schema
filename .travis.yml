@@ -1,7 +1,11 @@
 language: ruby
-cache: bundler
 rvm:
 - 2.2
+cache: bundler
+cache:
+  directories:
+    - _frontend/node_modules
+    - _frontend/bower_components
 
 before_install:
 - wget https://github.com/jgm/pandoc/releases/download/1.15.2/pandoc-1.15.2-1-amd64.deb
