@@ -15,16 +15,16 @@ https://groups.google.com/forum/?hl=en&fromgroups#!forum/datacite-metadata
 Schemas
 -------
 
-Each schema has its own folder under `/_site/meta`
-e.g. `/_site/meta/kernel-2.0/`.  This directory is allowed to contain
-only one xsd.  The directory structure is as follow:
+Each schema has its own folder under `/meta`
+e.g. `/meta/kernel-2.0/`. This directory is allowed to contain
+only one xsd. The directory structure is as follow:
 
-    /_site/meta/{schema-name}/{filename}.xsd   root xsd
-    /_site/meta/{schema-name}/include/         referenced xsd's
-    /_site/meta/{schema-name}/example/         example xml files
-    /_site/meta/{schema-name}/doc/             documentation (pdf's)
+    /meta/{schema-name}/{filename}.xsd   root xsd
+    /meta/{schema-name}/include/         referenced xsd's
+    /meta/{schema-name}/example/         example xml files
+    /meta/{schema-name}/doc/             documentation (pdf's)
 
-The `/www` directory will be published (as root) at https://schema.datacite.org, e.g.
+The `/metat` directory will be published at https://schema.datacite.org, e.g.
 
     https://schema.datacite.org/meta/kernel-2.0/metadata.xsd
 
@@ -37,5 +37,3 @@ validity of the schemas, and validity of the examples.
 You can execute the tests via
 
     mvn test
-
-
