@@ -1,6 +1,5 @@
 language: java
 jdk: oraclejdk8
-rvm: 2.2.0
 cache: bundler
 cache:
   directories:
@@ -8,6 +7,8 @@ cache:
     - _frontend/bower_components
 
 before_install:
+  - rvm install 2.2.0
+
   - wget http://www.htacg.org/binaries/binaries/tidy-4.9.23/tidy5-4.9.23-32bit.deb
   - sudo dpkg -i tidy5-4.9.23-32bit.deb
   - rm tidy5-4.9.23-32bit.deb
