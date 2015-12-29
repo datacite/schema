@@ -5,6 +5,7 @@ cache:
   directories:
     - _frontend/node_modules
     - _frontend/bower_components
+    - $HOME/.m2
 
 before_install:
   - rvm install 2.2.0
