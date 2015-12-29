@@ -32,7 +32,7 @@ before_script:
 
 script:
   - bundle exec jekyll build
-  - mvn -Dtest=BasicTest test -B
+  - mvn -Dtest=ValidationTest,BasicTest test -B
 
 deploy:
   provider: s3
