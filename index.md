@@ -13,7 +13,7 @@ If you have any comments on
 
 please contact us via our [Google discussion group](https://groups.google.com/forum/?hl=en&#38;fromgroups#!forum/datacite-metadata). We will review the suggestions and comments on a monthly basis, and reply using this same discussion forum.
 
-## Available versions
+## Available Versions
 
 For our [Metadata store](https://mds.datacite.org) all these versions are valid although only one version is considered <em>preferred</em> at any given moment of time. Starting with version 3.0 only major releases will have a new namespace.
 
@@ -40,6 +40,6 @@ These versions are no longer accepted by the DataCite MDS.
 
 If you have questions please use the [DataCite contact form](http://www.datacite.org/contact).
 
-## Source code
+## Source Code
 
 This project is hosted on [GitHub](https://github.com/datacite/schema).
