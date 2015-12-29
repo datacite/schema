@@ -34,7 +34,7 @@ Each available version of a schema is a subdirectory containing a set of files. 
 
 These versions are no longer accepted by the DataCite MDS.
 
-* [DataCite Metadata Schema 2.0](archive/kernel-2.0/index.html) (released 2011-01-24)
+* [DataCite Metadata Schema 2.0](archive/kernel-2.0/index.html) {{ "2011-01-24" | date: "%B %-d, %Y" }})
 
 ## Help
 

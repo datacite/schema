@@ -1,15 +1,18 @@
 ---
-layout: default
+layout: schema
 title: DataCite Metadata Schema 3.0
+time: 2013-07-24
+schema_url: https://doi.org/10.5438/0009
+documentation_url: https://doi.org/10.5438/0008
 ---
 
 # {{page.title}}
 
-The {{page.title}} was released on {{ "2013-07-24" | date: "%B %-d, %Y" }}.
-Please refer to the documentation [@https://doi.org/10.5438/0008] and XML Schema [@https://doi.org/10.5438/0009],
-and see the examples below.
+### [XML Schema](metadata.xsd)
 
-## Examples
+### [Documentation](doc/DataCite-MetadataKernel_v3.0.pdf)
+
+### Examples
 
 * [Example for a simple dataset](example/datacite-example-dataset-v3.0.xml)
 * [Example with complicated values](example/datacite-example-complicated-v3.0.xml)
@@ -22,4 +25,3 @@ and see the examples below.
 * [Example with Video as ResourceType](example/datacite-example-video-v3.0.xml)
 * [Example for a workflow ResourceType](example/datacite-example-workflow-v3.0.xml)
 
-## References
