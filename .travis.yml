@@ -30,8 +30,8 @@ before_script:
   - cd ../ && cp _config.$TRAVIS_BRANCH.yml _config.yml
 
 script:
-  - mvn -Dtest=ValidationTest,BasicTest test -B
   - bundle exec jekyll build
+  - mvn -Dtest=BasicTest test -B
 
 deploy:
   provider: s3
