@@ -21,7 +21,7 @@ public class SchemaDirectory {
     public final static String DOC_DIR = "doc/";
     public final static String INDEX_HTML = "index.html";
 
-    public final static String SCHEMA_SERVER_BASE_URL = "http://schema.datacite.org";
+    public final static String SCHEMA_SERVER_BASE_URL = "https://schema.datacite.org";
     public final static String SCHEMA_NAMESPACE_BASE = "http://datacite.org/schema/";
 
     public final static String SCHEMA_WITHOUT_NAMESPACE = "kernel-2.0";
@@ -75,7 +75,7 @@ public class SchemaDirectory {
     public String getExpectedSchemaLocation() {
         String path;
         path = getMajorSchema().getSchemaFile().getPath();
-        String url = path.replaceFirst("www", SCHEMA_SERVER_BASE_URL);
+        String url = path.replaceFirst("_site", SCHEMA_SERVER_BASE_URL);
         return url;
     }
 

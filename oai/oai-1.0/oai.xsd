@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- DataCite XML schema for dissemination of records using OAI-PMH    
-    
+<!-- DataCite XML schema for dissemination of records using OAI-PMH
+
     Author:
-    DataCite - http://www.datacite.org 
-    
+    DataCite - http://www.datacite.org
+
     Version 1.0 (2011-05-26)
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="http://schema.datacite.org/oai/oai-1.0/"
-    xmlns:oai_datacite="http://schema.datacite.org/oai/oai-1.0/"
+    targetNamespace="https://schema.datacite.org/oai/oai-1.0/"
+    xmlns:oai_datacite="https://schema.datacite.org/oai/oai-1.0/"
     elementFormDefault="qualified">
-    
+
     <xs:element name="oai_datacite" type="oai_datacite:rootType" block="substitution" />
 
     <xs:complexType name="rootType">
@@ -19,7 +19,7 @@
                 <xs:annotation>
                     <xs:documentation>The symbol of the datacentre that registered this record.</xs:documentation>
                 </xs:annotation>
-            </xs:element>            
+            </xs:element>
             <xs:element name="isReferenceQuality" type="xs:boolean" minOccurs="1" maxOccurs="1" block="substitution">
                 <xs:annotation>
                     <xs:documentation>Boolean indicating if this record is of reference quality.</xs:documentation>
@@ -36,5 +36,5 @@
                 </xs:annotation>
             </xs:element>
         </xs:all>
-    </xs:complexType>    
+    </xs:complexType>
 </xs:schema>

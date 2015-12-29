@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd" xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<resource xsi:schemaLocation="http://datacite.org/schema/kernel-3 https://schema.datacite.org/meta/kernel-3/metadata.xsd" xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<identifier identifierType="DOI">10.5072/10.CPoS-example</identifier>
 	<creators>
 		<creator>
@@ -8,7 +8,7 @@
 		</creator>
 		<creator>
 			<creatorName>Hornung, Anne</creatorName>
-			<nameIdentifier nameIdentifierScheme="ISNI" schemeURI="http://isni.org/isni/">14224587</nameIdentifier>			
+			<nameIdentifier nameIdentifierScheme="ISNI" schemeURI="http://isni.org/isni/">14224587</nameIdentifier>
 		</creator>
 	</creators>
 	<titles>
@@ -40,9 +40,9 @@
 	<rightsList> <rights rightsURI="http://creativecommons.org/licenses/by-nc-nd/3.0/deed">Creative Commons License: Attribution-NonCommercial-NoDerivs 3.0 Unported</rights></rightsList>
 	<descriptions>
 		<description descriptionType="SeriesInformation">Comparative Population Studies; Vol 38, No 1, 2013. ISSN 0076-7689</description>
-		<description descriptionType="Abstract">This paper validates the fertility histories of the German Generations and Gender Survey (GGS). 
-		Focusing on the cohorts 1930-69 of West German women, the total number of children, the parity distribution and the parity progression 
-		ratios are compared to external sources. One major result from this validation is that the German GGS understates the fertility for the 
+		<description descriptionType="Abstract">This paper validates the fertility histories of the German Generations and Gender Survey (GGS).
+		Focusing on the cohorts 1930-69 of West German women, the total number of children, the parity distribution and the parity progression
+		ratios are compared to external sources. One major result from this validation is that the German GGS understates the fertility for the
 		older cohorts and overstates it for the younger ones.</description>
 	</descriptions>
 </resource>

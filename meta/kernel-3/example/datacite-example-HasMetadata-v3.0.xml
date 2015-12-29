@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd" xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<resource xsi:schemaLocation="http://datacite.org/schema/kernel-3 https://schema.datacite.org/meta/kernel-3/metadata.xsd" xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <identifier identifierType="DOI">10.5072/example</identifier>
 	<creators>
 		<creator>
@@ -44,8 +44,8 @@
 	<formats>
 		<format>PDF</format>
 	</formats>
-<rightsList>   
-    <rights rightsURI="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported</rights></rightsList> 
+<rightsList>
+    <rights rightsURI="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported</rights></rightsList>
     <descriptions>
         <description descriptionType="Abstract">To identify putative novel specific targets of mir-210, we overexpressed miR-210 as well as miR-34a and a siRNA targeted against E2F3 in A549 human adenocarcinoma cells by transfecting them with synthetic pre-miRNAs or a synthetic negative pre-miRNA as control (miR-Neg). RNA samples were harvested at 48 hours post-transfection and 2 independent experiments performed in dye-swap: miR-210 versus miR-Neg ; miR-34a versus miR-Neg ; si-E2F3 versus miR-Neg ; si-control versus miR-Neg.</description>
     </descriptions>
