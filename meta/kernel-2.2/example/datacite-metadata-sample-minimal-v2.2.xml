@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns="http://datacite.org/schema/kernel-2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-2.2 https://schema.datacite.org/meta/kernel-2.2/metadata.xsd">
+	<identifier identifierType="DOI">10.5072/12345</identifier>
+	<creators>
+		<creator>
+			<creatorName>Dickens, Charles</creatorName>
+		</creator>
+	</creators>
+	<titles>
+		<title>A tale of two cities</title>
+	</titles>
+	<publisher>Doe, John</publisher>
+	<publicationYear>1859</publicationYear>
+</resource>

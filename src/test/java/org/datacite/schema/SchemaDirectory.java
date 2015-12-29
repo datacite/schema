@@ -16,12 +16,12 @@ import org.xml.sax.SAXException;
 
 public class SchemaDirectory {
 
-    public final static String SCHEMAS_BASE_DIR = "www/meta/";
+    public final static String SCHEMAS_BASE_DIR = "_site/meta/";
     public final static String EXAMPLE_DIR = "example/";
     public final static String DOC_DIR = "doc/";
     public final static String INDEX_HTML = "index.html";
 
-    public final static String SCHEMA_SERVER_BASE_URL = "http://schema.datacite.org";
+    public final static String SCHEMA_SERVER_BASE_URL = "https://schema.datacite.org";
     public final static String SCHEMA_NAMESPACE_BASE = "http://datacite.org/schema/";
 
     public final static String SCHEMA_WITHOUT_NAMESPACE = "kernel-2.0";
@@ -33,7 +33,7 @@ public class SchemaDirectory {
         if (!directory.exists())
             throw new FileNotFoundException(directory.getPath());
     }
-    
+
     public SchemaDirectory(String name) throws FileNotFoundException {
         this(new File(SCHEMAS_BASE_DIR + name));
     }
@@ -49,7 +49,7 @@ public class SchemaDirectory {
     private File getFile(String fileName) {
         return new File(directory, fileName);
     }
-    
+
     private List<File> getFiles(String directory) {
         return Utils.getFiles(getFile(directory));
     }
@@ -75,7 +75,7 @@ public class SchemaDirectory {
     public String getExpectedSchemaLocation() {
         String path;
         path = getMajorSchema().getSchemaFile().getPath();
-        String url = path.replaceFirst("www", SCHEMA_SERVER_BASE_URL);
+        String url = path.replaceFirst("_site", SCHEMA_SERVER_BASE_URL);
         return url;
     }
 
@@ -85,13 +85,13 @@ public class SchemaDirectory {
         else
             return SCHEMA_NAMESPACE_BASE + getMajorSchema().getName();
     }
-    
+
     /*
-     * retrieves the corresponding major schema directory 
-     * if it exists explicitly  
-     * 
+     * retrieves the corresponding major schema directory
+     * if it exists explicitly
+     *
      * example:
-     * 
+     *
      * if major schema version 3 exists, then root of 3.1 is 3
      * if major schema version 2 does not exists, then root of 2.1 is 2
      */
@@ -107,11 +107,11 @@ public class SchemaDirectory {
     public List<File> getExamples() {
         return getFiles(EXAMPLE_DIR);
     }
-    
+
     public List<File> getDocs() {
         return getFiles(DOC_DIR);
     }
-    
+
     public File getIndexHtml() {
         return getFile(INDEX_HTML);
     }

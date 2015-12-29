@@ -3,7 +3,7 @@ target/
 .project
 .settings
 _site/*
-.sass-cache
+.sass-cache/*
 .DS_Store
 _frontend/node_modules/*
 _frontend/bower_components/*

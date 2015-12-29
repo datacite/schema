@@ -20,7 +20,7 @@ import org.junit.runners.Parameterized.Parameters;
 
 /**
  * Html Validator. Requires external program "tidy" (http://tidy.sourceforge.net/).
- * 
+ *
  * @author peterss
  *
  */
@@ -46,7 +46,7 @@ public class HtmlTest {
 
     @Parameters(name="{0}")
     public static Collection<Object[]> data() {
-        File directory = new File("www/");
+        File directory = new File("_site/");
         Collection<Object[]> data = new ArrayList<Object[]>();
         List<File> files = (List<File>) FileUtils.listFiles(directory, new String[] { "html" }, true);
         Utils.sortFileList(files);
@@ -54,5 +54,5 @@ public class HtmlTest {
             data.add(new Object[] { file });
         return data;
     }
-    
+
 }

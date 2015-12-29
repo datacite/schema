@@ -1,0 +1,51 @@
+language: java
+jdk: oraclejdk8
+cache: bundler
+cache:
+  directories:
+    - _frontend/node_modules
+    - _frontend/bower_components
+    - $HOME/.m2
+
+before_install:
+  - rvm install 2.2.0
+
+  - wget http://www.htacg.org/binaries/binaries/tidy-4.9.23/tidy5-4.9.23-32bit.deb
+  - sudo dpkg -i tidy5-4.9.23-32bit.deb
+  - rm tidy5-4.9.23-32bit.deb
+
+  - wget https://github.com/jgm/pandoc/releases/download/1.15.2/pandoc-1.15.2-1-amd64.deb
+  - sudo dpkg -i pandoc-1.15.2-1-amd64.deb
+  - rm pandoc-1.15.2-1-amd64.deb
+
+install:
+  - bundle install
+
+before_script:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+      AWS_BUCKET="schema.datacite.org";
+    else
+      AWS_BUCKET="schema.labs.datacite.org";
+    fi
+  - cd _frontend && npm install
+  - cd ../ && cp _config.$TRAVIS_BRANCH.yml _config.yml
+
+script:
+  - bundle exec jekyll build
+  - mvn -Dtest=ValidationTest,BasicTest test -B
+
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  bucket: $AWS_BUCKET
+  local-dir: _site
+  acl: public_read
+  skip_cleanup: true
+  region: eu-west-1
+  detect_encoding: true
+  on:
+    all_branches: true
+
+notifications:
+  slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
