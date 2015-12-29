@@ -1,7 +1,6 @@
 language: java
 jdk: oraclejdk8
-rvm:
-  - 2.2
+rvm: 2.2.0
 cache: bundler
 cache:
   directories:
