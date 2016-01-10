@@ -11,7 +11,7 @@ before_install:
   - set -e
   - if [ "${TRAVIS_TAG:?}" ]; then
       AWS_BUCKET="schema.datacite.org";
-    elif [ "$TRAVIS_BRANCH" == "labs" ]
+    elif [ "$TRAVIS_BRANCH" == "labs" ]; then
       AWS_BUCKET="schema.labs.datacite.org";
     else
       exit 1;
