@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-# DataCite Metadata Schema
 
 ## Feedback
 
@@ -15,7 +14,7 @@ please contact us via our [Google discussion group](https://groups.google.com/fo
 
 ## Available Versions
 
-For our [Metadata store](https://mds.datacite.org) all these versions are valid although only one version is considered <em>preferred</em> at any given moment of time. Starting with version 3.0 only major releases will have a new namespace.
+For our [Metadata store](https://mds.datacite.org) all these versions are valid, although only one version is considered <em>preferred</em> at any given moment of time. Starting with version 3.0 only major releases will have a new namespace.
 
 Each incoming [Metadata store](https://mds.datacite.org) XML document should indicate the schema location in the root element.
 

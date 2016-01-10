@@ -19,7 +19,7 @@
                 <div class="bottom-teaser cf">
                   <div class="isLeft">
                     <h4>{{ page.title }}</h4>
-                    <p class="published"><i class="fa fa-calendar"></i> {{ page.time }}</p>
+                    <p class="published"><i class="fa fa-calendar"></i> {{ page.time | date: "%B %-d, %Y" }}</p>
                     <p class="published">XML Schema:<br/><a href="{{ page.schema_url }}">{{ page.schema_url }}</a></p>
                     <p class="published">Documentation:<br/><a href="{{ page.documentation_url }}">{{ page.documentation_url }}</a></p>
                   </div>

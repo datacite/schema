@@ -26,6 +26,7 @@ before_script:
       AWS_BUCKET="schema.datacite.org";
     else
       AWS_BUCKET="schema.labs.datacite.org";
+      DEPLOY = "true";
     fi
   - cd _frontend && npm install
   - cd ../ && cp _config.$TRAVIS_BRANCH.yml _config.yml
@@ -45,7 +46,8 @@ deploy:
   region: eu-west-1
   detect_encoding: true
   on:
-    all_branches: true
+    tags: true
+    condition: "$DEPLOY = true"
 
 notifications:
   slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
