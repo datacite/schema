@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- -->
 <oai_datacite
-    xmlns="https://schema.datacite.org/oai/oai-1.0/"
+    xmlns="http://schema.datacite.org/oai/oai-1.0/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://schema.datacite.org/oai/oai-1.0/ oai_datacite.xsd">
+    xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ oai_datacite.xsd">
     <isReferenceQuality>true</isReferenceQuality>
     <schemaVersion>2.1</schemaVersion>
     <datacentreSymbol>CISTI.JOE</datacentreSymbol>
     <payload>
-        <resource xmlns="http://datacite.org/schema/kernel-2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-2.1 https://schema.datacite.org/meta/kernel-2.1/metadata.xsd">
+        <resource xmlns="http://datacite.org/schema/kernel-2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-2.1 http://schema.datacite.org/meta/kernel-2.1/metadata.xsd">
             <identifier identifierType="DOI">10.5072/WDCC/CCSRNIES_SRES_B2</identifier>
             <creators>
                 <creator>
