@@ -8,6 +8,14 @@ cache:
     - $HOME/.m2
 
 before_install:
+  - set -e
+  - if [ "${TRAVIS_TAG:?}" ]; then
+      AWS_BUCKET="schema.datacite.org";
+    elif [ "$TRAVIS_BRANCH" == "labs" ]
+      AWS_BUCKET="schema.labs.datacite.org";
+    else
+      exit 1;
+    fi
   - rvm install 2.2.0
 
   - wget https://github.com/jgm/pandoc/releases/download/1.15.2/pandoc-1.15.2-1-amd64.deb
@@ -18,14 +26,6 @@ install:
   - bundle install
 
 before_script:
-  - set -e
-  - if [ "$TRAVIS_TAG" ]; then
-      AWS_BUCKET="schema.datacite.org";
-    elif [ "$TRAVIS_BRANCH" == "labs" ]
-      AWS_BUCKET="schema.labs.datacite.org";
-    else
-      exit 127;
-    fi
   - cd _frontend && npm install
   - cd ../ && cp _config.$TRAVIS_BRANCH.yml _config.yml
 
