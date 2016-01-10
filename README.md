@@ -24,9 +24,9 @@ only one xsd. The directory structure is as follow:
     /meta/{schema-name}/example/         example xml files
     /meta/{schema-name}/doc/             documentation (pdf's)
 
-The `/metat` directory will be published at https://schema.datacite.org, e.g.
+The `/metat` directory will be published at http://schema.datacite.org, e.g.
 
-    https://schema.datacite.org/meta/kernel-2.0/metadata.xsd
+    http://schema.datacite.org/meta/kernel-2.0/metadata.xsd
 
 Tests
 -----
