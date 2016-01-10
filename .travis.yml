@@ -8,11 +8,15 @@ cache:
     - $HOME/.m2
 
 before_install:
+  - set -e
+  - if [ "${TRAVIS_TAG?}" ]; then
+      AWS_BUCKET="schema.datacite.org";
+    elif [ "$TRAVIS_BRANCH" == "labs" ]; then
+      AWS_BUCKET="schema.labs.datacite.org";
+    else
+      exit 1;
+    fi
   - rvm install 2.2.0
-
-  - wget http://www.htacg.org/binaries/binaries/tidy-4.9.23/tidy5-4.9.23-32bit.deb
-  - sudo dpkg -i tidy5-4.9.23-32bit.deb
-  - rm tidy5-4.9.23-32bit.deb
 
   - wget https://github.com/jgm/pandoc/releases/download/1.15.2/pandoc-1.15.2-1-amd64.deb
   - sudo dpkg -i pandoc-1.15.2-1-amd64.deb
@@ -22,11 +26,6 @@ install:
   - bundle install
 
 before_script:
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then
-      AWS_BUCKET="schema.datacite.org";
-    else
-      AWS_BUCKET="schema.labs.datacite.org";
-    fi
   - cd _frontend && npm install
   - cd ../ && cp _config.$TRAVIS_BRANCH.yml _config.yml
 
