@@ -14,7 +14,6 @@
 			<xs:enumeration value="DataManager"/>
 			<xs:enumeration value="Distributor"/>
 			<xs:enumeration value="Editor"/>
-			<xs:enumeration value="Funder"/>
 			<xs:enumeration value="HostingInstitution"/>
 			<xs:enumeration value="Other"/>
 			<xs:enumeration value="Producer"/>
