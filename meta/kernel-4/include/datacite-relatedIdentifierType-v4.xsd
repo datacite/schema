@@ -15,6 +15,7 @@
 			<xs:enumeration value="EAN13"/>
 			<xs:enumeration value="EISSN"/>
 			<xs:enumeration value="Handle"/>
+			<xs:enumeration value="IGSN"/>
 			<xs:enumeration value="ISBN"/>
 			<xs:enumeration value="ISSN"/>
 			<xs:enumeration value="ISTC"/>
