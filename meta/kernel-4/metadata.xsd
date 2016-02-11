@@ -111,6 +111,19 @@
 						<xs:restriction base="yearType"/>
 					</xs:simpleType>
 				</xs:element>
+				<xs:element name="resourceType">
+					<xs:annotation>
+						<xs:documentation>The type of a resource. You may enter an additional free text description.</xs:documentation>
+						<xs:documentation>The format is open, but the preferred format is a single term of some detail so that a pair can be formed with the sub-property.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:string">
+								<xs:attribute name="resourceTypeGeneral" type="resourceType" use="required"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
 				<!--OPTIONAL FIELDS-->
 				<xs:element name="subjects" minOccurs="0">
 					<xs:complexType>
@@ -190,19 +203,6 @@
 					<xs:annotation>
 						<xs:documentation>Primary language of the resource. Allowed values are taken from  IETF BCP 47, ISO 639-1 language codes.</xs:documentation>
 					</xs:annotation>
-				</xs:element>
-				<xs:element name="resourceType">
-					<xs:annotation>
-						<xs:documentation>The type of a resource. You may enter an additional free text description.</xs:documentation>
-						<xs:documentation>The format is open, but the preferred format is a single term of some detail so that a pair can be formed with the sub-property.</xs:documentation>
-					</xs:annotation>
-					<xs:complexType>
-						<xs:simpleContent>
-							<xs:extension base="xs:string">
-								<xs:attribute name="resourceTypeGeneral" type="resourceType" use="required"/>
-							</xs:extension>
-						</xs:simpleContent>
-					</xs:complexType>
 				</xs:element>
 				<xs:element name="alternateIdentifiers" minOccurs="0">
 					<xs:complexType>
