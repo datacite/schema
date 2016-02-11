@@ -7,6 +7,7 @@
 			<xs:enumeration value="AlternativeTitle"/>
 			<xs:enumeration value="Subtitle"/>
 			<xs:enumeration value="TranslatedTitle"/>
+			<xs:enumeration value="Other"/>
 		</xs:restriction>
 	</xs:simpleType>
 </xs:schema>
