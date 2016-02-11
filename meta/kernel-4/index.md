@@ -20,7 +20,6 @@ title: DataCite Metadata Schema 4.0
 * [Example with Collection as ResourceType](example/datacite-example-ResourceTypeGeneral_Collection-v4.0.xml)
 * [Example with Video as ResourceType](example/datacite-example-video-v4.0.xml)
 * [Example for a workflow ResourceType](example/datacite-example-workflow-v4.0.xml)
-* Example with resourceTypeGeneral Catalog
 * Example with FundingReference and subfields
 * Example with Title to convey date
 * Example with Missing Metadata codes
