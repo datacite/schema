@@ -5,6 +5,8 @@ title: DataCite Metadata Schema 4.0
 
 # {{page.title}}
 
+This schema is unreleased, use it only to validate examples.
+
 ### [XML Schema](metadata.xsd)
 
 ### Examples
