@@ -56,6 +56,8 @@
 												<xs:restriction base="nonemptycontentStringType"/>
 											</xs:simpleType>
 										</xs:element>
+										<xs:element name="givenName" minOccurs="0"/>
+										<xs:element name="familyName" minOccurs="0"/>
 										<xs:element name="nameIdentifier" minOccurs="0" maxOccurs="unbounded">
 											<xs:complexType>
 												<xs:simpleContent>
