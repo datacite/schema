@@ -140,6 +140,7 @@
 										<xs:extension base="xs:string">
 											<xs:attribute name="subjectScheme" use="optional"/>
 											<xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+											<xs:attribute name="valueURI" type="xs:anyURI" use="optional"/>
 											<xs:attribute ref="xml:lang"/>
 										</xs:extension>
 									</xs:simpleContent>
@@ -333,6 +334,7 @@ Use the complete title of a license and include version information if applicabl
 										<xs:element name="geoLocationPoint" type="point" minOccurs="0"/>
 										<xs:element name="geoLocationBox" type="box" minOccurs="0"/>
 										<xs:element name="geoLocationPlace" minOccurs="0"/>
+										<xs:element name="geoLocationPolygon" minOccurs="0"/>
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
