@@ -5,9 +5,9 @@ title: DataCite Metadata Schema 4.0
 
 This schema is unreleased, use it only to validate examples.
 
-# [XML Schema](metadata.xsd)
+# [XML Schema](metadata.xsd) {-}
 
-# Examples
+# Examples {-}
 
 * [Full DataCite XML example](example/datacite-example-full-v4.0.xml)
 * [Example for a simple dataset](example/datacite-example-dataset-v4.0.xml)

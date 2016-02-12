@@ -940,7 +940,7 @@ For information about other DataCite services that pertain to DataCite metadata 
 
 # Appendices
 
-# Appendix 1: Controlled List Definitions
+## Appendix 1: Controlled List Definitions {-}
 
 In Appendix 1, as in Sections 2.1 and 2.3 above, controlled list values that enhance the prospect that the resource’s metadata will be found, cited and linked are indicated by shading.
 
@@ -1643,9 +1643,9 @@ Example: http://data.datacite.org/10.5678/LCRS/FOR816.CIT.1031</td>
 </table>
 
 
-# Appendix 2: Earlier Version Update Notes
+## Appendix 2: Earlier Version Update Notes {-}
 
-## Version 3.1 Update
+### Version 3.1 Update {-}
 
 Version 3.1 of the schema includes these changes:
 
@@ -1675,7 +1675,7 @@ Version 3.1 of the documentation includes these changes:
   * IsDerivedFrom and IsSourceOf
 * Correction of link errors in 3.0 documentation
 
-## Version 3.0 Update
+### Version 3.0 Update {-}
 
 Version 3.0 of the DataCite Metadata Schema included these changes (NOTE:  Two additional schema code level changes are the allowance of keeping optional wrapper elements empty and the allowance of arbitrary ordering of elements (by removal of <xs:sequence>).):
 
@@ -1708,7 +1708,7 @@ Version 3.0 of the DataCite Metadata Schema documentation included these changes
 * Addition of more and more varied XML examples on the Metadata Schema website
 * Removal from documentation of information about administrative metadata (which cannot be edited by contributors).
 
-## Version 2.2 Update
+### Version 2.2 Update {-}
 
 Version 2.2 of the DataCite Metadata Schema introduced several changes, as noted below:
 
@@ -1722,7 +1722,7 @@ Version 2.2 of the DataCite Metadata Schema documentation included these changes
 * Provision of more examples of xml for different types of resources
 * Explanation of the PublicationYear property in consideration of the requirements of citation. A change to the definition of the Publisher property, which now reads, "The name of the entity that holds, archives, publishes, prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role."
 
-## Version 2.1 Update
+### Version 2.1 Update {-}
 
 Version 2.1 of the DataCite Metadata Schema introduced several changes, as noted below:
 
@@ -1735,7 +1735,7 @@ Version 2.1 of the DataCite Metadata Schema documentation included these changes
 * Addition of a column to the Mandatory and Optional Properties tables providing an indicator of whether the property being described is an attribute or a child of the corresponding property that has preceded it
 * Revision of the allowed values description for the attribute 12.2 relationType. These have been reviewed and rewritten for increased clarity. In several cases, corrections to the definitions occurred.
 
-## Appendix 3: Additional information
+## Appendix 3: Additional information {-}
 
 Table 11: Standard values for unknown information
 
