@@ -371,9 +371,6 @@ Use the complete title of a license and include version information if applicabl
 									<xs:simpleContent>
 										<xs:extension base="xs:string">
 											<xs:attribute name="awardURI" type="xs:anyURI" use="optional"/>
-											<xs:annotation>
-												<xs:documentation>The URI leading to a page provided by the funder for more information about the award.</xs:documentation>
-											</xs:annotation>
 										</xs:extension>
 									</xs:simpleContent>
 								</xs:complexType>
