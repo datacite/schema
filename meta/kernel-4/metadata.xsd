@@ -7,7 +7,7 @@
   2011-06-27 v2.2: namespace: kernel-2.2, additions to controlled lists "resourceType", "contributorType", "relatedIdentifierType", and "descriptionType". Removal of intermediate include-files.
   2013-07-24 v3.0: namespace: kernel-3.0; delete LastMetadataUpdate & MetadateVersionNumber; additions to controlled lists "contributorType", "dateType", "descriptionType", "relationType", "relatedIdentifierType" & "resourceType"; deletion of "StartDate" & "EndDate" from list "dateType" and "Film" from "resourceType";  allow arbitrary order of elements; allow optional wrapper elements to be empty; include xml:lang attribute for title, subject & description; include attribute schemeURI for nameIdentifier of creator, contributor & subject; added new attributes "relatedMetadataScheme", "schemeURI" & "schemeType" to relatedIdentifier; included new property "geoLocation"
   2014-08-20 v3.1: additions to controlled lists "relationType", contributorType" and "relatedIdentifierType"; introduction of new child element "affiliation" to "creator" and "contributor"
-  2016-02-11 v4.0: namespace: kernel-4.0; makes "resourceType" required field
+  2016-02-11 v4.0: namespace: kernel-4.0; makes "resourceType" required field, added optional "givenName" and "familyName"
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-4" targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified" xml:lang="EN">
 	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2009/01/xml.xsd"/>
@@ -48,6 +48,7 @@
 								<xs:annotation>
 									<xs:documentation>The main researchers involved working on the data, or the authors of the publication in priority order. May be a corporate/institutional or personal name.</xs:documentation>
 									<xs:documentation>Format: Family, Given.</xs:documentation>
+									<xs:documentation>Personal names can be further specified using givenName and familyName.</xs:documentation>
 								</xs:annotation>
 								<xs:complexType>
 									<xs:sequence>
@@ -333,6 +334,47 @@ Use the complete title of a license and include version information if applicabl
 										<xs:element name="geoLocationBox" type="box" minOccurs="0"/>
 										<xs:element name="geoLocationPlace" minOccurs="0"/>
 									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="fundingReferences" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="funderName">
+								<xs:annotation>
+						      <xs:documentation>Name of the funding provider.</xs:documentation>
+					      </xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="nonemptycontentStringType"/>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="funderIdentifier" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Uniquely identifies a funding entity, according to various types.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="funderIdentifierType" use="required"/>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="awardNumber" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>The code assigned by the funder to a sponsored award.</xs:documentation>
+								</xs:annotation>
+							  <xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="awardURI" type="xs:anyURI" use="optional"/>
+											<xs:annotation>
+												<xs:documentation>The URI leading to a page provided by the funder for more information about the award.</xs:documentation>
+											</xs:annotation>
+										</xs:extension>
+									</xs:simpleContent>
 								</xs:complexType>
 							</xs:element>
 						</xs:sequence>
