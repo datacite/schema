@@ -1,65 +1,44 @@
 ---
 layout: schema
 title: DataCite Metadata Schema for the Publication and Citation of Research Data Version 4.0
+authors:
+ - jstarr
+ - lnielsen
+ - jashton
+ - abarton
+ - aciolek
+ - sdietiker
+ - jelliott
+ - kharzenetter
+ - bhirschmann
+ - bgenat
+ - jmailloux
+ - msmaele
+ - myahia
+ - fziedorn
 ---
 
 Note that this version of the schema is not backward compatible with previous schema versions. DataCite will provide ongoing support for the use of previous schema versions for a minimum of one year after the release of this version.
 
-Members of the Metadata Working Group
+# Introduction
 
-Joan Starr, California Digital Library (co-chair of working group)
+## The DataCite Consortium
 
-Lars Holm Nielsen, CERN (co-chair of working group)
-
-Jan Ashton, British Library
-
-Amy Barton, Purdue University Library
-
-Anne Ciolek-Figiel, Inist-CNRS
-
-Stefanie Dietiker, ETH Zurich (New)
-
-Jannean Elliott, DOE/OSTI
-
-Karoline Harzenetter, GESIS
-
-Barbara Hirschmann, ETH Zurich (Departing)
-
-Berrit Genat, TIB
-
-Jean-Yves Mailloux, NRC/CISTI
-
-Madeleine de Smaele, TU Delft
-
-Mohamed Yahia, Inist-CNRS
-
-Frauke Ziedorn, TIB (On leave, Metadata Supervisor)
-
-**Table of Contents**
-
-[[TOC]]
-
-1. Introduction
-
-    1. The DataCite Consortium
-
-Scholarly research is producing ever increasing amounts of digital research data, and it depends on data to verify research findings, create new research, and share findings. In this context, what has been missing until recently, is a *persistent* approach to access, identification, sharing, and re-use of datasets. To address this need, the DataCite (NOTE:  http://www.datacite.org  ) international consortium was founded in late 2009 with these three fundamental goals:
+Scholarly research is producing ever increasing amounts of digital research data, and it depends on data to verify research findings, create new research, and share findings. In this context, what has been missing until recently, is a *persistent* approach to access, identification, sharing, and re-use of datasets. To address this need, the [DataCite](http://www.datacite.org) international consortium was founded in late 2009 with these three fundamental goals:
 
 * establish easier access to scientific research data on the Internet,
-
 * increase acceptance of research data as legitimate, citable contributions to the scientific record, and
-
 * support data archiving that will permit results to be verified and re-purposed for future study.
 
 Since its founding in 2009, DataCite has grown and now spans the globe from Europe and North America to Asia and Australia. The aim of DataCite is to provide domain agnostic services to benefit scholars in a wide range of disciplines.
 
-Key to the DataCite service is the concept of a long term or *persistent *identifier*. *A persistent identifier is an association between a character string and a resource. Resources can be files, parts of files, persons, organizations, abstractions, etc. DataCite uses *Digital Object Identifiers* (DOIs) (NOTE:  DOIs are administered by the International DOI Foundation, http://www.doi.org/ ) at the present time and is considering the use of other identifier schemes in the future. For this reason, the Metadata Schema has been designed with flexibility and extensibility in mind.
+Key to the DataCite service is the concept of a long term or *persistent identifier*. A persistent identifier is an association between a character string and a resource. Resources can be files, parts of files, persons, organizations, abstractions, etc. DataCite uses *Digital Object Identifiers* (DOIs) (NOTE:  DOIs are administered by the International DOI Foundation, http://www.doi.org/ ) at the present time and is considering the use of other identifier schemes in the future. For this reason, the Metadata Schema has been designed with flexibility and extensibility in mind.
 
 ## DataCite Community Participation
 
 The Metadata Working Group would like to acknowledge the contributions to our work of many colleagues in our institutions who provided assistance of all kinds. Their help has been greatly appreciated. In addition, we are indebted to numerous individuals and organizations in the broader scholarly community who have taken an interest in this work. Because data citation and data management are evolving areas of concern, we look forward to continued interest. With this in mind, the Working Group provides an interactive discussion mechanism for DataCite members and clients to discuss the DataCite Metadata Schema and issues connected with metadata submitted to DataCite, as appropriate (NOTE:  Join the discussion here: schema.datacite.org.).
 
-    3. The Metadata Schema
+## The Metadata Schema
 
 The DataCite Metadata Schema is a list of core metadata properties chosen for the accurate and consistent identification of a resource for citation and retrieval purposes, along with recommended use instructions. The resource that is being identified can be of any kind, but it is typically a dataset. We use the term ‘dataset’ in its broadest sense. We mean it to include not only numerical data, but any other research data outputs. The metadata schema properties are presented and described in detail in [Section 2](#heading=h.tyjcwt)[.](#heading=h.tyjcwt)
 
@@ -77,72 +56,48 @@ For a specified list of all changes, see [Section 1.4](#heading=h.2et92p0)[.](#h
 
 Lastly, in order to support openness and future extensibility of the schema, a collaboration between DataCite and the Dublin Core Metadata Initiative (DCMI) Science and Metadata Community (SAM) (NOTE:  For more information on DCMI SAM, see http://wiki.dublincore.org/index.php/DCMI_Science_And_Metadata. ) has produced a version of the v3.1 schema in a Dublin Core Application Profile format which is currently out for review and comment via a dedicated Google forum (NOTE:  The Application Profile forum is available here: https://groups.google.com/a/datacite.org/forum/#!forum/dc2map ). The profile is made available in conjunction with the Metadata Working Group’s DataCite in RDF work which is also nearing completion.
 
-    4. Version 4.0 Update
+## Version 4.0 Update
 
 Version 4.0 of the schema includes these changes:
 
 * Allowing more than one nameIdentifier per creator or contributor
-
 * Add new optional subproperties for creatorName
-
-    * familyName
-
-    * givenName
-
+  * familyName
+  * givenName
 * Add new titleType "Other"
-
 * Add new subproperty for subjectScheme
-
-    * subjectScheme
-
-        * valueURI
-
+  * subjectScheme
+    * valueURI
 * Changing resourceTypeGeneral from optional to mandatory
-
 * Addition of a new resourceTypeGeneral option "Catalog"
-
 * Addition of a new relatedIdentifierType option "IGSN"
-
 * Addition of a new relationType pair "HasMember, IsMemberOf" in support of the Catalog resourceType
-
 * Addition of a  new descriptionType "TechnicalInfo"
-
 * Addition of a new subproperty for GeoLocation "geoLocationPolygon"
-
 * Addition of a new property: FundingReference, with subproperties
-
-    * funderName
-
-    * funderIdentifier
-
-        * funderIdentifierType
-
-    * awardNumber
-
-    * awardURI
-
+  * funderName
+  * funderIdentifier
+  * funderIdentifierType
+  * awardNumber
+  * awardURI
 * Deprecate contributorType "funder" (as a result of adding the new property “FundingReference”)
 
 Version 4.0 of the documentation includes these changes:
 
 * Correction of an error in the description of GeoLocation box (See property 18.2)
-
 * Provision of a guideline regarding how to write the ORCID ID (See property 2.2.1 nameIdentifierScheme)
-
 * Adjustment of the instructions for resourceTypeGeneral option "collection" (See Appendix 1, Table 7)
 
-2. DataCite Metadata Properties
+# DataCite Metadata Properties
 
-    1. Overview
+## Overview
 
 The properties of the DataCite Metadata Schema are presented in this section. More detailed descriptions of the properties, and their related sub-properties, are provided in [Section](#heading=h.17dp8vu)[ 2.3.](#heading=h.17dp8vu)
 
 There are three different levels of obligation for the metadata properties:
 
 * **Mandatory (M) **properties ** ***must* be provided,
-
 * **Recommended (R )** properties are optional, but strongly recommended for interoperability and
-
 * **Optional (O)** properties are optional and provide richer description.
 
 **Those clients**** who wish to enhance the prospects that their metadata will be found, cited and linked to original research are strongly encouraged to submit the Recommended as well as Mandatory set of properties.** Together, the Mandatory and Recommended set of properties and their sub-properties are especially valuable to information seekers and added-service providers, such as indexers. The Metadata Working Group members strongly urge the inclusion of metadata identified as Recommended for the purpose of achieving greater exposure for the resource’s metadata record, and therefore, the underlying research itself.
@@ -267,16 +222,15 @@ Table 2: DataCite Recommended and Optional Properties
   </tr>
 </table>
 
-
-    2. Citation
+## Citation
 
 Because many users of this schema are members of a variety of academic disciplines, DataCite remains discipline-agnostic concerning matters pertaining to academic style sheet requirements. Therefore, DataCite encourages rather than requires a particular citation format (NOTE:  In collaboration with CrossRef, DataCite has created a DOI Citation Formatter Service available at http://crosscite.org/citeproc/. The user can choose from more than 500 different citation formats in 45 different languages.). In keeping with this approach, the following is the *preferred *format for rendering a DataCite citation for human readers using the first five properties of the schema:
 
-Creator (PublicationYear): Title. Publisher. Identifier 
+> Creator (PublicationYear): Title. Publisher. Identifier 
 
 It may also be desirable to include information from two optional properties, Version and ResourceType (as appropriate). If so, the preferred form is as follows:
 
-Creator (PublicationYear): Title. Version. Publisher. ResourceType. Identifier
+> Creator (PublicationYear): Title. Version. Publisher. ResourceType. Identifier
 
 For citation purposes, DataCite prefers that DOI names are displayed as linkable, permanent URLs. The Identifier may appear in its original format. If the original format is chosen, be sure to include the characters "doi:" pre-pended to the Identifier as in “doi:10.1234/abc."
 
@@ -285,9 +239,7 @@ For resources that do not have a standard publication year value, DataCite sugge
 Here are several examples:
 
 * Irino, T; Tada, R (2009): Chemical and mineral compositions of sediments from ODP Site 127-797. V. 2.1. Geological Institute, University of Tokyo. [http://dx.doi.org/10.1594/PANGAEA.726855 ](http://dx.doi.org/10.1594/PANGAEA.726855)
-
 * Geofon operator (2009): GEFON event gfz2009kciu (NW Balkan Region). GeoForschungsZentrum Potsdam (GFZ). [http://dx.doi.org/10.1594/GFZ.GEOFON.gfz2009kciu](http://dx.doi.org/10.1594/GFZ.GEOFON.gfz2009kciu)
-
 * Denhard, Michael (2009): dphase_mpeps: MicroPEPS LAF-Ensemble run by DWD for the MAP D-PHASE project. World Data Center for Climate. Dataset. [http://dx.doi.org/10.1594/WDCC/dphase_mpeps](http://dx.doi.org/10.1594/WDCC/dphase_mpeps)
 
 *A special note regarding citation of dynamic datasets*:
@@ -295,14 +247,12 @@ Here are several examples:
 For datasets that are continuously and rapidly updated, there are special challenges both in citation and preservation. For citation, three approaches are possible:
 
 1. Cite a specific slice (the set of updates to the dataset made during a particular period of time or to a particular area of the dataset);
-
 2. Cite a specific snap shot (a copy of the entire dataset made at a specific time);
-
 3. Cite the continuously updated dataset, but add an Access Date and Time to the citation.
 
 Note that a "slice" and “snap shot” are versions of the dataset and require unique identifiers. The third option is controversial, because it necessarily means that following the citation does not result in observation of the resource as cited.
 
-    3. DataCite Properties
+## DataCite Properties
 
 Table 3 provides a detailed description of the mandatory properties, together with their sub-properties, which *must* be supplied with any initial metadata submission to the managing agent for DataCite. **If one of the required properties is unavailable**, please use one of the standard (machine-recognizable) codes listed in Appendix 3, [Table 11](#heading=h.49x2ik5)[.](#heading=h.49x2ik5) In [Table 4](#heading=h.lnxbz9)[,](#heading=h.lnxbz9) the Recommended and Optional properties are described in detail. For an example of how to make a submission in XML format, please see the [XML Examples](http://schema.datacite.org/meta/kernel-3/) provided on the DataCite Metadata Schema Repository (NOTE:  http://schema.datacite.org/ ) website.
 
@@ -453,9 +403,7 @@ If there is no standard publication year value, use the date that would be prefe
 PublicationYear : the year when the data was or will be made publicly available. In the case of datasets, "publish" is understood to mean making the data available on a specific date to the community of researchers.
 
 * If that date cannot be determined, use the date of registration.
-
 * If an embargo period has been in effect, use the date when the embargo period ends.
-
 * If there is no standard publication year value, use the date that would be preferred from a citation perspective.
 
 *In the case of a digitized version of a physical object*
@@ -1697,145 +1645,99 @@ Example: http://data.datacite.org/10.5678/LCRS/FOR816.CIT.1031</td>
 
 # Appendix 2: Earlier Version Update Notes
 
-**Version 3.1 Update**
+## Version 3.1 Update
 
 Version 3.1 of the schema includes these changes:
 
 * New affiliation attribute for Creator and Contributor
-
 * New relationType pairs
-
-    * IsReviewedBy and Reviews
-
-    * IsDerivedFrom and IsSourceOf
-
+  * IsReviewedBy and Reviews
+  * IsDerivedFrom and IsSourceOf
 * New contributorType: DataCurator
-
 * New relatedIdentifierTypes:
-
-    * arXiv
-
-    * bibcode
+  * arXiv
+  * bibcode
 
 Version 3.1 of the documentation includes these changes:
 
 * Documentation for the new affiliation attributes for Creator and Contributor
-
 * Special notes about support for long lists of names (Creator and Contributor)
-
 * Additional guidance for:
-
-    * Recording Publication Year
-
-    * Handling the digitized version of physical object
-
-    * Handling missing mandatory property values, including standard values table
-
+  * Recording Publication Year
+  * Handling the digitized version of physical object
+  * Handling missing mandatory property values, including standard values table
 * Documentation for the new contributorType: DataCurator
-
 * Documentation for the two new relatedIdentifierTypes:
-
-    * arXiv
-
-    * bibcode
-
+  * arXiv
+  * bibcode
 * Documentation, including examples, for the new relationType pairs:
-
-    * IsReviewedBy and Reviews
-
-    * IsDerivedFrom and IsSourceOf
-
+  * IsReviewedBy and Reviews
+  * IsDerivedFrom and IsSourceOf
 * Correction of link errors in 3.0 documentation
 
-**Version 3.0 Update**
+## Version 3.0 Update
 
 Version 3.0 of the DataCite Metadata Schema included these changes (NOTE:  Two additional schema code level changes are the allowance of keeping optional wrapper elements empty and the allowance of arbitrary ordering of elements (by removal of <xs:sequence>).):
 
 * Correction of a problem with our way of depicting dates by
-
-    * implementing RKMS-ISO8601 (NOTE:  The standard is documented here: http://www.ukoln.ac.uk/metadata/dcmi/collection-RKMS-ISO8601/ ) standard for depicting date ranges, so that a range is indicated as follows: 2004-03-02/2005-06-02
-
-    * deleting startDate and endDate date types, and derogating these from earlier versions
-
+  * implementing RKMS-ISO8601 (NOTE:  The standard is documented here: http://www.ukoln.ac.uk/metadata/dcmi/collection-RKMS-ISO8601/ ) standard for depicting date ranges, so that a range is indicated as follows: 2004-03-02/2005-06-02
+  * deleting startDate and endDate date types, and derogating these from earlier versions
 * Addition of a new GeoLocation property, with the sub-properties geoLocationPoint, geoLocationBox, geoLocationPlace supporting a simple depiction of geospatial information, as well as a free text description.
 
 * Addition of new values to controlled lists:
-
-    * contributorType: ResearchGroup and Other
-
-    * dateType:  Collected
-
-    * resourceTypeGeneral :  Audiovisual,  Workflow,  and Other and derogation of Film
-
-    * relatedIdentifierType: PMID
-
-    * relationType: IsIdenticalTo (indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource)
-
-    * relationType: HasMetadata, (indicates resource A has additional metadata B and indicates), IsMetadataFor (indicates additional metadata A for resource B)
-
-    * descriptionType:  Methods
+  * contributorType: ResearchGroup and Other
+  * dateType:  Collected
+  * resourceTypeGeneral :  Audiovisual,  Workflow,  and Other and derogation of Film
+  * relatedIdentifierType: PMID
+  * relationType: IsIdenticalTo (indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource)
+  * relationType: HasMetadata, (indicates resource A has additional metadata B and indicates), IsMetadataFor (indicates additional metadata A for resource B)
+  * descriptionType: Methods
 
 * Deletion of the derogated resourceType: film
-
 * new sub-properties for relationType: relatedMetadataScheme, schemeURI and schemeType, to be used only for the new relationType pair of HasMetadata, IsMetadataFor
-
 * Addition of schemeURI sub-property to the nameIdentifierScheme associated with CreatorName,  ContributorName and Subject
-
 * Addition of the rightsURI sub-property to Rights; Rights is now repeatable (within wrapper element rightsList).
-
 * Implementation of the xml:lang attribute (NOTE: Allowed values IETF BCP 47, ISO 639-1 language codes, e.g. en, de, fr) that can be used on the properties Title, Subject and Description.
-
 * Removal of two system-generated administrative metadata fields: LastMetadataUpdate and MetadataVersionNumber because both values are tracked in another way now.
 
 Version 3.0 of the DataCite Metadata Schema documentation included these changes:
 
 * Updates to the introductory information
-
 * Provision of greater detail, explanatory material and definitions for controlled lists
-
 * Indication of recommended metadata, in addition to mandatory and optional
-
 * Addition of more and more varied XML examples on the Metadata Schema website
-
 * Removal from documentation of information about administrative metadata (which cannot be edited by contributors).
 
-**Version 2.2 Update**
+## Version 2.2 Update
 
 Version 2.2 of the DataCite Metadata Schema introduced several changes, as noted below:
 
 * Addition of "URL" to list of allowed values for relatedIdentifierType
-
 * Addition of the following values to list of allowed values for contributorType: Producer, Distributor, RelatedPerson, Supervisor, Sponsor, Funder, RightsHolder
-
 * Addition of "SeriesInformation" to list of allowed values for descriptionType
-
 * Addition of "Model" to list of allowed values for resourceTypeGeneral
 
 Version 2.2 of the DataCite Metadata Schema documentation included these changes:
 
 * Provision of more examples of xml for different types of resources
-
 * Explanation of the PublicationYear property in consideration of the requirements of citation. A change to the definition of the Publisher property, which now reads, "The name of the entity that holds, archives, publishes, prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role."
 
-**Version 2.1 Update**
+## Version 2.1 Update
 
 Version 2.1 of the DataCite Metadata Schema introduced several changes, as noted below:
 
-* Addition of a namespace ([http://schema.datacite.org/namespace ](http://schema.datacite.org/namespace)![image alt text](image_1.png)) to the schema in order to support OAI PMH compatibility
-
+* Addition of a namespace ([http://schema.datacite.org/namespace ](http://schema.datacite.org/namespace) to the schema in order to support OAI PMH compatibility
 * Enforcement of content for mandatory properties
-
 * New type for the Date property to conform with the specification that it handles both YYYY and YYYY-MM-DD values
 
 Version 2.1 of the DataCite Metadata Schema documentation included these changes:
 
 * Addition of a column to the Mandatory and Optional Properties tables providing an indicator of whether the property being described is an attribute or a child of the corresponding property that has preceded it
-
 * Revision of the allowed values description for the attribute 12.2 relationType. These have been reviewed and rewritten for increased clarity. In several cases, corrections to the definitions occurred.
 
-**Appendix 3: Additional information**
+## Appendix 3: Additional information
 
-**Table 11: Standard values for unknown information**
+Table 11: Standard values for unknown information
 
 <table>
   <tr>
@@ -1883,5 +1785,3 @@ Version 2.1 of the DataCite Metadata Schema documentation included these changes
     <td>too numerous to list (et alia)</td>
   </tr>
 </table>
-
-

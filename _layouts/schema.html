@@ -27,6 +27,23 @@
               </div>
             </div>
           </div>
+          {% if page.authors %}
+          <div class="container-fluid">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="bottom-teaser cf">
+                  <div class="isLeft">
+                    <h4>Members of the Metadata Working Group</h4>
+                    {% for author_name in page.authors %}
+                    {% assign author = site.data.authors[author_name] %}
+                    <div class="author">{{author.name}}<br/><span class="bio">{{author.bio}}</span></div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endif %}
         </div>
       </div>
     </div>

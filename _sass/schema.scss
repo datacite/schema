@@ -1,6 +1,19 @@
 .header {
   margin-bottom: 20px;
 }
+.post-content {
+  width: 100%;
+  font-family: $font-family-serif;
+
+  h1 {
+    font-size: 1.75em;
+    margin-bottom: .25em;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: .25em;
+  }
+}
 
 span.citation {
   cursor: pointer;
@@ -61,4 +74,10 @@ span.citation {
       }
     }
   }
+}
+.author {
+  margin-bottom: 8px;
+}
+.bio {
+  color: #999999;
 }

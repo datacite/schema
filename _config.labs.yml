@@ -63,6 +63,7 @@ pandoc:
     - normalize
     - smart
     - mathjax
+    - number-offset=0
     - csl: _styles/apa.csl
     - bibliography: bibliography/references.bib
 
