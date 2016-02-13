@@ -31,6 +31,7 @@ before_script:
 
 script:
   - bundle exec jekyll build
+  - bundle exec rspec
   - mvn -Dtest=ValidationTest,BasicTest test -B
 
 deploy:

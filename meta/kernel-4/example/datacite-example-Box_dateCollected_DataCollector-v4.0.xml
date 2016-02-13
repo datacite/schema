@@ -32,14 +32,14 @@
   </sizes>
   <descriptions>
     <description descriptionType="Abstract">The Division has been taking records of temperatures
-        and humidities in groups of houses at various locations in Canada over the past several
-        years. This survey has more recently been extended to include schools. Records obtained
-        from classrooms in six schools in Ponhook Lake, Nova Scotia from June 1, 1961-October 12, 1962 are now reported.
+      and humidities in groups of houses at various locations in Canada over the past several
+      years. This survey has more recently been extended to include schools. Records obtained
+      from classrooms in six schools in Ponhook Lake, Nova Scotia from June 1, 1961-October 12, 1962 are now reported.
     </description>
   </descriptions>
   <geoLocations>
     <geoLocation>
-      <geoLocationBox>44.7167 -64.2 44.9667 -63.8 </geoLocationBox>
+      <geoLocationBox>44.7167 -64.2 44.9667 -63.8</geoLocationBox>
       <geoLocationPlace>Ponhook Lake, Nova Scotia</geoLocationPlace>
     </geoLocation>
   </geoLocations>

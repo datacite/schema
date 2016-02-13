@@ -1738,7 +1738,6 @@ Version 2.1 of the DataCite Metadata Schema documentation included these changes
 ## Appendix 3: Additional information {-}
 
 Table 11: Standard values for unknown information
-
 <table>
   <tr>
     <td>Code</td>
