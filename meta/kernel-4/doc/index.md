@@ -3,7 +3,6 @@ layout: schema
 title: DataCite Metadata Schema for the Publication and Citation of Research Data Version 4.0
 authors:
  - jstarr
- - lnielsen
  - jashton
  - abarton
  - aciolek
@@ -13,6 +12,7 @@ authors:
  - bhirschmann
  - bgenat
  - jmailloux
+ - lnielsen
  - msmaele
  - myahia
  - fziedorn
