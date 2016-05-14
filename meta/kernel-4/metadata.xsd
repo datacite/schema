@@ -374,7 +374,7 @@ Use the complete title of a license and include version information if applicabl
                       <xs:complexType>
                         <xs:simpleContent>
                           <xs:extension base="xs:string">
-                            <xs:attribute name="funderIdentifierType" use="required"/>
+                            <xs:attribute name="funderIdentifierType" type="funderIdentifierType" use="required"/>
                           </xs:extension>
                         </xs:simpleContent>
                       </xs:complexType>
@@ -391,7 +391,7 @@ Use the complete title of a license and include version information if applicabl
                         </xs:simpleContent>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element name="awardTitle">
+                    <xs:element name="awardTitle" minOccurs="0">
                       <xs:annotation>
                         <xs:documentation>The human readable title of the award (grant).</xs:documentation>
                       </xs:annotation>
@@ -430,8 +430,8 @@ Use the complete title of a license and include version information if applicabl
     <xs:restriction base="xs:token">
       <xs:pattern value="[\d]{4}"/>
     </xs:restriction>
-    <!-- definitions for geoLocation -->
   </xs:simpleType>
+  <!-- definitions for geoLocation -->
   <xs:complexType name="point">
     <xs:all>
       <xs:element name="pointLongitude" type="longitudeType" minOccurs="1"/>
