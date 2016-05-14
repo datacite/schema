@@ -329,13 +329,20 @@ Use the complete title of a license and include version information if applicabl
                   <xs:documentation>Spatial region or named place where the data was gathered or about which the data is focused.</xs:documentation>
                   <xs:documentation>A point contains a single latitude-longitude pair, separated by whitespace.</xs:documentation>
                   <xs:documentation>A box contains two white space separated latitude-longitude pairs, with each pair separated by whitespace. The first pair is the lower corner, the second is the upper corner.</xs:documentation>
+                  <xs:documentation>A drawn polygon area, defined by a set of points and lines connecting the points in a closed chain.</xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element name="geoLocationPlace" minOccurs="0"/>
                     <xs:element name="geoLocationPoint" type="point" minOccurs="0"/>
                     <xs:element name="geoLocationBox" type="box" minOccurs="0"/>
-                    <xs:element name="geoLocationPlace" minOccurs="0"/>
-                    <xs:element name="geoLocationPolygon" minOccurs="0"/>
+                    <xs:element name="geoLocationPolygon" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="polygonPoint" type="point" minOccurs="3" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -351,7 +358,7 @@ Use the complete title of a license and include version information if applicabl
                 </xs:annotation>
                 <xs:complexType>
                   <xs:all>
-                    <xs:element name="funderName">
+                    <xs:element name="funderName" minOccurs="1" maxOccurs="1">
                       <xs:annotation>
                         <xs:documentation>Name of the funding provider.</xs:documentation>
                       </xs:annotation>
@@ -373,7 +380,7 @@ Use the complete title of a license and include version information if applicabl
                     </xs:element>
                     <xs:element name="awardNumber" minOccurs="0">
                       <xs:annotation>
-                        <xs:documentation>The code assigned by the funder to a sponsored award.</xs:documentation>
+                        <xs:documentation>The code assigned by the funder to a sponsored award (grant).</xs:documentation>
                       </xs:annotation>
                       <xs:complexType>
                         <xs:simpleContent>
@@ -401,10 +408,10 @@ Use the complete title of a license and include version information if applicabl
     </xs:complexType>
   </xs:element>
   <!-- TYPE DECLARATIONS -->
-  <!-- defines the value for a DOI: DOI must start with "10."  -->
+  <!-- defines the value for a DOI"  -->
   <xs:simpleType name="doiType">
     <xs:restriction base="xs:token">
-      <xs:pattern value="10\..+/.+"/>
+      <xs:pattern value="10\.\d{4,9}/[-._;()/:a-zA-Z0-9]+"/>
     </xs:restriction>
   </xs:simpleType>
   <!-- defines value for mandatory fields -->
@@ -424,19 +431,30 @@ Use the complete title of a license and include version information if applicabl
     </xs:restriction>
     <!-- definitions for geoLocation -->
   </xs:simpleType>
-  <xs:simpleType name="point">
-    <xs:restriction base="listOfDoubles">
-      <xs:minLength value="2"/>
-      <xs:maxLength value="2"/>
+  <xs:complexType name="point">
+    <xs:all>
+      <xs:element name="pointLongitude" type="longitudeType" minOccurs="1"/>
+      <xs:element name="pointLatitude" type="latitudeType" minOccurs="1"/>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="box">
+    <xs:all>
+      <xs:element name="westBoundLongitude" type="longitudeType" minOccurs="1"/>
+      <xs:element name="eastBoundLongitude" type="longitudeType" minOccurs="1"/>
+      <xs:element name="southBoundLatitude" type="latitudeType" minOccurs="1"/>
+      <xs:element name="northBoundLatitude" type="latitudeType" minOccurs="1"/>
+    </xs:all>
+  </xs:complexType>
+  <xs:simpleType name="longitudeType">
+    <xs:restriction base="xs:float">
+      <xs:minInclusive value="-180"/>
+      <xs:maxInclusive value="180"/>
     </xs:restriction>
   </xs:simpleType>
-  <xs:simpleType name="box">
-    <xs:restriction base="listOfDoubles">
-      <xs:minLength value="4"/>
-      <xs:maxLength value="4"/>
+  <xs:simpleType name="latitudeType">
+    <xs:restriction base="xs:float">
+      <xs:minInclusive value="-90"/>
+      <xs:maxInclusive value="90"/>
     </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="listOfDoubles">
-    <xs:list itemType="xs:double"/>
   </xs:simpleType>
 </xs:schema>

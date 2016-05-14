@@ -32,11 +32,18 @@ describe "full example" do
     expect(geo_locations.size).to eq(1)
     geo_location = geo_locations.first
     expect(geo_location.elements.size).to eq(2)
-    geo_location_box = geo_location.first_element_child
-    expect(geo_location_box.name).to eq("geoLocationBox")
-    expect(geo_location_box.text).to eq("44.7167 -64.2 44.9667 -63.8")
-    geo_location_place = geo_location.last_element_child
+    geo_location_place = geo_location.first_element_child
     expect(geo_location_place.name).to eq("geoLocationPlace")
     expect(geo_location_place.text).to eq("Ponhook Lake, Nova Scotia")
+    geo_location_box = geo_location.last_element_child
+    expect(geo_location_box.name).to eq("geoLocationBox")
+    expect(geo_location_box.elements[0].name).to eq("westBoundLongitude")
+    expect(geo_location_box.elements[0].text).to eq("-64.2")
+    expect(geo_location_box.elements[1].name).to eq("eastBoundLongitude")
+    expect(geo_location_box.elements[1].text).to eq("-63.8")
+    expect(geo_location_box.elements[2].name).to eq("southBoundLatitude")
+    expect(geo_location_box.elements[2].text).to eq("44.7167")
+    expect(geo_location_box.elements[3].name).to eq("northBoundLatitude")
+    expect(geo_location_box.elements[3].text).to eq("44.9667")
   end
 end

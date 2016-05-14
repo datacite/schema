@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd" xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
   <identifier identifierType="DOI">10.5072/example-full</identifier>
   <creators>
     <creator>
@@ -55,9 +55,17 @@
   </descriptions>
   <geoLocations>
     <geoLocation>
-      <geoLocationPoint>31.233 -67.302</geoLocationPoint>
-      <geoLocationBox>41.090 -71.032  42.893 -68.211</geoLocationBox>
       <geoLocationPlace>Atlantic Ocean</geoLocationPlace>
+      <geoLocationPoint>
+        <pointLongitude>-67.302</pointLongitude>
+        <pointLatitude>31.233</pointLatitude>
+      </geoLocationPoint>
+      <geoLocationBox>
+        <westBoundLongitude>-71.032</westBoundLongitude>
+        <eastBoundLongitude>-68.211</eastBoundLongitude>
+        <southBoundLatitude>41.090</southBoundLatitude>
+        <northBoundLatitude>42.893</northBoundLatitude>
+      </geoLocationBox>
     </geoLocation>
   </geoLocations>
 </resource>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd" xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
   <identifier identifierType="DOI">10.5072/10.CPoS-example</identifier>
   <creators>
     <creator>
@@ -12,18 +12,22 @@
     </creator>
   </creators>
   <titles>
-    <title>The German Generations and Gender Survey: Some Critical Reflections on the Validity of Fertility Histories</title>
+    <title>
+      The German Generations and Gender Survey: Some Critical Reflections on the Validity of Fertility Histories
+    </title>
   </titles>
-  <publisher>Federal Institute for Population Research, Germany </publisher>
+  <publisher>Federal Institute for Population Research, Germany</publisher>
   <publicationYear>2013</publicationYear>
   <subjects>
-   <subject>Fertility</subject>
-   <subject>Marriage</subject>
-   <subject>Data validation</subject>
-   <subject>Germany</subject>
-   <subject>Mikrozensus</subject>
-   <subject>Gender survey</subject>
-   <subject subjectScheme="GESIS">10300 Demography, Population Research subjectURI="http://www.gesis.org/classification</subject>
+    <subject>Fertility</subject>
+    <subject>Marriage</subject>
+    <subject>Data validation</subject>
+    <subject>Germany</subject>
+    <subject>Mikrozensus</subject>
+    <subject>Gender survey</subject>
+    <subject subjectScheme="GESIS">
+      10300 Demography, Population Research subjectURI="http://www.gesis.org/classification
+    </subject>
   </subjects>
   <language>eng</language>
   <resourceType resourceTypeGeneral="Text">Article</resourceType>
@@ -37,12 +41,18 @@
     <format>PDF</format>
   </formats>
   <version>1</version>
-  <rightsList> <rights rightsURI="http://creativecommons.org/licenses/by-nc-nd/3.0/deed">Creative Commons License: Attribution-NonCommercial-NoDerivs 3.0 Unported</rights></rightsList>
+  <rightsList>
+    <rights rightsURI="http://creativecommons.org/licenses/by-nc-nd/3.0/deed">
+      Creative Commons License: Attribution-NonCommercial-NoDerivs 3.0 Unported
+    </rights>
+  </rightsList>
   <descriptions>
-    <description descriptionType="SeriesInformation">Comparative Population Studies; Vol 38, No 1, 2013. ISSN 0076-7689</description>
-    <description descriptionType="Abstract">This paper validates the fertility histories of the German Generations and Gender Survey (GGS).
-    Focusing on the cohorts 1930-69 of West German women, the total number of children, the parity distribution and the parity progression
-    ratios are compared to external sources. One major result from this validation is that the German GGS understates the fertility for the
-    older cohorts and overstates it for the younger ones.</description>
+    <description descriptionType="SeriesInformation">
+      Comparative Population Studies; Vol 38, No 1, 2013. ISSN 0076-7689
+    </description>
+    <description descriptionType="Abstract">
+      This paper validates the fertility histories of the German Generations and Gender Survey (GGS). Focusing on the cohorts 1930-69 of West German women, the total number of children, the parity distribution and the parity progression ratios are compared
+      to external sources. One major result from this validation is that the German GGS understates the fertility for the older cohorts and overstates it for the younger ones.
+    </description>
   </descriptions>
 </resource>

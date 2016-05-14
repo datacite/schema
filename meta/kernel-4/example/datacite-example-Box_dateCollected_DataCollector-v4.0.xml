@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd" xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
   <identifier identifierType="DOI">10.5072/DataCollector_dateCollected_geoLocationBox</identifier>
   <creators>
     <creator>
@@ -7,14 +7,16 @@
     </creator>
   </creators>
   <titles>
-    <title>Temperature and Humidity in School Classrooms, Ponhook Lake, N.S., 1961-1962</title>
+    <title>
+      Temperature and Humidity in School Classrooms, Ponhook Lake, N.S., 1961-1962
+    </title>
   </titles>
   <publisher>National Research Council Canada</publisher>
   <publicationYear>1963</publicationYear>
   <subjects>
-    <subject subjectScheme="LCCN" schemeURI="http://lccn.loc.gov/sh85062931">Temperature</subject>
-    <subject subjectScheme="LCCN" schemeURI="http://lccn.loc.gov/sh85133712">Humidity</subject>
-    <subject subjectScheme="LCCN" schemeURI="http://lccn.loc.gov/sh88003345">Classrooms</subject>
+    <subject schemeURI="http://lccn.loc.gov/sh85062931" subjectScheme="LCCN">Temperature</subject>
+    <subject schemeURI="http://lccn.loc.gov/sh85133712" subjectScheme="LCCN">Humidity</subject>
+    <subject schemeURI="http://lccn.loc.gov/sh88003345" subjectScheme="LCCN">Classrooms</subject>
     <subject>Ponhook Lake (N.S.)</subject>
   </subjects>
   <contributors>
@@ -31,16 +33,20 @@
     <size>10 p.</size>
   </sizes>
   <descriptions>
-    <description descriptionType="Abstract">The Division has been taking records of temperatures
-      and humidities in groups of houses at various locations in Canada over the past several
-      years. This survey has more recently been extended to include schools. Records obtained
-      from classrooms in six schools in Ponhook Lake, Nova Scotia from June 1, 1961-October 12, 1962 are now reported.
+    <description descriptionType="Abstract">
+      The Division has been taking records of temperatures and humidities in groups of houses at various locations in Canada over the past several years. This survey has more recently been extended to include schools. Records obtained from classrooms in
+      six schools in Ponhook Lake, Nova Scotia from June 1, 1961-October 12, 1962 are now reported.
     </description>
   </descriptions>
   <geoLocations>
     <geoLocation>
-      <geoLocationBox>44.7167 -64.2 44.9667 -63.8</geoLocationBox>
       <geoLocationPlace>Ponhook Lake, Nova Scotia</geoLocationPlace>
+      <geoLocationBox>
+        <westBoundLongitude>-64.2</westBoundLongitude>
+        <eastBoundLongitude>-63.8</eastBoundLongitude>
+        <southBoundLatitude>44.7167</southBoundLatitude>
+        <northBoundLatitude>44.9667</northBoundLatitude>
+      </geoLocationBox>
     </geoLocation>
   </geoLocations>
 </resource>
