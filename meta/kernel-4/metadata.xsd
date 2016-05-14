@@ -16,6 +16,7 @@
   <xs:include schemaLocation="include/datacite-resourceType-v4.xsd"/>
   <xs:include schemaLocation="include/datacite-relationType-v4.xsd"/>
   <xs:include schemaLocation="include/datacite-relatedIdentifierType-v4.xsd"/>
+  <xs:include schemaLocation="include/datacite-funderIdentifierType-v4.xsd"/>
   <xs:include schemaLocation="include/datacite-descriptionType-v4.xsd"/>
   <xs:element name="resource">
     <xs:annotation>
