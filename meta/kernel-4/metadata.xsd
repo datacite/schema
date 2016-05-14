@@ -346,38 +346,45 @@ Use the complete title of a license and include version information if applicabl
           <xs:complexType>
             <xs:sequence>
               <xs:element name="fundingReference" maxOccurs="unbounded">
-                <xs:element name="funderName">
-                  <xs:annotation>
-                    <xs:documentation>Name of the funding provider.</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                    <xs:restriction base="nonemptycontentStringType"/>
-                  </xs:simpleType>
-                </xs:element>
-                <xs:element name="funderIdentifier" minOccurs="0">
-                  <xs:annotation>
-                    <xs:documentation>Uniquely identifies a funding entity, according to various types.</xs:documentation>
-                  </xs:annotation>
-                  <xs:complexType>
-                    <xs:simpleContent>
-                      <xs:extension base="xs:string">
-                        <xs:attribute name="funderIdentifierType" use="required"/>
-                      </xs:extension>
-                    </xs:simpleContent>
-                  </xs:complexType>
-                </xs:element>
-                <xs:element name="awardNumber" minOccurs="0">
-                  <xs:annotation>
-                    <xs:documentation>The code assigned by the funder to a sponsored award.</xs:documentation>
-                  </xs:annotation>
-                  <xs:complexType>
-                    <xs:simpleContent>
-                      <xs:extension base="xs:string">
-                        <xs:attribute name="awardURI" type="xs:anyURI" use="optional"/>
-                      </xs:extension>
-                    </xs:simpleContent>
-                  </xs:complexType>
-                </xs:element>
+                <xs:annotation>
+                  <xs:documentation>Information about financial support (funding) for the resource being registered.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="funderName">
+                      <xs:annotation>
+                        <xs:documentation>Name of the funding provider.</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="nonemptycontentStringType"/>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="funderIdentifier" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Uniquely identifies a funding entity, according to various types.</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="funderIdentifierType" use="required"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="awardNumber" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>The code assigned by the funder to a sponsored award.</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="awardURI" type="xs:anyURI" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:all>
+                </xs:complexType>
               </xs:element>
             </xs:sequence>
           </xs:complexType>
