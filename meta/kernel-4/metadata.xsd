@@ -22,7 +22,7 @@
     <xs:annotation>
       <xs:documentation>
         Root element of a single record. This wrapper element is for XML implementation only and is not defined in the DataCite DOI standard.
-        Note: This is the case for all wrapper elements within this schema!</xs:documentation>
+        Note: This is the case for all wrapper elements within this schema.</xs:documentation>
       <xs:documentation>No content in this wrapper element.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
@@ -301,7 +301,7 @@ Use the complete title of a license and include version information if applicabl
         <xs:element name="descriptions" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="description" minOccurs="0" maxOccurs="unbounded">
+              <xs:element name="description" minOccurs="1" maxOccurs="unbounded">
                 <xs:annotation>
                   <xs:documentation>All additional information that does not fit in any of the other categories. May be used for technical information. It is a best practice to supply a description.</xs:documentation>
                 </xs:annotation>
@@ -325,26 +325,35 @@ Use the complete title of a license and include version information if applicabl
         <xs:element name="geoLocations" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="geoLocation" minOccurs="0" maxOccurs="unbounded">
-                <xs:annotation>
-                  <xs:documentation>Spatial region or named place where the data was gathered or about which the data is focused.</xs:documentation>
-                  <xs:documentation>A point contains a single latitude-longitude pair, separated by whitespace.</xs:documentation>
-                  <xs:documentation>A box contains two white space separated latitude-longitude pairs, with each pair separated by whitespace. The first pair is the lower corner, the second is the upper corner.</xs:documentation>
-                  <xs:documentation>A drawn polygon area, defined by a set of points and lines connecting the points in a closed chain.</xs:documentation>
-                </xs:annotation>
+              <xs:element name="geoLocation" minOccurs="1" maxOccurs="unbounded">
                 <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="geoLocationPlace" minOccurs="0"/>
-                    <xs:element name="geoLocationPoint" type="point" minOccurs="0"/>
-                    <xs:element name="geoLocationBox" type="box" minOccurs="0"/>
+                  <xs:all>
+                    <xs:element name="geoLocationPlace" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Spatial region or named place where the data was gathered or about which the data is focused.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="geoLocationPoint" type="point" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>A point contains a single latitude-longitude pair, separated by whitespace.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="geoLocationBox" type="box" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>A box contains two white space separated latitude-longitude pairs, with each pair separated by whitespace. The first pair is the lower corner, the second is the upper corner.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
                     <xs:element name="geoLocationPolygon" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>A drawn polygon area, defined by a set of points and lines connecting the points in a closed chain.</xs:documentation>
+                      </xs:annotation>
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element name="polygonPoint" type="point" minOccurs="3" maxOccurs="unbounded"/>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                  </xs:sequence>
+                  </xs:choice>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>

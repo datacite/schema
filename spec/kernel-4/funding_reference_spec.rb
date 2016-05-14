@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "validate funderReference" do
   let(:root) { File.join(File.dirname(__FILE__), '../../meta/kernel-4') }
   let(:xsd) { Dir.chdir(root) { Nokogiri::XML::Schema(File.read("metadata.xsd")) }}
-  let(:doc) { Dir.chdir(root) { Nokogiri::XML(File.read("example/datacite-example-fundingReference-v.4.0.xml")) }}
+  let(:doc) { Dir.chdir(root) { Nokogiri::XML(File.read("example/datacite-example-fundingReference-v.4.0.xml")) { |c| c.strict }}}
 
   it 'empty fundingReferences tag' do
     element = doc.at("fundingReferences")
