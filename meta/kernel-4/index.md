@@ -1,13 +1,16 @@
 ---
 layout: schema
 title: DataCite Metadata Schema 4.0
+time: 2016-05-14
 ---
 
 This schema is unreleased, use it only to validate examples.
 
-# [XML Schema](metadata.xsd) {-}
+## [XML Schema](metadata.xsd) {-}
 
-# Examples {-}
+## [Documentation](doc/DataCite-MetadataKernel_v4.0.pdf) {-}
+
+## Examples {-}
 
 * [Full DataCite XML example](example/datacite-example-full-v4.0.xml)
 * [Example for a simple dataset](example/datacite-example-dataset-v4.0.xml)
@@ -20,6 +23,4 @@ This schema is unreleased, use it only to validate examples.
 * [Example with Collection as ResourceType](example/datacite-example-ResourceTypeGeneral_Collection-v4.0.xml)
 * [Example with Video as ResourceType](example/datacite-example-video-v4.0.xml)
 * [Example for a workflow ResourceType](example/datacite-example-workflow-v4.0.xml)
-* Example with FundingReference and subfields
-* Example with Title to convey date
-* Example with Missing Metadata codes
+* [Example with fundingReference](example/datacite-example-fundingReference-v.4.0.xml)

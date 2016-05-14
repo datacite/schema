@@ -6,11 +6,11 @@ schema_url: https://doi.org/10.5438/0006
 documentation_url: https://doi.org/10.5438/0005
 ---
 
-# [XML Schema](metadata.xsd) {-}
+## [XML Schema](metadata.xsd) {-}
 
-# [Documentation](doc/DataCite-MetadataKernel_v2.2.pdf) {-}
+## [Documentation](doc/DataCite-MetadataKernel_v2.2.pdf) {-}
 
-# Examples {-}
+## Examples {-}
 
 * [Example](example/datacite-metadata-sample-v2.2.xml)
 * [Example article](example/datacite-metadata-sample-article-v2.2.xml)
