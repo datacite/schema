@@ -4,7 +4,7 @@ title: DataCite Metadata Schema 4.0
 time: 2016-05-14
 ---
 
-This schema is unreleased, use it only to validate examples.
+This schema is available as a pre-release version for testing.
 
 ## [XML Schema](metadata.xsd) {-}
 

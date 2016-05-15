@@ -18,7 +18,7 @@ For our [Metadata store](https://mds.datacite.org) all these versions are valid,
 
 Each incoming [Metadata store](https://mds.datacite.org) XML document should indicate the schema location in the root element.
 
-* [DataCite Metadata Schema 4.0](meta/kernel-4/index.html) (unreleased)
+* [DataCite Metadata Schema 4.0](meta/kernel-4/index.html) (pre-release version {{ "2016-05-14" | date: "%B %-d, %Y" }})
 
 * [DataCite Metadata Schema 3.1](meta/kernel-3.1/index.html) (released {{ "2014-10-16" | date: "%B %-d, %Y" }})
 * [DataCite Metadata Schema 3.0](meta/kernel-3.0/index.html) (released {{ "2013-07-24" | date: "%B %-d, %Y" }})
