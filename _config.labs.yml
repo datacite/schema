@@ -43,22 +43,6 @@ google_analytics: UA-22806196-8
 #error tracking
 bugsnag: 3708f408208870b6286e92d9d797b1c1
 
-# Build settings
-markdown: pandoc
-highlighter: pygments
-gems:
-  - jekyll-pandoc
-  - jemoji
-
-exclude:
-  - README.md
-  - LICENCE
-  - Gemfile
-  - Gemfile.lock
-  - .travis.yml
-  - vendor
-  - assets/jquery/*
-
 pandoc:
   extensions:
     - normalize
