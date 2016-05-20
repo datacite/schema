@@ -14,7 +14,14 @@ please contact us via our [Google discussion group](https://groups.google.com/fo
 
 ## Available Versions {-}
 
-For our [Metadata store](https://mds.datacite.org) all these versions are valid, although only one version is considered <em>preferred</em> at any given moment of time. Starting with version 3.0 only major releases will have a new namespace.
+For our [Metadata store](https://mds.datacite.org) all these versions are valid, although only one version is considered *preferred* at any given moment of time. Starting with version 3.0 only major releases will have a new namespace.
+
+The version number is formatted as: Major.Minor
+
+* **Major Version** — A major release is for adding features that require breaking backward
+  compatibility with previous versions or represent fundamental changes. For a major release, the MAJOR component is incremented by one and the MINOR component is set to zero, e.g. 3.1 to 4.0.
+* **Minor Version** — A minor release is for adding features that do not break backward
+  compatibility with previous versions and for fixing bugs that may or may not break backwards compatibility. For a minor release, the MINOR component is incremented by one, e.g. 3.0 to 3.1.
 
 Each incoming [Metadata store](https://mds.datacite.org) XML document should indicate the schema location in the root element.
 
