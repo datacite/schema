@@ -1,0 +1,52 @@
+<% wrap_layout :layout do %>
+  <div class="container-fluid">
+    <div class='row'>
+      <div class='col-md-8'>
+        <div class="panel panel-default">
+          <div class="panel-body post-content">
+            <h1><%= current_page.data.title %></h1>
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <div class="container-fluid">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="bottom-teaser cf">
+                <h5>Published</h5>
+                <p class="published"><i class="fa fa-calendar"></i> <%= current_page.data.date.strftime("%-d %b %Y") %></p>
+                <% if current_page.data.schema_url %>
+                  <h5>XML Schema</h5>
+                  <p class="published"><a href="<%= current_page.data.schema_url %>"><%= current_page.data.schema_url %></a></p>
+                <% end %>
+                <% if current_page.data.documentation_url %>
+                  <h5>Documentation</h5>
+                  <p class="published"><a href="<%= current_page.data.documentation_url %>"><%= current_page.data.documentation_url %></a></p>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% if current_page.data.authors.present? %>
+        <div class="container-fluid">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="bottom-teaser cf">
+                <div class="isLeft">
+                  <h4>Members of the Metadata Working Group</h4>
+                  <% current_page.data.authors.each do |author_name| %>
+                  {% assign author = data.authors[author_name] %}
+                  <div class="author">{{author.name}}<br/><span class="bio">{{author.bio}}</span></div>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+    </div>
+  </div>
+<% end %>

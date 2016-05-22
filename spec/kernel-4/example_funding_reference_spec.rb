@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "full example" do
-  let(:root) { File.join(File.dirname(__FILE__), '../../meta/kernel-4') }
+  let(:root) { File.join(File.dirname(__FILE__), '../../source/meta/kernel-4') }
   let(:xsd) { Dir.chdir(root) { Nokogiri::XML::Schema(File.read("metadata.xsd")) }}
   let(:doc) { Dir.chdir(root) { Nokogiri::XML(File.read("example/datacite-example-fundingReference-v.4.0.xml")) { |c| c.strict }}}
 

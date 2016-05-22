@@ -1,0 +1,25 @@
+- version: 4.0
+  title: DataCite Metadata Schema 4.0
+  date: 2016-05-14
+  schema_url: /meta/kernel-4.0/metadata.xsd
+  documentation_url: /meta/kernel-4.0/doc/DataCite-MetadataKernel_v4.0.pdf
+- version: 3.1
+  title: DataCite Metadata Schema 3.1
+  date: 2014-10-16
+  schema_url: http://doi.org/10.5438/0011
+  documentation_url: http://doi.org/10.5438/0010
+- version: 3.0
+  title: DataCite Metadata Schema 3.0
+  date: 2013-07-24
+  schema_url: http://doi.org/10.5438/0009
+  documentation_url: http://doi.org/10.5438/0008
+- version: 2.2
+  title: DataCite Metadata Schema 2.2
+  date: 2011-07-01
+  schema_url: http://doi.org/10.5438/0006
+  documentation_url: http://doi.org/10.5438/0005
+- version: 2.1
+  title: DataCite Metadata Schema 2.1
+  date: 2011-03-28
+  schema_url: http://doi.org/10.5438/0004
+  documentation_url: http://doi.org/10.5438/0003
