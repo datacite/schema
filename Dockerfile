@@ -5,6 +5,8 @@ MAINTAINER Martin Fenner "mfenner@datacite.org"
 ENV HOME /home/app
 
 # Set env defaults, can be overriden
+ENV LC_ALL en_US.UTF-8
+ENV LANG en_US.UTF-8
 ENV RACK_ENV development
 
 # Use baseimage-docker's init process.
