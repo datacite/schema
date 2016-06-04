@@ -1,0 +1,14 @@
+version: '2'
+
+# when sharing the host folder, you need to reinstall Ruby gems
+# and npm modules into the vendor folder
+
+services:
+  schema:
+    env_file:
+      - .env
+    image: datacite1/schema
+    ports:
+      - "8020:4567"
+    volumes:
+      - .:/home/app/webapp
