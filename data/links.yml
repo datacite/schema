@@ -1,4 +1,10 @@
 development_links:
+ - name: API
+   url: http://localhost:8040
+   icon: cogs
+ - name: Assets
+   url: http://localhost:8010
+   icon: file-image-o
  - name: Blog
    url: http://localhost:8030
    icon: rss
@@ -31,9 +37,6 @@ production_links:
  - name: Homepage
    url: https://www.datacite.org
    icon: globe
- - name: Event Data
-   url: https://eventdata.datacite.org
-   icon: link
  - name: MDS
    url: https://mds.datacite.org
    icon: database
