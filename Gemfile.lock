@@ -37,11 +37,10 @@ GIT
       uglifier (~> 3.0)
 
 GIT
-  remote: https://github.com/datacite/tilt.git
-  revision: 0c52779cb294c773dc185f14337622bf1d86205d
-  branch: pandoc-refactor
+  remote: https://github.com/rtomayko/tilt.git
+  revision: e05222985ce6b77cd69e3ca3cd933f437a02b931
   specs:
-    tilt (2.0.4)
+    tilt (2.0.5)
 
 GEM
   remote: https://rubygems.org/
@@ -105,7 +104,7 @@ GEM
     padrino-support (0.13.2)
       activesupport (>= 3.1)
     pandoc-ruby (2.0.1)
-    parallel (1.8.0)
+    parallel (1.9.0)
     rack (1.6.4)
     rack-livereload (0.3.16)
       rack
