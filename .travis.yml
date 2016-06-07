@@ -22,7 +22,7 @@ install:
 script:
   - bundle exec middleman build -e production
   - bundle exec rspec
-  - mvn test -B
+  - mvn clean test -B
 
 deploy:
   provider: s3
