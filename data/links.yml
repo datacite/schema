@@ -8,6 +8,9 @@ development_links:
  - name: Blog
    url: http://localhost:8030
    icon: rss
+ - name: Event Data
+   url: http://localhost:8050
+   icon: link
  - name: Profiles
    url: http://localhost:8080
    icon: user
