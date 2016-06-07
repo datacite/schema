@@ -21,7 +21,7 @@ public class SchemaDirectory {
     public final static String SCHEMAS_BASE_DIR = ROOT_DIR + "meta/";
     public final static String EXAMPLE_DIR = "example/";
     public final static String DOC_DIR = "doc/";
-    public final static String INDEX_HTML = "index.html";
+    public final static String INDEX_HTML = System.getProperty("index.html", "index.html.md");
 
     public final static String SCHEMA_SERVER_BASE_URL = "http://schema.datacite.org/";
     public final static String SCHEMA_NAMESPACE_BASE = "http://datacite.org/schema/";
