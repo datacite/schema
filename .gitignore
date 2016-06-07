@@ -20,3 +20,6 @@
 # ignore vendored assets
 /vendor/assets
 /vendor/node_modules
+
+# ignore maven build directory
+/target
