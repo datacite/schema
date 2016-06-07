@@ -16,7 +16,7 @@ import org.xml.sax.SAXException;
 
 public class SchemaDirectory {
 
-    public final static String SCHEMAS_BASE_DIR = "source/meta/";
+    public final static String SCHEMAS_BASE_DIR = "build/meta/";
     public final static String EXAMPLE_DIR = "example/";
     public final static String DOC_DIR = "doc/";
     public final static String INDEX_HTML = "index.html";
