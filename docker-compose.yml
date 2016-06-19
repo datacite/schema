@@ -7,7 +7,7 @@ services:
   schema:
     env_file:
       - .env
-    image: datacite1/schema
+    image: datacite/schema
     ports:
       - "8020:4567"
     volumes:
