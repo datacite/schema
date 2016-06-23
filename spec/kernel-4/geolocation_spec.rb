@@ -9,8 +9,7 @@ describe "validate geoLocation" do
     element = doc.at("geoLocations")
     element.replace "<geoLocations/>"
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-    expect(errors.length).to eq(1)
-    expect(errors.first).to include("Missing child element(s). Expected is ( {http://datacite.org/schema/kernel-4}geoLocation ).")
+    expect(errors).to be_empty
   end
 
   it 'geoLocationPoint' do

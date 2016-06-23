@@ -36,8 +36,7 @@ describe "validate other elements" do
       element = doc.at("descriptions")
       element.replace "<descriptions/>"
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-      expect(errors.length).to eq(1)
-      expect(errors.first).to include("Missing child element(s). Expected is ( {http://datacite.org/schema/kernel-4}description ).")
+      expect(errors).to be_empty
     end
   end
 end

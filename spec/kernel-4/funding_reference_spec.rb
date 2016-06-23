@@ -9,8 +9,7 @@ describe "validate funderReference" do
     element = doc.at("fundingReferences")
     element.replace "<fundingReferences/>"
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-    expect(errors.length).to eq(1)
-    expect(errors.first).to include("Missing child element(s). Expected is ( {http://datacite.org/schema/kernel-4}fundingReference ).")
+    expect(errors).to be_empty
   end
 
   it 'empty fundingReference tag' do
