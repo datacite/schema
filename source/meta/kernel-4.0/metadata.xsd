@@ -301,7 +301,7 @@ Use the complete title of a license and include version information if applicabl
         <xs:element name="descriptions" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="description" minOccurs="1" maxOccurs="unbounded">
+              <xs:element name="description" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                   <xs:documentation>All additional information that does not fit in any of the other categories. May be used for technical information. It is a best practice to supply a description.</xs:documentation>
                 </xs:annotation>
@@ -325,7 +325,7 @@ Use the complete title of a license and include version information if applicabl
         <xs:element name="geoLocations" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="geoLocation" minOccurs="1" maxOccurs="unbounded">
+              <xs:element name="geoLocation" minOccurs="0" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:all>
                     <xs:element name="geoLocationPlace" minOccurs="0">
@@ -362,7 +362,7 @@ Use the complete title of a license and include version information if applicabl
         <xs:element name="fundingReferences" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="fundingReference" maxOccurs="unbounded">
+              <xs:element name="fundingReference" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                   <xs:documentation>Information about financial support (funding) for the resource being registered.</xs:documentation>
                 </xs:annotation>
