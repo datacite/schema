@@ -421,7 +421,7 @@ Use the complete title of a license and include version information if applicabl
   <!-- defines the value for a DOI"  -->
   <xs:simpleType name="doiType">
     <xs:restriction base="xs:token">
-      <xs:pattern value="10\.\d{4,9}/[-._;()/:a-zA-Z0-9]+"/>
+      <xs:pattern value="10\..+/.+"/>
     </xs:restriction>
   </xs:simpleType>
   <!-- defines value for mandatory fields -->
