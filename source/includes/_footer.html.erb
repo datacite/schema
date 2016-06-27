@@ -1,0 +1,58 @@
+<!-- footer start -->
+
+<footer class='row footer'>
+  <div class="container-fluid">
+    <div class='col-md-3'>
+      <h4>About DataCite</h4>
+      <ul>
+      <% data.links.about_links.each do |link| %>
+        <li><%= link_to link.name, link.url %></a></li>
+      <% end %>
+      </ul>
+    </div>
+    <div class='col-md-3'>
+      <h4>Services</h4>
+      <ul>
+      <% data.links.services_links.each do |link| %>
+        <li><%= link_to link.name, link.url %></a></li>
+      <% end %>
+      </ul>
+    </div>
+    <div class='col-md-3'>
+      <h4>Resources</h4>
+      <ul>
+      <% data.links.resources_links.each do |link| %>
+        <li><%= link_to link.name, link.url %></a></li>
+      <% end %>
+      </ul>
+      <h4>Community</h4>
+      <ul>
+      <% data.links.community_links.each do |link| %>
+        <li><%= link_to link.name, link.url %></a></li>
+      <% end %>
+      </ul>
+    </div>
+    <div class='col-md-3'>
+      <h4 class="share">Contact us</h4>
+      <a href='mailto:support@datacite.org' class="share">
+        <i class='fa fa-envelope fa-2x'></i>
+      </a>
+      <a href='https://blog.datacite.org' class="share">
+        <i class='fa fa-rss fa-2x'></i>
+      </a>
+      <a href='https://twitter.com/datacite' class="share">
+        <i class='fa fa-twitter fa-2x'></i>
+      </a>
+      <a href='https://www.linkedin.com/company/datacite' class="share">
+        <i class='fa fa-linkedin fa-2x'></i>
+      </a>
+      <ul class="share">
+      <% data.links.contact_links.each do |link| %>
+        <li><%= link_to link.name, link.url %></a></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- footer end -->

@@ -3,44 +3,33 @@ jdk: oraclejdk8
 cache: bundler
 cache:
   directories:
-    - _frontend/node_modules
-    - _frontend/bower_components
     - $HOME/.m2
 
 before_install:
   - set -e
   - if [ "${TRAVIS_TAG?}" ]; then
       AWS_BUCKET="schema.datacite.org";
-      CONFIG_FILE="_config.master.yml";
     elif [ "$TRAVIS_BRANCH" == "labs" ]; then
       AWS_BUCKET="schema.labs.datacite.org";
-      CONFIG_FILE="_config.labs.yml";
     else
       exit 1;
     fi
   - rvm install 2.2.0
 
-  - wget https://github.com/jgm/pandoc/releases/download/1.15.2/pandoc-1.15.2-1-amd64.deb
-  - sudo dpkg -i pandoc-1.15.2-1-amd64.deb
-  - rm pandoc-1.15.2-1-amd64.deb
-
 install:
   - bundle install
 
-before_script:
-  - cd _frontend && npm install
-  - cd ../ && cp $CONFIG_FILE _config.yml
-
 script:
-  - bundle exec jekyll build
-  - mvn -Dtest=ValidationTest,BasicTest test -B
+  - bundle exec middleman build -e production
+  - bundle exec rspec
+  - mvn clean test -B -Droot.dir=build/ -Dindex.html=index.html
 
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   bucket: $AWS_BUCKET
-  local-dir: _site
+  local-dir: build
   acl: public_read
   skip_cleanup: true
   region: eu-west-1

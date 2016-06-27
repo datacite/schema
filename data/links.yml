@@ -1,0 +1,121 @@
+development_links:
+ - name: API
+   url: http://localhost:8040
+   icon: cogs
+ - name: Assets
+   url: http://localhost:8010
+   icon: file-image-o
+ - name: Blog
+   url: http://localhost:8030
+   icon: rss
+ - name: Event Data
+   url: http://localhost:8050
+   icon: link
+ - name: Homepage
+   url: http://localhost:8060
+   icon: globe
+ - name: Profiles
+   url: http://localhost:8080
+   icon: user
+ - name: Schema
+   url: http://localhost:8020
+   icon: file-code-o
+ - name: Search
+   url: http://localhost:8000
+   icon: search
+production_links:
+ - name: API
+   url: https://api.datacite.org
+   icon: cogs
+ - name: Blog
+   url: https://blog.datacite.org
+   icon: rss
+ - name: Citation Formatter
+   url: http://crosscite.org/citeproc/
+   icon: file-text-o
+ - name: Content Resolver
+   url: http://data.datacite.org
+   icon: repeat
+ - name: Homepage
+   url: https://www.datacite.org
+   icon: globe
+ - name: MDS
+   url: https://mds.datacite.org
+   icon: database
+ - name: OAI-PMH
+   url: http://oai.datacite.org
+   icon: table
+ - name: Profiles
+   url: https://profiles.datacite.org
+   icon: user
+ - name: Schema
+   url: http://schema.datacite.org
+   icon: file-code-o
+ - name: Search
+   url: https://search.datacite.org
+   icon: search
+ - name: Statistics
+   url: http://stats.datacite.org
+   icon: bar-chart
+ - name: Status
+   url: http://status.datacite.org
+   icon: calendar-check-o
+about_links:
+ - name: What we do
+   url: https://www.datacite.org/mission.html
+ - name: Board
+   url: https://www.datacite.org/board.html
+ - name: Steering groups
+   url: https://www.datacite.org/steering.html
+ - name: Staff
+   url: https://www.datacite.org/staff.html
+ - name: Job opportunities
+   url: https://www.datacite.org/jobopportunities.html
+services_links:
+ - name: Assign DOIs
+   url: https://www.datacite.org/dois.html
+ - name: Metadata search
+   url: https://www.datacite.org/search.html
+ - name: Event data
+   url: https://www.datacite.org/eventdata.html
+ - name: Profiles
+   url: https://www.datacite.org/profiles.html
+ - name: re3data
+   url: https://www.datacite.org/re3data.html
+ - name: Citation formatter
+   url: https://www.datacite.org/citation.html
+ - name: Statistics
+   url: https://www.datacite.org/stats.html
+ - name: Service status
+   url: https://www.datacite.org/service.html
+ - name: Content negotiation
+   url: https://www.datacite.org/content.html
+ - name: OAI-PMH
+   url: https://www.datacite.org/oaipmh.html
+ - name: Test environment
+   url: https://www.datacite.org/test.html
+resources_links:
+ - name: Metadata schema
+   url: https://schema.datacite.org
+ - name: Technical documentation
+   url: https://www.datacite.org/technical.html
+ - name: Outreach material
+   url: https://www.datacite.org/outreach.html
+ - name: Events
+   url: https://www.datacite.org/events.html
+community_links:
+ - name: Members
+   url: https://www.datacite.org/members.html
+ - name: Partners
+   url: https://www.datacite.org/partners.html
+ - name: Steering groups
+   url: https://www.datacite.org/steering.html
+ - name: Events
+   url: https://www.datacite.org/events.html
+contact_links:
+ - name: Terms and conditions
+   url: https://www.datacite.org/terms.html
+ - name: Privacy policy
+   url: https://www.datacite.org/privacy.html
+ - name: Acknowledgements
+   url: https://www.datacite.org/acknowledgments.html

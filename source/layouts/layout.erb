@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <meta charset="utf-8">
+    <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title><%= ENV['SITE_TITLE'] %></title>
+    <meta name="description" content="<%= ENV['SITE_DESCRIPTION'] %>" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- DublinCore Metadata -->
+    <meta property="dc:title" content="<%= ENV['SITE_TITLE'] %>" />
+    <meta property="dc:format" content="text/html" />
+    <meta property="dc:language" content="en" />
+    <meta property="dc:rights" content="CC-BY" />
+    <meta property="dc:source" content="<%= ENV['SITE_TITLE'] %>" />
+    <meta property="dc:subject" content="Scholarly Communication" />
+    <meta property="dc:type" content="website" />
+
+    <% if ENV['TWITTER_HANDLE'] %>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="<%= ENV['TWITTER_HANDLE'] %>" />
+    <meta name="twitter:title" content="<%= ENV['SITE_TITLE'] %>" />
+    <meta name="twitter:image" content="/images/datacite.png" />
+    <meta name="twitter:description" content="<%= ENV['SITE_DESCRIPTION'] %>" />
+    <% end %>
+
+    <meta property="og:site_name" content="<%= ENV['SITE_TITLE'] %>" />
+    <meta property="og:description" content="<%= ENV['SITE_DESCRIPTION'] %>" />
+    <meta property="og:image" content="/images/datacite.png" />
+    <meta property="og:type" content="blog" />
+
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic|Source+Code+Pro:400,600' rel='stylesheet' type='text/css'>
+    <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href="//<%= ENV['CDN_HOST'] %>/stylesheets/default.css" rel='stylesheet' type='text/css'>
+
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <% if ENV['BUGSNAG_JS_KEY'] %>
+      <script
+        src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js"
+        data-apikey="<%= ENV['BUGSNAG_JS_KEY'] %>">
+      </script>
+    <% end %>
+  </head>
+  <body>
+    <%= partial "includes/header.html.erb" %>
+
+    <%= yield %>
+
+    <%= partial "includes/footer.html.erb" %>
+    <%= partial "includes/google_analytics.html.erb" %>
+  </body>
+</html>

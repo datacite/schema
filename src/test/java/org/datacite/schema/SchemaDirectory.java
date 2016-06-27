@@ -16,12 +16,14 @@ import org.xml.sax.SAXException;
 
 public class SchemaDirectory {
 
-    public final static String SCHEMAS_BASE_DIR = "_site/meta/";
+    public final static String ROOT_DIR = System.getProperty("root.dir", "source/");
+
+    public final static String SCHEMAS_BASE_DIR = ROOT_DIR + "meta/";
     public final static String EXAMPLE_DIR = "example/";
     public final static String DOC_DIR = "doc/";
-    public final static String INDEX_HTML = "index.html";
+    public final static String INDEX_HTML = System.getProperty("index.html", "index.html.md");
 
-    public final static String SCHEMA_SERVER_BASE_URL = "http://schema.datacite.org";
+    public final static String SCHEMA_SERVER_BASE_URL = "http://schema.datacite.org/";
     public final static String SCHEMA_NAMESPACE_BASE = "http://datacite.org/schema/";
 
     public final static String SCHEMA_WITHOUT_NAMESPACE = "kernel-2.0";
@@ -75,7 +77,7 @@ public class SchemaDirectory {
     public String getExpectedSchemaLocation() {
         String path;
         path = getMajorSchema().getSchemaFile().getPath();
-        String url = path.replaceFirst("_site", SCHEMA_SERVER_BASE_URL);
+        String url = path.replaceFirst(ROOT_DIR, SCHEMA_SERVER_BASE_URL);
         return url;
     }
 
