@@ -28,6 +28,9 @@ labs_links:
    url: http://schema.labs.datacite.org
    icon: file-code-o
 production_links:
+ - name: API
+   url: https://api.datacite.org
+   icon: cogs
  - name: Blog
    url: https://blog.datacite.org
    icon: rss
