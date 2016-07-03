@@ -15,6 +15,8 @@ The version number is formatted as: Major.Minor
 
 Each incoming [Metadata store](https://mds.datacite.org) XML document should indicate the schema location in the root element.
 
+* [DataCite Metadata Schema 4.0](meta/kernel-4/index.html) (pre-release version {{ "2016-05-14" | date: "%B %-d, %Y" }})
+
 * [DataCite Metadata Schema 3.1](meta/kernel-3.1/index.html) (released {{ "2014-10-16" | date: "%B %-d, %Y" }})
 * [DataCite Metadata Schema 3.0](meta/kernel-3.0/index.html) (released {{ "2013-07-24" | date: "%B %-d, %Y" }})
 * [DataCite Metadata Schema 2.2](meta/kernel-2.2/index.html) (released {{ "2011-07-01" | date: "%B %-d, %Y" }})
