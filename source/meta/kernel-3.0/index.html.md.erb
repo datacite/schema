@@ -1,0 +1,49 @@
+---
+title: DataCite Metadata Schema 3.0
+date: 2013-07-24
+version: 3.0
+schema_url: http://doi.org/10.5438/0009
+documentation_url: http://doi.org/10.5438/0008
+---
+
+<div class="wrapper">
+  <!-- https://www.pexels.com/photo/camera-old-vintage-photos-35107/ -->
+  <div class="landing-header" style="background-image: url('//<%= ENV['CDN_HOST'] %>/images/schema/landing.jpg');">
+    <div class="container">
+      <div class="motto">
+        <h1><%= current_page.data.title %></h1>
+        <p>Released <%= Date.parse(current_page.data.date.to_s).strftime("%-d %b %Y") %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-light-blue">
+    <div class="row row-section">
+      <div class="container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+          <%= partial "meta/kernel-#{current_page.data.version}/schema.html.md" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-dark-blue">
+    <div class="row row-section">
+      <div class="container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+          <%= partial "meta/kernel-#{current_page.data.version}/documentation.html.md" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-white">
+    <div class="row row-section">
+      <div class="container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+          <%= partial "meta/kernel-#{current_page.data.version}/examples.html.md" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

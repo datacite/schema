@@ -1,7 +1,7 @@
 <!-- header start -->
 
 <div class="header" id="navtop">
-  <div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="navbar <%= current_page.data.alert ? 'navbar-default' : 'navbar-ct-transparent' %>" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header"
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -10,18 +10,21 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        <a class="navbar-brand" href="https://www.datacite.org"><%= ENV['SITE_NAME'] %></a>
       </div>
-      <a class="navbar-brand" href="/">
-        <img src="//<%= ENV['CDN_HOST'] %>/images/datacite.png" class="logo">
-        <span class="logo">Data</span><span>Cite <%= ENV['SITE_NAME'] %></span>
-      </a>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="account_menu_link"><i class='fa fa-th'></i> <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="support">Support <span class="caret"></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><%= link_to "Email", "mailto:support@datacite.org" %></li>
+              <li><%= link_to "Source Code", "https://github.com/datacite/segugio" %></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="sites"><i class='fa fa-th'></i> <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <% if development? %>
-                <li class='dropdown-header'>DataCite Development</li>
                 <% data.links.development_links.each do |link| %>
                   <li>
                     <a href='<%= link.url %>'>

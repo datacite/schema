@@ -1,14 +1,5 @@
----
-layout: schema
-title: DataCite Metadata Schema 3.1
-date: 2014-10-16
-schema_url: http://doi.org/10.5438/0011
-documentation_url: http://doi.org/10.5438/0010
----
-
 ## Examples
 
-* [Full DataCite XML example](example/datacite-example-full-v3.1.xml)
 * [Example for a simple dataset](example/datacite-example-dataset-v3.0.xml)
 * [Example with complicated values](example/datacite-example-complicated-v3.0.xml)
 * [Example with DataCollector as Contributor and a geoLocation box](example/datacite-example-Box_dateCollected_DataCollector-v3.0.xml)

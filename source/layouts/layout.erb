@@ -37,13 +37,18 @@
     <meta property="og:image" content="/images/datacite.png" />
     <meta property="og:type" content="blog" />
 
+<<<<<<< HEAD
     <link href="//fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
     <link href='//fonts.googleapis.com/css?family=Raleway:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
     <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
     <link href="//<%= ENV['CDN_HOST'] %>/stylesheets/default.css" rel='stylesheet' type='text/css'>
+=======
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
+    <link href="//<%= ENV['CDN_HOST'] %>/stylesheets/vellum.css" rel='stylesheet' type='text/css'>
+>>>>>>> master
 
-    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <%= favicon_tag 'favicon.ico' %>
 
     <% if ENV['BUGSNAG_JS_KEY'] %>
       <script
@@ -54,10 +59,9 @@
   </head>
   <body>
     <%= partial "includes/header.html.erb" %>
-
     <%= yield %>
-
     <%= partial "includes/footer.html.erb" %>
+    <%= partial "includes/javascripts.html.erb" %>
     <%= partial "includes/google_analytics.html.erb" %>
   </body>
 </html>
