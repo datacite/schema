@@ -1,13 +1,3 @@
----
-layout: schema
-title: DataCite Metadata Schema 4.0
-date: 2016-05-14
-schema_url: /meta/kernel-4/metadata.xsd
-documentation_url: /meta/kernel-4/doc/DataCite-MetadataKernel_v4.0.pdf
----
-
-This schema is available as a pre-release version for testing.
-
 ## Examples
 
 * [Full DataCite XML example](example/datacite-example-full-v4.0.xml)

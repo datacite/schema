@@ -1,13 +1,13 @@
 ---
-title: DataCite Metadata Schema 2.0
-version: 2.0
-date: 2011-01-24
-schema_url: https://doi.org/10.5438/0002
-documentation_url: https://doi.org/10.5438/0001
-alert: This version is only provided for archival purposes. It is no longer usable with the DataCite MDS.
+title: DataCite Metadata Schema 4.0
+version: 4.0
+date: 2016-05-14
+schema_url: /meta/kernel-4.0/metadata.xsd
+documentation_url: /meta/kernel-4.0/doc/DataCite-MetadataKernel_v4.0.pdf
+alert: This schema is available as a unpublished version for testing.
 ---
 
-<div class="alert alert-danger landing-alert">
+<div class="alert alert-warning landing-alert">
   <div class="container text-center">
     <h5><%= current_page.data.alert %></h5>
   </div>
@@ -28,7 +28,7 @@ alert: This version is only provided for archival purposes. It is no longer usab
     <div class="row row-section">
       <div class="container-fluid">
         <div class="col-md-8 col-md-offset-2">
-          <%= partial "archive/kernel-#{current_page.data.version}/schema.html.md" %>
+          <%= partial "meta/kernel-#{current_page.data.version}/schema.html.md" %>
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@ alert: This version is only provided for archival purposes. It is no longer usab
     <div class="row row-section">
       <div class="container-fluid">
         <div class="col-md-8 col-md-offset-2">
-          <%= partial "archive/kernel-#{current_page.data.version}/documentation.html.md" %>
+          <%= partial "meta/kernel-#{current_page.data.version}/documentation.html.md" %>
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@ alert: This version is only provided for archival purposes. It is no longer usab
     <div class="row row-section">
       <div class="container-fluid">
         <div class="col-md-8 col-md-offset-2">
-          <%= partial "archive/kernel-#{current_page.data.version}/examples.html.md" %>
+          <%= partial "meta/kernel-#{current_page.data.version}/examples.html.md" %>
         </div>
       </div>
     </div>
