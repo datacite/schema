@@ -1,11 +1,3 @@
----
-layout: schema
-title: DataCite Metadata Schema 3.1
-date: 2014-10-16
-schema_url: http://doi.org/10.5438/0011
-documentation_url: http://doi.org/10.5438/0010
----
-
 ## Examples
 
 * [Full DataCite XML example](example/datacite-example-full-v3.1.xml)

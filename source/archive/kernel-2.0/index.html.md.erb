@@ -1,0 +1,56 @@
+---
+title: DataCite Metadata Schema 2.0
+version: 2.0
+date: 2011-01-24
+schema_url: https://doi.org/10.5438/0002
+documentation_url: https://doi.org/10.5438/0001
+alert: This version is only provided for archival purposes. It is no longer usable with the DataCite MDS.
+---
+
+<div class="alert alert-danger landing-alert">
+  <div class="container text-center">
+    <h5>This version is only provided for archival purposes. It is no longer usable with the DataCite MDS.</h5>
+  </div>
+</div>
+
+<div class="wrapper">
+  <!-- https://www.pexels.com/photo/camera-old-vintage-photos-35107/ -->
+  <div class="landing-alert-header" style="background-image: url('//<%= ENV['CDN_HOST'] %>/images/schema/landing.jpg');">
+    <div class="container">
+      <div class="motto">
+        <h1><%= current_page.data.title %></h1>
+        <p>Released <%= Date.parse(current_page.data.date.to_s).strftime("%-d %b %Y") %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-light-blue">
+    <div class="row row-section">
+      <div class="container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+          <%= partial "archive/kernel-#{current_page.data.version}/schema.html.md" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-dark-blue">
+    <div class="row row-section">
+      <div class="container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+          <%= partial "archive/kernel-#{current_page.data.version}/documentation.html.md" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-white">
+    <div class="row row-section">
+      <div class="container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+          <%= partial "archive/kernel-#{current_page.data.version}/examples.html.md" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

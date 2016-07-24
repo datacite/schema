@@ -1,0 +1,46 @@
+---
+title: DataCite Metadata Schema
+description: The DataCite Metadata Schema is a list of core metadata properties chosen for an accurate and consistent identification of a resource for citation and retrieval purposes, along with recommended use instructions.
+---
+
+<div class="wrapper">
+  <!-- https://www.pexels.com/photo/camera-old-vintage-photos-35107/ -->
+  <div class="landing-header" style="background-image: url('//<%= ENV['CDN_HOST'] %>/images/schema/landing.jpg');">
+    <div class="container">
+      <div class="motto">
+        <h1><%= current_page.data.title %></h1>
+        <p><%= current_page.data.description %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-light-blue">
+    <div class="row row-section">
+      <div class="container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+          <%= partial "four.html.md" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-white">
+    <div class="row row-section">
+      <div class="container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+          <%= partial "versions.html.md" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-dark-blue">
+    <div class="row row-section">
+      <div class="container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+          <%= partial "feedback.html.md" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

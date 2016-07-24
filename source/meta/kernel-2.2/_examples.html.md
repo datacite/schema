@@ -1,11 +1,3 @@
----
-layout: schema
-title: DataCite Metadata Schema 2.2
-date: 2011-07-01
-schema_url: http://doi.org/10.5438/0006
-documentation_url: http://doi.org/10.5438/0005
----
-
 ## Examples
 
 * [Example](example/datacite-metadata-sample-v2.2.xml)
