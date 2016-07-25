@@ -1,8 +1,15 @@
 ## Metadata Schema 4.0
 
-The DataCite Metadata Schema 4.0 comes with improvements to name identifiers, funding information, resource types, and other modifications. These changes are important in improving data discoverability and reusability, and helps to grant proper credit to data creators.
+The DataCite Metadata Schema 4.0 comes with improvements to name identifiers, funding information, resource types, and other modifications:
 
-Metadata Schema 4.0 is available in the Test Metadata Store and will be made available for production use in September 2016.
+* Changing resourceTypeGeneral from optional to mandatory
+* Addition of a new property: FundingReference, with subproperties funderName, funderIdentifier, awardNumber, awardURI and awardTitle. Deprecation of contributorType "funder"
+* Addition of new optional subproperties for creatorName and contributorName: familyName and givenName
+* Addition of a new relatedIdentifierType option "IGSN"
+* Addition of a new subproperty for GeoLocation "geoLocationPolygon", and cChanging the definition of the existing GeoLocation subproperties (geoLocationPoint and
+geoLocationBox)
+
+The DataCite Metadata Schema 4.0 was released on May 14, 2016 and is available in the Test Metadata Store. It will be made available for production use in September 2016.
 
 <a href="https://player.vimeo.com/video/172929697" class="btn btn-neutral"><i class="fa fa-play"></i>Watch video</a>
-<a href="https://schema.labs.datacite.org/meta/kernel-4.0/" class="btn btn-neutral">More info</a>
+<a href="/meta/kernel-4.0/" class="btn btn-neutral">More info</a>
