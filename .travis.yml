@@ -21,7 +21,6 @@ install:
 
 script:
   - bundle exec middleman build -e production
-  - bundle exec rspec
   - mvn clean test -B -Droot.dir=build/ -Dindex.html=index.html
 
 deploy:
