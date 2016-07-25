@@ -1,3 +1,18 @@
+---
+title: DataCite Metadata Schema 3.0
+date: 2013-07-24
+layout: schema
+version: 3.0
+schema_url: http://doi.org/10.5438/0009
+documentation_url: http://doi.org/10.5438/0008
+---
+
+## Schema
+DataCite Metadata Working Group. (2013). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 3.0. DataCite e.V. [http://doi.org/10.5438/0009](http://doi.org/10.5438/0009)
+
+## Documentation
+DataCite Metadata Working Group. (2013). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 3.0. DataCite e.V. [http://doi.org/10.5438/0008](http://doi.org/10.5438/0008)
+
 ## Examples
 
 * [Example for a simple dataset](example/datacite-example-dataset-v3.0.xml)
