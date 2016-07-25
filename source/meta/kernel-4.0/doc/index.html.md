@@ -1,23 +1,3 @@
----
-layout: page
-title: DataCite Metadata Schema for the Publication and Citation of Research Data Version 4.0
-authors:
- - jstarr
- - jashton
- - abarton
- - aciolek
- - sdietiker
- - jelliott
- - kharzenetter
- - bhirschmann
- - bgenat
- - jmailloux
- - lnielsen
- - msmaele
- - myahia
- - fziedorn
----
-
 Note that this version of the schema is not backward compatible with previous schema versions. DataCite will provide ongoing support for the use of previous schema versions for a minimum of one year after the release of this version.
 
 # Introduction
