@@ -5,7 +5,7 @@ date: 2016-05-14
 layout: schema
 schema_url: /meta/kernel-4.0/metadata.xsd
 documentation_url: /meta/kernel-4.0/doc/DataCite-MetadataKernel_v4.0.pdf
-alert: Metadata Schema 4.0 is available in the Test Metadata Store. It will be made available for production use in September 2016.
+alert: Schema 4.0 is available in the Test Metadata Store. It will be made available for production use in September 2016.
 ---
 
 ## Schema

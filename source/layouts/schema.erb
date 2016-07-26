@@ -1,15 +1,7 @@
 <% wrap_layout :layout do %>
-  <% if current_page.data.alert %>
-    <div class="alert alert-warning landing-alert">
-      <div class="container text-center">
-        <h5><%= current_page.data.alert %></h5>
-      </div>
-    </div>
-  <% end %>
-
   <div class="wrapper">
     <!-- https://www.pexels.com/photo/camera-old-vintage-photos-35107/ -->
-    <div class="<%= current_page.data.alert ? 'landing-alert-header' : 'landing-header' %>" style="background-image: url('//<%= ENV['CDN_HOST'] %>/images/schema/landing.jpg');">
+    <div class="landing-header" style="background-image: url('//<%= ENV['CDN_HOST'] %>/images/schema/landing.jpg');">
       <div class="container">
         <div class="motto">
           <h1><%= current_page.data.title %></h1>
