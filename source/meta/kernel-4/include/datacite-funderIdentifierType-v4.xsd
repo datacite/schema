@@ -8,7 +8,7 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="ISNI"/>
       <xs:enumeration value="GRID"/>
-      <xs:enumeration value="CrossRef Funder ID"/>
+      <xs:enumeration value="Crossref Funder ID"/>
       <xs:enumeration value="Other"/>
     </xs:restriction>
   </xs:simpleType>
