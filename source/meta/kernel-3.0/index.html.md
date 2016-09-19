@@ -8,7 +8,7 @@ documentation_url: http://doi.org/10.5438/0008
 ---
 
 ## Documentation
-DataCite Metadata Working Group. (2013). Documentation DataCite Metadata Schema for the Publication and Citation of Research Data. Version 3.0. DataCite e.V. http://doi.org/10.5438/0008
+DataCite Metadata Working Group. (2013). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 3.0. DataCite e.V. http://doi.org/10.5438/0008
 
 <a href="doc/DataCite-MetadataKernel_v3.0.pdf" class="btn">Download PDF</a>
 

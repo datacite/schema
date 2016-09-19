@@ -8,7 +8,7 @@ documentation_url: /meta/kernel-4.0/doc/DataCite-MetadataKernel_v4.0.pdf
 ---
 
 ## Documentation
-DataCite Metadata Working Group. (2016). Documentation DataCite Metadata Schema for the Publication and Citation of Research Data. Version 4.0. DataCite e.V. http://doi.org/10.5438/0012
+DataCite Metadata Working Group. (2016). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.0. DataCite e.V. http://doi.org/10.5438/0012
 
 <a href="doc/DataCite-MetadataKernel_v4.0.pdf" class="btn">Download PDF</a>
 
