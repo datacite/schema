@@ -14,7 +14,7 @@ before_install:
     else
       exit 1;
     fi
-  - rvm install 2.2.0
+  - rvm install 2.3.1
 
 install:
   - bundle install
