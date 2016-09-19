@@ -14,7 +14,11 @@ before_install:
     else
       exit 1;
     fi
-  - rvm install 2.2.0
+  - rvm install 2.3.1
+
+  - wget https://github.com/jgm/pandoc/releases/download/1.15.2/pandoc-1.15.2-1-amd64.deb
+  - sudo dpkg -i pandoc-1.15.2-1-amd64.deb
+  - rm pandoc-1.15.2-1-amd64.deb
 
 install:
   - bundle install
@@ -38,3 +42,4 @@ deploy:
 
 notifications:
   slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
+  email: false

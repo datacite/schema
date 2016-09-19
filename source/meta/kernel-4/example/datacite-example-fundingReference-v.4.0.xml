@@ -1,0 +1,59 @@
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+  <identifier identifierType="DOI">10.5281/zenodo.47394</identifier>
+  <creators>
+    <creator>
+      <creatorName>Dedeurwaerdere Tom</creatorName>
+      <affiliation>Université catholique de Louvain</affiliation>
+    </creator>
+  </creators>
+  <titles>
+    <title>Combining internal and external motivations in multi-actor governance arrangements for biodiversity and ecosystem services</title>
+  </titles>
+  <publisher>Zenodo</publisher>
+  <publicationYear>2016</publicationYear>
+  <subjects>
+    <subject>Internal motivations</subject>
+    <subject>Biodiversity</subject>
+    <subject>Multi-actor governance</subject>
+    <subject>Payment for ecosystem services</subject>
+    <subject>Crowding out</subject>
+  </subjects>
+  <fundingReferences>
+    <fundingReference>
+      <funderName>European Commission</funderName>
+      <funderIdentifier funderIdentifierType="Crossref Funder ID">http://doi.org/10.13039/501100000780</funderIdentifier>
+      <awardNumber awardURI="http://cordis.europa.eu/project/rcn/100180_en.html">282625</awardNumber>
+      <awardTitle>MOTivational strength of ecosystem services and alternative ways to express the value of BIOdiversity</awardTitle>
+    </fundingReference>
+    <fundingReference>
+      <funderName>European Commission</funderName>
+      <funderIdentifier funderIdentifierType="Crossref Funder ID">http://doi.org/10.13039/501100000780</funderIdentifier>
+      <awardNumber awardURI="http://cordis.europa.eu/project/rcn/100603_en.html">284382</awardNumber>
+      <awardTitle>Institutionalizing global genetic-resource commons. Global Strategies for accessingand using essential public knowledge assets in the life science</awardTitle>
+    </fundingReference>
+  </fundingReferences>
+  <dates>
+    <date dateType="Issued">2016-03-11</date>
+  </dates>
+  <resourceType resourceTypeGeneral="Dataset"/>
+  <alternateIdentifiers>
+    <alternateIdentifier alternateIdentifierType="URL">http://zenodo.org/record/47394</alternateIdentifier>
+  </alternateIdentifiers>
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="URL" relationType="HasPart">https://zenodo.org/record/47394/files/Data_All_Internal_motivations.pdf</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="URL" relationType="HasPart">https://zenodo.org/record/47394/files/survey_questionnaire_internal_motivations.pdf</relatedIdentifier>
+  </relatedIdentifiers>
+  <rightsList>
+    <rights rightsURI="info:eu-repo/semantics/openAccess">Open Access</rights>
+    <rights rightsURI="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero 1.0 Universal</rights>
+  </rightsList>
+  <descriptions>
+    <description descriptionType="Abstract">&lt;p&gt;These files provide the original survey data of the paper on motivations for biodiversity conservation in Europe. This paper analyses the possibility of building a mutually supportive dynamics between
+      internally and&lt;br /&gt; externally motivated behaviour for biodiversity conservation and ecosystem services provision. To this&lt;br /&gt; purpose a face to face survey amongst 169 key actors of 34 highly successful and prominent
+      biodiversity&lt;br /&gt; arrangements in seven EU countries was conducted. The main&lt;br /&gt; finding of the paper is the feasibility of&lt;br /&gt; combining inherently intrinsically motivated behaviours (providing enjoyment, pleasure from&lt;br
+      /&gt; experimentation and learning, aesthetic satisfaction) and internalized extrinsic motivations (related&lt;br /&gt; to the identification with the collective goals of conservation policy) through a common set of governance&lt;br /&gt; features.
+      Successful initiatives that combine internal and external motivations share the following&lt;br /&gt; features: inclusive decision making processes, a broad monitoring by &amp;ldquo;peers&amp;rdquo; beyond the core staff of the&lt;br /&gt;
+      initiatives, and a context that is supportive for the building of autonomous actor competences. These&lt;br /&gt; findings are in line with the psycho-sociological theory of motivation, which shows the importance of a&lt;br /&gt; psycho-social
+      context leading to a subjective perception of autonomy and a sense of competence of the&lt;br /&gt; actors.&lt;/p&gt;</description>
+  </descriptions>
+</resource>

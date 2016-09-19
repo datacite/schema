@@ -57,7 +57,7 @@ describe "validate funderReference" do
       <fundingReferences>
         <fundingReference>
           <funderName>European Commission</funderName>
-          <funderIdentifier funderIdentifierType="Open Funder Registry">http://doi.org/10.13039/501100000780</funderIdentifier>
+          <funderIdentifier funderIdentifierType="Crossref Funder ID">http://doi.org/10.13039/501100000780</funderIdentifier>
         </fundingReference>
       </fundingReferences>
     EOT
@@ -92,7 +92,7 @@ describe "validate funderReference" do
     EOT
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
     expect(errors.length).to eq(2)
-    expect(errors.first).to include("The value 'ABC' is not an element of the set {'ISNI', 'GRID', 'Open Funder Registry', 'Other'}.")
+    expect(errors.first).to include("The value 'ABC' is not an element of the set {'ISNI', 'GRID', 'Crossref Funder ID', 'Other'}.")
   end
 
   it 'awardNumber' do

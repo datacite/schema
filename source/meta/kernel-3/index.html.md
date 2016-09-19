@@ -7,13 +7,15 @@ schema_url: http://doi.org/10.5438/0011
 documentation_url: http://doi.org/10.5438/0010
 ---
 
-## Schema
-DataCite Metadata Working Group. (2014). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 3.1. DataCite e.V. [http://doi.org/10.5438/0011](http://doi.org/10.5438/0011)
-
 ## Documentation
-DataCite Metadata Working Group. (2014). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 3.1. DataCite e.V. [http://doi.org/10.5438/0010](http://doi.org/10.5438/0010)
+DataCite Metadata Working Group. (2014). Documentation DataCite Metadata Schema for the Publication and Citation of Research Data. Version 3.1. DataCite e.V. http://doi.org/10.5438/0010
 
-Changes in this version include:
+<a href="doc/DataCite-MetadataKernel_v3.1.pdf" class="btn">Download PDF</a>
+
+## Schema
+DataCite Metadata Working Group. (2014). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 3.1. DataCite e.V. http://doi.org/10.5438/0011
+
+<a href="metadata.xsd" class="btn">View XML</a>
 
 * New affiliation attribute for Creator and Contributor
 * New relationType pairs IsReviewedBy/Reviews and IsDerivedFrom/IsSourceOf
