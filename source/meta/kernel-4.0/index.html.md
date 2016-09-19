@@ -1,20 +1,23 @@
 ---
 title: DataCite Metadata Schema 4.0
 version: 4.0
-date: 2016-05-14
+date: 2016-09-19
 layout: schema
 schema_url: /meta/kernel-4.0/metadata.xsd
 documentation_url: /meta/kernel-4.0/doc/DataCite-MetadataKernel_v4.0.pdf
-alert: Schema 4.0 is available in the Test Metadata Store. It will be made available for production use in September 2016.
 ---
 
-## Schema
-DataCite Metadata Working Group. (2016). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 4.0. DataCite e.V. Unpublished. [/meta/kernel-4.0/metadata.xsd](/meta/kernel-4.0/metadata.xsd)
-
 ## Documentation
-DataCite Metadata Working Group. (2016). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 4.0. DataCite e.V. Unpublished. [/meta/kernel-4.0/doc/DataCite-MetadataKernel_v4.0.pdf](/meta/kernel-4.0/doc/DataCite-MetadataKernel_v4.0.pdf)
+DataCite Metadata Working Group. (2016). Documentation DataCite Metadata Schema for the Publication and Citation of Research Data. Version 4.0. DataCite e.V. http://doi.org/10.5438/0012
 
-Changes in this version include:
+<a href="doc/DataCite-MetadataKernel_v4.0.pdf" class="btn">Download PDF</a>
+
+## Schema
+DataCite Metadata Working Group. (2016). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 4.0. DataCite e.V. http://doi.org/10.5438/0013
+
+<a href="metadata.xsd" class="btn">View XML</a>
+
+## Changes
 
 * Changing resourceTypeGeneral from optional to mandatory
 * Addition of a new property: FundingReference, with subproperties funderName, funderIdentifier, awardNumber, awardURI and awardTitle. Deprecation of contributorType "funder"
