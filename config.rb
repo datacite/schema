@@ -17,8 +17,10 @@ configure :development do
 end
 
 # Set markdown template engine
-set :markdown_engine, :kramdown
-set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown_engine, :pandoc
+set :markdown, smartypants: true,
+               csl: "styles/apa.csl",
+               bibliography: "bibliography/references.bib"
 
 # put configuration variables into .env file
 activate :dotenv
