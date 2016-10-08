@@ -1,4 +1,4 @@
-FROM phusion/passenger-full:0.9.18
+FROM phusion/passenger-full:0.9.19
 MAINTAINER Martin Fenner "mfenner@datacite.org"
 
 # Set correct environment variables.
@@ -13,7 +13,8 @@ ENV RACK_ENV development
 # CMD ["/sbin/my_init"]
 
 # Update installed APT packages
-RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold"
+RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold" && \
+    apt-get install -y pandoc
 
 # Install bundler
 RUN gem install bundler
