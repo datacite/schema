@@ -9,8 +9,10 @@ before_install:
   - set -e
   - if [ "${TRAVIS_TAG?}" ]; then
       AWS_BUCKET="schema.datacite.org";
+      RACK_ENV="production";
     elif [ "$TRAVIS_BRANCH" == "labs" ]; then
       AWS_BUCKET="schema.labs.datacite.org";
+      RACK_ENV="stage";
     else
       exit 1;
     fi
@@ -24,7 +26,7 @@ install:
   - bundle install
 
 script:
-  - bundle exec middleman build -e production
+  - bundle exec middleman build -e $RACK_ENV
   - mvn clean test -B -Droot.dir=build/ -Dindex.html=index.html
 
 deploy:
