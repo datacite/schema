@@ -13,6 +13,7 @@ before_install:
     elif [ "$TRAVIS_BRANCH" == "labs" ]; then
       AWS_BUCKET="schema.labs.datacite.org";
       RACK_ENV="stage";
+      cp .env.labs .env;
     else
       exit 1;
     fi
