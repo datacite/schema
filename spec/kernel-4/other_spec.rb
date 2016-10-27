@@ -22,6 +22,13 @@ describe "validate other elements" do
       expect(errors.first).to include("Element '{http://datacite.org/schema/kernel-4}resourceType': The attribute 'resourceTypeGeneral' is required but missing.")
     end
 
+    it 'empty resourceType' do
+      element = doc.at("resourceType")
+      element.replace '<resourceType resourceTypeGeneral="Dataset"></resourceType>'
+      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
+      expect(errors).to be_empty
+    end
+
     it 'unknown resourceTypeGeneral' do
       element = doc.at("resourceType")
       element.replace '<resourceType resourceTypeGeneral="Conference">Dataset</resourceType>'
