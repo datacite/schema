@@ -11,10 +11,10 @@ describe "full example" do
 
   it 'has relationType IsIdenticalTo' do
     related_identifiers = doc.search("relatedIdentifier")
-    expect(related_identifiers.size).to eq(1)
+    expect(related_identifiers.size).to eq(2)
     related_identifier = related_identifiers.first
     expect(related_identifier["relationType"]).to eq("IsIdenticalTo")
     expect(related_identifier["relatedIdentifierType"]).to eq("URN")
-    expect(related_identifier.text).to eq("urn:nbn:de:bib-cpos-2013-05de0")
+    expect(related_identifier.text).to eq("urn:nbn:de:bib-cpos-2013-02en8")
   end
 end
