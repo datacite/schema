@@ -349,7 +349,7 @@ Use the complete title of a license and include version information if applicabl
                       </xs:annotation>
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="polygonPoint" type="point" minOccurs="3" maxOccurs="unbounded"/>
+                          <xs:element name="polygonPoint" type="point" minOccurs="4" maxOccurs="unbounded"/>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
