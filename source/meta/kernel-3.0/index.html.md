@@ -15,7 +15,7 @@ DataCite Metadata Working Group. (2013). DataCite Metadata Schema Documentation 
 ## Schema
 DataCite Metadata Working Group. (2013). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 3.0. DataCite e.V. http://doi.org/10.5438/0009
 
-<a href="metadata.xsd" class="btn">View XML</a>
+<a href="metadata.xsd" class="btn">View XSD</a>
 
 ## Examples
 
