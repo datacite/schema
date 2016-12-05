@@ -1,5 +1,6 @@
 ---
-title: DataCite Metadata
+title: DataCite Metadata Landing
 date: 2016-12-05
-layout: schema
 ---
+## DataCite Metadata Landing Page
+This is a landing page only.

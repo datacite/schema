@@ -2,6 +2,7 @@
 # Page options, layouts, aliases and proxies
 ###
 
+# Redirects from other site from DataCite MDs
 redirect "meta/index.html", to: "meta/kernel-4.0/index.html"
 
 # Per-page layout changes:
