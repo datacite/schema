@@ -2,6 +2,8 @@
 # Page options, layouts, aliases and proxies
 ###
 
+redirect "meta/index.html", to: "meta/kernel-4.0/index.html"
+
 # Per-page layout changes:
 #
 # With no layout
@@ -14,6 +16,7 @@ page '/*.txt', layout: false
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+
 end
 
 # Set markdown template engine
