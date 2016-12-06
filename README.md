@@ -35,5 +35,7 @@ validity of the schemas, and validity of the examples.
 
 You can execute the tests via
 
-    mvn test
-    rspec
+```shell
+mvn test
+rspec
+```
