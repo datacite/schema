@@ -122,9 +122,16 @@ public class SchemaDirectory {
         File baseDir = new File(SCHEMAS_BASE_DIR);
         File[] dirs = baseDir.listFiles();
         List<SchemaDirectory> schemaDirectories = new ArrayList<SchemaDirectory>();
-
+        for (File dir : dirs)
+            try {
+                if (!Files.isSymbolicLink(dir.toPath()))
+                    schemaDirectories.add(new SchemaDirectory(dir));
+            } catch (FileNotFoundException e) {
+            }
         // Removes the directory association with index.html on /meta.
+        System.out.println(schemaDirectories);
         schemaDirectories.remove(0);
+        System.out.println(schemaDirectories);
         return schemaDirectories;
     }
 
