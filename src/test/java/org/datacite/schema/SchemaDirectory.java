@@ -128,8 +128,8 @@ public class SchemaDirectory {
                     schemaDirectories.add(new SchemaDirectory(dir));
             } catch (FileNotFoundException e) {
             }
-        // Removes the directory association with index.html on /meta. 
-        System.out.println(schemaDirectories.remove(0));
+        // Removes the directory association with index.html on /meta.
+        schemaDirectories.remove(0);
         return schemaDirectories;
     }
 
