@@ -126,8 +126,7 @@ public class SchemaDirectory {
         for (File dir : dirs)
             try {
                 if (!Files.isSymbolicLink(dir.toPath())){
-                    System.out.println(dir.getName());
-                    if(!removeFile.equals(dir.getName()))
+                    if(!removeFile.contains(dir.getName()))
                       schemaDirectories.add(new SchemaDirectory(dir));
                   }
             } catch (FileNotFoundException e) {
