@@ -14,6 +14,10 @@ before_install:
       AWS_BUCKET="schema.labs.datacite.org";
       RACK_ENV="stage";
       cp .env.labs .env;
+    elif [ "$TRAVIS_BRANCH" == "test" ]; then
+      AWS_BUCKET="schema.test.datacite.org";
+      RACK_ENV="stage";
+      cp .env.test .env;
     else
       exit 1;
     fi
