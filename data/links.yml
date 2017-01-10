@@ -29,6 +29,25 @@ development_links:
  - name: Statistics
    url: http://localhost:9010
    icon: bar-chart
+test_links:
+ - name: MDS
+   url: https://mds.test.datacite.org
+   icon: database
+ - name: Handle Server
+   url: https://handle.test.datacite.org
+   icon: mail-forward
+ - name: Schema
+   url: https://schema.test.datacite.org
+   icon: file-code-o
+ - name: Search
+   url: https://search.test.datacite.org
+   icon: search
+ - name: OAI-PMH
+   url: https://oai.test.datacite.org
+   icon: table
+ - name: Content Resolver
+   url: https://data.test.datacite.org
+   icon: repeat
 stage_links:
  - name: API
    url: https://api.labs.datacite.org
