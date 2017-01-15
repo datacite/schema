@@ -44,6 +44,9 @@ stage_links:
  - name: Schema
    url: https://schema.test.datacite.org
    icon: file-code-o
+ - name: Handle Server
+   url: https://handle.test.datacite.org
+   icon: mail-forward
  - name: Citation Formatter
    url: http://citation.test.crosscite.org
    icon: file-text-o
