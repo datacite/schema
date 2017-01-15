@@ -38,13 +38,6 @@ development_links:
    url: http://localhost:8040
    icon: cogs
 stage_links:
- - name: Homepage
-   url: https://www.test.datacite.org
-   icon: globe
- - name: Blog
-   url: https://blog.test.datacite.org
-   icon: rss
- - name: divider
  - name: MDS
    url: https://mds.test.datacite.org
    icon: database
