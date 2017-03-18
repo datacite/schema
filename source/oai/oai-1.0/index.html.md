@@ -11,11 +11,10 @@ This schema has been created specifically for the dissemination of DataCite meta
 
 
 - **datacentreSymbol** - the symbol of the datacentre that registered this dataset.
-- **isReferenceQuality** - a boolean value indicating whether the metadata is deemed to be of reference quality.
 - **schemaVersion** - the estimated DataCite Metadata Scheme version that this record adheres to.
 - **payload** - the complete metadata of this record.
 
 
 ## Examples
 
-* [DataCite OAI Version 1.0 example](oai-1.0/example/oai-sample-1.0.xml)
+* [DataCite OAI Version 1.0 example](example/oai-sample-1.0.xml)

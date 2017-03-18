@@ -17,7 +17,16 @@ page '/*.txt', layout: false
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+end
 
+# Load data
+activate :data_source do |c|
+  c.root = "https://#{ENV['CDN_HOST']}/data"
+  c.files = [
+    "authors.json",
+    "links.json",
+    "schemas.json"
+  ]
 end
 
 # Set markdown template engine
