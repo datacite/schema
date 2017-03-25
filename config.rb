@@ -21,7 +21,7 @@ end
 
 # Load data
 activate :data_source do |c|
-  c.root = "https://#{ENV['CDN_HOST']}/data"
+  c.root = "#{ENV['CDN_URL']}/data"
   c.files = [
     "authors.json",
     "links.json",
@@ -39,7 +39,7 @@ set :markdown, smartypants: true,
 activate :dotenv
 
 # use asset host
-activate :asset_host, host: "//#{ENV['CDN_HOST']}"
+activate :asset_host, host: "#{ENV['CDN_URL']}"
 
 ###
 # Helpers
