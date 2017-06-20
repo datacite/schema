@@ -3,8 +3,8 @@ DataCite Schema Repository
 
 [![Build Status](https://travis-ci.org/datacite/schema.svg?branch=labs)](https://travis-ci.org/datacite/schema)
 
-This repository holds the official metadata schemas from DataCite as
-required by the DataCite Metadata Store.
+This repository holds the official metadata schemas from DataCite as required
+by the DataCite Metadata Store.
 
 It contains the schemas itself along with examples and documentation.
 
