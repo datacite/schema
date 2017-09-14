@@ -3,7 +3,7 @@
   <identifier identifierType="DOI">10.5072/testpub</identifier>
   <creators>
     <creator>
-      <creatorName nameType="personal">Smith, John</creatorName>
+      <creatorName nameType="Personal">Smith, John</creatorName>
     </creator>
     <creator>
       <creatorName>つまらないものですが</creatorName>
@@ -45,7 +45,7 @@
   </formats>
   <version>2</version>
   <rightsList>
-    <rights lang="eng" rightsURI="http://creativecommons.org/licenses/by-nd/2.0/">Creative Commons Attribution-NoDerivs 2.0 Generic</rights>
+    <rights xml:lang="eng" rightsURI="http://creativecommons.org/licenses/by-nd/2.0/">Creative Commons Attribution-NoDerivs 2.0 Generic</rights>
   </rightsList>
   <descriptions>
     <description descriptionType="Abstract">
