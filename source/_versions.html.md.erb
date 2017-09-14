@@ -1,5 +1,17 @@
 ## Older Versions
 
+#### DataCite Metadata Schema 4.0
+Released <%= Date.parse("2016-09-19").strftime("%-d %b %Y") %>. Changes in this version include:
+
+* Changing resourceTypeGeneral from optional to mandatory
+* Addition of a new property: FundingReference, with subproperties funderName, funderIdentifier, awardNumber, awardURI and awardTitle. Deprecation of contributorType "funder"
+* Addition of new optional subproperties for creatorName and contributorName: familyName and givenName
+* Addition of a new relatedIdentifierType option "IGSN"
+* Addition of a new subproperty for GeoLocation "geoLocationPolygon", and changing the definition of the existing GeoLocation subproperties (geoLocationPoint and
+geoLocationBox)
+
+<a href="/meta/kernel-4.0/" class="btn btn-neutral">More info</a>
+
 #### DataCite Metadata Schema 3.1
 Released <%= Date.parse("2014-10-16").strftime("%-d %b %Y") %>. Changes in this version include:
 
