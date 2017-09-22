@@ -354,14 +354,20 @@ Use the complete title of a license and include version information if applicabl
                         <xs:documentation>A box contains two white space separated latitude-longitude pairs, with each pair separated by whitespace. The first pair is the lower corner, the second is the upper corner.</xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="geoLocationPolygon" minOccurs="0" maxOccurs="unbounded">
-                      <xs:annotation>
-                        <xs:documentation>A drawn polygon area, defined by a set of points and lines connecting the points in a closed chain.</xs:documentation>
-                      </xs:annotation>
+                    <xs:element name="geoLocationPolygons" minOccurs="0">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="polygonPoint" type="point" minOccurs="4" maxOccurs="unbounded"/>
-                          <xs:element name="inPolygonPoint" type="point" minOccurs="0" maxOccurs="1"/>
+                          <xs:element name="geoLocationPolygon" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation>A drawn polygon area, defined by a set of points and lines connecting the points in a closed chain.</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="polygonPoint" type="point" minOccurs="4" maxOccurs="unbounded"/>
+                                <xs:element name="inPolygonPoint" type="point" minOccurs="0" maxOccurs="1"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
