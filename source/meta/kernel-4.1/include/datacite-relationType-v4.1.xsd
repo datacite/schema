@@ -38,7 +38,7 @@
       <xs:enumeration value="Describes"/>
       <xs:enumeration value="IsDescribedBy"/>
       <xs:enumeration value="HasVersion"/>
-      <xs:enumeration value="IsVersionof"/>
+      <xs:enumeration value="IsVersionOf"/>
       <xs:enumeration value="Requires"/>
       <xs:enumeration value="IsRequiredBy"/>
     </xs:restriction>
