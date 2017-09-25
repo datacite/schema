@@ -28,8 +28,9 @@ install:
   - bundle install
 
 script:
+  - bundle exec rspec
+  - mvn clean test -B -Droot.dir=build/ -Dindex.html=index.html
   - bundle exec middleman build -e $RACK_ENV
-  # - mvn clean test -B -Droot.dir=build/ -Dindex.html=index.html
 
 deploy:
   provider: s3
