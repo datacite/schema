@@ -68,30 +68,28 @@
         <southBoundLatitude>41.090</southBoundLatitude>
         <northBoundLatitude>42.893</northBoundLatitude>
       </geoLocationBox>
-      <geoLocationPolygons>
-        <geoLocationPolygon>
-          <polygonPoint>
-            <pointLatitude>41.991</pointLatitude>
-            <pointLongitude>-71.032</pointLongitude>
-          </polygonPoint>
-          <polygonPoint>
-            <pointLatitude>42.893</pointLatitude>
-            <pointLongitude>-69.622</pointLongitude>
-          </polygonPoint>
-          <polygonPoint>
-            <pointLatitude>41.991</pointLatitude>
-            <pointLongitude>-68.211</pointLongitude>
-          </polygonPoint>
-          <polygonPoint>
-            <pointLatitude>41.090</pointLatitude>
-            <pointLongitude>-69.622</pointLongitude>
-          </polygonPoint>
-          <polygonPoint>
-            <pointLatitude>41.991</pointLatitude>
-            <pointLongitude>-71.032</pointLongitude>
-          </polygonPoint>
-        </geoLocationPolygon>
-      </geoLocationPolygons>
+      <geoLocationPolygon>
+        <polygonPoint>
+          <pointLatitude>41.991</pointLatitude>
+          <pointLongitude>-71.032</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>42.893</pointLatitude>
+          <pointLongitude>-69.622</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>41.991</pointLatitude>
+          <pointLongitude>-68.211</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>41.090</pointLatitude>
+          <pointLongitude>-69.622</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>41.991</pointLatitude>
+          <pointLongitude>-71.032</pointLongitude>
+        </polygonPoint>
+      </geoLocationPolygon>
     </geoLocation>
   </geoLocations>
   <fundingReferences>
