@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Version 4.1 - Created 2017-9-14 -->
+<!-- Version 4.1 - Created 2017-10-23 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-4" targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified">
   <xs:simpleType name="nameType" id="nameType">
     <xs:restriction base="xs:string">

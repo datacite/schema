@@ -3,7 +3,7 @@
   2011-01-13 v1.0 - FZ, TIB, Germany
   2013-05 v3.0: Addition of ID to simpleType element, addition of values "IsIdenticalTo", "HasMetadata" & "IsMetadataFor"
   2014-08-20 v3.1: Addition of values "Reviews" & "IsReviewedBy" and "IsDerivedFrom" & "IsSourceOf"
-  2017-09-14 v.4.1: Addition of values "Describes", "IsDescribedBy", "HasVersion", "IsVersionOf", "Requires", "IsRequiredBy" -->
+  2017-10-23 v.4.1: Addition of values "Describes", "IsDescribedBy", "HasVersion", "IsVersionOf", "Requires", "IsRequiredBy" -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-4" targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified">
   <xs:simpleType name="relationType" id="relationType">
     <xs:annotation>
