@@ -25,7 +25,7 @@ ADD . /home/app/webapp
 RUN chown -R app:app /home/app/webapp && \
     chmod -R 755 /home/app/webapp
 
-# Install npm and bower packages
+# Install npm packages
 WORKDIR /home/app/webapp/vendor
 RUN /sbin/setuser app npm install
 
