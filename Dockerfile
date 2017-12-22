@@ -25,10 +25,6 @@ ADD . /home/app/webapp
 RUN chown -R app:app /home/app/webapp && \
     chmod -R 755 /home/app/webapp
 
-# Install npm packages
-WORKDIR /home/app/webapp/vendor
-RUN /sbin/setuser app npm install
-
 # Install Ruby gems via bundler, run as app user
 WORKDIR /home/app/webapp
 RUN /sbin/setuser app bundle install --path vendor/bundle --without development

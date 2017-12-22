@@ -1,7 +1,7 @@
 version: '2'
 
 # when sharing the host folder, you need to reinstall Ruby gems
-# and npm modules into the vendor folder
+# into the vendor folder
 
 services:
   schema:
