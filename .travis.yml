@@ -6,17 +6,14 @@ cache:
     - $HOME/.m2
 
 before_install:
-  - set -e
   - if [ "${TRAVIS_TAG?}" ]; then
       AWS_BUCKET="schema.datacite.org";
       RACK_ENV="production";
       cp .env.production .env;
-    elif [ "$TRAVIS_BRANCH" == "test" ]; then
+    else
       AWS_BUCKET="schema.test.datacite.org";
       RACK_ENV="stage";
       cp .env.test .env;
-    else
-      exit 1;
     fi
   - rvm install 2.3.1
 
@@ -43,7 +40,7 @@ deploy:
   region: eu-west-1
   detect_encoding: true
   on:
-    all_branches: true
+    branch: master
 
 notifications:
   slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
