@@ -40,7 +40,7 @@ deploy:
   region: eu-west-1
   detect_encoding: true
   on:
-    all_branches: true
+    branch: master
 
 notifications:
   slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
