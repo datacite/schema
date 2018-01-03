@@ -1,9 +1,8 @@
 language: java
 jdk: oraclejdk8
 cache: bundler
-cache:
-  directories:
-    - $HOME/.m2
+
+sudo: required
 
 before_install:
   - if [ "${TRAVIS_TAG?}" ]; then
@@ -11,7 +10,7 @@ before_install:
       RACK_ENV="production";
       cp .env.production .env;
     else
-      AWS_BUCKET="schema.test.datacite.org";
+      AWS_BUCKET="schema.stage.datacite.org";
       RACK_ENV="stage";
       cp .env.test .env;
     fi
@@ -23,6 +22,7 @@ before_install:
 
 install:
   - bundle install
+  - sudo pip install awscli
 
 script:
   - bundle exec rspec
@@ -40,7 +40,20 @@ deploy:
   region: eu-west-1
   detect_encoding: true
   on:
-    branch: master
+    all_branches: true
+
+after_deploy:
+  - export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY
+  - export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_KEY
+  # Allow `awscli` to make requests to CloudFront.
+  - aws configure set preview.cloudfront true
+  # Invalidate every object in the targeted distribution.
+  - if [ "${TRAVIS_TAG?}" ]; then
+      - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+    else
+      - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID_STAGE --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID_TEST --paths "/*"
+    fi
 
 notifications:
   slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
