@@ -12,7 +12,7 @@ before_install:
     else
       AWS_BUCKET="schema.stage.datacite.org";
       RACK_ENV="stage";
-      cp .env.test .env;
+      cp .env.stage .env;
     fi
   - rvm install 2.3.1
 
