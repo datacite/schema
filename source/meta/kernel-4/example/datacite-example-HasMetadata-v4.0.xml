@@ -36,7 +36,7 @@
       <contributorName>INIST-CNRS</contributorName>
     </contributor>
   </contributors>
-  <language>eng</language>
+  <language>en</language>
   <resourceType resourceTypeGeneral="Text">Experiment report</resourceType>
   <relatedIdentifiers>
     <relatedIdentifier relatedIdentifierType="URL" relatedMetadataScheme="ISA-Tab" relationType="HasMetadata" schemeType="Text" schemeURI="http://isatab.sourceforge.net/docs/ISA-TAB_release-candidate-1_v1.0_24nov08.pdf">http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18695</relatedIdentifier>

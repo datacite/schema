@@ -25,7 +25,7 @@
 	 <subject>Gender survey</subject>
 	 <subject subjectScheme="GESIS">10300 Demography, Population Research subjectURI="http://www.gesis.org/classification</subject>
 	</subjects>
-	<language>eng</language>
+	<language>en</language>
 	<resourceType resourceTypeGeneral="Text">Article</resourceType>
 	<alternateIdentifiers>
 	<alternateIdentifier alternateIdentifierType="internal ID">da|ra.14.103</alternateIdentifier>
