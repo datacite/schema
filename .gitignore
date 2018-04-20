@@ -23,3 +23,7 @@
 
 # ignore maven build directory
 /target
+
+.settings
+.project
+.classpath
