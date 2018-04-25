@@ -22,10 +22,10 @@ DataCite Metadata Working Group. (2017). DataCite Metadata Schema for the Public
 * Allowing multiple polygons per GeoLocation
 * Addition of new optional "inPolygonPoint" subproperties for polygon
 * Addition of new dateType “Other”
-*	Addition of new "dateInformation" subproperty for dateType
 *	Addition of a new resourceType "DataPaper"
 *	Addition of three new relationType pairs: IsDescribedBy and Describes, HasVersion and IsVersionOf, IsRequiredBy and Requires
-* Addition of a new optional "nameType" attribute for Creator and Contributor. Controlled list: personal, organizational
+* Addition of new subproperty for Date: dateInformation
+* Addition of a new optional attribute for creatorName and ContributorName: nameType. Controlled list: personal, organizational
 * Addition of a new optional "resourceTypeGeneral" attribute for relatedIdentifier. Controlled list is identical to existing resourceTypeGeneral attribute
 * Addition of optional lang attribute to Rights property
 
