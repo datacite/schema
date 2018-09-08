@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+  <!--doi标识符-->
+  <identifier xmlns="http://datacite.org/schema/kernel-4" identifierType="DOI">10.23650/DATA.G.2018.P1</identifier>
+  <!--doi指向的URL信息，name资源出版商名称,language为链接所指向资源语言，参看《ISO-639-2》-->
+  <!--可以定义多个资源链接地址，例如中文版地址，英文版地址，一个DOI可以被解析到多个地址-->
+  <creators xmlns="http://datacite.org/schema/kernel-4">
+    <creator>
+      <!--作者名称[必填]-->
+      <creatorName>马洪云；李成柱；张俊</creatorName>
+      <givenName/>
+      <familyName/>
+      <affiliation>干旱半干旱区地下水与生态重点实验室西安地质调查中心</affiliation>
+    </creator>
+  </creators>
+  <titles xmlns="http://datacite.org/schema/kernel-4">
+    <!--资源的标题[必填] titleType可参照：https://schema.datacite.org/meta/kernel-4.0/include/datacite-titleType-v4.xsd -->
+    <title xml:lang="en-us">鄂尔多斯盆地地下水无机指标数据集（2014-2015年度）</title>
+    <title xml:lang="en-us" titleType="TranslatedTitle">Inorganic Indicator Dataset for Groundwater in Ordos Basin (2014-2015)</title>
+  </titles>
+  <!--出版者[必填]-->
+  <publisher xmlns="http://datacite.org/schema/kernel-4">全国地质资料馆</publisher>
+  <!--出版年[必填] 如:2014-->
+  <publicationYear xmlns="http://datacite.org/schema/kernel-4">2018</publicationYear>
+  <!--关键词[必填]-->
+  <subjects xmlns="http://datacite.org/schema/kernel-4">
+    <subject xml:lang="en-us" schemeURI="" subjectScheme="">鄂尔多斯盆地；地下水；地球化学；无机指标；数据集</subject>
+  </subjects>
+  <!--基金会节点可以删除，如果不删除，以下内容必须填写-->
+  <contributors xmlns="http://datacite.org/schema/kernel-4">
+    <!--贡献者[必填] 贡献者类型必须为以下其中一个：ContactPerson, DataCollector, DataCurator, DataManager, Distributor, Editor, HostingInstitution, Other, Producer, ProjectLeader, ProjectManager, ProjectMember, RegistrationAgency, RegistrationAuthority, RelatedPerson, ResearchGroup, RightsHolder, Researcher, Sponsor, Supervisor, WorkPackageLeader-->
+    <contributor contributorType="ContactPerson">
+      <contributorName>马洪云</contributorName>
+      <nameIdentifier schemeURI="" nameIdentifierScheme=""/>
+      <affiliation>中国地质调查局发展研究中心</affiliation>
+    </contributor>
+  </contributors>
+  <dates xmlns="http://datacite.org/schema/kernel-4">
+    <!--时间[必填] 时间格式:2014-01-01 时间类型必须为以下其中一个：Accepted, Available, Collected, Copyrighted, Created, Issued, Submitted, Updated, Valid-->
+    <date dateType="Accepted">2018-01-26</date>
+  </dates>
+  <!--语言[必填] 请参照 ISO 639-1 语言代码-->
+  <language xmlns="http://datacite.org/schema/kernel-4">chi</language>
+  <!--资源类型[必填] 资源类型必须为以下其中一个：Audiovisual, Collection, Dataset, Event, Image, InteractiveResource, Model, PhysicalObject, Service, Software, Sound, Text, Workflow, Other-->
+  <resourceType xmlns="http://datacite.org/schema/kernel-4" resourceTypeGeneral="Dataset">Geochemistry</resourceType>
+  <alternateIdentifiers xmlns="http://datacite.org/schema/kernel-4">
+    <alternateIdentifier alternateIdentifierType=""/>
+  </alternateIdentifiers>
+  <relatedIdentifiers xmlns="http://datacite.org/schema/kernel-4">
+    <!--关联标识-->
+    <!--关联标识符类型必须为以下其中一个：ARK, arXiv, bibcode, DOI, EAN13, EISSN, Handle, IGSN, ISBN, ISSN, ISTC, LISSN, LSID, PMID, PURL, UPC, URL, URN-->
+    <!--关联类型必须为以下其中一个：IsCitedBy, Cites, IsSupplementTo, IsSupplementedBy, IsContinuedBy, Continues, IsNewVersionOf, IsPreviousVersionOf, IsPartOf, HasPart, IsReferencedBy, References, IsDocumentedBy, Documents, IsCompiledBy, Compiles, IsVariantFormOf, IsOriginalFormOf, IsIdenticalTo, HasMetadata, IsMetadataFor, Reviews, IsReviewedBy, IsDerivedFrom, IsSourceOf-->
+    <relatedIdentifier relatedIdentifierType="ARK" relationType="IsCitedBy" relatedMetadataScheme="" schemeURI=""/>
+  </relatedIdentifiers>
+  <sizes xmlns="http://datacite.org/schema/kernel-4">
+    <!--数据大小-->
+    <size>220 kB</size>
+  </sizes>
+  <formats xmlns="http://datacite.org/schema/kernel-4">
+    <!--数据格式-->
+    <format>excel</format>
+  </formats>
+  <!--数据版本-->
+  <version xmlns="http://datacite.org/schema/kernel-4">1.0</version>
+  <rightsList xmlns="http://datacite.org/schema/kernel-4">
+    <!--版权申明-->
+    <rights rightsURI="http://dcc.ngac.org.cn/home/dataauth.htm">版权信息详见网站</rights>
+  </rightsList>
+  <descriptions xmlns="http://datacite.org/schema/kernel-4">
+    <!--摘要[必填] 摘要类型必须为以下其中一个：Abstract, Methods, SeriesInformation, TableOfContents, TechnicalInfo, Other-->
+    <description xml:lang="en-us" descriptionType="Abstract">本数据集包含了2014年、2015年两年内在鄂尔多斯盆地采集的742个地下水样品的位置信息、取样层位信息及35项无机地球化学成分测试结果信息。采样过程规范，测试结果均由合格实验室测试完成，数据质量可靠。可以真实反映该时段鄂尔多斯盆地地下水质量状况，为研究鄂尔多斯盆地地下水循环演化提供地球化学指标参考。</description>
+  </descriptions>
+  <!--位置节点可以删除，如果不删除，以下内容必须是数字-->
+</resource>
