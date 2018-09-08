@@ -7,17 +7,20 @@
   2011-06-27 v2.2: namespace: kernel-2.2, additions to controlled lists "resourceType", "contributorType", "relatedIdentifierType", and "descriptionType". Removal of intermediate include-files.
   2013-07-24 v3.0: namespace: kernel-3.0; delete LastMetadataUpdate & MetadateVersionNumber; additions to controlled lists "contributorType", "dateType", "descriptionType", "relationType", "relatedIdentifierType" & "resourceType"; deletion of "StartDate" & "EndDate" from list "dateType" and "Film" from "resourceType";  allow arbitrary order of elements; allow optional wrapper elements to be empty; include xml:lang attribute for title, subject & description; include attribute schemeURI for nameIdentifier of creator, contributor & subject; added new attributes "relatedMetadataScheme", "schemeURI" & "schemeType" to relatedIdentifier; included new property "geoLocation"
   2014-08-20 v3.1: additions to controlled lists "relationType", contributorType" and "relatedIdentifierType"; introduction of new child element "affiliation" to "creator" and "contributor"
-  2016-09-19 v4.0: namespace: kernel-4.0; makes "resourceType" required field, added optional "givenName" and "familyName" to creator and contributor, added "funderReference", added "valueURI" for subject, added "geoLocationPolygon" -->
+  2016-09-19 v4.0: namespace: kernel-4.0; makes "resourceType" required field, added optional "givenName" and "familyName" to creator and contributor, added "funderReference", added "valueURI" for subject, added "geoLocationPolygon"
+  2017-10-23 v4.1: Addition of dateType value "Other", relationType values "Describes", "IsDescribedBy", "HasVersion", "IsVersionOf", "Requires", "IsRequiredBy", resourceType value "DataPaper", new subproperties "dateInformation", "inPolygonPoint", new attribute "nameType", optional attribute "resourceTypeGeneral" for relatedIdentifier 
+  2018-09-08 v4.1.1 Make schema 4.1 backwards compatible to 4.0 by allowing geolocation elements in any order -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-4" targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified" xml:lang="EN">
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2009/01/xml.xsd"/>
   <xs:include schemaLocation="include/datacite-titleType-v4.xsd"/>
   <xs:include schemaLocation="include/datacite-contributorType-v4.xsd"/>
-  <xs:include schemaLocation="include/datacite-dateType-v4.xsd"/>
-  <xs:include schemaLocation="include/datacite-resourceType-v4.xsd"/>
-  <xs:include schemaLocation="include/datacite-relationType-v4.xsd"/>
+  <xs:include schemaLocation="include/datacite-dateType-v4.1.xsd"/>
+  <xs:include schemaLocation="include/datacite-resourceType-v4.1.xsd"/>
+  <xs:include schemaLocation="include/datacite-relationType-v4.1.xsd"/>
   <xs:include schemaLocation="include/datacite-relatedIdentifierType-v4.xsd"/>
   <xs:include schemaLocation="include/datacite-funderIdentifierType-v4.xsd"/>
   <xs:include schemaLocation="include/datacite-descriptionType-v4.xsd"/>
+  <xs:include schemaLocation="include/datacite-nameType-v4.1.xsd"/>
   <xs:element name="resource">
     <xs:annotation>
       <xs:documentation>
@@ -53,9 +56,13 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="creatorName">
-                      <xs:simpleType>
-                        <xs:restriction base="nonemptycontentStringType"/>
-                      </xs:simpleType>
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="nonemptycontentStringType">
+                            <xs:attribute name="nameType" type="nameType" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
                     </xs:element>
                     <xs:element name="givenName" minOccurs="0"/>
                     <xs:element name="familyName" minOccurs="0"/>
@@ -160,11 +167,13 @@
               <xs:complexType>
                 <xs:sequence>
                   <xs:element name="contributorName">
-                    <xs:simpleType>
-                      <xs:restriction base="xs:string">
-                        <xs:minLength value="1"/>
-                      </xs:restriction>
-                    </xs:simpleType>
+                    <xs:complexType>
+                      <xs:simpleContent>
+                        <xs:extension base="nonemptycontentStringType">
+                          <xs:attribute name="nameType" type="nameType" use="optional"/>
+                        </xs:extension>
+                      </xs:simpleContent>
+                    </xs:complexType>
                   </xs:element>
                   <xs:element name="givenName" minOccurs="0"/>
                   <xs:element name="familyName" minOccurs="0"/>
@@ -198,6 +207,7 @@
                   <xs:simpleContent>
                     <xs:extension base="xs:string">
                       <xs:attribute name="dateType" type="dateType" use="required"/>
+                      <xs:attribute name="dateInformation" use="optional"/>
                     </xs:extension>
                   </xs:simpleContent>
                 </xs:complexType>
@@ -238,6 +248,7 @@
                 <xs:complexType>
                   <xs:simpleContent>
                     <xs:extension base="xs:string">
+                      <xs:attribute name="resourceTypeGeneral" type="resourceType" use="optional"/>
                       <xs:attribute name="relatedIdentifierType" type="relatedIdentifierType" use="required"/>
                       <xs:attribute name="relationType" type="relationType" use="required"/>
                       <xs:attribute name="relatedMetadataScheme" use="optional"/>
@@ -291,6 +302,7 @@ Use the complete title of a license and include version information if applicabl
                   <xs:simpleContent>
                     <xs:extension base="xs:string">
                       <xs:attribute name="rightsURI" type="xs:anyURI" use="optional"/>
+                      <xs:attribute ref="xml:lang"/>
                     </xs:extension>
                   </xs:simpleContent>
                 </xs:complexType>
@@ -327,7 +339,7 @@ Use the complete title of a license and include version information if applicabl
             <xs:sequence>
               <xs:element name="geoLocation" minOccurs="0" maxOccurs="unbounded">
                 <xs:complexType>
-                  <xs:all>
+                  <xs:choice maxOccurs="unbounded">
                     <xs:element name="geoLocationPlace" minOccurs="0">
                       <xs:annotation>
                         <xs:documentation>Spatial region or named place where the data was gathered or about which the data is focused.</xs:documentation>
@@ -343,17 +355,18 @@ Use the complete title of a license and include version information if applicabl
                         <xs:documentation>A box contains two white space separated latitude-longitude pairs, with each pair separated by whitespace. The first pair is the lower corner, the second is the upper corner.</xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="geoLocationPolygon" minOccurs="0">
+                    <xs:element name="geoLocationPolygon" minOccurs="0" maxOccurs="unbounded">
                       <xs:annotation>
                         <xs:documentation>A drawn polygon area, defined by a set of points and lines connecting the points in a closed chain.</xs:documentation>
                       </xs:annotation>
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element name="polygonPoint" type="point" minOccurs="4" maxOccurs="unbounded"/>
+                          <xs:element name="inPolygonPoint" type="point" minOccurs="0" maxOccurs="1"/>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                  </xs:all>
+                  </xs:choices>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>

@@ -50,7 +50,7 @@ describe "validate other elements" do
       element.replace '<resourceType resourceTypeGeneral="Conference">Dataset</resourceType>'
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(2)
-      expect(errors.first).to include("The value 'Conference' is not an element of the set {'Audiovisual', 'Collection', 'Dataset', 'Event', 'Image', 'InteractiveResource', 'Model', 'PhysicalObject', 'Service', 'Software', 'Sound', 'Text', 'Workflow', 'Other'}.")
+      expect(errors.first).to include("The value 'Conference' is not an element of the set {'Audiovisual', 'Collection', 'DataPaper', 'Dataset', 'Event', 'Image', 'InteractiveResource', 'Model', 'PhysicalObject', 'Service', 'Software', 'Sound', 'Text', 'Workflow', 'Other'}.")
     end
   end
 

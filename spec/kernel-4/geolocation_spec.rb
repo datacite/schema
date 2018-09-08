@@ -45,8 +45,7 @@ describe "validate geoLocation" do
       </geoLocations>
     EOT
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-    expect(errors.length).to eq(1)
-    expect(errors.first).to include("Element '{http://datacite.org/schema/kernel-4}geoLocationPoint': This element is not expected.")
+    expect(errors).to be_empty
   end
 
   it 'geoLocationPoint missing latitude' do
