@@ -366,7 +366,7 @@ Use the complete title of a license and include version information if applicabl
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                  </xs:choices>
+                  </xs:choice>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
