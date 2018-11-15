@@ -347,7 +347,7 @@ Use the complete title of a license and include version information if applicabl
                     </xs:element>
                     <xs:element name="geoLocationPoint" type="point" minOccurs="0">
                       <xs:annotation>
-                        <xs:documentation>A point contains a single latitude-longitude pair, separated by whitespace.</xs:documentation>
+                        <xs:documentation>A point contains a single latitude-longitude pair.</xs:documentation>
                       </xs:annotation>
                     </xs:element>
                     <xs:element name="geoLocationBox" type="box" minOccurs="0">
