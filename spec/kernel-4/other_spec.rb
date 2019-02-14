@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "validate other elements" do
   let(:root) { File.join(File.dirname(__FILE__), '../../source/meta/kernel-4') }
   let(:xsd) { Dir.chdir(root) { Nokogiri::XML::Schema(File.read("metadata.xsd")) }}
-  let(:doc) { Dir.chdir(root) { Nokogiri::XML(File.read("example/datacite-example-full-v4.0.xml")) { |c| c.strict }}}
+  let(:doc) { Dir.chdir(root) { Nokogiri::XML(File.read("example/datacite-example-full-v4.xml")) { |c| c.strict }}}
 
   describe "resourceType" do
     it 'missing resourceType' do
@@ -11,7 +11,7 @@ describe "validate other elements" do
       element.replace ""
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(1)
-      expect(errors.first).to include("Missing child element(s). Expected is one of ( {http://datacite.org/schema/kernel-4}resourceType")
+      expect(errors.first).to include("Missing child element(s). Expected is ( {http://datacite.org/schema/kernel-4}resourceType ).")
     end
 
     it 'missing resourceTypeGeneral' do
@@ -35,7 +35,7 @@ describe "validate other elements" do
       element.replace '<resourceType resourceTypeGeneral="">Dataset</resourceType>'
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(2)
-      expect(errors.last).to eq("33:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': '' is not a valid value of the atomic type '{http://datacite.org/schema/kernel-4}resourceType'.")
+      expect(errors.last).to eq("35:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': '' is not a valid value of the atomic type '{http://datacite.org/schema/kernel-4}resourceType'.")
     end
 
     it 'empty resourceType' do
