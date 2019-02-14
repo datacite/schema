@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.2/metadata.xsd">
   <identifier identifierType="DOI">10.5072/FK25H7QRS</identifier>
   <creators>
     <creator>
@@ -12,7 +12,7 @@
   <titles>
     <title xml:lang="en">Analysis of ADNI data: Normal to MCI conversion</title>
   </titles>
-  <publisher>University of California, San Francisco</publisher>
+  <publisher xml:lang="en">University of California, San Francisco</publisher>
   <publicationYear>2013</publicationYear>
   <subjects>
     <subject xml:lang="en">Aging</subject>
@@ -24,7 +24,7 @@
   </subjects>
   <contributors>
     <contributor contributorType="ResearchGroup">
-      <contributorName nameType="Organizational">Center for Imaging of Neurodegenerative Disease</contributorName>
+      <contributorName xml:lang="en" nameType="Organizational">Center for Imaging of Neurodegenerative Disease</contributorName>
     </contributor>
   </contributors>
   <resourceType resourceTypeGeneral="Dataset"/>
