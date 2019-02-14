@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.2/metadata.xsd">
   <identifier identifierType="DOI">10.5072/geoPointExample</identifier>
   <creators>
     <creator>
@@ -17,7 +17,7 @@
       Gridded results of swath bathymetric mapping of Disko Bay, Western Greenland, 2007-2008
     </title>
   </titles>
-  <publisher>
+  <publisher xml:lang="en">
     PANGAEA - Data Publisher for Earth &amp; Environmental Science
   </publisher>
   <publicationYear>2011</publicationYear>
@@ -43,8 +43,8 @@
     <format>application/zip</format>
   </formats>
   <rightsList>
-    <rights rightsURI="http://creativecommons.org/licenses/by/3.0/deed">Creative Commons Attribution 3.0 Unported</rights>
-  </rightsList>
+    <rights xml:lang="en-US" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="
+CC-BY-3.0"  rightsURI="http://creativecommons.org/licenses/by/3.0/deed">Creative Commons Attribution-NoDerivs 2.0 Generic</rights></rightsList>
   <descriptions>
     <description xml:lang="en" descriptionType="Abstract">
       A ship-based acoustic mapping campaign was conducted at the exit of Ilulissat Ice Fjord and in the sedimentary basin of Disko Bay to the west of the fjord mouth. Submarine landscape and sediment distribution patterns are interpreted in terms of
