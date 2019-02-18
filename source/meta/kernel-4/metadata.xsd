@@ -59,7 +59,7 @@
                     <xs:element name="creatorName">
                       <xs:complexType>
                         <xs:simpleContent>
-                          <xs:extension base="nonemptycontentStringType">
+                          <xs:extension base="xs:string">
                             <xs:attribute name="nameType" type="nameType" use="optional"/>
                             <xs:attribute ref="xml:lang"/>
                           </xs:extension>
@@ -94,7 +94,7 @@
                 </xs:annotation>
                 <xs:complexType>
                   <xs:simpleContent>
-                    <xs:extension base="nonemptycontentStringType">
+                    <xs:extension base="xs:string">
                       <xs:attribute name="titleType" type="titleType" use="optional"/>
                       <xs:attribute ref="xml:lang"/>
                     </xs:extension>
@@ -427,9 +427,6 @@ Use the complete title of a license and include version information if applicabl
                       <xs:annotation>
                         <xs:documentation>The human readable title of the award (grant).</xs:documentation>
                       </xs:annotation>
-                      <xs:simpleType>
-                        <xs:restriction base="nonemptycontentStringType"/>
-                      </xs:simpleType>
                     </xs:element>
                   </xs:all>
                 </xs:complexType>
