@@ -10,7 +10,7 @@
   2016-09-19 v4.0: namespace: kernel-4.0; makes "resourceType" required field, added optional "givenName" and "familyName" to creator and contributor, added "funderReference", added "valueURI" for subject, added "geoLocationPolygon"
   2017-10-23 v4.1: Addition of dateType value "Other", relationType values "Describes", "IsDescribedBy", "HasVersion", "IsVersionOf", "Requires", "IsRequiredBy", resourceType value "DataPaper", new subproperties "dateInformation", "inPolygonPoint", new attribute "nameType", optional attribute "resourceTypeGeneral" for relatedIdentifier 
   2018-09-08 v4.1.1 Make schema 4.1 backwards compatible to 4.0 by allowing geolocation elements in any order
-  2019-02-14 v4.2: Addition of dateType value "Withdrawn", relationType values "Obsoletes", "isObsoletedBy", addition of new subproperties for Rights: rightsIdentifier, rightsIdentifierScheme, schemeURI, addition of the XML language attribute to the properties Creator, Contributor and Publisher for organizational names -->
+  2019-02-14 v4.2: Addition of dateType value "Withdrawn", relationType values "Obsoletes", "isObsoletedBy", addition of new subproperties for Rights: rightsIdentifier, rightsIdentifierScheme, schemeURI, addition of the XML language attribute to the properties Creator, Contributor and Publisher for organizational names, don't check format of DOI -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-4" targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified" xml:lang="EN">
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="include/xml.xsd"/>
   <xs:include schemaLocation="include/datacite-titleType-v4.xsd"/>
@@ -35,12 +35,11 @@
         <xs:element name="identifier">
           <xs:annotation>
             <xs:documentation>A persistent identifier that identifies a resource.</xs:documentation>
-            <xs:documentation>Currently, only DOI is allowed.</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:simpleContent>
-              <xs:extension base="doiType">
-                <xs:attribute name="identifierType" use="required" fixed="DOI"/>
+              <xs:extension base="nonemptycontentStringType">
+                <xs:attribute name="identifierType" use="required"/>
               </xs:extension>
             </xs:simpleContent>
           </xs:complexType>
@@ -438,12 +437,6 @@ Use the complete title of a license and include version information if applicabl
     </xs:complexType>
   </xs:element>
   <!-- TYPE DECLARATIONS -->
-  <!-- defines the value for a DOI"  -->
-  <xs:simpleType name="doiType">
-    <xs:restriction base="xs:token">
-      <xs:pattern value="10\..+/.+"/>
-    </xs:restriction>
-  </xs:simpleType>
   <!-- defines value for mandatory fields -->
   <xs:simpleType name="nonemptycontentStringType">
     <xs:restriction base="xs:string">
