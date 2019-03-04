@@ -1,0 +1,170 @@
+{
+  "id": "https://doi.org/10.5072/10.cpos-example",
+  "doi": "10.5072/10.cpos-example",
+  "types": {
+    "resourceTypeGeneral": "Text",
+    "resourceType": "Article",
+    "schemaOrg": "ScholarlyArticle",
+    "citeproc": "article-journal",
+    "bibtex": "article",
+    "ris": "RPRT"
+  },
+  "creators": [
+    {
+      "nameType": "Personal",
+      "name": "Kreyenfeld, Michaela",
+      "givenName": "Michaela",
+      "familyName": "Kreyenfeld",
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "http://isni.org/isni/0000000117540116",
+          "nameIdentifierScheme": "ISNI"
+        }
+      ]
+    },
+    {
+      "nameType": "Personal",
+      "name": "Hornung, Anne",
+      "givenName": "Anne",
+      "familyName": "Hornung",
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "http://viaf.org/viaf/304639093",
+          "nameIdentifierScheme": "VIAF"
+        }
+      ]
+    },
+    {
+      "nameType": "Personal",
+      "name": "Kubisch, Karolin",
+      "givenName": "Karolin",
+      "familyName": "Kubisch",
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "http://viaf.org/viaf/303937450",
+          "nameIdentifierScheme": "VIAF"
+        }
+      ]
+    }
+  ],
+  "titles": [
+    {
+      "title": "The German Generations and Gender Survey",
+      "lang": "en"
+    },
+    {
+      "title": "Some Critical Reflections on the Validity of Fertility Histories",
+      "titleType": "Subtitle",
+      "lang": "en"
+    }
+  ],
+  "publisher": "Federal Institute for Population Research, Germany",
+  "container": {
+    "type": "Series",
+    "title": "Comparative Population Studies Vol 38",
+    "firstPage": "No 1 (2013)"
+  },
+  "subjects": [
+    {
+      "subject": "Fertility",
+      "lang": "en"
+    },
+    {
+      "subject": "Marriage",
+      "lang": "en"
+    },
+    {
+      "subject": "Germany",
+      "lang": "en"
+    },
+    {
+      "subject": "Data validation",
+      "lang": "en"
+    },
+    {
+      "subject": "Mikrozensus",
+      "lang": "en"
+    },
+    {
+      "subject": "Gender survey",
+      "lang": "en"
+    },
+    {
+      "subject": "10300 Demography, Population Research",
+      "subjectScheme": "GESIS",
+      "schemeUri": "http://www.gesis.org/en/services/research/tools-for-searching/classification",
+      "lang": "en"
+    }
+  ],
+  "contributors": [
+    {
+      "nameType": "Organizational",
+      "name": "Federal Institute For Population Research"
+    }
+  ],
+  "dates": [
+    {
+      "date": "2013",
+      "dateType": "Issued"
+    }
+  ],
+  "publicationYear": "2013",
+  "language": "en",
+  "identifiers": [
+    {
+      "identifierType": "DOI",
+      "identifier": "https://doi.org/10.5072/10.cpos-example"
+    },
+    {
+      "identifierType": "internal ID",
+      "identifier": "da|ra.14.103"
+    }
+  ],
+  "sizes": [
+
+  ],
+  "formats": [
+    "PDF"
+  ],
+  "version": "1",
+  "rightsList": [
+    {
+      "rights": "Creative Commons License: Attribution-NonCommercial-NoDerivs 3.0 Unported",
+      "rightsUri": "http://creativecommons.org/licenses/by-nc-nd/3.0/deed",
+      "lang": "en-US"
+    }
+  ],
+  "descriptions": [
+    {
+      "description": "Comparative Population Studies Vol 38, No 1 (2013)",
+      "descriptionType": "SeriesInformation",
+      "lang": "en"
+    },
+    {
+      "description": "This paper validates the fertility histories of the German Generations and Gender Survey (GGS). Focusing on the cohorts 1930-69 of West German women, the total number of children, the parity distribution and the parity progression ratios are comparedto external sources. One major result from this validation is that the German GGS understates the fertility for the older cohorts and overstates it for the younger ones.",
+      "descriptionType": "Abstract",
+      "lang": "en"
+    }
+  ],
+  "geoLocations": [
+
+  ],
+  "fundingReferences": [
+
+  ],
+  "relatedIdentifiers": [
+    {
+      "relatedIdentifier": "urn:nbn:de:bib-cpos-2013-02en8",
+      "relatedIdentifierType": "URN",
+      "relationType": "IsIdenticalTo"
+    },
+    {
+      "relatedIdentifier": "10.4232/10.cpos-2013-02en",
+      "relatedIdentifierType": "DOI",
+      "relationType": "IsIdenticalTo"
+    }
+  ],
+  "schemaVersion": "http://datacite.org/schema/kernel-4",
+  "agency": "DataCite",
+  "state": "findable"
+}

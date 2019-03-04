@@ -1,0 +1,113 @@
+{
+  "id": "https://doi.org/10.5072/d3p26q35r-test",
+  "doi": "10.5072/d3p26q35r-test",
+  "types": {
+    "resourceTypeGeneral": "Dataset",
+    "resourceType": "Dataset",
+    "schemaOrg": "Dataset",
+    "citeproc": "dataset",
+    "bibtex": "misc",
+    "ris": "DATA"
+  },
+  "creators": [
+    {
+      "nameType": "Personal",
+      "name": "Fosmire, Michael",
+      "givenName": "Michael",
+      "familyName": "Fosmire"
+    },
+    {
+      "nameType": "Personal",
+      "name": "Wertz, Ruth",
+      "givenName": "Ruth",
+      "familyName": "Wertz"
+    },
+    {
+      "nameType": "Personal",
+      "name": "Purzer, Senay",
+      "givenName": "Senay",
+      "familyName": "Purzer"
+    }
+  ],
+  "titles": [
+    {
+      "title": "Critical Engineering Literacy Test (CELT)",
+      "lang": "en"
+    }
+  ],
+  "publisher": "Purdue University Research Repository (PURR)",
+  "container": {
+  },
+  "subjects": [
+    {
+      "subject": "Assessment",
+      "lang": "en"
+    },
+    {
+      "subject": "Information Literacy",
+      "lang": "en"
+    },
+    {
+      "subject": "Engineering",
+      "lang": "en"
+    },
+    {
+      "subject": "Undergraduate Students",
+      "lang": "en"
+    },
+    {
+      "subject": "CELT",
+      "lang": "en"
+    },
+    {
+      "subject": "Purdue University",
+      "lang": "en"
+    }
+  ],
+  "contributors": [
+
+  ],
+  "dates": [
+    {
+      "date": "2013",
+      "dateType": "Issued"
+    }
+  ],
+  "publicationYear": "2013",
+  "language": "en",
+  "identifiers": [
+    {
+      "identifierType": "DOI",
+      "identifier": "https://doi.org/10.5072/d3p26q35r-test"
+    }
+  ],
+  "sizes": [
+
+  ],
+  "formats": [
+
+  ],
+  "version": "1.0",
+  "rightsList": [
+
+  ],
+  "descriptions": [
+    {
+      "description": "We developed an instrument, Critical Engineering Literacy Test (CELT), which is a multiple choice instrument designed to measure undergraduate students’ scientific and information literacy skills. It requires students to first read a technical memo\n      and, based on the memo’s arguments, answer eight multiple choice and six open-ended response questions. We collected data from 143 first-year engineering students and conducted an item analysis. The KR-20 reliability of the instrument was .39. Item\n      difficulties ranged between .17 to .83. The results indicate low reliability index but acceptable levels of item difficulties and item discrimination indices. Students were most challenged when answering items measuring scientific and mathematical\n      literacy (i.e., identifying incorrect information).",
+      "descriptionType": "Abstract",
+      "lang": "en"
+    }
+  ],
+  "geoLocations": [
+
+  ],
+  "fundingReferences": [
+
+  ],
+  "relatedIdentifiers": [
+
+  ],
+  "schemaVersion": "http://datacite.org/schema/kernel-4",
+  "agency": "DataCite",
+  "state": "findable"
+}
