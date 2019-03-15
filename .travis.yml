@@ -28,7 +28,7 @@ script:
   - bundle exec rspec
   # - mvn clean test -B -Droot.dir=build/ -Dindex.html=index.html
   - bundle exec middleman build -e $RACK_ENV
-  - bundle exec htmlproofer --http-status-ignore "999,403" --allow-hash-href --empty_alt_ignore --only-4xx ./build
+  - bundle exec htmlproofer --http-status-ignore "999,403" --allow-hash-href --only-4xx ./build
 
 deploy:
   provider: s3
