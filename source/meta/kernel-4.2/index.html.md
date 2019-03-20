@@ -1,7 +1,7 @@
 ---
 title: DataCite Metadata Schema 4.2
 version: 4.2
-date: 2019-02-14
+date: 2019-03-20
 layout: schema
 schema_url: /meta/kernel-4.2/metadata.xsd
 documentation_url: /meta/kernel-4.2/doc/DataCite-MetadataKernel_v4.2.pdf
