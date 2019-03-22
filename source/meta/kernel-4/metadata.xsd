@@ -329,11 +329,7 @@ Use the complete title of a license and include version information if applicabl
                 <xs:complexType mixed="true">
                   <xs:choice>
                     <xs:element name="br" minOccurs="0" maxOccurs="unbounded">
-                      <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                          <xs:length value="0"/>
-                        </xs:restriction>
-                      </xs:simpleType>
+                      <xs:complexType/>
                     </xs:element>
                   </xs:choice>
                   <xs:attribute name="descriptionType" type="descriptionType" use="required"/>
