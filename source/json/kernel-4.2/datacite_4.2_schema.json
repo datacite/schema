@@ -303,7 +303,7 @@
         },
         "language": {
             "type": "string",
-            "vocabulary": "language-tags"
+            "$comment": "Primary language of the resource. Allowed values are taken from  IETF BCP 47, ISO 639-1 language codes."
         },
         "resourceType": {
             "type": "object",
