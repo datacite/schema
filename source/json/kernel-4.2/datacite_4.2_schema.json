@@ -212,27 +212,45 @@
     "type": "object",
 
     "properties": {
-        "identifier": {
+        "types": {
             "type": "object",
             "properties": {
-                "identifier": {"type": "string", "format": "doi"},
-                "identifierType": {"type": "string", "enum": ["DOI"]}
+                "resourceType": {"type": "string"},
+                "resourceTypeGeneral": {"$ref": "#/definitions/resourceTypeGeneral"}
             },
-            "required": ["identifier", "identifierType"]
+            "required": ["resourceType", "resourceTypeGeneral"]
+        },
+        "identifiers": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "identifier": {"type": "string"},
+                    "identifierType": {"type": "string"}
+                },
+                "required": ["identifier", "identifierType"]
+            },
+            "uniqueItems": true,
+            "contains": {
+                "properties": {
+                    "identifier": {"format": "doi"},
+                    "identifierType": {"enum": ["DOI"]}
+                }
+            }
         },
         "creators": {
             "type": "array",
             "items": {
                 "type": "object",
                 "properties": {
-                    "creatorName": {"type": "string"},
+                    "name": {"type": "string"},
                     "nameType": {"$ref": "#/definitions/nameType"},
                     "givenName": {"type": "string"},
                     "familyName": {"type": "string"},
                     "nameIdentifiers": {"$ref": "#/definitions/nameIdentifiers"},
                     "affiliations": {"$ref": "#/definitions/affiliations"}
                 },
-                "required": ["creatorName"]
+                "required": ["name"]
             },
             "minItems": 1,
             "uniqueItems": true
@@ -277,14 +295,14 @@
                 "type": "object",
                 "properties": {
                     "contributorType": {"$ref": "#/definitions/contributorType"},
-                    "contributorName": {"type": "string"},
+                    "name": {"type": "string"},
                     "nameType": {"$ref": "#/definitions/nameType"},
                     "givenName": {"type": "string"},
                     "familyName": {"type": "string"},
                     "nameIdentifiers": {"$ref": "#/definitions/nameIdentifiers"},
                     "affiliations": {"$ref": "#/definitions/affiliations"}
                 },
-                "required": ["contributorType", "contributorName"]
+                "required": ["contributorType", "name"]
             },
             "uniqueItems": true
         },
@@ -304,26 +322,6 @@
         "language": {
             "type": "string",
             "$comment": "Primary language of the resource. Allowed values are taken from  IETF BCP 47, ISO 639-1 language codes."
-        },
-        "resourceType": {
-            "type": "object",
-            "properties": {
-                "resourceType": {"type": "string"},
-                "resourceTypeGeneral": {"$ref": "#/definitions/resourceTypeGeneral"}
-            },
-            "required": ["resourceType", "resourceTypeGeneral"]
-        },
-        "alternateIdentifiers": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "alternateIdentifier": {"type": "string"},
-                    "alternateIdentifierType": {"type": "string"}
-                },
-                "required": ["alternateIdentifier", "alternateIdentifierType"]
-            },
-            "uniqueItems": true
         },
         "relatedIdentifiers": {
             "type": "array",
@@ -358,22 +356,14 @@
         "sizes": {
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "size": {"type": "string"}
-                },
-                "required": ["size"]
+                "type": "string"
             },
             "uniqueItems": true
         },
         "formats": {
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "format": {"type": "string"}
-                },
-                "required": ["format"]
+                "type": "string"
             },
             "uniqueItems": true
         },
@@ -462,11 +452,11 @@
     },
 
     "required": [
-        "identifier",
+        "identifiers",
         "creators",
         "titles",
         "publisher",
         "publicationYear",
-        "resourceType"
+        "types"
     ]
 }
