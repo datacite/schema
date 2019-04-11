@@ -261,7 +261,8 @@
                 "type": "object",
                 "properties": {
                     "title": {"type": "string"},
-                    "titleType": {"$ref": "#/definitions/titleType"}
+                    "titleType": {"$ref": "#/definitions/titleType"},
+                    "lang": {"type": "string"}
                 },
                 "required": ["title"]
             },
@@ -283,7 +284,8 @@
                     "subject": {"type": "string"},
                     "subjectScheme": {"type": "string"},
                     "schemeURI": {"type": "string", "format": "uri"},
-                    "valueURI": {"type": "string", "format": "uri"}
+                    "valueURI": {"type": "string", "format": "uri"},
+                    "lang": {"type": "string"}
                 },
                 "required": ["subject"]
             },
@@ -379,7 +381,8 @@
                     "rightsURI": {"type": "string", "format": "uri"},
                     "rightsIdentifier": {"type": "string"},
                     "rightsIdentifierScheme": {"type": "string"},
-                    "schemeURI": {"type": "string", "format": "uri"}
+                    "schemeURI": {"type": "string", "format": "uri"},
+                    "lang": {"type": "string"}
                 },
                 "required": ["rights"]
             },
@@ -391,7 +394,8 @@
                 "type": "object",
                 "properties": {
                     "description": {"type": "string"},
-                    "descriptionType": {"$ref": "#/definitions/descriptionType"}
+                    "descriptionType": {"$ref": "#/definitions/descriptionType"},
+                    "lang": {"type": "string"}
                 },
                 "required": ["description", "descriptionType"]
             },
