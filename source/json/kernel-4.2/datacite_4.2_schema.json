@@ -385,8 +385,7 @@
                     "rightsIdentifierScheme": {"type": "string"},
                     "schemeURI": {"type": "string", "format": "uri"},
                     "lang": {"type": "string"}
-                },
-                "required": ["rights"]
+                }
             },
             "uniqueItems": true
         },
