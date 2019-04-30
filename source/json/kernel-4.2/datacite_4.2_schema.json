@@ -223,7 +223,7 @@
         "identifier": {
             "type": "object",
             "properties": {
-                "identifier": {"type": "string", "format": "doi"},
+                "identifier": {"type": "string", "pattern": "^10\\.\\d+(\\.\\d+)*/.+$"},
                 "identifierType": {"type": "string", "enum": ["DOI"]}
             },
             "required": ["identifier", "identifierType"]
