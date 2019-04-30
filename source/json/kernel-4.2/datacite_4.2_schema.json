@@ -220,23 +220,13 @@
             },
             "required": ["resourceType", "resourceTypeGeneral"]
         },
-        "identifiers": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "identifier": {"type": "string"},
-                    "identifierType": {"type": "string"}
-                },
-                "required": ["identifier", "identifierType"]
+        "identifier": {
+            "type": "object",
+            "properties": {
+                "identifier": {"type": "string", "format": "doi"},
+                "identifierType": {"type": "string", "enum": ["DOI"]}
             },
-            "uniqueItems": true,
-            "contains": {
-                "properties": {
-                    "identifier": {"format": "doi"},
-                    "identifierType": {"enum": ["DOI"]}
-                }
-            }
+            "required": ["identifier", "identifierType"]
         },
         "creators": {
             "type": "array",
@@ -324,6 +314,18 @@
         "language": {
             "type": "string",
             "$comment": "Primary language of the resource. Allowed values are taken from  IETF BCP 47, ISO 639-1 language codes."
+        },
+        "alternateIdentifiers": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "alternateIdentifier": {"type": "string"},
+                    "alternateIdentifierType": {"type": "string"}
+                },
+                "required": ["alternateIdentifier", "alternateIdentifierType"]
+            },
+            "uniqueItems": true
         },
         "relatedIdentifiers": {
             "type": "array",
@@ -464,7 +466,7 @@
     },
 
     "required": [
-        "identifiers",
+        "identifier",
         "creators",
         "titles",
         "publisher",
