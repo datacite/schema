@@ -43,7 +43,7 @@
       <xs:enumeration value="Requires"/>
       <xs:enumeration value="IsRequiredBy"/>
       <xs:enumeration value="Obsoletes"/>
-      <xs:enumeration value="IsObsoletedBy "/>
+      <xs:enumeration value="IsObsoletedBy"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>
