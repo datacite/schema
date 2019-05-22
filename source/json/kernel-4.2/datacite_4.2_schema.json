@@ -212,10 +212,18 @@
     "type": "object",
 
     "properties": {
+        "types": {
+            "type": "object",
+            "properties": {
+                "resourceType": {"type": "string"},
+                "resourceTypeGeneral": {"$ref": "#/definitions/resourceTypeGeneral"}
+            },
+            "required": ["resourceType", "resourceTypeGeneral"]
+        },
         "identifier": {
             "type": "object",
             "properties": {
-                "identifier": {"type": "string", "format": "doi"},
+                "identifier": {"type": "string", "pattern": "^10\\.\\d+(\\.\\d+)*/.+$"},
                 "identifierType": {"type": "string", "enum": ["DOI"]}
             },
             "required": ["identifier", "identifierType"]
@@ -225,14 +233,14 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "creatorName": {"type": "string"},
+                    "name": {"type": "string"},
                     "nameType": {"$ref": "#/definitions/nameType"},
                     "givenName": {"type": "string"},
                     "familyName": {"type": "string"},
                     "nameIdentifiers": {"$ref": "#/definitions/nameIdentifiers"},
                     "affiliations": {"$ref": "#/definitions/affiliations"}
                 },
-                "required": ["creatorName"]
+                "required": ["name"]
             },
             "minItems": 1,
             "uniqueItems": true
@@ -243,7 +251,8 @@
                 "type": "object",
                 "properties": {
                     "title": {"type": "string"},
-                    "titleType": {"$ref": "#/definitions/titleType"}
+                    "titleType": {"$ref": "#/definitions/titleType"},
+                    "lang": {"type": "string"}
                 },
                 "required": ["title"]
             },
@@ -265,7 +274,8 @@
                     "subject": {"type": "string"},
                     "subjectScheme": {"type": "string"},
                     "schemeURI": {"type": "string", "format": "uri"},
-                    "valueURI": {"type": "string", "format": "uri"}
+                    "valueURI": {"type": "string", "format": "uri"},
+                    "lang": {"type": "string"}
                 },
                 "required": ["subject"]
             },
@@ -277,14 +287,14 @@
                 "type": "object",
                 "properties": {
                     "contributorType": {"$ref": "#/definitions/contributorType"},
-                    "contributorName": {"type": "string"},
+                    "name": {"type": "string"},
                     "nameType": {"$ref": "#/definitions/nameType"},
                     "givenName": {"type": "string"},
                     "familyName": {"type": "string"},
                     "nameIdentifiers": {"$ref": "#/definitions/nameIdentifiers"},
                     "affiliations": {"$ref": "#/definitions/affiliations"}
                 },
-                "required": ["contributorType", "contributorName"]
+                "required": ["contributorType", "name"]
             },
             "uniqueItems": true
         },
@@ -303,15 +313,7 @@
         },
         "language": {
             "type": "string",
-            "vocabulary": "language-tags"
-        },
-        "resourceType": {
-            "type": "object",
-            "properties": {
-                "resourceType": {"type": "string"},
-                "resourceTypeGeneral": {"$ref": "#/definitions/resourceTypeGeneral"}
-            },
-            "required": ["resourceType", "resourceTypeGeneral"]
+            "$comment": "Primary language of the resource. Allowed values are taken from  IETF BCP 47, ISO 639-1 language codes."
         },
         "alternateIdentifiers": {
             "type": "array",
@@ -358,22 +360,14 @@
         "sizes": {
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "size": {"type": "string"}
-                },
-                "required": ["size"]
+                "type": "string"
             },
             "uniqueItems": true
         },
         "formats": {
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "format": {"type": "string"}
-                },
-                "required": ["format"]
+                "type": "string"
             },
             "uniqueItems": true
         },
@@ -389,9 +383,9 @@
                     "rightsURI": {"type": "string", "format": "uri"},
                     "rightsIdentifier": {"type": "string"},
                     "rightsIdentifierScheme": {"type": "string"},
-                    "schemeURI": {"type": "string", "format": "uri"}
-                },
-                "required": ["rights"]
+                    "schemeURI": {"type": "string", "format": "uri"},
+                    "lang": {"type": "string"}
+                }
             },
             "uniqueItems": true
         },
@@ -401,7 +395,8 @@
                 "type": "object",
                 "properties": {
                     "description": {"type": "string"},
-                    "descriptionType": {"$ref": "#/definitions/descriptionType"}
+                    "descriptionType": {"$ref": "#/definitions/descriptionType"},
+                    "lang": {"type": "string"}
                 },
                 "required": ["description", "descriptionType"]
             },
@@ -458,6 +453,14 @@
                 "required": ["funderName"]
             },
             "uniqueItems": true
+        },
+        "schemaVersion": {
+            "type": "string",
+            "const": "http://datacite.org/schema/kernel-4"
+        },
+        "agency": {
+            "type": "string",
+            "enum": ["DataCite"]
         }
     },
 
@@ -467,6 +470,8 @@
         "titles",
         "publisher",
         "publicationYear",
-        "resourceType"
+        "types",
+        "schemaVersion",
+        "agency"
     ]
 }
