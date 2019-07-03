@@ -3,6 +3,7 @@
   "doi": "10.5281/zenodo.47394",
   "types": {
     "resourceTypeGeneral": "Dataset",
+    "resourceType": "Dataset",
     "schemaOrg": "Dataset",
     "citeproc": "dataset",
     "bibtex": "misc",
@@ -58,16 +59,12 @@
     }
   ],
   "publicationYear": "2016",
-  "identifiers": [
+  "identifier": 
     {
       "identifierType": "DOI",
-      "identifier": "https://doi.org/10.5281/zenodo.47394"
-    },
-    {
-      "identifierType": "URL",
-      "identifier": "http://zenodo.org/record/47394"
+      "identifier": "10.5281/zenodo.47394"
     }
-  ],
+  ,
   "sizes": [
 
   ],

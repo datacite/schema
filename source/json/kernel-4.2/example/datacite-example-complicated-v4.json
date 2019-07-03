@@ -71,16 +71,12 @@
   ],
   "publicationYear": "2010",
   "language": "de",
-  "identifiers": [
+  "identifier": 
     {
       "identifierType": "DOI",
-      "identifier": "https://doi.org/10.5072/testpub"
-    },
-    {
-      "identifierType": "ISBN",
-      "identifier": "937-0-4523-12357-6"
+      "identifier": "10.5072/testpub"
     }
-  ],
+  ,
   "sizes": [
     "256 pages"
   ],

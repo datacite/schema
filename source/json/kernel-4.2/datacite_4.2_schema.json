@@ -70,7 +70,7 @@
         },
         "date": {
             "type": "string",
-            "oneOf": [
+            "anyOf": [
                 {"format": "year"},
                 {"format": "yearmonth"},
                 {"format": "date"},

@@ -71,12 +71,12 @@
   ],
   "publicationYear": "1963",
   "language": "en",
-  "identifiers": [
+  "identifier": 
     {
       "identifierType": "DOI",
-      "identifier": "https://doi.org/10.5072/datacollector_datecollected_geolocationbox"
+      "identifier": "10.5072/datacollector_datecollected_geolocationbox"
     }
-  ],
+  ,
   "sizes": [
     "10 p."
   ],
