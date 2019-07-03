@@ -39,12 +39,12 @@
     }
   ],
   "publicationYear": "2017",
-  "identifiers": [
+  "identifier": 
     {
       "identifierType": "DOI",
-      "identifier": "https://doi.org/10.5072/example-polygon"
+      "identifier": "10.5072/example-polygon"
     }
-  ],
+  ,
   "sizes": [
 
   ],

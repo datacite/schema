@@ -53,20 +53,11 @@
   ],
   "publicationYear": "2008",
   "language": "en",
-  "identifiers": [
+  "identifier": 
     {
       "identifierType": "DOI",
-      "identifier": "https://doi.org/10.5072/1003496"
+      "identifier": "10.5072/1003496"
     },
-    {
-      "identifierType": "ADS Grey Lit ID",
-      "identifier": "4335"
-    },
-    {
-      "identifierType": "OASIS ID",
-      "identifier": "suatltd1-48159"
-    }
-  ],
   "sizes": [
     "Doc: 46 kb",
     "PDF: 750 kb",

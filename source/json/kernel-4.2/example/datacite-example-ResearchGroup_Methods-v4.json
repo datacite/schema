@@ -3,6 +3,7 @@
   "doi": "10.5072/fk25h7qrs",
   "types": {
     "resourceTypeGeneral": "Dataset",
+    "resourceType": "Dataset",
     "schemaOrg": "Dataset",
     "citeproc": "dataset",
     "bibtex": "misc",
@@ -60,7 +61,8 @@
   "contributors": [
     {
       "nameType": "Organizational",
-      "name": "Center For Imaging Of Neurodegenerative Disease"
+      "name": "Center For Imaging Of Neurodegenerative Disease",
+      "contributorType": "ResearchGroup"
     }
   ],
   "dates": [
@@ -70,12 +72,12 @@
     }
   ],
   "publicationYear": "2013",
-  "identifiers": [
+  "identifier": 
     {
       "identifierType": "DOI",
-      "identifier": "https://doi.org/10.5072/fk25h7qrs"
+      "identifier": "10.5072/fk25h7qrs"
     }
-  ],
+  ,
   "sizes": [
 
   ],

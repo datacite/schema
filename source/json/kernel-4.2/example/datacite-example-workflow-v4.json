@@ -69,12 +69,12 @@
   ],
   "publicationYear": "2012",
   "language": "en",
-  "identifiers": [
+  "identifier": 
     {
       "identifierType": "DOI",
-      "identifier": "https://doi.org/10.5072/100044"
+      "identifier": "10.5072/100044"
     }
-  ],
+  ,
   "sizes": [
     "31 MB"
   ],

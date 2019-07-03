@@ -74,7 +74,8 @@
   "contributors": [
     {
       "nameType": "Organizational",
-      "name": "INIST-CNRS"
+      "name": "INIST-CNRS",
+      "contributorType":"ResearchGroup"
     }
   ],
   "dates": [
@@ -85,12 +86,12 @@
   ],
   "publicationYear": "2010",
   "language": "en",
-  "identifiers": [
+  "identifier": 
     {
       "identifierType": "DOI",
-      "identifier": "https://doi.org/10.5072/example"
+      "identifier": "10.5072/example"
     }
-  ],
+  ,
   "sizes": [
     "183 ko",
     "3 pages"

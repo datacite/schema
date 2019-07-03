@@ -65,12 +65,12 @@
   ],
   "publicationYear": "2016",
   "language": "en",
-  "identifiers": [
+  "identifier": 
     {
       "identifierType": "DOI",
-      "identifier": "https://doi.org/10.5072/example-datapaper"
+      "identifier": "10.5072/example-datapaper"
     }
-  ],
+  ,
   "sizes": [
 
   ],
