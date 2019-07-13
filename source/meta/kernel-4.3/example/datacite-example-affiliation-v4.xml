@@ -15,7 +15,7 @@
       <familyName>Carberry</familyName>
       <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-1825-0097</nameIdentifier>
       <affiliation affiliationIdentifier="https://ror.org/05gq02987" affiliationIdentifierScheme="ROR">Brown University</affiliation>
-      <affiliation affiliationIdentifier="https://ror.org/05h7xva58" affiliationIdentifierScheme="ROR">Wesleyan University</affiliation>
+      <affiliation affiliationIdentifier="grid.268117.b" affiliationIdentifierScheme="GRID" schemeURI="https://grid.ac/institutes/">Wesleyan University</affiliation>
     </creator>
     <creator>
       <creatorName nameType="Organizational">The Psychoceramics Study Group</creatorName>
