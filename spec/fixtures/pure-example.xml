@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resource xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd" 
+  xmlns="http://datacite.org/schema/kernel-4" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <identifier identifierType="DOI">10.17630/bb43e6a3-72e0-464c-9fdd-fbe5d3e56a09</identifier>
+  <creators>
+    <creator>
+      <creatorName>Haywood, Raphaelle Dawn</creatorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Raphaelle Dawn</givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Haywood</familyName>
+      <affiliation xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">School of Physics and Astronomy</affiliation>
+    </creator>
+    <creator>
+      <creatorName>Cameron, Andrew Collier</creatorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Andrew Collier</givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Cameron</familyName>
+      <affiliation xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">School of Physics and Astronomy</affiliation>
+    </creator>
+    <creator>
+      <creatorName>Unruh, Y. C. </creatorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Y. C. </givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Unruh</familyName>
+    </creator>
+    <creator>
+      <creatorName>Lovis, C. </creatorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">C. </givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Lovis</familyName>
+    </creator>
+    <creator>
+      <creatorName>Lanza, A.F. </creatorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">A.F. </givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Lanza</familyName>
+    </creator>
+    <creator>
+      <creatorName>Llama, Joseph</creatorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Joseph</givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Llama</familyName>
+      <affiliation xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">School of Physics and Astronomy</affiliation>
+    </creator>
+    <creator>
+      <creatorName>Deleuil, M. </creatorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">M. </givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Deleuil</familyName>
+    </creator>
+    <creator>
+      <creatorName>Fares, Rim</creatorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Rim</givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Fares</familyName>
+    </creator>
+    <creator>
+      <creatorName>Gillon, M. </creatorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">M. </givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Gillon</familyName>
+    </creator>
+    <creator>
+      <creatorName>Moutou, C. </creatorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">C. </givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Moutou</familyName>
+    </creator>
+    <creator>
+      <creatorName>Pepe, F. </creatorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">F. </givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Pepe</familyName>
+    </creator>
+    <creator>
+      <creatorName>Pollacco, D. </creatorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">D. </givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Pollacco</familyName>
+    </creator>
+    <creator>
+      <creatorName>Queloz, D. </creatorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">D. </givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Queloz</familyName>
+    </creator>
+    <creator>
+      <creatorName>Ségransan, D. </creatorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">D. </givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Ségransan</familyName>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">Data underpinning - The Sun as a planet-host star: Proxies from SDO images for HARPS radial-velocity variations</title>
+  </titles>
+  <publisher>University of St Andrews</publisher>
+  <publicationYear>2016</publicationYear>
+  <resourceType resourceTypeGeneral="Audiovisual">Dataset</resourceType>
+  <contributors>
+    <contributor contributorType="ContactPerson">
+      <contributorName>Haywood, Raphaelle Dawn</contributorName>
+      <givenName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Raphaelle Dawn</givenName>
+      <familyName xsi:type="xs:string" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">Haywood</familyName>
+    </contributor>
+  </contributors>
+  <dates>
+    <date dateType="Available">2016-01-20</date>
+  </dates>
+  <sizes>
+    <size>1KB</size>
+    <size>6KB</size>
+    <size>25KB</size>
+    <size>4KB</size>
+    <size>11KB</size>
+    <size>7MB</size>
+  </sizes>
+  <formats>
+    <format>application/octet-stream</format>
+    <format>application/x-rtf</format>
+    <format>text/plain</format>
+    <format>text/plain</format>
+    <format>application/octet-stream</format>
+    <format>application/x-gzip</format>
+  </formats>
+  <rightsList>
+    <rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY</rights>
+    <rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY</rights>
+    <rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY</rights>
+    <rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY</rights>
+    <rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY</rights>
+    <rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY</rights>
+  </rightsList>
+  <descriptions>
+    <description descriptionType="Abstract" xml:lang="en"></description>
+  </descriptions>
+  <fundingReferences>
+    <fundingReference>
+      <funderName>Science &amp; Technology Facilities Council</funderName>
+      <awardNumber>ST/M001296/1</awardNumber>
+      <awardTitle>Astronomy at St Andrews 2015-2018</awardTitle>
+    </fundingReference>
+    <fundingReference>
+      <funderName>European Commission</funderName>
+      <awardTitle>ETAEARTH</awardTitle>
+    </fundingReference>
+    <fundingReference>
+      <funderName>Science &amp; Technology Facilities Council</funderName>
+      <awardNumber>ST/I000666/1</awardNumber>
+      <awardTitle>St Andrrews Astronomy PATT linked Travel and subsistence</awardTitle>
+    </fundingReference>
+    <fundingReference>
+      <funderName>Science &amp; Technology Facilities Council</funderName>
+      <awardNumber>ST/J001651/1</awardNumber>
+      <awardTitle>Astrophysics at St Andrews: 2012 - 2014</awardTitle>
+    </fundingReference>
+    <fundingReference>
+      <funderName>PPARC - Now STFC</funderName>
+      <awardNumber>PP/D000890/1</awardNumber>
+      <awardTitle>Astrophysics at St.Andrews</awardTitle>
+    </fundingReference>
+    <fundingReference>
+      <funderName>Science &amp; Technology Facilities Council</funderName>
+      <awardNumber>ST/G001006/1</awardNumber>
+      <awardTitle>Patt Linked Travel &amp; Subsistence</awardTitle>
+    </fundingReference>
+  </fundingReferences>
+</resource>

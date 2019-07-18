@@ -6,12 +6,6 @@ describe "full example" do
   let(:xsd) { Dir.chdir(root) { Nokogiri::XML::Schema(File.read("metadata.xsd")) }}
 
   it 'does not validate' do
-    expect(doc).not_to pass_validation(xsd)
-  end
-
-  it 'missing nameIdentifier string' do
-    errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-    expect(errors.length).to eq(2)
-    expect(errors.first).to include("Element '{http://datacite.org/schema/kernel-4}nameIdentifier': [facet 'minLength'] The value has a length of '0'; this underruns the allowed minimum length of '1'.")
+    expect(doc).to pass_validation(xsd)
   end
 end
