@@ -471,7 +471,6 @@
         "publisher",
         "publicationYear",
         "types",
-        "schemaVersion",
-        "agency"
+        "schemaVersion"
     ]
 }
