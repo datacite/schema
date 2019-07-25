@@ -432,7 +432,8 @@
                                     "minItems": 4
                                 },
                                 "inPolygonPoint": {"$ref": "#/definitions/geoLocationPoint"}
-                            }
+                            },
+                            "required": ["polygonPoints"]
                         },
                         "uniqueItems": true
                     }
