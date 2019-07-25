@@ -460,10 +460,6 @@
         "schemaVersion": {
             "type": "string",
             "const": "http://datacite.org/schema/kernel-4"
-        },
-        "agency": {
-            "type": "string",
-            "enum": ["DataCite"]
         }
     },
 
