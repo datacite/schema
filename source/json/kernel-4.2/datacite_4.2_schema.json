@@ -238,7 +238,8 @@
                     "givenName": {"type": "string"},
                     "familyName": {"type": "string"},
                     "nameIdentifiers": {"$ref": "#/definitions/nameIdentifiers"},
-                    "affiliations": {"$ref": "#/definitions/affiliations"}
+                    "affiliations": {"$ref": "#/definitions/affiliations"},
+                    "lang": {"type": "string"}
                 },
                 "required": ["name"]
             },
@@ -292,7 +293,8 @@
                     "givenName": {"type": "string"},
                     "familyName": {"type": "string"},
                     "nameIdentifiers": {"$ref": "#/definitions/nameIdentifiers"},
-                    "affiliations": {"$ref": "#/definitions/affiliations"}
+                    "affiliations": {"$ref": "#/definitions/affiliations"},
+                    "lang": {"type": "string"}
                 },
                 "required": ["contributorType", "name"]
             },
