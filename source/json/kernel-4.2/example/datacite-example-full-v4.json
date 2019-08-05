@@ -75,16 +75,11 @@
   ],
   "publicationYear": "2014",
   "language": "en-US",
-  "identifiers": [
+  "identifier": 
     {
       "identifierType": "DOI",
-      "identifier": "https://doi.org/10.5072/example-full"
+      "identifier": "10.5072/example-full"
     },
-    {
-      "identifierType": "URL",
-      "identifier": "https://schema.datacite.org/meta/kernel-4.2/example/datacite-example-full-v4.2.xml"
-    }
-  ],
   "sizes": [
     "4 kB"
   ],

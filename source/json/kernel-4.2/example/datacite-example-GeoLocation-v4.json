@@ -3,6 +3,7 @@
   "doi": "10.5072/geopointexample",
   "types": {
     "resourceTypeGeneral": "Dataset",
+    "resourceType": "Dataset",
     "schemaOrg": "Dataset",
     "citeproc": "dataset",
     "bibtex": "misc",
@@ -47,7 +48,8 @@
   "contributors": [
     {
       "nameType": "Organizational",
-      "name": "         IFM-GEOMAR Leibniz-Institute Of Marine Sciences, Kiel University       "
+      "name": "IFM-GEOMAR Leibniz-Institute Of Marine Sciences, Kiel University",
+      "contributorType": "ResearchGroup"
     }
   ],
   "dates": [
@@ -58,12 +60,12 @@
   ],
   "publicationYear": "2011",
   "language": "en",
-  "identifiers": [
+  "identifier": 
     {
       "identifierType": "DOI",
-      "identifier": "https://doi.org/10.5072/geopointexample"
+      "identifier": "10.5072/geopointexample"
     }
-  ],
+  ,
   "sizes": [
     "4 datasets"
   ],

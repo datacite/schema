@@ -99,7 +99,8 @@
   "contributors": [
     {
       "nameType": "Organizational",
-      "name": "Federal Institute For Population Research"
+      "name": "Federal Institute For Population Research",
+      "contributorType": "ResearchGroup"
     }
   ],
   "dates": [
@@ -110,16 +111,11 @@
   ],
   "publicationYear": "2013",
   "language": "en",
-  "identifiers": [
+  "identifier": 
     {
       "identifierType": "DOI",
-      "identifier": "https://doi.org/10.5072/10.cpos-example"
+      "identifier": "10.5072/10.cpos-example"
     },
-    {
-      "identifierType": "internal ID",
-      "identifier": "da|ra.14.103"
-    }
-  ],
   "sizes": [
 
   ],

@@ -48,12 +48,12 @@
   ],
   "publicationYear": "2013",
   "language": "en",
-  "identifiers": [
+  "identifier": 
     {
       "identifierType": "DOI",
-      "identifier": "https://doi.org/10.5072/1153992"
+      "identifier": "10.5072/1153992"
     }
-  ],
+  ,
   "sizes": [
 
   ],
