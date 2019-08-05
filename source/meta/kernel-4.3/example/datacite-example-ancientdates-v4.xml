@@ -5,23 +5,25 @@
 		<creator>
 			<creatorName nameType="Personal">Augustus</creatorName>
 			<nameIdentifier schemeURI="http://www.isni.org/" nameIdentifierScheme="ISNI">0000000121227317</nameIdentifier>
-		</creator
-	</creators
+		</creator>
+	</creators>
 	<titles>
 		<title xml:lang="en">Silver Denarius of Augustus, Emerita, 25 BC - 23 BC 1969.222.1267</title>
 	</titles>
 	<publisher xml:lang="en">American Numismatic Society</publisher>
 	<publicationYear>2010</publicationYear>
-	<contributors>
-		<contributor>
 	<dates>
-		<date dateType="Created" dateInformation="from 25 BC to 23 BC">-0025/-0023</date>
+		<date dateType="Created" dateInformation="from 25 BC to 23 BC">-0024/-0022</date>
 	</dates>
-	<resourceType resourceTypeGeneral="Physical Object">Coin</resourceType>
+	<resourceType resourceTypeGeneral="PhysicalObject">Coin</resourceType>
 	<sizes>
 		<size>3.47 g</size>
-		<size>13.5 mm</size
+		<size>13.5 mm</size>
 	</sizes>
-	<rights rightsURI="http://opendatacommons.org/licenses/odbl/" rightsIdentifier="ODbL-1.0">Metadata are openly licensed with a Open Data Commons Open Database License (ODbL)</rights>
-	<alternateIdentifier alternateIdentifierType="local accession number">1969.222.1267</alternateIdentifier>
+	<rightsList>
+	  <rights rightsURI="http://opendatacommons.org/licenses/odbl/" rightsIdentifier="ODbL-1.0">Metadata are openly licensed with a Open Data Commons Open Database License (ODbL)</rights>
+	</rightsList>
+	<alternateIdentifiers>
+	  <alternateIdentifier alternateIdentifierType="local accession number">1969.222.1267</alternateIdentifier>
+  </alternateIdentifiers>
 </resource>
