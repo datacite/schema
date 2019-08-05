@@ -435,6 +435,37 @@ Use the complete title of a license and include version information if applicabl
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
+  <!-- definition for EDTF dates, modified from PREMIS 2.0 -->
+  <xs:simpleType name="edtf">
+    <xs:restriction base="xs:string">
+      <!-- pattern for iso8601 dateTime -->
+      <xs:pattern value="(-)?[0-9]{4}(-[0-9]{2})?(-[0-9]{2})?(T([0-9]{2}:){2}[0-9]{2}Z)?"/>
+      
+      <!--  
+      The following pattern is for year (yyyy) or year-month (yyyy-mm)              
+      The last or last two digits of year may be '?'  meaning "one year in that range but not sure which year", for example 19?? means some year from 1990 to 1999.  Similarly month may be '??' so that 2004-?? "means some month in 2004".  And the entire string may end with '?' or '~' for "uncertain" or "approximate".
+      Hyphen must separate year and month.
+      -->
+      <xs:pattern value="\d{2}(\d{2}|\?\?|\d(\d|\?))(-(\d{2}|\?\?))?~?\??"/>
+      <!--  
+      The following pattern is for  yearMonthDay - yyyymmdd,  where 'dd' may be '??'  so '200412??' means "some day during the month of 12/2004". 
+      The whole  string may be followed by '?' or '~'  to mean "questionable" or "approximate".     Hypens are  not allowed for this pattern. 
+      -->
+      <xs:pattern value="\d{6}(\d{2}|\?\?)~?\??"/>
+      <!--  
+
+      The following pattern is for date and time with T separator:'yyyymmddThhmmss'. 
+      Hypens in date and colons in time not allowed for this pattern.   
+      -->
+      <xs:pattern value="\d{8}T\d{6}"/>
+      <!--  
+
+      The following pattern is for a date range. in years: 'yyyy/yyyy'; or year/month: yyyy-mm/yyyy-mm, or year/month/day: yyyy-mm-dd/yyyy-mm-dd. Beginning or end of range value may be 'unknown'. End of range value may be 'open'.
+      Hypens mandatory when month is present. 
+      -->
+      <xs:pattern value="((-)?(\d{4}(-\d{2})?(-\d{2})?)|unknown)/((-)?(\d{4}(-\d{2})?(-\d{2})?)|unknown|open)"/>
+    </xs:restriction>
+  </xs:simpleType>
   <!-- definition for affiliation -->
   <xs:complexType name="affiliation">
     <xs:annotation>
