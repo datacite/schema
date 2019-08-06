@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+  <identifier identifierType="DOI">10.17630/DDAC3588-92E3-401D-BC9F-9F0AC11B8C4F</identifier>
+  <creators>
+    <creator>
+      <creatorName>Barbosa, Miguel</creatorName>
+      <givenName xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">Miguel</givenName>
+      <familyName xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">Barbosa</familyName>
+      <affiliation xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">School of Biology</affiliation>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">The effects of familiarity on escape responses in the Trinidadian guppy (Poecilia reticulata) - version 2</title>
+  </titles>
+  <publisher>University of St Andrews</publisher>
+  <publicationYear>2017</publicationYear>
+  <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+  <dates>
+    <date dateType="Available">2017-08-24</date>
+    <date dateType="Valid">2015-01-01/2017-12-31</date>
+  </dates>
+  <sizes>
+    <size>9KB</size>
+  </sizes>
+  <formats>
+    <format>application/octet-stream</format>
+  </formats>
+  <rightsList>
+    <rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY</rights>
+  </rightsList>
+  <descriptions>
+    <description descriptionType="Abstract" xml:lang="en">Data used on Hayley's paper on the effect of familiarity on escape responses.
+
+Updated version of the dataset 'The effects of familiarity on escape responses in the Trinidadian guppy (Poecilia reticulata)', https://doi.org/10.17630/92831d81-38f0-4573-b2e5-e1d11adf9322</description>
+  </descriptions>
+  <geoLocations>
+    <geoLocation>
+      <geoLocationPlace xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">University of St Andrews</geoLocationPlace>
+    </geoLocation>
+  </geoLocations>
+</resource>

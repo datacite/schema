@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+  <identifier identifierType="DOI">10.5072/testpub</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Smith, John</creatorName>
+      <givenName>John</givenName>
+      <familyName>Smith</familyName>
+    </creator>
+    <creator>
+      <creatorName>つまらないものですが</creatorName>
+      <nameIdentifier nameIdentifierScheme="ISNI" schemeURI="http://isni.org/isni/">0000000134596520</nameIdentifier>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="pl">Właściwości rzutowań podprzestrzeniowych</title>
+    <title xml:lang="en" titleType="TranslatedTitle">Translation of Polish titles</title>
+  </titles>
+  <publisher xml:lang="en">Springer</publisher>
+  <publicationYear>2010</publicationYear>
+  <subjects>
+    <subject xml:lang="en" subjectScheme="DDC">830 German &amp; related literatures</subject>
+    <subject xml:lang="en">Polish Literature</subject>
+  </subjects>
+  <contributors>
+    <contributor contributorType="DataCollector">
+      <contributorName nameType="Personal">Doe, John</contributorName>
+      <givenName>John</givenName>
+      <familyName>Doe</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0001-5393-1421</nameIdentifier>
+    </contributor>
+  </contributors>
+  <language>de</language>
+  <resourceType resourceTypeGeneral="Text">Monograph</resourceType>
+  <alternateIdentifiers>
+    <alternateIdentifier alternateIdentifierType="ISBN">937-0-4523-12357-6</alternateIdentifier>
+  </alternateIdentifiers>
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="IsPartOf">10.5272/oldertestpub</relatedIdentifier>
+  </relatedIdentifiers>
+  <sizes>
+    <size>256 pages</size>
+  </sizes>
+  <formats>
+    <format>pdf</format>
+  </formats>
+  <version>2</version>
+  <rightsList>
+    <rights xml:lang="en-US" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-ND-2.0" rightsURI="http://creativecommons.org/licenses/by-nd/2.0/"/>  </rightsList>
+  <descriptions>
+    <description xml:lang="la" descriptionType="Abstract">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+      takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+      et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </description>
+  </descriptions>
+</resource>

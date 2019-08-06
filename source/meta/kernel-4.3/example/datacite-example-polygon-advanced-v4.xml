@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+  <identifier identifierType="DOI">10.5072/example-polygon-advanced</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Stefan Jakobsson</creatorName>
+      <givenName>Stefan</givenName>
+      <familyName>Jakobsson></familyName>
+      <affiliation>Swedish National Data Service</affiliation>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">Advanced DataCite polygon example</title>
+  </titles>
+  <publisher>DataCite</publisher>
+  <publicationYear>2017</publicationYear>
+  <resourceType resourceTypeGeneral="Software">XML</resourceType>
+  <version>4.3</version>
+  <geoLocations>
+    <geoLocation>
+      <!--
+      Tavenui Island crosses the 180th meridian and is therefore represented by 
+      two polygons
+      -->
+      <geoLocationPlace>Taveuni Island</geoLocationPlace>
+      <geoLocationPolygons>
+        <geoLocationPolygon>
+          <polygonPoint>
+            <pointLongitude>-179.84834</pointLongitude>
+            <pointLatitude>-16.75655</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>-179.85125</pointLongitude>
+            <pointLatitude>-16.70427</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>-179.88026</pointLongitude>
+            <pointLatitude>-16.6625</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>-180</pointLongitude>
+            <pointLatitude>-16.774761</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>-180</pointLongitude>
+            <pointLatitude>-16.987368</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>-179.81332</pointLongitude>
+            <pointLatitude>-16.79501</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>-179.84834</pointLongitude>
+            <pointLatitude>-16.75655</pointLatitude>
+          </polygonPoint>
+        </geoLocationPolygon>
+        <geoLocationPolygon>
+          <polygonPoint>
+            <pointLongitude>180</pointLongitude>
+            <pointLatitude>-16.774761</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>179.97324</pointLongitude>
+            <pointLatitude>-16.79985</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>179.87342</pointLongitude>
+            <pointLatitude>-16.97126</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>179.91126</pointLongitude>
+            <pointLatitude>-17.01977</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>179.9858</pointLongitude>
+            <pointLatitude>-17.002</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>180</pointLongitude>
+            <pointLatitude>-16.987368</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>180</pointLongitude>
+            <pointLatitude>-16.774761</pointLatitude>
+          </polygonPoint>
+        </geoLocationPolygon>
+      </geoLocationPolygons>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPlace>Almost the entire earth</geoLocationPlace>
+      <geoLocationPolygons>
+        <!-- 
+        This polygon is larger than half the earth, inPolygonPoint is therefore
+        used to indicate the inside of the polygon 
+        -->
+        <geoLocationPolygon>
+          <polygonPoint>
+            <pointLongitude>-165</pointLongitude>
+            <pointLatitude>85</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>-175</pointLongitude>
+            <pointLatitude>75</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>-175</pointLongitude>
+            <pointLatitude>-75</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>-165</pointLongitude>
+            <pointLatitude>-85</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>165</pointLongitude>
+            <pointLatitude>-85</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>175</pointLongitude>
+            <pointLatitude>-75</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>175</pointLongitude>
+            <pointLatitude>75</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>165</pointLongitude>
+            <pointLatitude>85</pointLatitude>
+          </polygonPoint>
+          <polygonPoint>
+            <pointLongitude>-165</pointLongitude>
+            <pointLatitude>85</pointLatitude>
+          </polygonPoint>
+          <inPolygonPoint>
+            <pointLongitude>0</pointLongitude>
+            <pointLatitude>0</pointLatitude>
+          </inPolygonPoint>
+        </geoLocationPolygon>
+      </geoLocationPolygons>
+    </geoLocation>
+  </geoLocations>
+</resource>

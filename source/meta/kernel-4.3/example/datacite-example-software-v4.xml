@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+  <identifier identifierType="DOI">10.5072/example-software-2.0</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Zielinski, AT</creatorName>
+      <nameIdentifier schemeURI="http://orcid.org" nameIdentifierScheme="ORCID">0000-0002-2997-2175</nameIdentifier>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Kalberer, M</creatorName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Bortolini, C</creatorName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Giorio, C</creatorName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Fuller, SJ</creatorName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Kourtchev, I</creatorName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Popoola, O</creatorName>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">Code supporting "A new processing scheme for ultra-high resolution direct infusion mass spectrometry data"</title>
+  </titles>
+  <publisher>Apollo - University of Cambridge Repository</publisher>
+  <publicationYear>2017</publicationYear>
+  <subjects>
+    <subject>UHRMS</subject>
+    <subject>ESI</subject>
+    <subject>APPI</subject>
+    <subject>Environmental samples</subject>
+    <subject>direct infusion</subject>
+    <subject>Orbitrap</subject>
+  </subjects>
+  <contributors>
+    <contributor contributorType="HostingInstitution">
+      <contributorName xml:lang="en" nameType="Organizational">Apollo - University of Cambridge Repository</contributorName>
+    </contributor>
+  </contributors>
+  <dates>
+    <date dateType="Issued">2017-05-08</date>
+    <date dateType="Available">2017-05-08</date>
+  </dates>
+  <language>en</language>
+  <resourceType resourceTypeGeneral="Software">Software</resourceType>
+  <relatedIdentifiers>
+    <relatedIdentifier relationType="IsNewVersionOf" relatedIdentifierType="DOI">doi:10.5072/example-software-1.0</relatedIdentifier>
+    <relatedIdentifier relationType="IsVersionOf" relatedIdentifierType="DOI">doi:10.5072/example-software-repository</relatedIdentifier>
+  </relatedIdentifiers>
+  <formats>
+    <format>application/ld+json</format>
+  </formats>
+  <version>2.0</version>
+  <rightsList>
+   <rights xml:lang="en-US" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="GPL-3.0-only" rightsURI="https://opensource.org/licenses/GPL-3.0">GNU General Public License version 3</rights></rightsList>
+  <descriptions>
+    <description xml:lang="en" descriptionType="Abstract">Set of scripts used to process direct infusion mass spectrometry data as described in the associated paper</description>
+    <description xml:lang="en" descriptionType="TechnicalInfo">Scripts written and run using Wolfram Mathematica (confirmed with versions 10.2 to 11.1). Assumes raw data matches format produced by a LTQ Orbitrap Velos mass spectrometer and exported by the proprietary software (Xcalibur) to a comma-separated values (.csv) file. The .csv files are the expected input into the Mathematica scripts.</description>
+  </descriptions>
+</resource>

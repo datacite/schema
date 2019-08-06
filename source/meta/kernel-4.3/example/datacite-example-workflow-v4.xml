@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+  <identifier identifierType="DOI">10.5072/100044</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Luo, R</creatorName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Liu, B</creatorName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Xie, Y</creatorName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Li, Z</creatorName>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">
+      Software and supporting material for "SOAPdenovo2: An empirically improved memory-efficient short read de novo assembly"
+    </title>
+  </titles>
+  <publisher xml:lang="en">GigaScience Database</publisher>
+  <publicationYear>2012</publicationYear>
+  <subjects>
+    <subject xml:lang="en">DNA (Genetics)</subject>
+    <subject xml:lang="en">Computer Program</subject>
+  </subjects>
+  <dates>
+    <date dateType="Available">2012-12-13</date>
+  </dates>
+  <language>en</language>
+  <resourceType resourceTypeGeneral="Workflow">Software</resourceType>
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="IsReferencedBy">10.5072/2047-217X-1-1</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="Compiles">10.5072/100038</relatedIdentifier>
+  </relatedIdentifiers>
+  <sizes>
+    <size>31 MB</size>
+  </sizes>
+  <rightsList>
+    <rights xml:lang="en-US" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC0 1.0" rightsURI="http://creativecommons.org/publicdomain/zero/1.0/"/>  </rightsList>
+  <descriptions>
+    <description xml:lang="en" descriptionType="Abstract">
+      SOAPdenovo2 is the latest de novo genome assembly package from BGI's SOAP (short oligonucleotide analysis package) suite of tools (homepage here: http://soap.genomics.org.cn/). Compared to SOAPdenovo1, this new version has the advantage of a new
+      algorithm design that reduces memory consumption in graph construction, resolves more repeat regions in contig assembly, increases coverage and length in scaffold construction, improves gap closure, and is optimized for large genomes. Using new
+      sequencing data from the YH (Homo sapiens) diploid genome - the first sequenced Han Chinese individual, an updated assembly was produced (see dataset here: doi:10.5524/100038), with the N50 scores for the contig and scaffold being 3-fold and 50-fold
+      longer, respectively, than the first published version. The genome coverage increased from 81.16% to 93.91%, and memory consumption was ~2/3 times lower during the point of largest memory consumption. Benchmarking with Assemblathon1 and GAGE datasets
+      shows that SOAPdenovo2 greatly surpasses its predecessor SOAPdenovo1 and is competitive to other assemblers on both assembly length and accuracy. In order to facilitate readers to repeat and recreate these findings, configured packages with the
+      compressed pipelines containing all of the necessary shell scripts and tools are available from the BGI FTP server (ftp://public.genomics.org.cn/BGI/SOAPdenovo2). The latest version of SOAPdenovo2 is available from Sourceforge:
+      http://soapdenovo2.sourceforge.net/ These pipelines will also soon be made available from our data platform as Galaxy workflows: http://galaxy.cbiit.cuhk.edu.hk/
+    </description>
+  </descriptions>
+</resource>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+  <identifier identifierType="DOI">10.5072/example</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Mari, Bernard</creatorName>
+      <givenName>Bernard</givenName>
+      <familyName>Mari</familyName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Puissegur, Marie-Pierre</creatorName>
+      <givenName>Marie-Pierre</givenName>
+      <familyName>Puissegur</familyName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Barbry, Pascal</creatorName>
+      <givenName>Pascal</givenName>
+      <familyName>Barbry</familyName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Lebrigand, Kevin</creatorName>
+      <givenName>Kevin</givenName>
+      <familyName>Lebrigand</familyName>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">
+      Identification of putative novel specific targets of mir-210 in A549 human adenocarcinoma cells
+    </title>
+  </titles>
+  <publisher xml:lang="fr">
+    Institut de Pharmacologie Moleculaire et Cellulaire (IPMC), CNRS UMR6097, Universite de Nice Sophia-Antipolis, 660 route des lucioles, 06560 Valbonne - Sophia-Antipolis, France
+  </publisher>
+  <publicationYear>2010</publicationYear>
+  <subjects>
+    <subject schemeURI="http://www.nlm.nih.gov/mesh/meshhome.html" subjectScheme="Mesh">Neoplasms</subject>
+    <subject schemeURI="http://purl.obolibrary.org/obo/obi" subjectScheme="OBI">Transcription profiling</subject>
+    <subject schemeURI="http://www.ncbi.nlm.nih.gov/Taxonomy/" subjectScheme="NCBITaxon">Homo sapiens</subject>
+    <subject schemeURI="http://www.ebi.ac.uk/efo" subjectScheme="Mesh">A549</subject>
+    <subject schemeURI="http://purl.obolibrary.org/obo/obi" subjectScheme="OBI">DNA microarray</subject>
+  </subjects>
+  <contributors>
+    <contributor contributorType="HostingInstitution">
+      <contributorName xml:lang="fr" nameType="Organizational">INIST-CNRS</contributorName>
+    </contributor>
+  </contributors>
+  <language>en</language>
+  <resourceType resourceTypeGeneral="Text">Experiment report</resourceType>
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="URL" relatedMetadataScheme="ISA-Tab" relationType="HasMetadata" schemeType="Text" schemeURI="http://isatab.sourceforge.net/docs/ISA-TAB_release-candidate-1_v1.0_24nov08.pdf">http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18695</relatedIdentifier>
+  </relatedIdentifiers>
+  <sizes>
+    <size>183 ko</size>
+    <size>3 pages</size>
+  </sizes>
+  <formats>
+    <format>PDF</format>
+  </formats>
+  <rightsList>
+    <rights xml:lang="en-US" schemeURI="https://spdx.org/licenses/"   rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-NC-ND-3.0"  rightsURI="http://creativecommons.org/licenses/by-nc-nd/3.0/"/>  </rightsList>
+  <descriptions>
+    <description xml:lang="en" descriptionType="Abstract">
+      To identify putative novel specific targets of mir-210, we overexpressed miR-210 as well as miR-34a and a siRNA targeted against E2F3 in A549 human adenocarcinoma cells by transfecting them with synthetic pre-miRNAs or a synthetic negative pre-miRNA
+      as control (miR-Neg). RNA samples were harvested at 48 hours post-transfection and 2 independent experiments performed in dye-swap: miR-210 versus miR-Neg ; miR-34a versus miR-Neg ; si-E2F3 versus miR-Neg ; si-control versus miR-Neg.
+    </description>
+  </descriptions>
+</resource>

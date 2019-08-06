@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+  <identifier identifierType="DOI">10.5072/example-datapaper</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Hammond, Mark D</creatorName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Jones, Daniel C</creatorName>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">Freshwater flux from ice sheet melting and iceberg calving in the Southern Ocean</title>
+  </titles>
+  <publisher xml:lang="en">Royal Meteorological Society</publisher>
+  <publicationYear>2016</publicationYear>
+  <subjects>
+    <subject xml:lang="en">freshwater</subject>
+    <subject xml:lang="en">Southern Ocean</subject>
+    <subject xml:lang="en">modelling</subject>
+    <subject xml:lang="en">Antarctica</subject>
+  </subjects>
+  <language>en</language>
+  <resourceType resourceTypeGeneral="DataPaper">Dataset</resourceType>
+  <relatedIdentifiers>
+    <relatedIdentifier relationType="Describes" relatedIdentifierType="DOI">doi:10.5072/dataset</relatedIdentifier>
+  </relatedIdentifiers>
+  <descriptions>
+    <description descriptionType="Abstract">This dataset is a multiyear mean Southern Ocean freshwater flux field that uses recently compiled measurements of ice sheet melting, iceberg calving, iceberg tracking, and river runoff</description>
+    <description descriptionType="SeriesInformation">Geoscience Data Journal, Volume 3, Issue 2 November 2016  Pages 60–62</description>
+  </descriptions>
+</resource>

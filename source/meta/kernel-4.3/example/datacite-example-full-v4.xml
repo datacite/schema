@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.2/metadata.xsd">
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
   <identifier identifierType="DOI">10.5072/example-full</identifier>
   <creators>
     <creator>
@@ -29,12 +29,12 @@
     </contributor>
   </contributors>
   <dates>
-    <date dateType="Updated" dateInformation="Updated with 4.2 properties">2017-09-13</date>
+    <date dateType="Updated" dateInformation="Updated with 4.3 properties">2019-08-02</date>
   </dates>
   <language>en-US</language>
   <resourceType resourceTypeGeneral="Software">XML</resourceType>
   <alternateIdentifiers>
-    <alternateIdentifier alternateIdentifierType="URL">https://schema.datacite.org/meta/kernel-4.2/example/datacite-example-full-v4.2.xml</alternateIdentifier>
+    <alternateIdentifier alternateIdentifierType="URL">https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-full-v4.3.xml</alternateIdentifier>
   </alternateIdentifiers>
   <relatedIdentifiers>
     <relatedIdentifier relatedIdentifierType="URL" relationType="HasMetadata" relatedMetadataScheme="citeproc+json" schemeURI="https://github.com/citation-style-language/schema/raw/master/csl-data.json">https://data.datacite.org/application/citeproc+json/10.5072/example-full</relatedIdentifier>
@@ -51,7 +51,7 @@
    <rights xml:lang="en-US" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC0 1.0" rightsURI="http://creativecommons.org/publicdomain/zero/1.0/"/>  </rightsList>
   <descriptions>
     <description xml:lang="en-US" descriptionType="Abstract">
-      XML example of all DataCite Metadata Schema v4.2 properties.
+      XML example of all DataCite Metadata Schema v4.3 properties.
     </description>
   </descriptions>
   <geoLocations>
