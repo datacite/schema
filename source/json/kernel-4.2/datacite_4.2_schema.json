@@ -243,7 +243,8 @@
                     "givenName": {"type": "string"},
                     "familyName": {"type": "string"},
                     "nameIdentifiers": {"$ref": "#/definitions/nameIdentifiers"},
-                    "affiliations": {"$ref": "#/definitions/affiliations"}
+                    "affiliations": {"$ref": "#/definitions/affiliations"},
+                    "lang": {"type": "string"}
                 },
                 "required": ["name"]
             },
@@ -297,7 +298,8 @@
                     "givenName": {"type": "string"},
                     "familyName": {"type": "string"},
                     "nameIdentifiers": {"$ref": "#/definitions/nameIdentifiers"},
-                    "affiliations": {"$ref": "#/definitions/affiliations"}
+                    "affiliations": {"$ref": "#/definitions/affiliations"},
+                    "lang": {"type": "string"}
                 },
                 "required": ["contributorType", "name"]
             },
@@ -435,7 +437,8 @@
                                     "minItems": 4
                                 },
                                 "inPolygonPoint": {"$ref": "#/definitions/geoLocationPoint"}
-                            }
+                            },
+                            "required": ["polygonPoints"]
                         },
                         "uniqueItems": true
                     }
@@ -462,10 +465,6 @@
         "schemaVersion": {
             "type": "string",
             "const": "http://datacite.org/schema/kernel-4"
-        },
-        "agency": {
-            "type": "string",
-            "enum": ["DataCite"]
         }
     },
 

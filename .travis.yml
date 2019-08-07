@@ -1,5 +1,6 @@
-language: java
-jdk: oraclejdk8
+language: ruby
+rvm:
+- 2.4.4
 cache: bundler
 
 sudo: required

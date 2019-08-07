@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+  <identifier identifierType="DOI">10.5072/1003496</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Barton, T.</creatorName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Bowler, D.</creatorName>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">
+      Archaeological Evaluation, 64 Kenneth Street, Stornoway Isle of Lewis
+    </title>
+  </titles>
+  <publisher xml:lang="en">Scottish Urban Archaeological Trust Ltd.</publisher>
+  <publicationYear>2008</publicationYear>
+  <subjects>
+    <subject xml:lang="en">Archaeology</subject>
+    <subject xml:lang="en">Grey Literature</subject>
+  </subjects>
+  <language>en</language>
+  <resourceType resourceTypeGeneral="Collection">Report</resourceType>
+  <alternateIdentifiers>
+    <alternateIdentifier alternateIdentifierType="ADS Grey Lit ID">4335</alternateIdentifier>
+    <alternateIdentifier alternateIdentifierType="OASIS ID">suatltd1-48159</alternateIdentifier>
+  </alternateIdentifiers>
+  <sizes>
+    <size>Doc: 46 kb</size>
+    <size>PDF: 750 kb</size>
+    <size>JPG: 700 kb</size>
+  </sizes>
+  <formats>
+    <format>application/msword</format>
+    <format>application/pdf</format>
+    <format>image/jpeg</format>
+  </formats>
+  <rightsList>
+    <rights xml:lang="en" rightsURI="http://archaeologydataservice.ac.uk/advice/termsOfUseAndAccess">Terms of Use and Access to ADS Resources</rights>
+  </rightsList>
+  <descriptions>
+    <description xml:lang="en" descriptionType="Other">
+      Unpublished fieldwork reports (Grey Literature Library)
+    </description>
+  </descriptions>
+  <geoLocations>
+    <geoLocation>
+      <geoLocationPlace>Stornoway, Western Isles, Scotland</geoLocationPlace>
+    </geoLocation>
+  </geoLocations>
+</resource>
