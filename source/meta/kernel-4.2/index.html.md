@@ -45,4 +45,4 @@ DataCite Metadata Working Group. (2019). DataCite Metadata Schema for the Public
 * [Example with Collection as ResourceType](example/datacite-example-ResourceTypeGeneral_Collection-v4.xml)
 * [Example with Video as ResourceType](example/datacite-example-video-v4.xml)
 * [Example for a workflow ResourceType](example/datacite-example-workflow-v4.xml)
-* [Example with fundingReference](example/datacite-example-fundingReference-v.4.xml)
+* [Example with fundingReference](example/datacite-example-fundingReference-v4.xml)
