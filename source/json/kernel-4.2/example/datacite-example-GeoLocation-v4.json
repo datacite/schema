@@ -36,8 +36,7 @@
     }
   ],
   "publisher": "PANGAEA - Data Publisher for Earth & Environmental Science",
-  "container": {
-  },
+  "container": {},
   "subjects": [
     {
       "subject": "551 Geology, hydrology, meteorology",
@@ -60,12 +59,12 @@
   ],
   "publicationYear": "2011",
   "language": "en",
-  "identifier": 
+  "identifiers": [
     {
       "identifierType": "DOI",
       "identifier": "10.5072/geopointexample"
     }
-  ,
+  ],
   "sizes": [
     "4 datasets"
   ],
@@ -95,9 +94,7 @@
       "geoLocationPlace": "Disko Bay"
     }
   ],
-  "fundingReferences": [
-
-  ],
+  "fundingReferences": [],
   "relatedIdentifiers": [
     {
       "relatedIdentifier": "10.5072/timeseries",

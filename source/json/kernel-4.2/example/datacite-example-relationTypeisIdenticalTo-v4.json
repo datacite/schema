@@ -111,14 +111,17 @@
   ],
   "publicationYear": "2013",
   "language": "en",
-  "identifier": 
+  "identifiers": [
     {
       "identifierType": "DOI",
       "identifier": "10.5072/10.cpos-example"
     },
-  "sizes": [
-
+    {
+      "identifierType": "internal ID",
+      "identifier": "da|ra.14.103"
+    }
   ],
+  "sizes": [],
   "formats": [
     "PDF"
   ],
@@ -142,12 +145,8 @@
       "lang": "en"
     }
   ],
-  "geoLocations": [
-
-  ],
-  "fundingReferences": [
-
-  ],
+  "geoLocations": [],
+  "fundingReferences": [],
   "relatedIdentifiers": [
     {
       "relatedIdentifier": "urn:nbn:de:bib-cpos-2013-02en8",

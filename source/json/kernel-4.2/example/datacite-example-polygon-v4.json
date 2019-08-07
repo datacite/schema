@@ -24,14 +24,9 @@
     }
   ],
   "publisher": "4TU.Centre for Research Data",
-  "container": {
-  },
-  "subjects": [
-
-  ],
-  "contributors": [
-
-  ],
+  "container": {},
+  "subjects": [],
+  "contributors": [],
   "dates": [
     {
       "date": "2017",
@@ -39,24 +34,18 @@
     }
   ],
   "publicationYear": "2017",
-  "identifier": 
+  "identifiers": [
     {
       "identifierType": "DOI",
       "identifier": "10.5072/example-polygon"
     }
-  ,
-  "sizes": [
-
   ],
+  "sizes": [],
   "formats": [
     "application/x-netcdf"
   ],
-  "rightsList": [
-
-  ],
-  "descriptions": [
-
-  ],
+  "rightsList": [],
+  "descriptions": [],
   "geoLocations": [
     {
       "geoLocationPolygon": [
@@ -268,12 +257,8 @@
       "geoLocationPlace": "Zandmotor, sand suppletion area on the Dutch coast."
     }
   ],
-  "fundingReferences": [
-
-  ],
-  "relatedIdentifiers": [
-
-  ],
+  "fundingReferences": [],
+  "relatedIdentifiers": [],
   "schemaVersion": "http://datacite.org/schema/kernel-4",
   "agency": "DataCite",
   "state": "findable"

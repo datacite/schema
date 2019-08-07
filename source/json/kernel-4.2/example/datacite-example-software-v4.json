@@ -66,8 +66,7 @@
     }
   ],
   "publisher": "Apollo - University of Cambridge Repository",
-  "container": {
-  },
+  "container": {},
   "subjects": [
     {
       "subject": "UHRMS"
@@ -107,15 +106,13 @@
   ],
   "publicationYear": "2017",
   "language": "en",
-  "identifier": 
+  "identifiers": [
     {
       "identifierType": "DOI",
       "identifier": "10.5072/example-software-2.0"
     }
-  ,
-  "sizes": [
-
   ],
+  "sizes": [],
   "formats": [
     "application/ld+json"
   ],
@@ -139,12 +136,8 @@
       "lang": "en"
     }
   ],
-  "geoLocations": [
-
-  ],
-  "fundingReferences": [
-
-  ],
+  "geoLocations": [],
+  "fundingReferences": [],
   "relatedIdentifiers": [
     {
       "relatedIdentifier": "doi:10.5072/example-software-1.0",

@@ -24,8 +24,7 @@
     }
   ],
   "publisher": "National Research Council Canada",
-  "container": {
-  },
+  "container": {},
   "subjects": [
     {
       "subject": "Temperature",
@@ -71,21 +70,17 @@
   ],
   "publicationYear": "1963",
   "language": "en",
-  "identifier": 
+  "identifiers": [
     {
       "identifierType": "DOI",
       "identifier": "10.5072/datacollector_datecollected_geolocationbox"
     }
-  ,
+  ],
   "sizes": [
     "10 p."
   ],
-  "formats": [
-
-  ],
-  "rightsList": [
-
-  ],
+  "formats": [],
+  "rightsList": [],
   "descriptions": [
     {
       "description": "The Division has been taking records of temperatures and humidities in groups of houses at various locations in Canada over the past several years. This survey has more recently been extended to include schools. Records obtained from classrooms in\n      six schools in Ponhook Lake, Nova Scotia from June 1, 1961-October 12, 1962 are now reported.",
@@ -104,12 +99,8 @@
       "geoLocationPlace": "Ponhook Lake, Nova Scotia"
     }
   ],
-  "fundingReferences": [
-
-  ],
-  "relatedIdentifiers": [
-
-  ],
+  "fundingReferences": [],
+  "relatedIdentifiers": [],
   "schemaVersion": "http://datacite.org/schema/kernel-4",
   "agency": "DataCite",
   "state": "findable"

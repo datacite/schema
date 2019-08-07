@@ -30,8 +30,7 @@
     }
   ],
   "publisher": "University of California, San Francisco",
-  "container": {
-  },
+  "container": {},
   "subjects": [
     {
       "subject": "Aging",
@@ -72,21 +71,15 @@
     }
   ],
   "publicationYear": "2013",
-  "identifier": 
+  "identifiers": [
     {
       "identifierType": "DOI",
       "identifier": "10.5072/fk25h7qrs"
     }
-  ,
-  "sizes": [
-
   ],
-  "formats": [
-
-  ],
-  "rightsList": [
-
-  ],
+  "sizes": [],
+  "formats": [],
+  "rightsList": [],
   "descriptions": [
     {
       "description": "This study replication data resource includes information referencing specific items in the Alzheimer's Disease Neuroimaging Initiative (ADNI) database that were used with the included analysis scripts (R statistical software) to reach conclusions\n      presented in the referenced publication (DOI: 10.1016/j.jalz.2012.05.911).",
@@ -99,12 +92,8 @@
       "lang": "en"
     }
   ],
-  "geoLocations": [
-
-  ],
-  "fundingReferences": [
-
-  ],
+  "geoLocations": [],
+  "fundingReferences": [],
   "relatedIdentifiers": [
     {
       "relatedIdentifier": "10.5072/j.jalz.2012.05.911",

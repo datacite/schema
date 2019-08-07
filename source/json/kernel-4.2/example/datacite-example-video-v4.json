@@ -29,17 +29,14 @@
     }
   ],
   "publisher": "Photovoltaic Institute",
-  "container": {
-  },
+  "container": {},
   "subjects": [
     {
       "subject": "Solar Energy",
       "lang": "en"
     }
   ],
-  "contributors": [
-
-  ],
+  "contributors": [],
   "dates": [
     {
       "date": "2013",
@@ -48,21 +45,17 @@
   ],
   "publicationYear": "2013",
   "language": "en",
-  "identifier": 
+  "identifiers": [
     {
       "identifierType": "DOI",
       "identifier": "10.5072/1153992"
     }
-  ,
-  "sizes": [
-
   ],
+  "sizes": [],
   "formats": [
     "MP4"
   ],
-  "rightsList": [
-
-  ],
+  "rightsList": [],
   "descriptions": [
     {
       "description": "This hour-long video features John Halter as the narrator. Mr. Halter is best known as a journalist rather than a TV star, and here he plays that role as he does an \"expose\" type of walkthrough a new home. The home has been advertised as a house with\n      the very latest in state-of-the art energy efficiency, especially solar. Mr. Halter puts the home through an investigation and determines that it can, indeed, live up to its claims.",
@@ -70,15 +63,9 @@
       "lang": "en"
     }
   ],
-  "geoLocations": [
-
-  ],
-  "fundingReferences": [
-
-  ],
-  "relatedIdentifiers": [
-
-  ],
+  "geoLocations": [],
+  "fundingReferences": [],
+  "relatedIdentifiers": [],
   "schemaVersion": "http://datacite.org/schema/kernel-4",
   "agency": "DataCite",
   "state": "findable"

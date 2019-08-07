@@ -54,9 +54,7 @@
       "lang": "en"
     }
   ],
-  "contributors": [
-
-  ],
+  "contributors": [],
   "dates": [
     {
       "date": "2016",
@@ -65,21 +63,15 @@
   ],
   "publicationYear": "2016",
   "language": "en",
-  "identifier": 
+  "identifiers": [
     {
       "identifierType": "DOI",
       "identifier": "10.5072/example-datapaper"
     }
-  ,
-  "sizes": [
-
   ],
-  "formats": [
-
-  ],
-  "rightsList": [
-
-  ],
+  "sizes": [],
+  "formats": [],
+  "rightsList": [],
   "descriptions": [
     {
       "description": "This dataset is a multiyear mean Southern Ocean freshwater flux field that uses recently compiled measurements of ice sheet melting, iceberg calving, iceberg tracking, and river runoff",
@@ -90,12 +82,8 @@
       "descriptionType": "SeriesInformation"
     }
   ],
-  "geoLocations": [
-
-  ],
-  "fundingReferences": [
-
-  ],
+  "geoLocations": [],
+  "fundingReferences": [],
   "relatedIdentifiers": [
     {
       "relatedIdentifier": "doi:10.5072/dataset",

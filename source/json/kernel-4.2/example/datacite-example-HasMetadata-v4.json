@@ -42,8 +42,7 @@
     }
   ],
   "publisher": "Institut de Pharmacologie Moleculaire et Cellulaire (IPMC), CNRS UMR6097, Universite de Nice Sophia-Antipolis, 660 route des lucioles, 06560 Valbonne - Sophia-Antipolis, France",
-  "container": {
-  },
+  "container": {},
   "subjects": [
     {
       "subject": "Neoplasms",
@@ -75,7 +74,7 @@
     {
       "nameType": "Organizational",
       "name": "INIST-CNRS",
-      "contributorType":"ResearchGroup"
+      "contributorType": "ResearchGroup"
     }
   ],
   "dates": [
@@ -86,12 +85,12 @@
   ],
   "publicationYear": "2010",
   "language": "en",
-  "identifier": 
+  "identifiers": [
     {
       "identifierType": "DOI",
       "identifier": "10.5072/example"
     }
-  ,
+  ],
   "sizes": [
     "183 ko",
     "3 pages"
@@ -112,12 +111,8 @@
       "lang": "en"
     }
   ],
-  "geoLocations": [
-
-  ],
-  "fundingReferences": [
-
-  ],
+  "geoLocations": [],
+  "fundingReferences": [],
   "relatedIdentifiers": [
     {
       "relatedIdentifier": "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18695",

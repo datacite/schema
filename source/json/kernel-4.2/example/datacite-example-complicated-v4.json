@@ -71,12 +71,16 @@
   ],
   "publicationYear": "2010",
   "language": "de",
-  "identifier": 
+  "identifiers": [
     {
       "identifierType": "DOI",
       "identifier": "10.5072/testpub"
+    },
+    {
+      "identifierType": "ISBN",
+      "identifier": "937-0-4523-12357-6"
     }
-  ,
+  ],
   "sizes": [
     "256 pages"
   ],
@@ -97,12 +101,8 @@
       "lang": "la"
     }
   ],
-  "geoLocations": [
-
-  ],
-  "fundingReferences": [
-
-  ],
+  "geoLocations": [],
+  "fundingReferences": [],
   "relatedIdentifiers": [
     {
       "relatedIdentifier": "10.5272/oldertestpub",

@@ -30,8 +30,7 @@
     }
   ],
   "publisher": "Scottish Urban Archaeological Trust Ltd.",
-  "container": {
-  },
+  "container": {},
   "subjects": [
     {
       "subject": "Archaeology",
@@ -42,9 +41,7 @@
       "lang": "en"
     }
   ],
-  "contributors": [
-
-  ],
+  "contributors": [],
   "dates": [
     {
       "date": "2008",
@@ -53,11 +50,20 @@
   ],
   "publicationYear": "2008",
   "language": "en",
-  "identifier": 
+  "identifiers": [
     {
       "identifierType": "DOI",
       "identifier": "10.5072/1003496"
     },
+    {
+      "identifierType": "ADS Grey Lit ID",
+      "identifier": "4335"
+    },
+    {
+      "identifierType": "OASIS ID",
+      "identifier": "suatltd1-48159"
+    }
+  ],
   "sizes": [
     "Doc: 46 kb",
     "PDF: 750 kb",
@@ -87,12 +93,8 @@
       "geoLocationPlace": "Stornoway, Western Isles, Scotland"
     }
   ],
-  "fundingReferences": [
-
-  ],
-  "relatedIdentifiers": [
-
-  ],
+  "fundingReferences": [],
+  "relatedIdentifiers": [],
   "schemaVersion": "http://datacite.org/schema/kernel-4",
   "agency": "DataCite",
   "state": "findable"
