@@ -1,0 +1,97 @@
+{
+  "id": "https://doi.org/10.5072/example-datapaper",
+  "doi": "10.5072/example-datapaper",
+  "types": {
+    "resourceTypeGeneral": "DataPaper",
+    "resourceType": "Dataset",
+    "schemaOrg": "Dataset",
+    "citeproc": "dataset",
+    "bibtex": "misc",
+    "ris": "DATA"
+  },
+  "creators": [
+    {
+      "nameType": "Personal",
+      "name": "Hammond, Mark D",
+      "givenName": "Mark D",
+      "familyName": "Hammond"
+    },
+    {
+      "nameType": "Personal",
+      "name": "Jones, Daniel C",
+      "givenName": "Daniel C",
+      "familyName": "Jones"
+    }
+  ],
+  "titles": [
+    {
+      "title": "Freshwater flux from ice sheet melting and iceberg calving in the Southern Ocean",
+      "lang": "en"
+    }
+  ],
+  "publisher": "Royal Meteorological Society",
+  "container": {
+    "type": "Series",
+    "title": "Geoscience Data Journal",
+    "volume": "Volume 3",
+    "firstPage": "Issue 2 November 2016  Pages 60–62"
+  },
+  "subjects": [
+    {
+      "subject": "freshwater",
+      "lang": "en"
+    },
+    {
+      "subject": "Southern Ocean",
+      "lang": "en"
+    },
+    {
+      "subject": "modelling",
+      "lang": "en"
+    },
+    {
+      "subject": "Antarctica",
+      "lang": "en"
+    }
+  ],
+  "contributors": [],
+  "dates": [
+    {
+      "date": "2016",
+      "dateType": "Issued"
+    }
+  ],
+  "publicationYear": "2016",
+  "language": "en",
+  "identifiers": [
+    {
+      "identifierType": "DOI",
+      "identifier": "10.5072/example-datapaper"
+    }
+  ],
+  "sizes": [],
+  "formats": [],
+  "rightsList": [],
+  "descriptions": [
+    {
+      "description": "This dataset is a multiyear mean Southern Ocean freshwater flux field that uses recently compiled measurements of ice sheet melting, iceberg calving, iceberg tracking, and river runoff",
+      "descriptionType": "Abstract"
+    },
+    {
+      "description": "Geoscience Data Journal, Volume 3, Issue 2 November 2016  Pages 60–62",
+      "descriptionType": "SeriesInformation"
+    }
+  ],
+  "geoLocations": [],
+  "fundingReferences": [],
+  "relatedIdentifiers": [
+    {
+      "relatedIdentifier": "doi:10.5072/dataset",
+      "relatedIdentifierType": "DOI",
+      "relationType": "Describes"
+    }
+  ],
+  "schemaVersion": "http://datacite.org/schema/kernel-4",
+  "agency": "DataCite",
+  "state": "findable"
+}

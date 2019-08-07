@@ -1,0 +1,156 @@
+{
+  "id": "https://doi.org/10.5072/example-software-2.0",
+  "doi": "10.5072/example-software-2.0",
+  "types": {
+    "resourceTypeGeneral": "Software",
+    "resourceType": "Software",
+    "schemaOrg": "SoftwareSourceCode",
+    "citeproc": "article",
+    "bibtex": "misc",
+    "ris": "COMP"
+  },
+  "creators": [
+    {
+      "nameType": "Personal",
+      "name": "Zielinski, AT",
+      "givenName": "AT",
+      "familyName": "Zielinski",
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "https://orcid.org/0000-0002-2997-2175",
+          "nameIdentifierScheme": "ORCID"
+        }
+      ]
+    },
+    {
+      "nameType": "Personal",
+      "name": "Kalberer, M",
+      "givenName": "M",
+      "familyName": "Kalberer"
+    },
+    {
+      "nameType": "Personal",
+      "name": "Bortolini, C",
+      "givenName": "C",
+      "familyName": "Bortolini"
+    },
+    {
+      "nameType": "Personal",
+      "name": "Giorio, C",
+      "givenName": "C",
+      "familyName": "Giorio"
+    },
+    {
+      "nameType": "Personal",
+      "name": "Fuller, SJ",
+      "givenName": "SJ",
+      "familyName": "Fuller"
+    },
+    {
+      "nameType": "Personal",
+      "name": "Kourtchev, I",
+      "givenName": "I",
+      "familyName": "Kourtchev"
+    },
+    {
+      "nameType": "Personal",
+      "name": "Popoola, O",
+      "givenName": "O",
+      "familyName": "Popoola"
+    }
+  ],
+  "titles": [
+    {
+      "title": "Code supporting \"A new processing scheme for ultra-high resolution direct infusion mass spectrometry data\"",
+      "lang": "en"
+    }
+  ],
+  "publisher": "Apollo - University of Cambridge Repository",
+  "container": {},
+  "subjects": [
+    {
+      "subject": "UHRMS"
+    },
+    {
+      "subject": "ESI"
+    },
+    {
+      "subject": "APPI"
+    },
+    {
+      "subject": "Environmental samples"
+    },
+    {
+      "subject": "direct infusion"
+    },
+    {
+      "subject": "Orbitrap"
+    }
+  ],
+  "contributors": [
+    {
+      "nameType": "Organizational",
+      "name": "Apollo-University Of Cambridge Repository",
+      "contributorType": "ResearchGroup"
+    }
+  ],
+  "dates": [
+    {
+      "date": "2017-05-08",
+      "dateType": "Issued"
+    },
+    {
+      "date": "2017-05-08",
+      "dateType": "Available"
+    }
+  ],
+  "publicationYear": "2017",
+  "language": "en",
+  "identifiers": [
+    {
+      "identifierType": "DOI",
+      "identifier": "10.5072/example-software-2.0"
+    }
+  ],
+  "sizes": [],
+  "formats": [
+    "application/ld+json"
+  ],
+  "version": "2.0",
+  "rightsList": [
+    {
+      "rights": "GNU General Public License version 3",
+      "rightsUri": "https://opensource.org/licenses/GPL-3.0",
+      "lang": "en-US"
+    }
+  ],
+  "descriptions": [
+    {
+      "description": "Set of scripts used to process direct infusion mass spectrometry data as described in the associated paper",
+      "descriptionType": "Abstract",
+      "lang": "en"
+    },
+    {
+      "description": "Scripts written and run using Wolfram Mathematica (confirmed with versions 10.2 to 11.1). Assumes raw data matches format produced by a LTQ Orbitrap Velos mass spectrometer and exported by the proprietary software (Xcalibur) to a comma-separated values (.csv) file. The .csv files are the expected input into the Mathematica scripts.",
+      "descriptionType": "TechnicalInfo",
+      "lang": "en"
+    }
+  ],
+  "geoLocations": [],
+  "fundingReferences": [],
+  "relatedIdentifiers": [
+    {
+      "relatedIdentifier": "doi:10.5072/example-software-1.0",
+      "relatedIdentifierType": "DOI",
+      "relationType": "IsNewVersionOf"
+    },
+    {
+      "relatedIdentifier": "doi:10.5072/example-software-repository",
+      "relatedIdentifierType": "DOI",
+      "relationType": "IsVersionOf"
+    }
+  ],
+  "schemaVersion": "http://datacite.org/schema/kernel-4",
+  "agency": "DataCite",
+  "state": "findable"
+}

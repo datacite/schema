@@ -1,0 +1,108 @@
+{
+  "id": "https://doi.org/10.5072/geopointexample",
+  "doi": "10.5072/geopointexample",
+  "types": {
+    "resourceTypeGeneral": "Dataset",
+    "resourceType": "Dataset",
+    "schemaOrg": "Dataset",
+    "citeproc": "dataset",
+    "bibtex": "misc",
+    "ris": "DATA"
+  },
+  "creators": [
+    {
+      "nameType": "Personal",
+      "name": "Schumann, Kai",
+      "givenName": "Kai",
+      "familyName": "Schumann"
+    },
+    {
+      "nameType": "Personal",
+      "name": "Völker, David",
+      "givenName": "David",
+      "familyName": "Völker"
+    },
+    {
+      "nameType": "Personal",
+      "name": "Weinrebe, Wilhelm Reiber",
+      "givenName": "Wilhelm Reiber",
+      "familyName": "Weinrebe"
+    }
+  ],
+  "titles": [
+    {
+      "title": "Gridded results of swath bathymetric mapping of Disko Bay, Western Greenland, 2007-2008",
+      "lang": "en"
+    }
+  ],
+  "publisher": "PANGAEA - Data Publisher for Earth & Environmental Science",
+  "container": {},
+  "subjects": [
+    {
+      "subject": "551 Geology, hydrology, meteorology",
+      "subjectScheme": "DDC",
+      "lang": "en"
+    }
+  ],
+  "contributors": [
+    {
+      "nameType": "Organizational",
+      "name": "IFM-GEOMAR Leibniz-Institute Of Marine Sciences, Kiel University",
+      "contributorType": "ResearchGroup"
+    }
+  ],
+  "dates": [
+    {
+      "date": "2011",
+      "dateType": "Issued"
+    }
+  ],
+  "publicationYear": "2011",
+  "language": "en",
+  "identifiers": [
+    {
+      "identifierType": "DOI",
+      "identifier": "10.5072/geopointexample"
+    }
+  ],
+  "sizes": [
+    "4 datasets"
+  ],
+  "formats": [
+    "application/zip"
+  ],
+  "rightsList": [
+    {
+      "rights": "Creative Commons Attribution-NoDerivs 2.0 Generic",
+      "rightsUri": "http://creativecommons.org/licenses/by/3.0/deed",
+      "lang": "en-US"
+    }
+  ],
+  "descriptions": [
+    {
+      "description": "A ship-based acoustic mapping campaign was conducted at the exit of Ilulissat Ice Fjord and in the sedimentary basin of Disko Bay to the west of the fjord mouth. Submarine landscape and sediment distribution patterns are interpreted in terms of\n      glaciomarine facies types that are related to variations in the past position of the glacier front. In particular, asymmetric ridges that form a curved entity and a large sill at the fjord mouth may represent moraines hat depict at least two\n      relatively stable positions of the ice front in the Disko Bay and at the fjord mouth. In this respect, Ilulissat Glacier shows prominent differences to the East Greenland Kangerlussuaq Glacier which is comparable in present size and present role for\n      the ice discharge from the inland ice sheet. Two linear clusters of pockmarks in the center of the sedimentary basin seem to be linked to ongoing methane release due to dissociation of gas hydrates, a process fueled by climate warming in the Arctic\n      realm.",
+      "descriptionType": "Abstract",
+      "lang": "en"
+    }
+  ],
+  "geoLocations": [
+    {
+      "geoLocationPoint": {
+        "pointLatitude": "69.000000",
+        "pointLongitude": "-52.000000"
+      },
+      "geoLocationPlace": "Disko Bay"
+    }
+  ],
+  "fundingReferences": [],
+  "relatedIdentifiers": [
+    {
+      "relatedIdentifier": "10.5072/timeseries",
+      "relatedIdentifierType": "DOI",
+      "relationType": "Continues"
+    }
+  ],
+  "schemaVersion": "http://datacite.org/schema/kernel-4",
+  "agency": "DataCite",
+  "state": "findable"
+}

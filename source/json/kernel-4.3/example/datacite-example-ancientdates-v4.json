@@ -1,0 +1,93 @@
+{
+  "id": "https://doi.org/10.5072/0945113",
+  "doi": "10.5072/0945113",
+  "types": {
+    "resourceTypeGeneral": "PhysicalObject",
+    "resourceType": "Coin",
+    "schemaOrg": "CreativeWork",
+    "citeproc": "article",
+    "bibtex": "misc",
+    "ris": "GEN"
+  },
+  "creators": [
+    {
+      "nameType": "Personal",
+      "name": "Augustus",
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "http://www.isni.org/0000000121227317",
+          "schemeUri": "http://www.isni.org/",
+          "nameIdentifierScheme": "ISNI"
+        }
+      ],
+      "affiliation": [
+
+      ]
+    }
+  ],
+  "titles": [
+    {
+      "title": "Silver Denarius of Augustus, Emerita, 25 BC - 23 BC 1969.222.1267",
+      "lang": "en"
+    }
+  ],
+  "publisher": "American Numismatic Society",
+  "container": {
+  },
+  "subjects": [
+
+  ],
+  "contributors": [
+
+  ],
+  "dates": [
+    {
+      "date": "-0024/-0022",
+      "dateType": "Created",
+      "dateInformation": "from 25 BC to 23 BC"
+    },
+    {
+      "date": "2010",
+      "dateType": "Issued"
+    }
+  ],
+  "publicationYear": "2010",
+  "identifiers": [
+    {
+      "identifierType": "DOI",
+      "identifier": "https://doi.org/10.5072/0945113"
+    },
+    {
+      "identifierType": "local accession number",
+      "identifier": "1969.222.1267"
+    }
+  ],
+  "sizes": [
+    "3.47 g",
+    "13.5 mm"
+  ],
+  "formats": [
+
+  ],
+  "rightsList": [
+    {
+      "rights": "Metadata are openly licensed with a Open Data Commons Open Database License (ODbL)",
+      "rightsUri": "http://opendatacommons.org/licenses/odbl"
+    }
+  ],
+  "descriptions": [
+
+  ],
+  "geoLocations": [
+
+  ],
+  "fundingReferences": [
+
+  ],
+  "relatedIdentifiers": [
+
+  ],
+  "schemaVersion": "http://datacite.org/schema/kernel-4",
+  "agency": "DataCite",
+  "state": "findable"
+}
