@@ -9,15 +9,18 @@
     "bibtex": "misc",
     "ris": "COMP"
   },
-  "creators": [{
+  "creators": [
+    {
       "nameType": "Personal",
       "name": "Zielinski, AT",
       "givenName": "AT",
       "familyName": "Zielinski",
-      "nameIdentifiers": [{
-        "nameIdentifier": "https://orcid.org/0000-0002-2997-2175",
-        "nameIdentifierScheme": "ORCID"
-      }]
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "https://orcid.org/0000-0002-2997-2175",
+          "nameIdentifierScheme": "ORCID"
+        }
+      ]
     },
     {
       "nameType": "Personal",
@@ -56,13 +59,16 @@
       "familyName": "Popoola"
     }
   ],
-  "titles": [{
-    "title": "Code supporting \"A new processing scheme for ultra-high resolution direct infusion mass spectrometry data\"",
-    "lang": "en"
-  }],
+  "titles": [
+    {
+      "title": "Code supporting \"A new processing scheme for ultra-high resolution direct infusion mass spectrometry data\"",
+      "lang": "en"
+    }
+  ],
   "publisher": "Apollo - University of Cambridge Repository",
   "container": {},
-  "subjects": [{
+  "subjects": [
+    {
       "subject": "UHRMS"
     },
     {
@@ -81,12 +87,15 @@
       "subject": "Orbitrap"
     }
   ],
-  "contributors": [{
-    "nameType": "Organizational",
-    "name": "Apollo-University Of Cambridge Repository",
-    "contributorType": "ResearchGroup"
-  }],
-  "dates": [{
+  "contributors": [
+    {
+      "nameType": "Organizational",
+      "name": "Apollo-University Of Cambridge Repository",
+      "contributorType": "ResearchGroup"
+    }
+  ],
+  "dates": [
+    {
       "date": "2017-05-08",
       "dateType": "Issued"
     },
@@ -97,23 +106,26 @@
   ],
   "publicationYear": "2017",
   "language": "en",
-  "identifiers": [{
-    "identifierType": "DOI",
-    "identifier": "10.5072/example-software-2.0"
-  }],
-  "sizes": [
-
+  "identifiers": [
+    {
+      "identifierType": "DOI",
+      "identifier": "10.5072/example-software-2.0"
+    }
   ],
+  "sizes": [],
   "formats": [
     "application/ld+json"
   ],
   "version": "2.0",
-  "rightsList": [{
-    "rights": "GNU General Public License version 3",
-    "rightsUri": "https://opensource.org/licenses/GPL-3.0",
-    "lang": "en-US"
-  }],
-  "descriptions": [{
+  "rightsList": [
+    {
+      "rights": "GNU General Public License version 3",
+      "rightsUri": "https://opensource.org/licenses/GPL-3.0",
+      "lang": "en-US"
+    }
+  ],
+  "descriptions": [
+    {
       "description": "Set of scripts used to process direct infusion mass spectrometry data as described in the associated paper",
       "descriptionType": "Abstract",
       "lang": "en"
@@ -124,13 +136,10 @@
       "lang": "en"
     }
   ],
-  "geoLocations": [
-
-  ],
-  "fundingReferences": [
-
-  ],
-  "relatedIdentifiers": [{
+  "geoLocations": [],
+  "fundingReferences": [],
+  "relatedIdentifiers": [
+    {
       "relatedIdentifier": "doi:10.5072/example-software-1.0",
       "relatedIdentifierType": "DOI",
       "relationType": "IsNewVersionOf"

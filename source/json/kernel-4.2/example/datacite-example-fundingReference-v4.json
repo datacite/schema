@@ -9,20 +9,25 @@
     "bibtex": "misc",
     "ris": "DATA"
   },
-  "creators": [{
-    "nameType": "Personal",
-    "name": "Dedeurwaerdere, Tom",
-    "givenName": "Tom",
-    "familyName": "Dedeurwaerdere",
-    "affiliation": "Université catholique de Louvain"
-  }],
-  "titles": [{
-    "title": "Combining internal and external motivations in multi-actor governance arrangements for biodiversity and ecosystem services",
-    "lang": "en"
-  }],
+  "creators": [
+    {
+      "nameType": "Personal",
+      "name": "Dedeurwaerdere, Tom",
+      "givenName": "Tom",
+      "familyName": "Dedeurwaerdere",
+      "affiliation": "Université catholique de Louvain"
+    }
+  ],
+  "titles": [
+    {
+      "title": "Combining internal and external motivations in multi-actor governance arrangements for biodiversity and ecosystem services",
+      "lang": "en"
+    }
+  ],
   "publisher": "Zenodo",
   "container": {},
-  "subjects": [{
+  "subjects": [
+    {
       "subject": "Internal motivations",
       "lang": "en"
     },
@@ -43,30 +48,28 @@
       "lang": "en"
     }
   ],
-  "contributors": [
-
+  "contributors": [],
+  "dates": [
+    {
+      "date": "2016-03-11",
+      "dateType": "Issued"
+    }
   ],
-  "dates": [{
-    "date": "2016-03-11",
-    "dateType": "Issued"
-  }],
   "publicationYear": "2016",
   "identifiers": [
     {
-    "identifierType": "DOI",
-    "identifier": "10.5281/zenodo.47394"
+      "identifierType": "DOI",
+      "identifier": "10.5281/zenodo.47394"
     },
-    {"identifierType": "URL",
-    "identifier": "http://zenodo.org/record/47394"
+    {
+      "identifierType": "URL",
+      "identifier": "http://zenodo.org/record/47394"
     }
   ],
-  "sizes": [
-
-  ],
-  "formats": [
-
-  ],
-  "rightsList": [{
+  "sizes": [],
+  "formats": [],
+  "rightsList": [
+    {
       "rights": "Open Access",
       "rightsUri": "info:eu-repo/semantics/openAccess"
     },
@@ -75,15 +78,16 @@
       "rightsUri": "http://creativecommons.org/publicdomain/zero/1.0"
     }
   ],
-  "descriptions": [{
-    "description": "These files provide the original survey data of the paper on motivations for biodiversity conservation in Europe. This paper analyses the possibility of building a mutually supportive dynamics between\n      internally and<br> externally motivated behaviour for biodiversity conservation and ecosystem services provision. To this<br> purpose a face to face survey amongst 169 key actors of 34 highly successful and prominent\n      biodiversity<br> arrangements in seven EU countries was conducted. The main<br> finding of the paper is the feasibility of<br> combining inherently intrinsically motivated behaviours (providing enjoyment, pleasure from<br> experimentation and learning, aesthetic satisfaction) and internalized extrinsic motivations (related<br> to the identification with the collective goals of conservation policy) through a common set of governance<br> features.\n      Successful initiatives that combine internal and external motivations share the following<br> features: inclusive decision making processes, a broad monitoring by “peers” beyond the core staff of the<br>\n      initiatives, and a context that is supportive for the building of autonomous actor competences. These<br> findings are in line with the psycho-sociological theory of motivation, which shows the importance of a<br> psycho-social\n      context leading to a subjective perception of autonomy and a sense of competence of the<br> actors.",
-    "descriptionType": "Abstract",
-    "lang": "en"
-  }],
-  "geoLocations": [
-
+  "descriptions": [
+    {
+      "description": "These files provide the original survey data of the paper on motivations for biodiversity conservation in Europe. This paper analyses the possibility of building a mutually supportive dynamics between\n      internally and<br> externally motivated behaviour for biodiversity conservation and ecosystem services provision. To this<br> purpose a face to face survey amongst 169 key actors of 34 highly successful and prominent\n      biodiversity<br> arrangements in seven EU countries was conducted. The main<br> finding of the paper is the feasibility of<br> combining inherently intrinsically motivated behaviours (providing enjoyment, pleasure from<br> experimentation and learning, aesthetic satisfaction) and internalized extrinsic motivations (related<br> to the identification with the collective goals of conservation policy) through a common set of governance<br> features.\n      Successful initiatives that combine internal and external motivations share the following<br> features: inclusive decision making processes, a broad monitoring by “peers” beyond the core staff of the<br>\n      initiatives, and a context that is supportive for the building of autonomous actor competences. These<br> findings are in line with the psycho-sociological theory of motivation, which shows the importance of a<br> psycho-social\n      context leading to a subjective perception of autonomy and a sense of competence of the<br> actors.",
+      "descriptionType": "Abstract",
+      "lang": "en"
+    }
   ],
-  "fundingReferences": [{
+  "geoLocations": [],
+  "fundingReferences": [
+    {
       "funderName": "European Commission",
       "funderIdentifier": "https://doi.org/10.13039/501100000780",
       "funderIdentifierType": "Crossref Funder ID",
@@ -100,7 +104,8 @@
       "awardTitle": "Institutionalizing global genetic-resource commons. Global Strategies for accessing and using essential public knowledge assets in the life sciences"
     }
   ],
-  "relatedIdentifiers": [{
+  "relatedIdentifiers": [
+    {
       "relatedIdentifier": "https://zenodo.org/record/47394/files/Data_All_Internal_motivations.pdf",
       "relatedIdentifierType": "URL",
       "relationType": "HasPart"

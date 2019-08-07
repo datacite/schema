@@ -9,7 +9,8 @@
     "bibtex": "book",
     "ris": "BOOK"
   },
-  "creators": [{
+  "creators": [
+    {
       "nameType": "Personal",
       "name": "Smith, John",
       "givenName": "John",
@@ -19,7 +20,8 @@
       "name": "つまらないものですが"
     }
   ],
-  "titles": [{
+  "titles": [
+    {
       "title": "Właściwości rzutowań podprzestrzeniowych",
       "lang": "pl"
     },
@@ -35,7 +37,8 @@
     "identifier": "10.5272/oldertestpub",
     "identifierType": "DOI"
   },
-  "subjects": [{
+  "subjects": [
+    {
       "subject": "830 German &amp; related literatures",
       "subjectScheme": "DDC",
       "lang": "en"
@@ -45,29 +48,39 @@
       "lang": "en"
     }
   ],
-  "contributors": [{
-    "nameType": "Personal",
-    "name": "Doe, John",
-    "givenName": "John",
-    "familyName": "Doe",
-    "nameIdentifiers": [{
-      "nameIdentifier": "https://orcid.org/0000-0001-5393-1421",
-      "nameIdentifierScheme": "ORCID"
-    }],
-    "contributorType": "DataCollector"
-  }],
-  "dates": [{
-    "date": "2010",
-    "dateType": "Issued"
-  }],
+  "contributors": [
+    {
+      "nameType": "Personal",
+      "name": "Doe, John",
+      "givenName": "John",
+      "familyName": "Doe",
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "https://orcid.org/0000-0001-5393-1421",
+          "nameIdentifierScheme": "ORCID"
+        }
+      ],
+      "contributorType": "DataCollector"
+    }
+  ],
+  "dates": [
+    {
+      "date": "2010",
+      "dateType": "Issued"
+    }
+  ],
   "publicationYear": "2010",
   "language": "de",
-  "identifiers": [{
-    "identifierType": "DOI",
-    "identifier": "10.5072/testpub"
-  },{
-    "identifierType": "ISBN",
-    "identifier": "937-0-4523-12357-6"}],
+  "identifiers": [
+    {
+      "identifierType": "DOI",
+      "identifier": "10.5072/testpub"
+    },
+    {
+      "identifierType": "ISBN",
+      "identifier": "937-0-4523-12357-6"
+    }
+  ],
   "sizes": [
     "256 pages"
   ],
@@ -75,26 +88,28 @@
     "pdf"
   ],
   "version": "2",
-  "rightsList": [{
-    "rightsUri": "http://creativecommons.org/licenses/by-nd/2.0",
-    "lang": "en-US"
-  }],
-  "descriptions": [{
-    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea\n      takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores\n      et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-    "descriptionType": "Abstract",
-    "lang": "la"
-  }],
-  "geoLocations": [
-
+  "rightsList": [
+    {
+      "rightsUri": "http://creativecommons.org/licenses/by-nd/2.0",
+      "lang": "en-US"
+    }
   ],
-  "fundingReferences": [
-
+  "descriptions": [
+    {
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea\n      takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores\n      et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "descriptionType": "Abstract",
+      "lang": "la"
+    }
   ],
-  "relatedIdentifiers": [{
-    "relatedIdentifier": "10.5272/oldertestpub",
-    "relatedIdentifierType": "DOI",
-    "relationType": "IsPartOf"
-  }],
+  "geoLocations": [],
+  "fundingReferences": [],
+  "relatedIdentifiers": [
+    {
+      "relatedIdentifier": "10.5272/oldertestpub",
+      "relatedIdentifierType": "DOI",
+      "relationType": "IsPartOf"
+    }
+  ],
   "schemaVersion": "http://datacite.org/schema/kernel-4",
   "agency": "DataCite",
   "state": "findable"

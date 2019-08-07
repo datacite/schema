@@ -36,8 +36,7 @@
     }
   ],
   "publisher": "Purdue University Research Repository (PURR)",
-  "container": {
-  },
+  "container": {},
   "subjects": [
     {
       "subject": "Assessment",
@@ -64,9 +63,7 @@
       "lang": "en"
     }
   ],
-  "contributors": [
-
-  ],
+  "contributors": [],
   "dates": [
     {
       "date": "2013",
@@ -75,22 +72,16 @@
   ],
   "publicationYear": "2013",
   "language": "en",
-  "identifiers":
-  [{
+  "identifiers": [
+    {
       "identifierType": "DOI",
       "identifier": "10.5072/d3p26q35r-test"
-    }]
-  ,
-  "sizes": [
-
+    }
   ],
-  "formats": [
-
-  ],
+  "sizes": [],
+  "formats": [],
   "version": "1.0",
-  "rightsList": [
-
-  ],
+  "rightsList": [],
   "descriptions": [
     {
       "description": "We developed an instrument, Critical Engineering Literacy Test (CELT), which is a multiple choice instrument designed to measure undergraduate students’ scientific and information literacy skills. It requires students to first read a technical memo\n      and, based on the memo’s arguments, answer eight multiple choice and six open-ended response questions. We collected data from 143 first-year engineering students and conducted an item analysis. The KR-20 reliability of the instrument was .39. Item\n      difficulties ranged between .17 to .83. The results indicate low reliability index but acceptable levels of item difficulties and item discrimination indices. Students were most challenged when answering items measuring scientific and mathematical\n      literacy (i.e., identifying incorrect information).",
@@ -98,15 +89,9 @@
       "lang": "en"
     }
   ],
-  "geoLocations": [
-
-  ],
-  "fundingReferences": [
-
-  ],
-  "relatedIdentifiers": [
-
-  ],
+  "geoLocations": [],
+  "fundingReferences": [],
+  "relatedIdentifiers": [],
   "schemaVersion": "http://datacite.org/schema/kernel-4",
   "agency": "DataCite",
   "state": "findable"

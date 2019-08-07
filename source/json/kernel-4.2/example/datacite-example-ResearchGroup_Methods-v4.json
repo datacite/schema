@@ -9,23 +9,30 @@
     "bibtex": "misc",
     "ris": "DATA"
   },
-  "creators": [{
-    "nameType": "Personal",
-    "name": "Rizk-Jackson, Angela",
-    "givenName": "Angela",
-    "familyName": "Rizk-Jackson",
-    "nameIdentifiers": [{
-      "nameIdentifier": "https://orcid.org/0000-0002-1732-8550",
-      "nameIdentifierScheme": "ORCID"
-    }]
-  }],
-  "titles": [{
-    "title": "Analysis of ADNI data: Normal to MCI conversion",
-    "lang": "en"
-  }],
+  "creators": [
+    {
+      "nameType": "Personal",
+      "name": "Rizk-Jackson, Angela",
+      "givenName": "Angela",
+      "familyName": "Rizk-Jackson",
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "https://orcid.org/0000-0002-1732-8550",
+          "nameIdentifierScheme": "ORCID"
+        }
+      ]
+    }
+  ],
+  "titles": [
+    {
+      "title": "Analysis of ADNI data: Normal to MCI conversion",
+      "lang": "en"
+    }
+  ],
   "publisher": "University of California, San Francisco",
   "container": {},
-  "subjects": [{
+  "subjects": [
+    {
       "subject": "Aging",
       "lang": "en"
     },
@@ -50,30 +57,31 @@
       "lang": "en"
     }
   ],
-  "contributors": [{
-    "nameType": "Organizational",
-    "name": "Center For Imaging Of Neurodegenerative Disease",
-    "contributorType": "ResearchGroup"
-  }],
-  "dates": [{
-    "date": "2013",
-    "dateType": "Issued"
-  }],
+  "contributors": [
+    {
+      "nameType": "Organizational",
+      "name": "Center For Imaging Of Neurodegenerative Disease",
+      "contributorType": "ResearchGroup"
+    }
+  ],
+  "dates": [
+    {
+      "date": "2013",
+      "dateType": "Issued"
+    }
+  ],
   "publicationYear": "2013",
-  "identifiers": [{
-    "identifierType": "DOI",
-    "identifier": "10.5072/fk25h7qrs"
-  }],
-  "sizes": [
-
+  "identifiers": [
+    {
+      "identifierType": "DOI",
+      "identifier": "10.5072/fk25h7qrs"
+    }
   ],
-  "formats": [
-
-  ],
-  "rightsList": [
-
-  ],
-  "descriptions": [{
+  "sizes": [],
+  "formats": [],
+  "rightsList": [],
+  "descriptions": [
+    {
       "description": "This study replication data resource includes information referencing specific items in the Alzheimer's Disease Neuroimaging Initiative (ADNI) database that were used with the included analysis scripts (R statistical software) to reach conclusions\n      presented in the referenced publication (DOI: 10.1016/j.jalz.2012.05.911).",
       "descriptionType": "Abstract",
       "lang": "en"
@@ -84,17 +92,15 @@
       "lang": "en"
     }
   ],
-  "geoLocations": [
-
+  "geoLocations": [],
+  "fundingReferences": [],
+  "relatedIdentifiers": [
+    {
+      "relatedIdentifier": "10.5072/j.jalz.2012.05.911",
+      "relatedIdentifierType": "DOI",
+      "relationType": "IsReferencedBy"
+    }
   ],
-  "fundingReferences": [
-
-  ],
-  "relatedIdentifiers": [{
-    "relatedIdentifier": "10.5072/j.jalz.2012.05.911",
-    "relatedIdentifierType": "DOI",
-    "relationType": "IsReferencedBy"
-  }],
   "schemaVersion": "http://datacite.org/schema/kernel-4",
   "agency": "DataCite",
   "state": "findable"

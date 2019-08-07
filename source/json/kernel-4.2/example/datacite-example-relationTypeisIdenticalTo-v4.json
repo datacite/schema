@@ -9,38 +9,46 @@
     "bibtex": "article",
     "ris": "RPRT"
   },
-  "creators": [{
+  "creators": [
+    {
       "nameType": "Personal",
       "name": "Kreyenfeld, Michaela",
       "givenName": "Michaela",
       "familyName": "Kreyenfeld",
-      "nameIdentifiers": [{
-        "nameIdentifier": "http://isni.org/isni/0000000117540116",
-        "nameIdentifierScheme": "ISNI"
-      }]
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "http://isni.org/isni/0000000117540116",
+          "nameIdentifierScheme": "ISNI"
+        }
+      ]
     },
     {
       "nameType": "Personal",
       "name": "Hornung, Anne",
       "givenName": "Anne",
       "familyName": "Hornung",
-      "nameIdentifiers": [{
-        "nameIdentifier": "http://viaf.org/viaf/304639093",
-        "nameIdentifierScheme": "VIAF"
-      }]
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "http://viaf.org/viaf/304639093",
+          "nameIdentifierScheme": "VIAF"
+        }
+      ]
     },
     {
       "nameType": "Personal",
       "name": "Kubisch, Karolin",
       "givenName": "Karolin",
       "familyName": "Kubisch",
-      "nameIdentifiers": [{
-        "nameIdentifier": "http://viaf.org/viaf/303937450",
-        "nameIdentifierScheme": "VIAF"
-      }]
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "http://viaf.org/viaf/303937450",
+          "nameIdentifierScheme": "VIAF"
+        }
+      ]
     }
   ],
-  "titles": [{
+  "titles": [
+    {
       "title": "The German Generations and Gender Survey",
       "lang": "en"
     },
@@ -56,7 +64,8 @@
     "title": "Comparative Population Studies Vol 38",
     "firstPage": "No 1 (2013)"
   },
-  "subjects": [{
+  "subjects": [
+    {
       "subject": "Fertility",
       "lang": "en"
     },
@@ -87,39 +96,45 @@
       "lang": "en"
     }
   ],
-  "contributors": [{
-    "nameType": "Organizational",
-    "name": "Federal Institute For Population Research",
-    "contributorType": "ResearchGroup"
-  }],
-  "dates": [{
-    "date": "2013",
-    "dateType": "Issued"
-  }],
+  "contributors": [
+    {
+      "nameType": "Organizational",
+      "name": "Federal Institute For Population Research",
+      "contributorType": "ResearchGroup"
+    }
+  ],
+  "dates": [
+    {
+      "date": "2013",
+      "dateType": "Issued"
+    }
+  ],
   "publicationYear": "2013",
   "language": "en",
-  "identifiers": [{
-    "identifierType": "DOI",
-    "identifier": "10.5072/10.cpos-example"
-  },
-  {
+  "identifiers": [
+    {
+      "identifierType": "DOI",
+      "identifier": "10.5072/10.cpos-example"
+    },
+    {
       "identifierType": "internal ID",
       "identifier": "da|ra.14.103"
-  }
+    }
   ],
-  "sizes": [
-
-  ],
+  "sizes": [],
   "formats": [
     "PDF"
   ],
   "version": "1",
-  "rightsList": [{
-    "rights": "Creative Commons License: Attribution-NonCommercial-NoDerivs 3.0 Unported",
-    "rightsUri": "http://creativecommons.org/licenses/by-nc-nd/3.0/deed",
-    "lang": "en-US"
-  }],
-  "descriptions": [{
+  "rightsList": [
+    {
+      "rights": "Creative Commons License: Attribution-NonCommercial-NoDerivs 3.0 Unported",
+      "rightsUri": "http://creativecommons.org/licenses/by-nc-nd/3.0/deed",
+      "lang": "en-US"
+    }
+  ],
+  "descriptions": [
+    {
       "description": "Comparative Population Studies Vol 38, No 1 (2013)",
       "descriptionType": "SeriesInformation",
       "lang": "en"
@@ -130,13 +145,10 @@
       "lang": "en"
     }
   ],
-  "geoLocations": [
-
-  ],
-  "fundingReferences": [
-
-  ],
-  "relatedIdentifiers": [{
+  "geoLocations": [],
+  "fundingReferences": [],
+  "relatedIdentifiers": [
+    {
       "relatedIdentifier": "urn:nbn:de:bib-cpos-2013-02en8",
       "relatedIdentifierType": "URN",
       "relationType": "IsIdenticalTo"
