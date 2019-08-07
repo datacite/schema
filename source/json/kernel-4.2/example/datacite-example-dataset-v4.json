@@ -75,11 +75,11 @@
   ],
   "publicationYear": "2013",
   "language": "en",
-  "identifier": 
-    {
+  "identifiers":
+  [{
       "identifierType": "DOI",
       "identifier": "10.5072/d3p26q35r-test"
-    }
+    }]
   ,
   "sizes": [
 

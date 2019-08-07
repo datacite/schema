@@ -9,16 +9,13 @@
     "bibtex": "misc",
     "ris": "MPCT"
   },
-  "creators": [
-    {
-      "nameType": "Personal",
-      "name": "Lynn, Briscoe",
-      "givenName": "Briscoe",
-      "familyName": "Lynn"
-    }
-  ],
-  "titles": [
-    {
+  "creators": [{
+    "nameType": "Personal",
+    "name": "Lynn, Briscoe",
+    "givenName": "Briscoe",
+    "familyName": "Lynn"
+  }],
+  "titles": [{
       "title": "Walking Your Space, Evaluating Your Home",
       "lang": "en"
     },
@@ -29,31 +26,24 @@
     }
   ],
   "publisher": "Photovoltaic Institute",
-  "container": {
-  },
-  "subjects": [
-    {
-      "subject": "Solar Energy",
-      "lang": "en"
-    }
-  ],
+  "container": {},
+  "subjects": [{
+    "subject": "Solar Energy",
+    "lang": "en"
+  }],
   "contributors": [
 
   ],
-  "dates": [
-    {
-      "date": "2013",
-      "dateType": "Issued"
-    }
-  ],
+  "dates": [{
+    "date": "2013",
+    "dateType": "Issued"
+  }],
   "publicationYear": "2013",
   "language": "en",
-  "identifier": 
-    {
-      "identifierType": "DOI",
-      "identifier": "10.5072/1153992"
-    }
-  ,
+  "identifiers": [{
+    "identifierType": "DOI",
+    "identifier": "10.5072/1153992"
+  }],
   "sizes": [
 
   ],
@@ -63,13 +53,11 @@
   "rightsList": [
 
   ],
-  "descriptions": [
-    {
-      "description": "This hour-long video features John Halter as the narrator. Mr. Halter is best known as a journalist rather than a TV star, and here he plays that role as he does an \"expose\" type of walkthrough a new home. The home has been advertised as a house with\n      the very latest in state-of-the art energy efficiency, especially solar. Mr. Halter puts the home through an investigation and determines that it can, indeed, live up to its claims.",
-      "descriptionType": "Abstract",
-      "lang": "en"
-    }
-  ],
+  "descriptions": [{
+    "description": "This hour-long video features John Halter as the narrator. Mr. Halter is best known as a journalist rather than a TV star, and here he plays that role as he does an \"expose\" type of walkthrough a new home. The home has been advertised as a house with\n      the very latest in state-of-the art energy efficiency, especially solar. Mr. Halter puts the home through an investigation and determines that it can, indeed, live up to its claims.",
+    "descriptionType": "Abstract",
+    "lang": "en"
+  }],
   "geoLocations": [
 
   ],

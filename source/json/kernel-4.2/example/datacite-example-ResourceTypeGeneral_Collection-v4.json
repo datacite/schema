@@ -9,8 +9,7 @@
     "bibtex": "misc",
     "ris": "GEN"
   },
-  "creators": [
-    {
+  "creators": [{
       "nameType": "Personal",
       "name": "Barton, T.",
       "givenName": "T.",
@@ -23,17 +22,13 @@
       "familyName": "Bowler"
     }
   ],
-  "titles": [
-    {
-      "title": "Archaeological Evaluation, 64 Kenneth Street, Stornoway Isle of Lewis",
-      "lang": "en"
-    }
-  ],
+  "titles": [{
+    "title": "Archaeological Evaluation, 64 Kenneth Street, Stornoway Isle of Lewis",
+    "lang": "en"
+  }],
   "publisher": "Scottish Urban Archaeological Trust Ltd.",
-  "container": {
-  },
-  "subjects": [
-    {
+  "container": {},
+  "subjects": [{
       "subject": "Archaeology",
       "lang": "en"
     },
@@ -45,19 +40,24 @@
   "contributors": [
 
   ],
-  "dates": [
-    {
-      "date": "2008",
-      "dateType": "Issued"
-    }
-  ],
+  "dates": [{
+    "date": "2008",
+    "dateType": "Issued"
+  }],
   "publicationYear": "2008",
   "language": "en",
-  "identifier": 
-    {
-      "identifierType": "DOI",
-      "identifier": "10.5072/1003496"
-    },
+  "identifiers": [{
+    "identifierType": "DOI",
+    "identifier": "10.5072/1003496"
+  },
+  {
+    "identifierType": "ADS Grey Lit ID",
+    "identifier": "4335"
+  },
+  {
+    "identifierType": "OASIS ID",
+    "identifier": "suatltd1-48159"
+  }],
   "sizes": [
     "Doc: 46 kb",
     "PDF: 750 kb",
@@ -68,25 +68,19 @@
     "application/pdf",
     "image/jpeg"
   ],
-  "rightsList": [
-    {
-      "rights": "Terms of Use and Access to ADS Resources",
-      "rightsUri": "http://archaeologydataservice.ac.uk/advice/termsOfUseAndAccess",
-      "lang": "en"
-    }
-  ],
-  "descriptions": [
-    {
-      "description": "Unpublished fieldwork reports (Grey Literature Library)",
-      "descriptionType": "Other",
-      "lang": "en"
-    }
-  ],
-  "geoLocations": [
-    {
-      "geoLocationPlace": "Stornoway, Western Isles, Scotland"
-    }
-  ],
+  "rightsList": [{
+    "rights": "Terms of Use and Access to ADS Resources",
+    "rightsUri": "http://archaeologydataservice.ac.uk/advice/termsOfUseAndAccess",
+    "lang": "en"
+  }],
+  "descriptions": [{
+    "description": "Unpublished fieldwork reports (Grey Literature Library)",
+    "descriptionType": "Other",
+    "lang": "en"
+  }],
+  "geoLocations": [{
+    "geoLocationPlace": "Stornoway, Western Isles, Scotland"
+  }],
   "fundingReferences": [
 
   ],

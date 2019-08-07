@@ -9,25 +9,19 @@
     "bibtex": "article",
     "ris": "RPRT"
   },
-  "creators": [
-    {
-      "nameType": "Personal",
-      "name": "Peach, A.",
-      "givenName": "A.",
-      "familyName": "Peach"
-    }
-  ],
-  "titles": [
-    {
-      "title": "Temperature and Humidity in School Classrooms, Ponhook Lake, N.S., 1961-1962",
-      "lang": "en"
-    }
-  ],
+  "creators": [{
+    "nameType": "Personal",
+    "name": "Peach, A.",
+    "givenName": "A.",
+    "familyName": "Peach"
+  }],
+  "titles": [{
+    "title": "Temperature and Humidity in School Classrooms, Ponhook Lake, N.S., 1961-1962",
+    "lang": "en"
+  }],
   "publisher": "National Research Council Canada",
-  "container": {
-  },
-  "subjects": [
-    {
+  "container": {},
+  "subjects": [{
       "subject": "Temperature",
       "subjectScheme": "LCCN",
       "schemeUri": "http://lccn.loc.gov/sh85062931",
@@ -50,17 +44,14 @@
       "lang": "en"
     }
   ],
-  "contributors": [
-    {
-      "nameType": "Personal",
-      "name": "Pomegranate, B.",
-      "givenName": "B.",
-      "familyName": "Pomegranate",
-      "contributorType": "DataCollector"
-    }
-  ],
-  "dates": [
-    {
+  "contributors": [{
+    "nameType": "Personal",
+    "name": "Pomegranate, B.",
+    "givenName": "B.",
+    "familyName": "Pomegranate",
+    "contributorType": "DataCollector"
+  }],
+  "dates": [{
       "date": "1961-06-01/1962-10-12",
       "dateType": "Collected"
     },
@@ -71,12 +62,10 @@
   ],
   "publicationYear": "1963",
   "language": "en",
-  "identifier": 
-    {
-      "identifierType": "DOI",
-      "identifier": "10.5072/datacollector_datecollected_geolocationbox"
-    }
-  ,
+  "identifiers": [{
+    "identifierType": "DOI",
+    "identifier": "10.5072/datacollector_datecollected_geolocationbox"
+  }],
   "sizes": [
     "10 p."
   ],
@@ -86,24 +75,20 @@
   "rightsList": [
 
   ],
-  "descriptions": [
-    {
-      "description": "The Division has been taking records of temperatures and humidities in groups of houses at various locations in Canada over the past several years. This survey has more recently been extended to include schools. Records obtained from classrooms in\n      six schools in Ponhook Lake, Nova Scotia from June 1, 1961-October 12, 1962 are now reported.",
-      "descriptionType": "Abstract",
-      "lang": "en"
-    }
-  ],
-  "geoLocations": [
-    {
-      "geoLocationBox": {
-        "westBoundLongitude": "-64.2",
-        "eastBoundLongitude": "-63.8",
-        "southBoundLatitude": "44.7167",
-        "northBoundLatitude": "44.9667"
-      },
-      "geoLocationPlace": "Ponhook Lake, Nova Scotia"
-    }
-  ],
+  "descriptions": [{
+    "description": "The Division has been taking records of temperatures and humidities in groups of houses at various locations in Canada over the past several years. This survey has more recently been extended to include schools. Records obtained from classrooms in\n      six schools in Ponhook Lake, Nova Scotia from June 1, 1961-October 12, 1962 are now reported.",
+    "descriptionType": "Abstract",
+    "lang": "en"
+  }],
+  "geoLocations": [{
+    "geoLocationBox": {
+      "westBoundLongitude": "-64.2",
+      "eastBoundLongitude": "-63.8",
+      "southBoundLatitude": "44.7167",
+      "northBoundLatitude": "44.9667"
+    },
+    "geoLocationPlace": "Ponhook Lake, Nova Scotia"
+  }],
   "fundingReferences": [
 
   ],

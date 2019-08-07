@@ -9,23 +9,18 @@
     "bibtex": "misc",
     "ris": "COMP"
   },
-  "creators": [
-    {
-      "nameType": "Personal",
-      "name": "Miller, Elizabeth",
-      "givenName": "Elizabeth",
-      "familyName": "Miller",
-      "nameIdentifiers": [
-        {
-          "nameIdentifier": "https://orcid.org/0000-0001-5000-0007",
-          "nameIdentifierScheme": "ORCID"
-        }
-      ],
-      "affiliation": "DataCite"
-    }
-  ],
-  "titles": [
-    {
+  "creators": [{
+    "nameType": "Personal",
+    "name": "Miller, Elizabeth",
+    "givenName": "Elizabeth",
+    "familyName": "Miller",
+    "nameIdentifiers": [{
+      "nameIdentifier": "https://orcid.org/0000-0001-5000-0007",
+      "nameIdentifierScheme": "ORCID"
+    }],
+    "affiliation": "DataCite"
+  }],
+  "titles": [{
       "title": "Full DataCite XML Example",
       "lang": "en-US"
     },
@@ -36,34 +31,26 @@
     }
   ],
   "publisher": "DataCite",
-  "container": {
-  },
-  "subjects": [
-    {
-      "subject": "000 computer science",
-      "subjectScheme": "dewey",
-      "schemeUri": "http://dewey.info/",
-      "lang": "en-US"
-    }
-  ],
-  "contributors": [
-    {
-      "nameType": "Personal",
-      "name": "Starr, Joan",
-      "givenName": "Joan",
-      "familyName": "Starr",
-      "nameIdentifiers": [
-        {
-          "nameIdentifier": "https://orcid.org/0000-0002-7285-027X",
-          "nameIdentifierScheme": "ORCID"
-        }
-      ],
-      "affiliation": "California Digital Library",
-      "contributorType": "ProjectLeader"
-    }
-  ],
-  "dates": [
-    {
+  "container": {},
+  "subjects": [{
+    "subject": "000 computer science",
+    "subjectScheme": "dewey",
+    "schemeUri": "http://dewey.info/",
+    "lang": "en-US"
+  }],
+  "contributors": [{
+    "nameType": "Personal",
+    "name": "Starr, Joan",
+    "givenName": "Joan",
+    "familyName": "Starr",
+    "nameIdentifiers": [{
+      "nameIdentifier": "https://orcid.org/0000-0002-7285-027X",
+      "nameIdentifierScheme": "ORCID"
+    }],
+    "affiliation": "California Digital Library",
+    "contributorType": "ProjectLeader"
+  }],
+  "dates": [{
       "date": "2017-09-13",
       "dateType": "Updated",
       "dateInformation": "Updated with 4.2 properties"
@@ -75,11 +62,14 @@
   ],
   "publicationYear": "2014",
   "language": "en-US",
-  "identifier": 
-    {
-      "identifierType": "DOI",
-      "identifier": "10.5072/example-full"
+  "identifiers": [{
+    "identifierType": "DOI",
+    "identifier": "10.5072/example-full"
     },
+    {
+      "identifierType": "URL",
+      "identifier": "https://schema.datacite.org/meta/kernel-4.2/example/datacite-example-full-v4.2.xml"
+    }],
   "sizes": [
     "4 kB"
   ],
@@ -87,77 +77,67 @@
     "application/xml"
   ],
   "version": "4.2",
-  "rightsList": [
-    {
-      "rightsUri": "http://creativecommons.org/publicdomain/zero/1.0",
-      "lang": "en-US"
-    }
-  ],
-  "descriptions": [
-    {
-      "description": "XML example of all DataCite Metadata Schema v4.2 properties.",
-      "descriptionType": "Abstract",
-      "lang": "en-US"
-    }
-  ],
-  "geoLocations": [
-    {
-      "geoLocationPoint": {
-        "pointLatitude": "31.233",
-        "pointLongitude": "-67.302"
-      },
-      "geoLocationBox": {
-        "westBoundLongitude": "-71.032",
-        "eastBoundLongitude": "-68.211",
-        "southBoundLatitude": "41.090",
-        "northBoundLatitude": "42.893"
-      },
-      "geoLocationPolygon": [
-        {
-          "polygonPoint": {
-            "pointLatitude": "41.991",
-            "pointLongitude": "-71.032"
-          }
-        },
-        {
-          "polygonPoint": {
-            "pointLatitude": "42.893",
-            "pointLongitude": "-69.622"
-          }
-        },
-        {
-          "polygonPoint": {
-            "pointLatitude": "41.991",
-            "pointLongitude": "-68.211"
-          }
-        },
-        {
-          "polygonPoint": {
-            "pointLatitude": "41.090",
-            "pointLongitude": "-69.622"
-          }
-        },
-        {
-          "polygonPoint": {
-            "pointLatitude": "41.991",
-            "pointLongitude": "-71.032"
-          }
+  "rightsList": [{
+    "rightsUri": "http://creativecommons.org/publicdomain/zero/1.0",
+    "lang": "en-US"
+  }],
+  "descriptions": [{
+    "description": "XML example of all DataCite Metadata Schema v4.2 properties.",
+    "descriptionType": "Abstract",
+    "lang": "en-US"
+  }],
+  "geoLocations": [{
+    "geoLocationPoint": {
+      "pointLatitude": "31.233",
+      "pointLongitude": "-67.302"
+    },
+    "geoLocationBox": {
+      "westBoundLongitude": "-71.032",
+      "eastBoundLongitude": "-68.211",
+      "southBoundLatitude": "41.090",
+      "northBoundLatitude": "42.893"
+    },
+    "geoLocationPolygon": [{
+        "polygonPoint": {
+          "pointLatitude": "41.991",
+          "pointLongitude": "-71.032"
         }
-      ],
-      "geoLocationPlace": "Atlantic Ocean"
-    }
-  ],
-  "fundingReferences": [
-    {
-      "funderName": "National Science Foundation",
-      "funderIdentifier": "https://doi.org/10.13039/100000001",
-      "funderIdentifierType": "Crossref Funder ID",
-      "awardNumber": "CBET-106",
-      "awardTitle": "Full DataCite XML Example"
-    }
-  ],
-  "relatedIdentifiers": [
-    {
+      },
+      {
+        "polygonPoint": {
+          "pointLatitude": "42.893",
+          "pointLongitude": "-69.622"
+        }
+      },
+      {
+        "polygonPoint": {
+          "pointLatitude": "41.991",
+          "pointLongitude": "-68.211"
+        }
+      },
+      {
+        "polygonPoint": {
+          "pointLatitude": "41.090",
+          "pointLongitude": "-69.622"
+        }
+      },
+      {
+        "polygonPoint": {
+          "pointLatitude": "41.991",
+          "pointLongitude": "-71.032"
+        }
+      }
+    ],
+    "geoLocationPlace": "Atlantic Ocean"
+  }],
+  "fundingReferences": [{
+    "funderName": "National Science Foundation",
+    "funderIdentifier": "https://doi.org/10.13039/100000001",
+    "funderIdentifierType": "Crossref Funder ID",
+    "awardNumber": "CBET-106",
+    "awardTitle": "Full DataCite XML Example"
+  }],
+  "relatedIdentifiers": [{
       "relatedIdentifier": "https://data.datacite.org/application/citeproc+json/10.5072/example-full",
       "relatedIdentifierType": "URL",
       "relationType": "HasMetadata",

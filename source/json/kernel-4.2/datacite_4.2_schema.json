@@ -220,13 +220,18 @@
             },
             "required": ["resourceType", "resourceTypeGeneral"]
         },
-        "identifier": {
-            "type": "object",
-            "properties": {
-                "identifier": {"type": "string", "pattern": "^10\\.\\d+(\\.\\d+)*/.+$"},
-                "identifierType": {"type": "string", "enum": ["DOI"]}
+        "identifiers": {
+            "type": "array",
+            "items":{
+                "type": "object",
+                "properties": {
+                    "identifier": {"type": "string"},
+                    "identifierType": {"type": "string"}
+                },
+                "required": ["identifier", "identifierType"]
             },
-            "required": ["identifier", "identifierType"]
+            "minItems": 1,
+            "uniqueItems": true
         },
         "creators": {
             "type": "array",
@@ -465,7 +470,7 @@
     },
 
     "required": [
-        "identifier",
+        "identifiers",
         "creators",
         "titles",
         "publisher",
