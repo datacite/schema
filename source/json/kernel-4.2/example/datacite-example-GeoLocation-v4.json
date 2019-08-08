@@ -88,8 +88,8 @@
   "geoLocations": [
     {
       "geoLocationPoint": {
-        "pointLatitude": "69.000000",
-        "pointLongitude": "-52.000000"
+        "pointLatitude": 69.000000,
+        "pointLongitude": -52.000000
       },
       "geoLocationPlace": "Disko Bay"
     }

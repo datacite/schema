@@ -193,10 +193,20 @@
         "geoLocationPoint": {
             "type": "object",
             "properties": {
-                "pointLongitude": {"type": "string", "format": "longitude"},
-                "pointLatitude": {"type": "string", "format": "latitude"}
+                "pointLongitude": {"$ref": "#/definitions/longitude"},
+                "pointLatitude": {"$ref": "#/definitions/latitude"}
             },
             "required": ["pointLongitude", "pointLatitude"]
+        },
+        "longitude": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+        },
+        "latitude": {
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
         },
         "funderIdentifierType": {
             "type": "string",
@@ -419,10 +429,10 @@
                     "geoLocationBox": {
                         "type": "object",
                         "properties": {
-                            "westBoundLongitude": {"type": "string", "format": "longitude"},
-                            "eastBoundLongitude": {"type": "string", "format": "longitude"},
-                            "southBoundLatitude": {"type": "string", "format": "latitude"},
-                            "northBoundLatitude": {"type": "string", "format": "latitude"}
+                            "westBoundLongitude": {"$ref": "#/definitions/longitude"},
+                            "eastBoundLongitude": {"$ref": "#/definitions/longitude"},
+                            "southBoundLatitude": {"$ref": "#/definitions/latitude"},
+                            "northBoundLatitude": {"$ref": "#/definitions/latitude"}
                         },
                         "required": ["westBoundLongitude", "eastBoundLongitude", "southBoundLatitude", "northBoundLatitude"]
                     },

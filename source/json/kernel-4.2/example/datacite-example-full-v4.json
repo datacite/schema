@@ -107,44 +107,44 @@
   "geoLocations": [
     {
       "geoLocationPoint": {
-        "pointLatitude": "31.233",
-        "pointLongitude": "-67.302"
+        "pointLatitude": 31.233,
+        "pointLongitude": -67.302
       },
       "geoLocationBox": {
-        "westBoundLongitude": "-71.032",
-        "eastBoundLongitude": "-68.211",
-        "southBoundLatitude": "41.090",
-        "northBoundLatitude": "42.893"
+        "westBoundLongitude": -71.032,
+        "eastBoundLongitude": -68.211,
+        "southBoundLatitude": 41.090,
+        "northBoundLatitude": 42.893
       },
       "geoLocationPolygon": [
         {
           "polygonPoint": {
-            "pointLatitude": "41.991",
-            "pointLongitude": "-71.032"
+            "pointLatitude": 41.991,
+            "pointLongitude": -71.032
           }
         },
         {
           "polygonPoint": {
-            "pointLatitude": "42.893",
-            "pointLongitude": "-69.622"
+            "pointLatitude": 42.893,
+            "pointLongitude": -69.622
           }
         },
         {
           "polygonPoint": {
-            "pointLatitude": "41.991",
-            "pointLongitude": "-68.211"
+            "pointLatitude": 41.991,
+            "pointLongitude": -68.211
           }
         },
         {
           "polygonPoint": {
-            "pointLatitude": "41.090",
-            "pointLongitude": "-69.622"
+            "pointLatitude": 41.090,
+            "pointLongitude": -69.622
           }
         },
         {
           "polygonPoint": {
-            "pointLatitude": "41.991",
-            "pointLongitude": "-71.032"
+            "pointLatitude": 41.991,
+            "pointLongitude": -71.032
           }
         }
       ],
