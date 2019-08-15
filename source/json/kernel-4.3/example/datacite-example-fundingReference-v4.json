@@ -3,6 +3,7 @@
   "doi": "10.5281/zenodo.47394",
   "types": {
     "resourceTypeGeneral": "Dataset",
+    "resourceType": "Dataset",
     "schemaOrg": "Dataset",
     "citeproc": "dataset",
     "bibtex": "misc",
