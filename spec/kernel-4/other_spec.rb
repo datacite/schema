@@ -35,7 +35,7 @@ describe "validate other elements" do
       element.replace '<resourceType resourceTypeGeneral="">Dataset</resourceType>'
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(2)
-      expect(errors.last).to eq("35:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': '' is not a valid value of the atomic type '{http://datacite.org/schema/kernel-4}resourceType'.")
+      expect(errors.last).to eq("47:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': '' is not a valid value of the atomic type '{http://datacite.org/schema/kernel-4}resourceType'.")
     end
 
     it 'empty resourceType' do

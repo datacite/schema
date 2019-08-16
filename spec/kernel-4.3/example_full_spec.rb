@@ -11,7 +11,7 @@ describe "full example" do
 
   it 'has givenName and familyName' do
     creators = doc.search("creator")
-    expect(creators.size).to eq(1)
+    expect(creators.size).to eq(3)
     creator = creators.first
     expect(creator.elements.size).to eq(5)
 
