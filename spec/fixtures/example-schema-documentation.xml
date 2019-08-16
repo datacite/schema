@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns="http://datacite.org/schema/kernel-4" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+    <identifier identifierType="DOI">10.14454/7XQ3-ZF69</identifier>
+    <creators>
+        <creator>
+            <creatorName nameType="Organizational">DataCite Metadata Working Group</creatorName>
+        </creator>
+    </creators>
+    <titles>
+        <title>DataCite Metadata Schema Documentation for the Publication and Citation of Research Data v4.3</title>
+    </titles>
+    <publisher>DataCite</publisher>
+    <publicationYear>2019</publicationYear>
+    <contributors>
+        <contributor contributorType="ProjectLeader">
+            <contributorName>de Smaele, Madeleine</contributorName>
+            <givenName>Madeleine</givenName>
+            <familyName>de Smaele</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">0000-0003-4149-8311</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/02e2c7k09" affiliationIdentifierScheme="ROR">Delft University of Technology</affiliation>
+        </contributor>
+        <contributor contributorType="ProjectLeader">
+            <contributorName>Dasler, Robin</contributorName>
+            <givenName>Robin</givenName>
+            <familyName>Dasler</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">0000-0002-4695-7874</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR">DataCite</affiliation>
+        </contributor>
+        <contributor contributorType="Editor">
+            <contributorName>Ashton, Jan</contributorName>
+            <givenName>Jan</givenName>
+            <familyName>Ashton</familyName>
+            <affiliation affiliationIdentifier="https://ror.org/05dhe8b71" affiliationIdentifierScheme="ROR">British Library</affiliation>
+        </contributor>
+        <contributor contributorType="Editor">
+            <contributorName>Roy, Sophie</contributorName>
+            <givenName>Sophie</givenName>
+            <familyName>Roy</familyName>
+            <affiliation affiliationIdentifier="https://ror.org/04mte1k06" affiliationIdentifierScheme="ROR">National Research Council Canada</affiliation>
+        </contributor>
+        <contributor contributorType="Editor">
+            <contributorName>Fenner, Martin</contributorName>
+            <givenName>Martin</givenName>
+            <familyName>Fenner</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">0000-0001-6528-2027</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR">DataCite</affiliation>
+        </contributor>
+        <contributor contributorType="Editor">
+            <contributorName>Jacobson, Mark</contributorName>
+            <givenName>Mark</givenName>
+            <familyName>Jacobson</familyName>
+            <affiliation>South African Environmental Observation Network</affiliation>
+        </contributor>
+        <contributor contributorType="Editor">
+            <contributorName>Bernal Martínez, Isabel</contributorName>
+            <givenName>Isabel</givenName>
+            <familyName>Bernal Martínez</familyName>
+            <affiliation affiliationIdentifier="https://ror.org/02gfc7t72" affiliationIdentifierScheme="ROR">Spanish National Research Council</affiliation>
+        </contributor>
+        <contributor contributorType="Editor">
+            <contributorName>Burger, Marleen</contributorName>
+            <givenName>Marleen</givenName>
+            <familyName>Burger</familyName>
+            <affiliation affiliationIdentifier="https://ror.org/04aj4c181" affiliationIdentifierScheme="ROR">German National Library of Science and Technology</affiliation>
+        </contributor>
+        <contributor contributorType="Editor">
+            <contributorName>Yahia, Mohamed</contributorName>
+            <givenName>Mohamed</givenName>
+            <familyName>Yahia</familyName>
+            <affiliation affiliationIdentifier="https://ror.org/02mn0vt57" affiliationIdentifierScheme="ROR">Institut de l'Information Scientifique et Technique</affiliation>
+        </contributor>
+        <contributor contributorType="Editor">
+            <contributorName>Zolly, Lisa</contributorName>
+            <givenName>Lisa</givenName>
+            <familyName>Zolly</familyName>
+            <affiliation affiliationIdentifier="https://ror.org/035a68863" affiliationIdentifierScheme="ROR">United States Geological Survey</affiliation>
+        </contributor>
+        <contributor contributorType="Editor">
+            <contributorName>Habermann, Ted</contributorName>
+            <givenName>Ted</givenName>
+            <familyName>Habermann</familyName>
+            <affiliation>Metadata Game Changers</affiliation>
+        </contributor>
+        <contributor contributorType="Editor">
+            <contributorName>Raugh, Anne</contributorName>
+            <givenName>Anne</givenName>
+            <familyName>Raugh</familyName>
+            <affiliation affiliationIdentifier="https://ror.org/047s2c258" affiliationIdentifierScheme="ROR">University of Maryland, College Park</affiliation>
+        </contributor>
+        <contributor contributorType="Editor">
+            <contributorName>Ilik, Violeta</contributorName>
+            <givenName>Violeta</givenName>
+            <familyName>Ilik</familyName>
+            <affiliation affiliationIdentifier="https://ror.org/00hj8s172" affiliationIdentifierScheme="ROR">Columbia University</affiliation>
+        </contributor>
+        <contributor contributorType="Editor">
+            <contributorName>La Roi, Andreas</contributorName>
+            <givenName>Andreas</givenName>
+            <familyName>La Roi</familyName>
+            <affiliation affiliationIdentifier="https://ror.org/05a28rw58" affiliationIdentifierScheme="ROR">Swiss Federal Institute of Technology in Zurich</affiliation>
+        </contributor>
+    </contributors>
+    <language>eng</language>
+    <resourceType resourceTypeGeneral="Text">Documentation</resourceType>
+    <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="Documents">10.14454/F2WP-S162</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsNewVersionOf">10.5438/BMJT-BX77</relatedIdentifier>
+    </relatedIdentifiers>
+    <sizes>
+        <size>73 pages</size>
+    </sizes>
+    <formats>
+        <format>application/pdf</format>
+    </formats>
+    <version>4.3</version>
+    <descriptions>
+        <description descriptionType="TableOfContents">1 Introduction
+            <br/>1.1 The DataCite Consortium
+            <br/>1.2 DataCite Community Participation
+            <br/>1.3 The Metadata Schema
+            <br/>1.4 Version 4.32 Update
+            <br/>2 DataCite Metadata Properties
+            <br/>2.1 Overview
+            <br/>2.2 Citation
+            <br/>2.3 DataCite Properties
+            <br/>3 XML Example
+            <br/>4 XML Schema
+            <br/>5 Other DataCite Services
+            <br/>Appendices
+            <br/>Appendix 1: Controlled List Definitions
+            <br/>Appendix 2: Earlier Version Update Notes
+            <br/>Appendix 3: Standard values for unknown information
+            <br/>Appendix 4: Version 4.1 Changes in support of software citation
+            <br/>Appendix 5: FORCE11 Software Citation Principles Mapping
+        </description>
+    </descriptions>
+</resource>
