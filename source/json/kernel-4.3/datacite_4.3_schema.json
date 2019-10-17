@@ -22,12 +22,26 @@
             },
             "uniqueItems": true
         },
+        "affiliationIdentifiers": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "affiliationIdentifier": {"type": "string"},
+                    "affiliationIdentifierScheme": {"type": "string"},
+                    "schemeURI": {"type": "string", "format": "uri"}
+                },
+                "required": ["affiliationIdentifier", "affiliationIdentifierScheme"]
+            },
+            "uniqueItems": true
+        },
         "affiliations": {
             "type": "array",
             "items": {
                 "type": "object",
                 "properties": {
-                    "affiliation": {"type": "string"}
+                    "affiliation": {"type": "string"},
+                    "affiliationIdentifier": {"$ref":"#/definitions/affiliationIdentifiers"}
                 },
                 "required": ["affiliation"]
             },
