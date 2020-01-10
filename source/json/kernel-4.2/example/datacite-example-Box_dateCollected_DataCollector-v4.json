@@ -91,10 +91,10 @@
   "geoLocations": [
     {
       "geoLocationBox": {
-        "westBoundLongitude": "-64.2",
-        "eastBoundLongitude": "-63.8",
-        "southBoundLatitude": "44.7167",
-        "northBoundLatitude": "44.9667"
+        "westBoundLongitude": -64.2,
+        "eastBoundLongitude": -63.8,
+        "southBoundLatitude": 44.7167,
+        "northBoundLatitude": 44.9667
       },
       "geoLocationPlace": "Ponhook Lake, Nova Scotia"
     }
