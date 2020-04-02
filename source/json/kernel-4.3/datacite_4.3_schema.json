@@ -22,26 +22,15 @@
             },
             "uniqueItems": true
         },
-        "affiliationIdentifiers": {
+        "affiliation": {
             "type": "array",
             "items": {
                 "type": "object",
                 "properties": {
+                    "name": {"type": "string"},
                     "affiliationIdentifier": {"type": "string"},
                     "affiliationIdentifierScheme": {"type": "string"},
                     "schemeURI": {"type": "string", "format": "uri"}
-                },
-                "required": ["affiliationIdentifier", "affiliationIdentifierScheme"]
-            },
-            "uniqueItems": true
-        },
-        "affiliations": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "affiliation": {"type": "string"},
-                    "affiliationIdentifier": {"$ref":"#/definitions/affiliationIdentifiers"}
                 },
                 "required": ["affiliation"]
             },
