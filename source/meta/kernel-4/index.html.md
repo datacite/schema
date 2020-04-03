@@ -1,19 +1,20 @@
 ---
-title: DataCite Metadata Schema 4.2
-version: 4.2
-date: 2019-02-14
+title: DataCite Metadata Schema 4.3
+version: 4.3
+date: 2019-08-16
 layout: schema
-schema_url: /meta/kernel-4.2/metadata.xsd
-documentation_url: /meta/kernel-4.2/doc/DataCite-MetadataKernel_v4.2.pdf
+schema_url: /meta/kernel-4.3/metadata.xsd
+documentation_url: /meta/kernel-4.3/doc/DataCite-MetadataKernel_v4.3.pdf
 ---
 
 ## Documentation
-DataCite Metadata Working Group. (2018). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.2. DataCite e.V. https://doi.org/10.5438/bmjt-bx77
+DataCite Metadata Working Group. (2019). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 4.3. DataCite e.V. https://doi.org/10.14454/7xq3-zf69
 
-<a href="doc/DataCite-MetadataKernel_v4.2.pdf" class="btn">Download PDF</a>
+<a href="doc/DataCite-MetadataKernel_v4.3.pdf" class="btn">Download PDF</a>
+
 
 ## Schema
-DataCite Metadata Working Group. (2017). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 4.2. DataCite e.V. http://doi.org/10.5438/rv0g-av03
+DataCite Metadata Working Group. (2019). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 4.3. DataCite e.V. https://doi.org/10.14454/f2wp-s162
 
 <a href="metadata.xsd" class="btn">View XSD</a>
 
