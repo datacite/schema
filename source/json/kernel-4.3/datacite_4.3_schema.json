@@ -436,10 +436,10 @@
                     "geoLocationBox": {
                         "type": "object",
                         "properties": {
-                            "westBoundLongitude": {"type": "string", "format": "longitude"},
-                            "eastBoundLongitude": {"type": "string", "format": "longitude"},
-                            "southBoundLatitude": {"type": "string", "format": "latitude"},
-                            "northBoundLatitude": {"type": "string", "format": "latitude"}
+                            "westBoundLongitude": {"$ref": "#/definitions/longitude"},
+                            "eastBoundLongitude": {"$ref": "#/definitions/longitude"},
+                            "southBoundLatitude": {"$ref": "#/definitions/latitude"},
+                            "northBoundLatitude": {"$ref": "#/definitions/latitude"}
                         },
                         "required": ["westBoundLongitude", "eastBoundLongitude", "southBoundLatitude", "northBoundLatitude"]
                     },
