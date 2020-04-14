@@ -1,6 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-
+    "id": "datacite-v4.3.json",
+    "title": "DataCite v4.3",
+    "description": "JSON representation of the DataCite v4.3 schema.",
+    "additionalProperties": false,
     "definitions": {
         "nameType": {
             "type": "string",
@@ -16,7 +19,7 @@
                 "properties": {
                     "nameIdentifier": {"type": "string"},
                     "nameIdentifierScheme": {"type": "string"},
-                    "schemeURI": {"type": "string", "format": "uri"}
+                    "schemeUri": {"type": "string", "format": "uri"}
                 },
                 "required": ["nameIdentifier", "nameIdentifierScheme"]
             },
@@ -30,7 +33,7 @@
                     "name": {"type": "string"},
                     "affiliationIdentifier": {"type": "string"},
                     "affiliationIdentifierScheme": {"type": "string"},
-                    "schemeURI": {"type": "string", "format": "uri"}
+                    "schemeUri": {"type": "string", "format": "uri"}
                 },
                 "required": ["affiliation"]
             },
@@ -293,8 +296,8 @@
                 "properties": {
                     "subject": {"type": "string"},
                     "subjectScheme": {"type": "string"},
-                    "schemeURI": {"type": "string", "format": "uri"},
-                    "valueURI": {"type": "string", "format": "uri"},
+                    "schemeUri": {"type": "string", "format": "uri"},
+                    "valueUri": {"type": "string", "format": "uri"},
                     "lang": {"type": "string"}
                 },
                 "required": ["subject"]
@@ -357,7 +360,7 @@
                     "relatedIdentifierType": {"$ref": "#/definitions/relatedIdentifierType"},
                     "relationType": {"$ref": "#/definitions/relationType"},
                     "relatedMetadataScheme": {"type": "string"},
-                    "schemeURI": {"type": "string", "format": "uri"},
+                    "schemeUri": {"type": "string", "format": "uri"},
                     "schemeType": {"type": "string"},
                     "resourceTypeGeneral": {"$ref": "#/definitions/resourceTypeGeneral"}
                 },
@@ -371,7 +374,7 @@
                     "$comment": "these properties may only be used with relation types HasMetadata/IsMetadataFor",
                     "properties": {
                         "relatedMetadataScheme": false,
-                        "schemeURI": false,
+                        "schemeUri": false,
                         "schemeType": false
                     }
                 }
@@ -401,10 +404,10 @@
                 "type": "object",
                 "properties": {
                     "rights": {"type": "string"},
-                    "rightsURI": {"type": "string", "format": "uri"},
+                    "rightsUri": {"type": "string", "format": "uri"},
                     "rightsIdentifier": {"type": "string"},
                     "rightsIdentifierScheme": {"type": "string"},
-                    "schemeURI": {"type": "string", "format": "uri"},
+                    "schemeUri": {"type": "string", "format": "uri"},
                     "lang": {"type": "string"}
                 }
             },
@@ -433,10 +436,10 @@
                     "geoLocationBox": {
                         "type": "object",
                         "properties": {
-                            "westBoundLongitude": {"$ref": "#/definitions/longitude"},
-                            "eastBoundLongitude": {"$ref": "#/definitions/longitude"},
-                            "southBoundLatitude": {"$ref": "#/definitions/latitude"},
-                            "northBoundLatitude": {"$ref": "#/definitions/latitude"}
+                            "westBoundLongitude": {"type": "string", "format": "longitude"},
+                            "eastBoundLongitude": {"type": "string", "format": "longitude"},
+                            "southBoundLatitude": {"type": "string", "format": "latitude"},
+                            "northBoundLatitude": {"type": "string", "format": "latitude"}
                         },
                         "required": ["westBoundLongitude", "eastBoundLongitude", "southBoundLatitude", "northBoundLatitude"]
                     },
@@ -469,7 +472,7 @@
                     "funderIdentifier": {"type": "string"},
                     "funderIdentifierType": {"$ref": "#/definitions/funderIdentifierType"},
                     "awardNumber": {"type": "string"},
-                    "awardURI": {"type": "string", "format": "uri"},
+                    "awardUri": {"type": "string", "format": "uri"},
                     "awardTitle": {"type": "string"}
                 },
                 "required": ["funderName"]
@@ -479,6 +482,14 @@
         "schemaVersion": {
             "type": "string",
             "const": "http://datacite.org/schema/kernel-4"
+        },
+        "container": {
+            "type": "object",
+            "properties": {
+                "type": {"type": "string"},
+                "title": {"type": "string"},
+                "firstPage": {"type": "string"}
+            }
         }
     },
 
