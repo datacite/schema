@@ -25,7 +25,7 @@
             },
             "uniqueItems": true
         },
-        "affiliation": {
+        "affiliations": {
             "type": "array",
             "items": {
                 "type": "object",
@@ -35,7 +35,7 @@
                     "affiliationIdentifierScheme": {"type": "string"},
                     "schemeUri": {"type": "string", "format": "uri"}
                 },
-                "required": ["affiliation"]
+                "required": ["name"]
             },
             "uniqueItems": true
         },
@@ -260,7 +260,7 @@
                     "givenName": {"type": "string"},
                     "familyName": {"type": "string"},
                     "nameIdentifiers": {"$ref": "#/definitions/nameIdentifiers"},
-                    "affiliations": {"$ref": "#/definitions/affiliations"},
+                    "affiliation": {"$ref": "#/definitions/affiliations"},
                     "lang": {"type": "string"}
                 },
                 "required": ["name"]
@@ -315,7 +315,7 @@
                     "givenName": {"type": "string"},
                     "familyName": {"type": "string"},
                     "nameIdentifiers": {"$ref": "#/definitions/nameIdentifiers"},
-                    "affiliations": {"$ref": "#/definitions/affiliations"},
+                    "affiliation": {"$ref": "#/definitions/affiliations"},
                     "lang": {"type": "string"}
                 },
                 "required": ["contributorType", "name"]
