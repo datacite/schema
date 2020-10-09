@@ -77,8 +77,8 @@ describe "validate geoLocation" do
       </geoLocations>
     EOT
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-    expect(errors.length).to eq(2)
-    expect(errors.first).to include("Element '{http://datacite.org/schema/kernel-4}pointLatitude': [facet 'maxInclusive'] The value '110.000000' is greater than the maximum value allowed ('90').")
+    expect(errors.length).to eq(1)
+    expect(errors.first).to eq("61:0: ERROR: Element '{http://datacite.org/schema/kernel-4}pointLatitude': [facet 'maxInclusive'] The value '110.000000' is greater than the maximum value allowed ('90').")
   end
 
   it 'pointLatitude out of range' do

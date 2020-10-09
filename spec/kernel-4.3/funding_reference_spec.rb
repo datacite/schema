@@ -47,7 +47,7 @@ describe "validate funderReference" do
       </fundingReferences>
     EOT
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-    expect(errors.length).to eq(2)
+    expect(errors.length).to eq(1)
     expect(errors.first).to include("Element '{http://datacite.org/schema/kernel-4}funderName': [facet 'minLength'] The value has a length of '0'; this underruns the allowed minimum length of '1'.")
   end
 
@@ -91,7 +91,7 @@ describe "validate funderReference" do
       </fundingReferences>
     EOT
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-    expect(errors.length).to eq(2)
+    expect(errors.length).to eq(1)
     expect(errors.first).to include("The value 'ABC' is not an element of the set {'ISNI', 'GRID', 'ROR', 'Crossref Funder ID', 'Other'}.")
   end
 

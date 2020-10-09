@@ -20,21 +20,21 @@ describe "validate DOI" do
   it '8.5555/123' do
     doc.at("identifier").content = "8.5555/123"
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-    expect(errors.length).to eq(2)
+    expect(errors.length).to eq(1)
     expect(errors.first).to include("not accepted by the pattern '10\\..+/.+'")
   end
 
   it '10.5555' do
     doc.at("identifier").content = "10.5555"
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-    expect(errors.length).to eq(2)
+    expect(errors.length).to eq(1)
     expect(errors.first).to include("not accepted by the pattern '10\\..+/.+'")
   end
 
   it '123' do
     doc.at("identifier").content = "123"
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-    expect(errors.length).to eq(2)
+    expect(errors.length).to eq(1)
     expect(errors.first).to include("not accepted by the pattern '10\\..+/.+'")
   end
 end

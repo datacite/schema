@@ -34,8 +34,8 @@ describe "validate other elements" do
       element = doc.at("resourceType")
       element.replace '<resourceType resourceTypeGeneral="">Dataset</resourceType>'
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-      expect(errors.length).to eq(2)
-      expect(errors.last).to eq("47:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': '' is not a valid value of the atomic type '{http://datacite.org/schema/kernel-4}resourceType'.")
+      expect(errors.length).to eq(1)
+      expect(errors.last).to eq("47:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': [facet 'enumeration'] The value '' is not an element of the set {'Audiovisual', 'Collection', 'DataPaper', 'Dataset', 'Event', 'Image', 'InteractiveResource', 'Model', 'PhysicalObject', 'Service', 'Software', 'Sound', 'Text', 'Workflow', 'Other'}.")
     end
 
     it 'empty resourceType' do
@@ -49,7 +49,7 @@ describe "validate other elements" do
       element = doc.at("resourceType")
       element.replace '<resourceType resourceTypeGeneral="Conference">Dataset</resourceType>'
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-      expect(errors.length).to eq(2)
+      expect(errors.length).to eq(1)
       expect(errors.first).to include("The value 'Conference' is not an element of the set {'Audiovisual', 'Collection', 'DataPaper', 'Dataset', 'Event', 'Image', 'InteractiveResource', 'Model', 'PhysicalObject', 'Service', 'Software', 'Sound', 'Text', 'Workflow', 'Other'}.")
     end
   end
