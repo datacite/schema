@@ -15,7 +15,6 @@ before_install:
       RACK_ENV="stage";
       cp .env.stage .env;
     fi
-  - rvm install 2.3.1
 
   - wget https://github.com/jgm/pandoc/releases/download/1.15.2/pandoc-1.15.2-1-amd64.deb
   - sudo dpkg -i pandoc-1.15.2-1-amd64.deb
