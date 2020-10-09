@@ -1,4 +1,10 @@
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="//cdn.statuspage.io/se-v2.js"></script>
-<script src="<%= ENV['CDN_URL'] %>/javascripts/default.js"></script>
+<script src="https://assets.datacite.org/javascripts/default.js"></script>
+<div id="consent"></div>
+<script src="<%= ENV['CDN_URL'] %>/javascripts/consent.js"></script>
+<% if ENV['SITE_GA'].present? %>
+  <div id="ga" data-ga="<%= ENV['SITE_GA'] %>"></div>
+  <script src="/javascripts/ga.js"></script>
+<% end %>
