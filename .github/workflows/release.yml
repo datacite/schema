@@ -51,4 +51,4 @@ jobs:
           channel: '#ops'
           username: 'GitHub Actions'
           color: 'good'
-          text: 'A new version of the homepage has been released.'
+          text: 'A new version of the schema site has been released.'
