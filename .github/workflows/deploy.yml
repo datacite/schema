@@ -1,0 +1,55 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - "master"
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      RACK_ENV: stage
+      ENV_FILE: .env.stage
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      S3_BUCKET: ${{ secrets.STAGE_S3_BUCKET }}
+      CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.STAGE_CLOUDFRONT_DISTRIBUTION_ID }}
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+
+      - name: Build and test
+        run: |
+          cp $ENV_FILE .env
+          gem install bundler -v 1.17.3
+          bundle install --jobs 4 --retry 3
+          yarn install --non-interactive
+          wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
+          sudo dpkg -i pandoc-1.19.2.1-1-amd64.deb
+          rm pandoc-1.19.2.1-1-amd64.deb
+          bundle exec rspec
+          bundle exec middleman build -e $RACK_ENV
+          
+      - name: Check links
+        run: | 
+          bundle exec htmlproofer --http-status-ignore "999,403" --allow-hash-href --empty_alt_ignore --only-4xx ./build
+
+      - name: Deploy 
+        uses: reggionick/s3-deploy@v3
+        with:
+          folder: build
+          bucket: ${{ secrets.STAGE_S3_BUCKET }}
+          bucket-region: ${{ secrets.S3_BUCKET_REGION }}
+          dist-id: ${{ secrets.STAGE_CLOUDFRONT_DISTRIBUTION_ID }}
+          invalidation: /
+          delete-removed: true
+
+      - name: Notify Slack
+        uses: adamkdean/simple-slack-notify@1.0.4
+        with:
+          channel: '#ops'
+          username: 'GitHub Actions'
+          color: 'good'
+          text: 'A new version of the schema site has been deployed to stage.'

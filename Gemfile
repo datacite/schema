@@ -1,9 +1,7 @@
-# If you do not have OpenSSL installed, change
-# the following line to use 'http://'
 source 'https://rubygems.org'
 
 # Middleman Gems
-gem 'middleman', "4.2.1"
+gem 'middleman', '~> 4.2'
 gem 'middleman-dotenv', '~> 2.0'
 gem 'middleman-livereload'
 gem 'tilt', '~> 2.0', git: "https://github.com/datacite/tilt.git", branch: "pandoc-options"
