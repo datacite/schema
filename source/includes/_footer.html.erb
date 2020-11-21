@@ -6,7 +6,7 @@
       <h4>About DataCite</h4>
       <ul>
       <% data.links.about_links.each do |link| %>
-        <li><%= link_to link.name, "#{ENV["HOMEPAGE_URL"]}#{link.url}" %></a></li>
+        <li><%= link_to link.name, "#{ENV["CDN_URL"]}#{link.url}" %></a></li>
       <% end %>
       </ul>
     </div>
@@ -14,7 +14,7 @@
       <h4>Services</h4>
       <ul>
       <% data.links.services_links.each do |link| %>
-        <li><%= link_to link.name, "#{ENV["HOMEPAGE_URL"]}#{link.url}" %></a></li>
+        <li><%= link_to link.name, "#{ENV["CDN_URL"]}#{link.url}" %></a></li>
       <% end %>
       </ul>
     </div>
@@ -28,7 +28,7 @@
       <h4>Community</h4>
       <ul>
       <% data.links.community_links.each do |link| %>
-        <li><%= link_to link.name, "#{ENV["HOMEPAGE_URL"]}#{link.url}" %></a></li>
+        <li><%= link_to link.name, "#{ENV["CDN_URL"]}#{link.url}" %></a></li>
       <% end %>
       </ul>
     </div>
@@ -54,7 +54,7 @@
       <% end %>
       <ul class="share">
       <% data.links.contact_links.each do |link| %>
-        <li><%= link_to link.name, "#{ENV["HOMEPAGE_URL"]}#{link.url}" %></a></li>
+        <li><%= link_to link.name, "#{ENV["CDN_URL"]}#{link.url}" %></a></li>
       <% end %>
       </ul>
       <a href="http://status.datacite.org" target="_blank">

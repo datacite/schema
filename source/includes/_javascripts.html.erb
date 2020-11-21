@@ -6,5 +6,5 @@
 <script src="<%= ENV['CDN_URL'] %>/javascripts/consent.js"></script>
 <% if ENV['SITE_GA'].present? %>
   <div id="ga" data-ga="<%= ENV['SITE_GA'] %>"></div>
-  <script src="/javascripts/ga.js"></script>
+  <script src="<%= ENV['CDN_URL'] %>/javascripts/ga.js"></script>
 <% end %>
