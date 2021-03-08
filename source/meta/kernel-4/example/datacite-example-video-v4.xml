@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.2/metadata.xsd">
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
   <identifier identifierType="DOI">10.5072/1153992</identifier>
   <creators>
     <creator>
@@ -23,9 +24,6 @@
     <format>MP4</format>
   </formats>
   <descriptions>
-    <description xml:lang="en" descriptionType="Abstract">
-      This hour-long video features John Halter as the narrator. Mr. Halter is best known as a journalist rather than a TV star, and here he plays that role as he does an "expose" type of walkthrough a new home. The home has been advertised as a house with
-      the very latest in state-of-the art energy efficiency, especially solar. Mr. Halter puts the home through an investigation and determines that it can, indeed, live up to its claims.
-    </description>
+    <description xml:lang="en" descriptionType="Abstract">This hour-long video features John Halter as the narrator. Mr. Halter is best known as a journalist rather than a TV star, and here he plays that role as he does an "expose" type of walkthrough a new home. The home has been advertised as a house with the very latest in state-of-the art energy efficiency, especially solar. Mr. Halter puts the home through an investigation and determines that it can, indeed, live up to its claims.</description>
   </descriptions>
 </resource>

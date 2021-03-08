@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
     <identifier identifierType="DOI">10.5072/example-full</identifier>
     <creators>
         <creator>
@@ -24,7 +25,7 @@
     <publicationYear>2014</publicationYear>
     <subjects>
         <subject xml:lang="en-US" schemeURI="http://dewey.info/" subjectScheme="dewey">000 computer science</subject>
-   </subjects>
+    </subjects>
     <contributors>
         <contributor contributorType="ProjectLeader">
             <contributorName>Starr, Joan</contributorName>
@@ -60,7 +61,8 @@
     </formats>
     <version>4.3</version>
     <rightsList>
-        <rights xml:lang="en-US" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC0 1.0" rightsURI="http://creativecommons.org/publicdomain/zero/1.0/"/>  </rightsList>
+        <rights xml:lang="en-US" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC0 1.0" rightsURI="http://creativecommons.org/publicdomain/zero/1.0/"/>
+    </rightsList>
     <descriptions>
         <description xml:lang="en-US" descriptionType="Abstract">
             XML example of all DataCite Metadata Schema v4.3 properties.
