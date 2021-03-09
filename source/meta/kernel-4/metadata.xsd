@@ -502,7 +502,7 @@ Use the complete title of a license and include version information if applicabl
                         <xs:documentation>Last page of the related item e.g. of the chapter, article, or conference paper.</xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="Publisher" minOccurs="0">
+                    <xs:element name="publisher" minOccurs="0">
                       <xs:annotation>
                         <xs:documentation>The name of the entity that holds, archives, publishes prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role.</xs:documentation>
                       </xs:annotation>
@@ -599,7 +599,7 @@ Use the complete title of a license and include version information if applicabl
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-      </xs:sequence>
+      </xs:all>
     </xs:complexType>
   </xs:element>
 
