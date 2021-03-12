@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.2/metadata.xsd">
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
   <identifier identifierType="DOI">10.5072/testpub</identifier>
   <creators>
     <creator>
@@ -9,7 +10,7 @@
     </creator>
     <creator>
       <creatorName>つまらないものですが</creatorName>
-      <nameIdentifier nameIdentifierScheme="ISNI" schemeURI="http://isni.org/isni/">0000000134596520</nameIdentifier>
+      <nameIdentifier nameIdentifierScheme="ISNI" schemeURI="https://isni.org/">0000000134596520</nameIdentifier>
     </creator>
   </creators>
   <titles>
@@ -19,7 +20,7 @@
   <publisher xml:lang="en">Springer</publisher>
   <publicationYear>2010</publicationYear>
   <subjects>
-    <subject xml:lang="en" subjectScheme="DDC">830 German &amp; related literatures</subject>
+    <subject xml:lang="en" subjectScheme="DDC" classificationCode="830">German literature &amp; related literatures</subject>
     <subject xml:lang="en">Polish Literature</subject>
   </subjects>
   <contributors>
@@ -27,7 +28,7 @@
       <contributorName nameType="Personal">Doe, John</contributorName>
       <givenName>John</givenName>
       <familyName>Doe</familyName>
-      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0001-5393-1421</nameIdentifier>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">0000-0001-5393-1421</nameIdentifier>
     </contributor>
   </contributors>
   <language>de</language>
@@ -46,12 +47,9 @@
   </formats>
   <version>2</version>
   <rightsList>
-    <rights xml:lang="en-US" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-ND-2.0" rightsURI="http://creativecommons.org/licenses/by-nd/2.0/"/>  </rightsList>
+    <rights xml:lang="en-US" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-ND-2.0" rightsURI="https://creativecommons.org/licenses/by-nd/2.0/"/>
+  </rightsList>
   <descriptions>
-    <description xml:lang="la" descriptionType="Abstract">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-      takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-      et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-    </description>
+    <description xml:lang="la" descriptionType="Abstract">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</description>
   </descriptions>
 </resource>

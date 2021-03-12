@@ -11,8 +11,11 @@
   2017-10-23 v4.1: Addition of dateType value "Other", relationType values "Describes", "IsDescribedBy", "HasVersion", "IsVersionOf", "Requires", "IsRequiredBy", resourceType value "DataPaper", new subproperties "dateInformation", "inPolygonPoint", new attribute "nameType", optional attribute "resourceTypeGeneral" for relatedIdentifier 
   2018-09-08 v4.1.1 Make schema 4.1 backwards compatible to 4.0 by allowing geolocation elements in any order
   2019-02-14 v4.2: Addition of dateType value "Withdrawn", relationType values "Obsoletes", "isObsoletedBy", addition of new subproperties for Rights: rightsIdentifier, rightsIdentifierScheme, schemeURI, addition of the XML language attribute to the properties Creator, Contributor and Publisher for organizational names, don't check format of DOI
-  2019-07-13 v4.3: Addition of new subproperties for Affiliation: "affiliationIdentifier", "affiliationIdentifierScheme", "schemeURI", addition of new sub-property for funderIdentifier: "schemeURI", addition of new funderIdentifierScheme: "ROR", added documentation for nameIdentifier -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified" xml:lang="EN">
+  2019-07-13 v4.3: Addition of new subproperties for Affiliation: "affiliationIdentifier", "affiliationIdentifierScheme", "schemeURI", addition of new sub-property for funderIdentifier: "schemeURI", addition of new funderIdentifierScheme: "ROR", added documentation for nameIdentifier 
+  2021-03-08 v4.4: Addition of new property relatedItem, relationType value "isPublishedIn", subject subproperty "classificationCode", controlled list "numberType", additional 13 properties for controlled list "resourceType" -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://datacite.org/schema/kernel-4" targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified" xml:lang="EN">
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="include/xml.xsd"/>
   <xs:include schemaLocation="include/datacite-titleType-v4.xsd"/>
   <xs:include schemaLocation="include/datacite-contributorType-v4.xsd"/>
@@ -23,6 +26,7 @@
   <xs:include schemaLocation="include/datacite-funderIdentifierType-v4.xsd"/>
   <xs:include schemaLocation="include/datacite-descriptionType-v4.xsd"/>
   <xs:include schemaLocation="include/datacite-nameType-v4.xsd"/>
+  <xs:include schemaLocation="include/datacite-numberType-v4.xsd"/>
   <xs:element name="resource">
     <xs:annotation>
       <xs:documentation>
@@ -136,19 +140,20 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="subject" minOccurs="0" maxOccurs="unbounded">
-              <xs:annotation>
-                <xs:documentation>Subject, keywords, classification codes, or key phrases describing the resource.</xs:documentation>
-              </xs:annotation>
-              <xs:complexType>
-                <xs:simpleContent>
-                  <xs:extension base="xs:string">
-                    <xs:attribute name="subjectScheme" use="optional"/>
-                    <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
-                    <xs:attribute name="valueURI" type="xs:anyURI" use="optional"/>
-                    <xs:attribute ref="xml:lang"/>
-                  </xs:extension>
-                </xs:simpleContent>
-              </xs:complexType>
+                <xs:annotation>
+                  <xs:documentation>Subject, keywords, classification codes, or key phrases describing the resource.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="subjectScheme" use="optional"/>
+                      <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+                      <xs:attribute name="valueURI" type="xs:anyURI" use="optional"/>
+                      <xs:attribute name="classificationCode" type="xs:anyURI" use="optional"/>
+                      <xs:attribute ref="xml:lang"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
               </xs:element>
             </xs:sequence>
           </xs:complexType>
@@ -157,29 +162,29 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="contributor" minOccurs="0" maxOccurs="unbounded">
-              <xs:annotation>
-                <xs:documentation>The institution or person responsible for collecting, creating, or otherwise contributing to the developement of the dataset.</xs:documentation>
-                <xs:documentation>The personal name format should be: Family, Given.</xs:documentation>
-              </xs:annotation>
-              <xs:complexType>
-                <xs:sequence>
-                  <xs:element name="contributorName">
-                    <xs:complexType>
-                      <xs:simpleContent>
-                        <xs:extension base="nonemptycontentStringType">
-                          <xs:attribute name="nameType" type="nameType" use="optional"/>
-                          <xs:attribute ref="xml:lang"/>
-                        </xs:extension>
-                      </xs:simpleContent>
-                    </xs:complexType>
-                  </xs:element>
-                  <xs:element name="givenName" minOccurs="0"/>
-                  <xs:element name="familyName" minOccurs="0"/>
-                  <xs:element name="nameIdentifier" xsi:type="nameIdentifier" minOccurs="0" maxOccurs="unbounded"/>
-                  <xs:element name="affiliation" xsi:type="affiliation" minOccurs="0" maxOccurs="unbounded"/>
-                </xs:sequence>
-                <xs:attribute name="contributorType" type="contributorType" use="required"/>
-              </xs:complexType>
+                <xs:annotation>
+                  <xs:documentation>The institution or person responsible for collecting, creating, or otherwise contributing to the developement of the dataset.</xs:documentation>
+                  <xs:documentation>The personal name format should be: Family, Given.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="contributorName">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="nonemptycontentStringType">
+                            <xs:attribute name="nameType" type="nameType" use="optional"/>
+                            <xs:attribute ref="xml:lang"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="givenName" minOccurs="0"/>
+                    <xs:element name="familyName" minOccurs="0"/>
+                    <xs:element name="nameIdentifier" xsi:type="nameIdentifier" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="affiliation" xsi:type="affiliation" minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                  <xs:attribute name="contributorType" type="contributorType" use="required"/>
+                </xs:complexType>
               </xs:element>
             </xs:sequence>
           </xs:complexType>
@@ -413,9 +418,198 @@ Use the complete title of a license and include version information if applicabl
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="relatedItems" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="relatedItem" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Information about a resource related to the one being registered e.g. a journal or book of which the article or chapter is part.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="relatedItemIdentifier" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>The identifier for the related item.</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="relatedItemIdentifierType" type="relatedIdentifierType" use="optional">
+                              <xs:annotation>
+                                <xs:documentation>The type of the Identifier for the related item e.g. DOI.</xs:documentation>
+                              </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="relatedMetadataScheme" use="optional">
+                              <xs:annotation>
+                                <xs:documentation>The name of the scheme.</xs:documentation>
+                              </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="schemeURI" type="xs:anyURI" use="optional">
+                              <xs:annotation>
+                                <xs:documentation>The URI of the relatedMetadataScheme.</xs:documentation>
+                              </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="schemeType" use="optional">
+                              <xs:annotation>
+                                <xs:documentation>The type of the relatedMetadataScheme, linked with the schemeURI.</xs:documentation>
+                              </xs:annotation>
+                            </xs:attribute>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="creators" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="creator" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation>The institution or person responsible for creating the 
+                                related resource. To supply multiple creators, repeat this property.
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="creatorName">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="nameType" type="nameType" use="optional"/>
+                                        <xs:attribute ref="xml:lang"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="givenName" minOccurs="0"/>
+                                <xs:element name="familyName" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="titles" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="title" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation>Title of the related item.</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="titleType" type="titleType" use="optional"/>
+                                  <xs:attribute ref="xml:lang"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="volume" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Volume of the related item.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="issue" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Issue number or name of the related item.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="number" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Issue number or name of the related item.</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="numberType" type="numberType" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="firstPage" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>First page of the related item e.g. of the chapter, article, or conference paper.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="lastPage" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Last page of the related item e.g. of the chapter, article, or conference paper.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="publisher" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>The name of the entity that holds, archives, publishes prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="publicationYear" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>The year when the item was or will be made publicly available.</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="yearType"/>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="edition" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Edition or version of the related item.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="contributors" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="contributor" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation>The institution or person responsible for collecting, 
+                              managing, distributing, or otherwise contributing to the development of 
+                              the resource.</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="contributorName">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="nameType" type="nameType" use="optional"/>
+                                        <xs:attribute ref="xml:lang"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="givenName" minOccurs="0"/>
+                                <xs:element name="familyName" minOccurs="0"/>
+                              </xs:sequence>
+                              <xs:attribute name="contributorType" type="contributorType" use="required">
+                                <xs:annotation>
+                                  <xs:documentation>The type of contributor of the resource.</xs:documentation>
+                                </xs:annotation>
+                              </xs:attribute>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="relatedItemType" type="resourceType" use="required">
+                    <xs:annotation>
+                      <xs:documentation>The type of the related item, e.g. journal article, book or chapter.</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="relationType" type="relationType" use="required">
+                    <xs:annotation>
+                      <xs:documentation>Description of the relationship of the resource being registered (A) and the related resource (B).</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:all>
     </xs:complexType>
   </xs:element>
+
   <!-- TYPE DECLARATIONS -->
   <!-- defines value for mandatory fields -->
   <xs:simpleType name="nonemptycontentStringType">
@@ -440,7 +634,7 @@ Use the complete title of a license and include version information if applicabl
     <xs:restriction base="xs:string">
       <!-- pattern for iso8601 dateTime -->
       <xs:pattern value="(-)?[0-9]{4}(-[0-9]{2})?(-[0-9]{2})?(T([0-9]{2}:){2}[0-9]{2}Z)?"/>
-      
+
       <!--  
       The following pattern is for year (yyyy) or year-month (yyyy-mm)              
       The last or last two digits of year may be '?'  meaning "one year in that range but not sure which year", for example 19?? means some year from 1990 to 1999.  Similarly month may be '??' so that 2004-?? "means some month in 2004".  And the entire string may end with '?' or '~' for "uncertain" or "approximate".

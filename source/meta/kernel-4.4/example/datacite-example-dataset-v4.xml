@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.2/metadata.xsd">
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
   <identifier identifierType="DOI">10.5072/D3P26Q35R-Test</identifier>
   <creators>
     <creator>
@@ -14,7 +15,7 @@
     </creator>
     <creator>
       <creatorName nameType="Personal">Purzer, Senay</creatorName>
-       <givenName>Senay</givenName>
+      <givenName>Senay</givenName>
       <familyName>Purzer</familyName>
     </creator>
   </creators>
@@ -35,11 +36,6 @@
   <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
   <version>1.0</version>
   <descriptions>
-    <description xml:lang="en" descriptionType="Abstract">
-      We developed an instrument, Critical Engineering Literacy Test (CELT), which is a multiple choice instrument designed to measure undergraduate students’ scientific and information literacy skills. It requires students to first read a technical memo
-      and, based on the memo’s arguments, answer eight multiple choice and six open-ended response questions. We collected data from 143 first-year engineering students and conducted an item analysis. The KR-20 reliability of the instrument was .39. Item
-      difficulties ranged between .17 to .83. The results indicate low reliability index but acceptable levels of item difficulties and item discrimination indices. Students were most challenged when answering items measuring scientific and mathematical
-      literacy (i.e., identifying incorrect information).
-    </description>
+    <description xml:lang="en" descriptionType="Abstract">We developed an instrument, Critical Engineering Literacy Test (CELT), which is a multiple choice instrument designed to measure undergraduate students’ scientific and information literacy skills. It requires students to first read a technical memo and, based on the memo’s arguments, answer eight multiple choice and six open-ended response questions. We collected data from 143 first-year engineering students and conducted an item analysis. The KR-20 reliability of the instrument was .39. Item difficulties ranged between .17 to .83. The results indicate low reliability index but acceptable levels of item difficulties and item discrimination indices. Students were most challenged when answering items measuring scientific and mathematical literacy (i.e., identifying incorrect information).</description>
   </descriptions>
 </resource>
