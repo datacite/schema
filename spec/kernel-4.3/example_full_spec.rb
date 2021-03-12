@@ -11,7 +11,7 @@ describe "full example" do
 
   it 'has givenName and familyName' do
     creators = doc.search("creator")
-    expect(creators.size).to eq(3)
+    expect(creators.size).to eq(1)
     creator = creators.first
     expect(creator.elements.size).to eq(5)
 
@@ -29,7 +29,7 @@ describe "full example" do
 
     name_identifier = creator.elements[3]
     expect(name_identifier.name).to eq("nameIdentifier")
-    expect(name_identifier["schemeURI"]).to eq("http://orcid.org/")
+    expect(name_identifier["schemeURI"]).to eq("https://orcid.org/")
     expect(name_identifier["nameIdentifierScheme"]).to eq("ORCID")
     expect(name_identifier.text).to eq("0000-0001-5000-0007")
   end
