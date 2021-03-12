@@ -117,7 +117,9 @@
   <relatedItems>
     <relatedItem relationType="IsPublishedIn" relatedItemType="Journal">
       <relatedItemIdentifier relatedItemIdentifierType="DOI">10.1016/j.physletb.2017.11.044</relatedItemIdentifier>
-      <title>Physics letters / B</title>
+      <titles>
+        <title>Physics letters / B</title>
+      </titles>
       <volume>776</volume>
       <firstPage>249</firstPage>
       <lastPage>264</lastPage>

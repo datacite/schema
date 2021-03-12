@@ -65,7 +65,9 @@
   <relatedItems>
     <relatedItem relationType="IsPublishedIn" relatedItemType="Journal">
       <relatedItemIdentifier relatedItemIdentifierType="DOI">10.12765/CPoS-2013-02</relatedItemIdentifier>
-      <title>Comparative Population Studies</title>
+      <titles>
+        <title>Comparative Population Studies</title>
+      </titles>
       <volume>38</volume>
       <number>1</number>
       <publicationYear>2013</publicationYear>

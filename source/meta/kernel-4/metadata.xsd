@@ -458,16 +458,52 @@ Use the complete title of a license and include version information if applicabl
                         </xs:simpleContent>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element name="title" minOccurs="0" maxOccurs="unbounded">
-                      <xs:annotation>
-                        <xs:documentation>Title of the related item.</xs:documentation>
-                      </xs:annotation>
+                    <xs:element name="creators" minOccurs="0">
                       <xs:complexType>
-                        <xs:simpleContent>
-                          <xs:extension base="xs:string">
-                            <xs:attribute name="titleType" type="titleType" use="optional"/>
-                          </xs:extension>
-                        </xs:simpleContent>
+                        <xs:sequence>
+                          <xs:element name="creator" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation>The institution or person responsible for creating the 
+                                related resource. To supply multiple creators, repeat this property.
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="creatorName">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="nameType" type="nameType" use="optional"/>
+                                        <xs:attribute ref="xml:lang"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="givenName" minOccurs="0"/>
+                                <xs:element name="familyName" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="titles" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="title" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation>Title of the related item.</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="titleType" type="titleType" use="optional"/>
+                                  <xs:attribute ref="xml:lang"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
                       </xs:complexType>
                     </xs:element>
                     <xs:element name="volume" minOccurs="0">
@@ -519,35 +555,6 @@ Use the complete title of a license and include version information if applicabl
                       <xs:annotation>
                         <xs:documentation>Edition or version of the related item.</xs:documentation>
                       </xs:annotation>
-                    </xs:element>
-                    <xs:element name="creators" minOccurs="0">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="creator" minOccurs="0" maxOccurs="unbounded">
-                            <xs:annotation>
-                              <xs:documentation>The institution or person responsible for creating the 
-                                related resource. To supply multiple creators, repeat this property.
-                              </xs:documentation>
-                            </xs:annotation>
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="creatorName">
-                                  <xs:complexType>
-                                    <xs:simpleContent>
-                                      <xs:extension base="xs:string">
-                                        <xs:attribute name="nameType" type="nameType" use="optional"/>
-                                        <xs:attribute ref="xml:lang"/>
-                                      </xs:extension>
-                                    </xs:simpleContent>
-                                  </xs:complexType>
-                                </xs:element>
-                                <xs:element name="givenName" minOccurs="0"/>
-                                <xs:element name="familyName" minOccurs="0"/>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
                     </xs:element>
                     <xs:element name="contributors" minOccurs="0">
                       <xs:complexType>

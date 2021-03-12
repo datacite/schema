@@ -32,7 +32,9 @@
   <relatedItems>
     <relatedItem relationType="IsPublishedIn" relatedItemType="Journal">
       <relatedItemIdentifier relatedItemIdentifierType="DOI">10.1002/gdj3.43</relatedItemIdentifier>
-      <title>Geoscience Data Journal</title>
+      <titles>
+        <title>Geoscience Data Journal</title>
+      </titles>
       <volume>3</volume>
       <issue>2</issue>
       <publicationYear>2016</publicationYear>

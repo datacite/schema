@@ -5,7 +5,6 @@
   <xs:simpleType name="numberType" id="numberType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Article"/>
-      <xs:enumeration value="Volume"/>
       <xs:enumeration value="Chapter"/>
       <xs:enumeration value="Report"/>
       <xs:enumeration value="Other"/>
