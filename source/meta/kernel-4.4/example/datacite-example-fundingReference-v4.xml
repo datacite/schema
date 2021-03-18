@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4.4/metadata.xsd">
   <identifier identifierType="DOI">10.5281/zenodo.47394</identifier>
   <creators>
     <creator>
@@ -39,7 +38,7 @@
   <dates>
     <date dateType="Issued">2016-03-11</date>
   </dates>
-  <resourceType resourceTypeGeneral="Dataset"/>
+  <resourceType resourceTypeGeneral="Dataset" />
   <alternateIdentifiers>
     <alternateIdentifier alternateIdentifierType="URL">https://zenodo.org/record/47394</alternateIdentifier>
   </alternateIdentifiers>

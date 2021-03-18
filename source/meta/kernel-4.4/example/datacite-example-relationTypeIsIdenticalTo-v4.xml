@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4.4/metadata.xsd">
   <identifier identifierType="DOI">10.5072/10.CPoS-example</identifier>
   <creators>
     <creator>
@@ -57,7 +56,7 @@
   </formats>
   <version>1</version>
   <rightsList>
-    <rights xml:lang="en-US" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-NC-ND-3.0" rightsURI="https://creativecommons.org/licenses/by-nc-nd/3.0/"/>
+    <rights xml:lang="en-US" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-NC-ND-3.0" rightsURI="https://creativecommons.org/licenses/by-nc-nd/3.0/" />
   </rightsList>
   <descriptions>
     <description xml:lang="en" descriptionType="Abstract">This paper validates the fertility histories of the German Generations and Gender Survey (GGS). Focusing on the cohorts 1930-69 of West German women, the total number of children, the parity distribution and the parity progression ratios are comparedto external sources. One major result from this validation is that the German GGS understates the fertility for the older cohorts and overstates it for the younger ones.</description>
