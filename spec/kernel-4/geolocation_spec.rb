@@ -61,7 +61,7 @@ describe "validate geoLocation" do
     EOT
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
     expect(errors.length).to eq(1)
-    expect(errors.first).to include("Element '{http://datacite.org/schema/kernel-4}geoLocationPoint': Missing child element(s). Expected is ( {http://datacite.org/schema/kernel-4}pointLatitude ).")
+    expect(errors.first).to include("Element '{https://datacite.org/schema/kernel-4}geoLocationPoint': Missing child element(s). Expected is ( {https://datacite.org/schema/kernel-4}pointLatitude ).")
   end
 
   it 'geoLocationPoint out of range' do
@@ -78,7 +78,7 @@ describe "validate geoLocation" do
     EOT
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
     expect(errors.length).to eq(1)
-    expect(errors.first).to include("Element '{http://datacite.org/schema/kernel-4}pointLatitude': [facet 'maxInclusive'] The value '110.000000' is greater than the maximum value allowed ('90').")
+    expect(errors.first).to include("Element '{https://datacite.org/schema/kernel-4}pointLatitude': [facet 'maxInclusive'] The value '110.000000' is greater than the maximum value allowed ('90').")
   end
 
   it 'pointLatitude out of range' do
@@ -95,7 +95,7 @@ describe "validate geoLocation" do
     EOT
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
     expect(errors.length).to eq(1)
-    expect(errors.first).to include("Element '{http://datacite.org/schema/kernel-4}pointLatitude': 'Disko Bay' is not a valid value of the atomic type '{http://datacite.org/schema/kernel-4}latitudeType'.")
+    expect(errors.first).to include("Element '{https://datacite.org/schema/kernel-4}pointLatitude': 'Disko Bay' is not a valid value of the atomic type '{https://datacite.org/schema/kernel-4}latitudeType'.")
   end
 
   it 'geoLocationPolygon' do
@@ -148,7 +148,7 @@ describe "validate geoLocation" do
     EOT
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
     expect(errors.length).to eq(1)
-    expect(errors.first).to include("Element '{http://datacite.org/schema/kernel-4}geoLocationPolygon': Missing child element(s). Expected is ( {http://datacite.org/schema/kernel-4}polygonPoint ).")
+    expect(errors.first).to include("Element '{https://datacite.org/schema/kernel-4}geoLocationPolygon': Missing child element(s). Expected is ( {https://datacite.org/schema/kernel-4}polygonPoint ).")
   end
 
   it 'geoLocationBox' do
@@ -183,6 +183,6 @@ describe "validate geoLocation" do
     EOT
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
     expect(errors.length).to eq(1)
-    expect(errors.first).to include("Element '{http://datacite.org/schema/kernel-4}geoLocationBox': Missing child element(s). Expected is one of ( {http://datacite.org/schema/kernel-4}eastBoundLongitude, {http://datacite.org/schema/kernel-4}northBoundLatitude ).")
+    expect(errors.first).to include("Element '{https://datacite.org/schema/kernel-4}geoLocationBox': Missing child element(s). Expected is one of ( {https://datacite.org/schema/kernel-4}eastBoundLongitude, {https://datacite.org/schema/kernel-4}northBoundLatitude ).")
   end
 end

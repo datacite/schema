@@ -21,7 +21,7 @@ describe "validate funderReference" do
     EOT
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
     expect(errors.length).to eq(1)
-    expect(errors.first).to include("Missing child element(s). Expected is one of ( {http://datacite.org/schema/kernel-4}funderName, {http://datacite.org/schema/kernel-4}funderIdentifier, {http://datacite.org/schema/kernel-4}awardNumber, {http://datacite.org/schema/kernel-4}awardTitle )")
+    expect(errors.first).to include("Missing child element(s). Expected is one of ( {https://datacite.org/schema/kernel-4}funderName, {https://datacite.org/schema/kernel-4}funderIdentifier, {https://datacite.org/schema/kernel-4}awardNumber, {https://datacite.org/schema/kernel-4}awardTitle )")
   end
 
   it 'only funderName' do
@@ -48,7 +48,7 @@ describe "validate funderReference" do
     EOT
     errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
     expect(errors.length).to eq(1)
-    expect(errors.first).to include("Element '{http://datacite.org/schema/kernel-4}funderName': [facet 'minLength'] The value has a length of '0'; this underruns the allowed minimum length of '1'.")
+    expect(errors.first).to include("Element '{https://datacite.org/schema/kernel-4}funderName': [facet 'minLength'] The value has a length of '0'; this underruns the allowed minimum length of '1'.")
   end
 
   it 'funderIdentifier' do

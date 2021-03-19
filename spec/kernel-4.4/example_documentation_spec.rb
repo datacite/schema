@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "full example" do
-  let(:root) { File.join(File.dirname(__FILE__), '../../source/meta/kernel-4.3') }
+  let(:root) { File.join(File.dirname(__FILE__), '../../source/meta/kernel-4.4') }
   let(:xsd) { Dir.chdir(root) { Nokogiri::XML::Schema(File.read("metadata.xsd")) }}
   let(:doc) { Dir.chdir(root) { Nokogiri::XML(File.read("../../../spec/fixtures/example-schema-documentation.xml")) { |c| c.strict }}}
 

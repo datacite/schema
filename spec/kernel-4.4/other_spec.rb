@@ -11,7 +11,7 @@ describe "validate other elements" do
       element.replace ""
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(1)
-      expect(errors.first).to include("Missing child element(s). Expected is ( {http://datacite.org/schema/kernel-4}resourceType ).")
+      expect(errors.first).to include("Missing child element(s). Expected is ( {https://datacite.org/schema/kernel-4}resourceType ).")
     end
 
     it 'missing resourceTypeGeneral' do
@@ -19,7 +19,7 @@ describe "validate other elements" do
       element.replace "<resourceType/>"
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(1)
-      expect(errors.first).to include("Element '{http://datacite.org/schema/kernel-4}resourceType': The attribute 'resourceTypeGeneral' is required but missing.")
+      expect(errors.first).to include("Element '{https://datacite.org/schema/kernel-4}resourceType': The attribute 'resourceTypeGeneral' is required but missing.")
     end
 
     it 'missing resourceTypeGeneral with resourceType' do
@@ -27,7 +27,7 @@ describe "validate other elements" do
       element.replace '<resourceType>Dataset</resourceType>'
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(1)
-      expect(errors.first).to include("Element '{http://datacite.org/schema/kernel-4}resourceType': The attribute 'resourceTypeGeneral' is required but missing.")
+      expect(errors.first).to include("Element '{https://datacite.org/schema/kernel-4}resourceType': The attribute 'resourceTypeGeneral' is required but missing.")
     end
 
     it 'empty resourceTypeGeneral with resourceType' do
@@ -35,7 +35,7 @@ describe "validate other elements" do
       element.replace '<resourceType resourceTypeGeneral="">Dataset</resourceType>'
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(1)
-      expect(errors.last).to eq("35:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': [facet 'enumeration'] The value '' is not an element of the set {'Audiovisual', 'Book', 'BookChapter', 'Collection', 'ComputationalNotebook', 'ConferencePaper', 'ConferenceProceeding', 'DataPaper', 'Dataset', 'Dissertation', 'Event', 'Image', 'InteractiveResource', 'Journal', 'JournalArticle', 'Model', 'OutputManagementPlan', 'PeerReview', 'PhysicalObject', 'Preprint', 'Report', 'Service', 'Software', 'Sound', 'Standard', 'Text', 'Workflow', 'Other'}.")
+      expect(errors.last).to eq("35:0: ERROR: Element '{https://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': [facet 'enumeration'] The value '' is not an element of the set {'Audiovisual', 'Book', 'BookChapter', 'Collection', 'ComputationalNotebook', 'ConferencePaper', 'ConferenceProceeding', 'DataPaper', 'Dataset', 'Dissertation', 'Event', 'Image', 'InteractiveResource', 'Journal', 'JournalArticle', 'Model', 'OutputManagementPlan', 'PeerReview', 'PhysicalObject', 'Preprint', 'Report', 'Service', 'Software', 'Sound', 'Standard', 'Text', 'Workflow', 'Other'}.")
     end
 
     it 'empty resourceType' do
