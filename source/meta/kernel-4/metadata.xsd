@@ -504,6 +504,14 @@ Use the complete title of a license and include version information if applicabl
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
+                    <xs:element name="publicationYear" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>The year when the item was or will be made publicly available.</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="yearType" />
+                      </xs:simpleType>
+                    </xs:element>
                     <xs:element name="volume" minOccurs="0">
                       <xs:annotation>
                         <xs:documentation>Volume of the related item.</xs:documentation>
@@ -540,14 +548,6 @@ Use the complete title of a license and include version information if applicabl
                       <xs:annotation>
                         <xs:documentation>The name of the entity that holds, archives, publishes prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role.</xs:documentation>
                       </xs:annotation>
-                    </xs:element>
-                    <xs:element name="publicationYear" minOccurs="0">
-                      <xs:annotation>
-                        <xs:documentation>The year when the item was or will be made publicly available.</xs:documentation>
-                      </xs:annotation>
-                      <xs:simpleType>
-                        <xs:restriction base="yearType" />
-                      </xs:simpleType>
                     </xs:element>
                     <xs:element name="edition" minOccurs="0">
                       <xs:annotation>
