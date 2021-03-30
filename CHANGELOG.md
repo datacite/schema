@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/datacite/schema/tree/HEAD)
+
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.4...HEAD)
+
+**Implemented enhancements:**
+
+- Schema 4.4 [\#88](https://github.com/datacite/schema/issues/88)
+
 ## [4.4.4](https://github.com/datacite/schema/tree/4.4.4) (2020-11-21)
 
 [Full Changelog](https://github.com/datacite/schema/compare/4.4.3...4.4.4)
@@ -107,7 +115,6 @@
 **Merged pull requests:**
 
 - moves schemas 2.1 and 2.2. to /archive from /meta [\#58](https://github.com/datacite/schema/pull/58) ([daslerr](https://github.com/daslerr))
-- Updating nokogiri to new version for security reasons. [\#41](https://github.com/datacite/schema/pull/41) ([richardhallett](https://github.com/richardhallett))
 
 ## [4.2.3](https://github.com/datacite/schema/tree/4.2.3) (2019-05-22)
 
@@ -230,6 +237,7 @@
 **Merged pull requests:**
 
 - oai-1.1 with isReferenceQuality removed [\#42](https://github.com/datacite/schema/pull/42) ([mfenner](https://github.com/mfenner))
+- Updating nokogiri to new version for security reasons. [\#41](https://github.com/datacite/schema/pull/41) ([richardhallett](https://github.com/richardhallett))
 - \[datacite/datacite\#251\] Remove bower [\#39](https://github.com/datacite/schema/pull/39) ([richardhallett](https://github.com/richardhallett))
 
 ## [v.4.1](https://github.com/datacite/schema/tree/v.4.1) (2017-10-23)
