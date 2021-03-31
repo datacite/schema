@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/datacite/schema/tree/HEAD)
+## [4.4.5](https://github.com/datacite/schema/tree/4.4.5) (2021-03-30)
 
-[Full Changelog](https://github.com/datacite/schema/compare/4.4.4...HEAD)
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.4...4.4.5)
 
 **Implemented enhancements:**
 
@@ -147,7 +147,6 @@
 
 **Closed issues:**
 
-- Schema 4.2 change with nonemptycontentStringType [\#51](https://github.com/datacite/schema/issues/51)
 - Schema 4.2 XSD [\#50](https://github.com/datacite/schema/issues/50)
 - Validation of identifier [\#43](https://github.com/datacite/schema/issues/43)
 
@@ -198,6 +197,7 @@
 
 **Closed issues:**
 
+- Schema 4.2 change with nonemptycontentStringType [\#51](https://github.com/datacite/schema/issues/51)
 - Typo in Table 4, Property 12 [\#45](https://github.com/datacite/schema/issues/45)
 -  DataCite Metadata Schema 4.1 documentation nameType attribute bug [\#44](https://github.com/datacite/schema/issues/44)
 
