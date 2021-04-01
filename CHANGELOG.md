@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.4.7](https://github.com/datacite/schema/tree/4.4.7) (2021-04-01)
+
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.6...4.4.7)
+
 ## [4.4.6](https://github.com/datacite/schema/tree/4.4.6) (2021-03-31)
 
 [Full Changelog](https://github.com/datacite/schema/compare/4.4.5...4.4.6)
@@ -103,7 +107,6 @@
 
 - Updates 4.3 examples [\#66](https://github.com/datacite/schema/pull/66) ([daslerr](https://github.com/daslerr))
 - JSONSchema fixes [\#59](https://github.com/datacite/schema/pull/59) ([lnielsen](https://github.com/lnielsen))
-- moves schemas 2.1 and 2.2. to /archive from /meta [\#58](https://github.com/datacite/schema/pull/58) ([daslerr](https://github.com/daslerr))
 - Modifications to get json schema to validate all json examples [\#55](https://github.com/datacite/schema/pull/55) ([tmorrell](https://github.com/tmorrell))
 
 ## [4.2.4](https://github.com/datacite/schema/tree/4.2.4) (2019-08-02)
@@ -116,6 +119,10 @@
 - affiliation xml:lang attribute [\#57](https://github.com/datacite/schema/issues/57)
 - DataCite Schema 4.3 [\#56](https://github.com/datacite/schema/issues/56)
 - HTML version of schema 4.2 documentation [\#35](https://github.com/datacite/schema/issues/35)
+
+**Merged pull requests:**
+
+- moves schemas 2.1 and 2.2. to /archive from /meta [\#58](https://github.com/datacite/schema/pull/58) ([daslerr](https://github.com/daslerr))
 
 ## [4.2.3](https://github.com/datacite/schema/tree/4.2.3) (2019-05-22)
 
