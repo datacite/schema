@@ -4,6 +4,10 @@
 
 [Full Changelog](https://github.com/datacite/schema/compare/4.4.8...HEAD)
 
+**Fixed bugs:**
+
+- Broken Link in schema document [\#85](https://github.com/datacite/schema/issues/85)
+
 **Closed issues:**
 
 - Schema 4.4 XSD and Documentation [\#87](https://github.com/datacite/schema/issues/87)
