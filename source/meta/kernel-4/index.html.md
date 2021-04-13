@@ -35,7 +35,9 @@ DataCite Metadata Working Group. (2021). DataCite Metadata Schema for the Public
   * Preprint
   * Report
   * Standard
+
 ### Addition of a new relationType: “isPublishedIn” (indicates that A is published in B)
+
 ### Addition of a new relatedItem property, with subproperties to contain specific details for containing publication information previously encoded in a description field with descriptionType=”SeriesInformation” (for example, to define the journal name, volume, and page number for an article resource). Subproperties:
   * relationType
   * relatedItemType
