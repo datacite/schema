@@ -114,9 +114,9 @@
   </fundingReferences>
   <relatedItems>
     <relatedItem relationType="IsPublishedIn" relatedItemType="Journal">
-      <relatedItemIdentifier relatedItemIdentifierType="DOI">10.1016/j.physletb.2017.11.044</relatedItemIdentifier>
+      <relatedItemIdentifier relatedItemIdentifierType="ISSN">0370-2693</relatedItemIdentifier>
       <titles>
-        <title>Physics letters / B</title>
+        <title>Physics letters B</title>
       </titles>
       <publicationYear>2018</publicationYear>
       <volume>776</volume>
