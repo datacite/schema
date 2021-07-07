@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/datacite/schema/tree/HEAD)
+
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.9...HEAD)
+
+**Fixed bugs:**
+
+- Fix formatting on new schema 4.4 landing page [\#92](https://github.com/datacite/schema/issues/92)
+
+**Closed issues:**
+
+- Use ISSN for relatedItem Journal [\#93](https://github.com/datacite/schema/issues/93)
+
 ## [4.4.9](https://github.com/datacite/schema/tree/4.4.9) (2021-04-13)
 
 [Full Changelog](https://github.com/datacite/schema/compare/4.4.8...4.4.9)
@@ -139,7 +151,6 @@
 **Merged pull requests:**
 
 - moves schemas 2.1 and 2.2. to /archive from /meta [\#58](https://github.com/datacite/schema/pull/58) ([daslerr](https://github.com/daslerr))
-- \[datacite/datacite\#251\] Remove bower [\#39](https://github.com/datacite/schema/pull/39) ([richardhallett](https://github.com/richardhallett))
 
 ## [4.2.3](https://github.com/datacite/schema/tree/4.2.3) (2019-05-22)
 
@@ -215,6 +226,7 @@
 
 **Closed issues:**
 
+- Typo in Table 4, Property 12 [\#45](https://github.com/datacite/schema/issues/45)
 - Some errors in 4.1 changelog and docs [\#38](https://github.com/datacite/schema/issues/38)
 
 ## [v.4.1.7](https://github.com/datacite/schema/tree/v.4.1.7) (2018-04-25)
@@ -223,7 +235,6 @@
 
 **Closed issues:**
 
-- Typo in Table 4, Property 12 [\#45](https://github.com/datacite/schema/issues/45)
 -  DataCite Metadata Schema 4.1 documentation nameType attribute bug [\#44](https://github.com/datacite/schema/issues/44)
 
 ## [v.4.1.6](https://github.com/datacite/schema/tree/v.4.1.6) (2018-04-20)
@@ -263,6 +274,7 @@
 
 - oai-1.1 with isReferenceQuality removed [\#42](https://github.com/datacite/schema/pull/42) ([mfenner](https://github.com/mfenner))
 - Updating nokogiri to new version for security reasons. [\#41](https://github.com/datacite/schema/pull/41) ([richardhallett](https://github.com/richardhallett))
+- \[datacite/datacite\#251\] Remove bower [\#39](https://github.com/datacite/schema/pull/39) ([richardhallett](https://github.com/richardhallett))
 
 ## [v.4.1](https://github.com/datacite/schema/tree/v.4.1) (2017-10-23)
 
