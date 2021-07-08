@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.4.11](https://github.com/datacite/schema/tree/4.4.11) (2021-07-08)
+
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.10...4.4.11)
+
 ## [4.4.10](https://github.com/datacite/schema/tree/4.4.10) (2021-07-07)
 
 [Full Changelog](https://github.com/datacite/schema/compare/4.4.9...4.4.10)
@@ -236,12 +240,14 @@
 
 - Typo in Table 4, Property 12 [\#45](https://github.com/datacite/schema/issues/45)
 -  DataCite Metadata Schema 4.1 documentation nameType attribute bug [\#44](https://github.com/datacite/schema/issues/44)
-- Fix language examples [\#37](https://github.com/datacite/schema/issues/37)
-- Use of xsd:all vs. xsd:sequence  [\#33](https://github.com/datacite/schema/issues/33)
 
 ## [v.4.1.6](https://github.com/datacite/schema/tree/v.4.1.6) (2018-04-20)
 
 [Full Changelog](https://github.com/datacite/schema/compare/v.4.1.5...v.4.1.6)
+
+**Closed issues:**
+
+- Fix language examples [\#37](https://github.com/datacite/schema/issues/37)
 
 ## [v.4.1.5](https://github.com/datacite/schema/tree/v.4.1.5) (2018-04-20)
 
@@ -266,6 +272,7 @@
 **Closed issues:**
 
 - Nokogiri version out of date [\#40](https://github.com/datacite/schema/issues/40)
+- Use of xsd:all vs. xsd:sequence  [\#33](https://github.com/datacite/schema/issues/33)
 
 **Merged pull requests:**
 
