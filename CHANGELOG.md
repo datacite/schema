@@ -244,6 +244,7 @@
 
 - Typo in Table 4, Property 12 [\#45](https://github.com/datacite/schema/issues/45)
 -  DataCite Metadata Schema 4.1 documentation nameType attribute bug [\#44](https://github.com/datacite/schema/issues/44)
+- Nokogiri version out of date [\#40](https://github.com/datacite/schema/issues/40)
 
 ## [v.4.1.6](https://github.com/datacite/schema/tree/v.4.1.6) (2018-04-20)
 
@@ -275,7 +276,6 @@
 
 **Closed issues:**
 
-- Nokogiri version out of date [\#40](https://github.com/datacite/schema/issues/40)
 - Use of xsd:all vs. xsd:sequence  [\#33](https://github.com/datacite/schema/issues/33)
 
 **Merged pull requests:**
