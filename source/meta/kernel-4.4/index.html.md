@@ -13,6 +13,9 @@ DataCite Metadata Working Group. (2021). DataCite Metadata Schema Documentation 
 <a href="doc/DataCite-MetadataKernel_v4.4.pdf" class="btn">Download PDF</a>
 
 
+<a href="doc/DataCite-MetadataKernel_v4.4.pdf" class="btn">Download PDF</a>
+
+
 ## Schema
 DataCite Metadata Working Group. (2021). DataCite Metadata Schema for the Publication and Citation of Research Data and Other Research Outputs. Version 4.4. DataCite e.V. https://doi.org/10.14454/fxws-0523
 
