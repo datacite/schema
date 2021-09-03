@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/datacite/schema/tree/HEAD)
+
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.12...HEAD)
+
+**Closed issues:**
+
+- changesto website mapping datacite-dc final [\#98](https://github.com/datacite/schema/issues/98)
+
+**Merged pull requests:**
+
+- updates of dublic\_core [\#102](https://github.com/datacite/schema/pull/102) ([kjgarza](https://github.com/kjgarza))
+
 ## [4.4.12](https://github.com/datacite/schema/tree/4.4.12) (2021-07-08)
 
 [Full Changelog](https://github.com/datacite/schema/compare/4.4.11...4.4.12)
@@ -87,6 +99,7 @@
 **Merged pull requests:**
 
 - Bump rack from 2.0.8 to 2.2.3 [\#81](https://github.com/datacite/schema/pull/81) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Make latitude and longitude values numbers instead of strings [\#68](https://github.com/datacite/schema/pull/68) ([mark-saeon](https://github.com/mark-saeon))
 
 ## [4.3.7](https://github.com/datacite/schema/tree/4.3.7) (2020-07-01)
 
@@ -116,7 +129,7 @@
 
 - Update minor typos in schema 4.3 documentation [\#78](https://github.com/datacite/schema/pull/78) ([daslerr](https://github.com/daslerr))
 - Bump rack from 2.0.6 to 2.0.8 [\#77](https://github.com/datacite/schema/pull/77) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Make latitude and longitude values numbers instead of strings [\#68](https://github.com/datacite/schema/pull/68) ([mark-saeon](https://github.com/mark-saeon))
+- oai-1.1 with isReferenceQuality removed [\#42](https://github.com/datacite/schema/pull/42) ([mfenner](https://github.com/mfenner))
 
 ## [4.3.3](https://github.com/datacite/schema/tree/4.3.3) (2019-08-16)
 
@@ -244,7 +257,6 @@
 
 - Typo in Table 4, Property 12 [\#45](https://github.com/datacite/schema/issues/45)
 -  DataCite Metadata Schema 4.1 documentation nameType attribute bug [\#44](https://github.com/datacite/schema/issues/44)
-- Nokogiri version out of date [\#40](https://github.com/datacite/schema/issues/40)
 
 ## [v.4.1.6](https://github.com/datacite/schema/tree/v.4.1.6) (2018-04-20)
 
@@ -276,11 +288,11 @@
 
 **Closed issues:**
 
+- Nokogiri version out of date [\#40](https://github.com/datacite/schema/issues/40)
 - Use of xsd:all vs. xsd:sequence  [\#33](https://github.com/datacite/schema/issues/33)
 
 **Merged pull requests:**
 
-- oai-1.1 with isReferenceQuality removed [\#42](https://github.com/datacite/schema/pull/42) ([mfenner](https://github.com/mfenner))
 - Updating nokogiri to new version for security reasons. [\#41](https://github.com/datacite/schema/pull/41) ([richardhallett](https://github.com/richardhallett))
 - \[datacite/datacite\#251\] Remove bower [\#39](https://github.com/datacite/schema/pull/39) ([richardhallett](https://github.com/richardhallett))
 
