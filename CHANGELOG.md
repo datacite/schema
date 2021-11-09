@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/datacite/schema/tree/HEAD)
+## [4.4.13](https://github.com/datacite/schema/tree/4.4.13) (2021-09-03)
 
-[Full Changelog](https://github.com/datacite/schema/compare/4.4.12...HEAD)
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.12...4.4.13)
 
 **Closed issues:**
 
@@ -99,7 +99,6 @@
 **Merged pull requests:**
 
 - Bump rack from 2.0.8 to 2.2.3 [\#81](https://github.com/datacite/schema/pull/81) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Make latitude and longitude values numbers instead of strings [\#68](https://github.com/datacite/schema/pull/68) ([mark-saeon](https://github.com/mark-saeon))
 
 ## [4.3.7](https://github.com/datacite/schema/tree/4.3.7) (2020-07-01)
 
@@ -129,7 +128,7 @@
 
 - Update minor typos in schema 4.3 documentation [\#78](https://github.com/datacite/schema/pull/78) ([daslerr](https://github.com/daslerr))
 - Bump rack from 2.0.6 to 2.0.8 [\#77](https://github.com/datacite/schema/pull/77) ([dependabot[bot]](https://github.com/apps/dependabot))
-- oai-1.1 with isReferenceQuality removed [\#42](https://github.com/datacite/schema/pull/42) ([mfenner](https://github.com/mfenner))
+- Make latitude and longitude values numbers instead of strings [\#68](https://github.com/datacite/schema/pull/68) ([mark-saeon](https://github.com/mark-saeon))
 
 ## [4.3.3](https://github.com/datacite/schema/tree/4.3.3) (2019-08-16)
 
@@ -293,6 +292,7 @@
 
 **Merged pull requests:**
 
+- oai-1.1 with isReferenceQuality removed [\#42](https://github.com/datacite/schema/pull/42) ([mfenner](https://github.com/mfenner))
 - Updating nokogiri to new version for security reasons. [\#41](https://github.com/datacite/schema/pull/41) ([richardhallett](https://github.com/richardhallett))
 - \[datacite/datacite\#251\] Remove bower [\#39](https://github.com/datacite/schema/pull/39) ([richardhallett](https://github.com/richardhallett))
 
