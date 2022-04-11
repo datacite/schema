@@ -104,10 +104,11 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
-    mini_portile2 (2.4.0)
+    mini_portile2 (2.8.0)
     minitest (5.14.2)
-    nokogiri (1.10.10)
-      mini_portile2 (~> 2.4.0)
+    nokogiri (1.13.4)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     nokogumbo (2.0.2)
       nokogiri (~> 1.8, >= 1.8.4)
     padrino-helpers (0.13.3.4)
@@ -119,6 +120,7 @@ GEM
     pandoc-ruby (2.1.4)
     parallel (1.20.0)
     public_suffix (4.0.6)
+    racc (1.6.0)
     rack (2.2.3)
     rack-livereload (0.3.17)
       rack
@@ -166,7 +168,7 @@ DEPENDENCIES
   middleman-data_source (~> 0.8.1)
   middleman-dotenv (~> 2.0)
   middleman-livereload
-  nokogiri (~> 1.10)
+  nokogiri (~> 1.13)
   pandoc-ruby (~> 2.0)
   rspec
   rspec-xsd
