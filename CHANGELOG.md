@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.4.14](https://github.com/datacite/schema/tree/4.4.14) (2022-04-29)
+
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.13...4.4.14)
+
 ## [4.4.13](https://github.com/datacite/schema/tree/4.4.13) (2021-09-03)
 
 [Full Changelog](https://github.com/datacite/schema/compare/4.4.12...4.4.13)
