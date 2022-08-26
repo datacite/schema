@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/datacite/schema/tree/HEAD)
+
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.14...HEAD)
+
+**Fixed bugs:**
+
+- Link to version 4.3 using wrong style [\#104](https://github.com/datacite/schema/issues/104)
+
 ## [4.4.14](https://github.com/datacite/schema/tree/4.4.14) (2022-04-29)
 
 [Full Changelog](https://github.com/datacite/schema/compare/4.4.13...4.4.14)
