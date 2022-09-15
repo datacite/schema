@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/datacite/schema/tree/HEAD)
+## [4.4.15](https://github.com/datacite/schema/tree/4.4.15) (2022-09-15)
 
-[Full Changelog](https://github.com/datacite/schema/compare/4.4.14...HEAD)
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.14...4.4.15)
 
 **Fixed bugs:**
 
