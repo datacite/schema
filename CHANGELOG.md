@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/datacite/schema/tree/HEAD)
+
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.15...HEAD)
+
+**Merged pull requests:**
+
+- Add sub-pages for "Older Versions" and "Contribute" [\#116](https://github.com/datacite/schema/pull/116) ([KellyStathis](https://github.com/KellyStathis))
+
 ## [4.4.15](https://github.com/datacite/schema/tree/4.4.15) (2022-09-15)
 
 [Full Changelog](https://github.com/datacite/schema/compare/4.4.14...4.4.15)
