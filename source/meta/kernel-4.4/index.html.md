@@ -33,7 +33,7 @@ DataCite Metadata Working Group. (2021). DataCite Metadata Schema for the Public
   * Dissertation
   * Journal
   * JournalArticle
-  * OutputsManagementPlan
+  * OutputManagementPlan
   * PeerReview
   * Preprint
   * Report
