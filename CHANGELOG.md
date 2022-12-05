@@ -7,6 +7,7 @@
 **Closed issues:**
 
 - Remove 's' from OutputsManagementPlan [\#105](https://github.com/datacite/schema/issues/105)
+- Description problem for relatedItem/number [\#90](https://github.com/datacite/schema/issues/90)
 
 **Merged pull requests:**
 
