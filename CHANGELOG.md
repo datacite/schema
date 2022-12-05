@@ -4,6 +4,10 @@
 
 [Full Changelog](https://github.com/datacite/schema/compare/4.4.15...HEAD)
 
+**Closed issues:**
+
+- Remove 's' from OutputsManagementPlan [\#105](https://github.com/datacite/schema/issues/105)
+
 **Merged pull requests:**
 
 - Add sub-pages for "Older Versions" and "Contribute" [\#116](https://github.com/datacite/schema/pull/116) ([KellyStathis](https://github.com/KellyStathis))
