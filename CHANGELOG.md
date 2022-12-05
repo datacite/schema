@@ -136,6 +136,7 @@
 **Merged pull requests:**
 
 - update link typos in schema docs [\#80](https://github.com/datacite/schema/pull/80) ([daslerr](https://github.com/daslerr))
+- Bump rack from 2.0.6 to 2.0.8 [\#77](https://github.com/datacite/schema/pull/77) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [4.3.6](https://github.com/datacite/schema/tree/4.3.6) (2020-04-17)
 
@@ -152,7 +153,6 @@
 **Merged pull requests:**
 
 - Update minor typos in schema 4.3 documentation [\#78](https://github.com/datacite/schema/pull/78) ([daslerr](https://github.com/daslerr))
-- Bump rack from 2.0.6 to 2.0.8 [\#77](https://github.com/datacite/schema/pull/77) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Make latitude and longitude values numbers instead of strings [\#68](https://github.com/datacite/schema/pull/68) ([mark-saeon](https://github.com/mark-saeon))
 
 ## [4.3.3](https://github.com/datacite/schema/tree/4.3.3) (2019-08-16)
