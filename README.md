@@ -7,9 +7,6 @@ by the DataCite Metadata Store.
 
 It contains the schemas itself along with examples and documentation.
 
-If you have any comments or questions regarding the schema please post them in our Google Group:
-https://groups.google.com/forum/?hl=en&fromgroups#!forum/datacite-metadata
-
 ## Schemas
 
 Each schema has its own folder under `/source/meta`
@@ -24,6 +21,16 @@ only one xsd. The directory structure is as follow:
 The `/source/meta` directory will be published at http://schema.datacite.org, e.g.
 
     http://schema.datacite.org/meta/kernel-2.0/metadata.xsd
+
+## Feedback
+
+If you have any questions about the metadata schema, please contact support@datacite.org.
+
+If you have an idea for a change to the DataCite Metadata Schema, let us know through this form: [DataCite Metadata Schema Suggestions](https://forms.gle/jeLP7AnzW5RGvuz58).
+
+We recommend first reviewing the ideas on the [DataCite Metadata Schema Trello board](https://trello.com/b/mDWDeh20/datacite-metadata-schema) to see if a similar idea has already been proposed. If it has, you can contribute to the discussion by following the instructions on the card.
+
+Learn more about contributing to the DataCite Metadata Schema here: [DataCite Schema - Contribute](https://schema.datacite.org/contribute.html).
 
 ## Tests
 
