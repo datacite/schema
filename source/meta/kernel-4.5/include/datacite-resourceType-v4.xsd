@@ -22,6 +22,7 @@
       <xs:enumeration value="Dissertation" />
       <xs:enumeration value="Event" />
       <xs:enumeration value="Image" />
+      <xs:enumeration value="Instrument" />
       <xs:enumeration value="InteractiveResource" />
       <xs:enumeration value="Journal" />
       <xs:enumeration value="JournalArticle" />
@@ -35,6 +36,7 @@
       <xs:enumeration value="Software" />
       <xs:enumeration value="Sound" />
       <xs:enumeration value="Standard" />
+      <xs:enumeration value="StudyRegistration" />
       <xs:enumeration value="Text" />
       <xs:enumeration value="Workflow" />
       <xs:enumeration value="Other" />
