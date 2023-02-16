@@ -105,6 +105,9 @@
           <xs:complexType>
             <xs:simpleContent>
               <xs:extension base="nonemptycontentStringType">
+                <xs:attribute name="publisherIdentifier" use="optional" />
+                <xs:attribute name="publisherIdentifierScheme" use="optional" />
+                <xs:attribute name="schemeURI" type="xs:anyURI" use="optional" />
                 <xs:attribute ref="xml:lang" />
               </xs:extension>
             </xs:simpleContent>
