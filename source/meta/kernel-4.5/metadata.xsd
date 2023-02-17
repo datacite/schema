@@ -611,6 +611,10 @@ Use the complete title of a license and include version information if applicabl
           <xs:complexType>
             <xs:sequence>
               <xs:element name="distribution" minOccurs="1" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Represents an accessible form of a resource such as downloadable files. This property can be repeated if different variations are available.</xs:documentation>
+                  <xs:documentation>The use of this property indicates directly downloadable distributions. Every distribution should represent the same resource in its entirety.</xs:documentation>
+                </xs:annotation>
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="file" minOccurs="1" maxOccurs="unbounded">
