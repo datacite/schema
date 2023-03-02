@@ -46,6 +46,8 @@
       <xs:enumeration value="IsRequiredBy" />
       <xs:enumeration value="Obsoletes" />
       <xs:enumeration value="IsObsoletedBy" />
+      <xs:enumeration value="Collects" />
+      <xs:enumeration value="IsCollectedBy" />
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>

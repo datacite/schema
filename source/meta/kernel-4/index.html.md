@@ -1,9 +1,9 @@
 ---
-title: DataCite Metadata Schema 4.4
-version: 4.4
-date: 2021-03-30
+title: DataCite Metadata Schema 4.5
+version: 4.5
+date: 2023-XX-XX
 layout: schema
-schema_url: /meta/kernel-4.4/metadata.xsd
+schema_url: /meta/kernel-4.5/metadata.xsd
 documentation_url: /meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf
 ---
 
@@ -12,6 +12,9 @@ DataCite Metadata Working Group. (2021). DataCite Metadata Schema Documentation 
 
 <a href="doc/DataCite-MetadataKernel_v4.4.pdf" class="btn">Download PDF</a>
 
+On the occasion of the release of v4.4 of the DataCite Metadata Schema its Metadata Working Group has updated the mapping to Dublin Core. This replaces the mapping in the Appendix of the DataCite-MetadataKernel v2.1.
+
+<a href="doc/DataCite_DublinCore_Mapping.pdf" class="btn">Download PDF</a>
 
 ## Schema
 DataCite Metadata Working Group. (2021). DataCite Metadata Schema for the Publication and Citation of Research Data and Other Research Outputs. Version 4.4. DataCite e.V. https://doi.org/10.14454/fxws-0523
@@ -30,7 +33,7 @@ DataCite Metadata Working Group. (2021). DataCite Metadata Schema for the Public
   * Dissertation
   * Journal
   * JournalArticle
-  * OutputsManagementPlan
+  * OutputManagementPlan
   * PeerReview
   * Preprint
   * Report
