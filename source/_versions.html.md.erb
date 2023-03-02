@@ -1,3 +1,14 @@
+#### DataCite Metadata Schema 4.4
+
+Released <%= Date.parse("2021-03-30").strftime("%-d %b %Y") %>. Changes in this version include:
+
+* Addition of the new subproperty “classificationCode” in the Subject property.
+* Addition of new values to the resourceTypeGeneral property: Book, BookChapter, ComputationalNotebook, ConferencePaper, ConferenceProceeding, Dissertation, Journal, JournalArticle, OutputManagementPlan, PeerReview, Preprint, Report, Standard
+* Addition of a new relationType: “isPublishedIn” (indicates that A is published in B)
+* Addition of a new relatedItem property, with subproperties to contain specific details for containing publication information previously encoded in a description field with descriptionType=”SeriesInformation” (for example, to define the journal name, volume, and page number for an article resource).
+
+<a href="/meta/kernel-4.4/" class="btn">More info</a>
+
 #### DataCite Metadata Schema 4.3
 
 Released <%= Date.parse("2019-08-16").strftime("%-d %b %Y") %>. Changes in this version include:
