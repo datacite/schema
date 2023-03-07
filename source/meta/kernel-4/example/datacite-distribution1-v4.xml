@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 ../metadata.xsd">
+	<identifier identifierType="DOI">10.7969/4VS4-MK10</identifier>
+	<creators>
+		<creator>
+			<creatorName nameType="Personal">Kenkenberg, Alexander</creatorName>
+			<givenName>Alexander</givenName>
+			<familyName>Kenkenberg</familyName>
+			<nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5552-6921</nameIdentifier>
+		</creator>
+	</creators>
+	<titles>
+		<title xml:lang="en">Real-time Volumetric Cloud Visualization of Meteorological Simulation Data</title>
+	</titles>
+	<publicationYear>2022</publicationYear>
+    <publisher publisherIdentifier="https://ror.org/05591te55" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">LMU München</publisher>
+	<resourceType resourceTypeGeneral="Dataset"/>
+	<subjects>
+		<subject subjectScheme="Fields of Science and Technology (FOS)" schemeURI="http://www.oecd.org/science/inno" valueURI="http://www.oecd.org/science/inno/38235147.pdf">FOS: Computer and information sciences</subject>
+	</subjects>
+	<language>en</language>
+	<sizes>
+		<size>40 GB</size>
+	</sizes>
+	<formats>
+		<format>application/zip</format>
+	</formats>
+	<rightsList>
+		<rights rightsURI="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International</rights>
+	</rightsList>
+	<descriptions>
+		<description descriptionType="Abstract">This archive contains a cyclone simulation as png/csv files and as Unreal Engine 4.27 assets. 
+</description>
+	</descriptions>
+	<distributions>
+		<distribution>
+			<file mediaType="application/zip">
+				<contentURL byteSize="40000000000">https://example.org/archive.zip</contentURL>
+				<checksums>
+					<checksum algorithm="MD5">d41d8cd98f00b204e9800998ecf8427e</checksum>
+				</checksums>
+				<accessLevel xml:lang="en" accessLevelURI="http://purl.org/coar/access_right/c_abf2">open access</accessLevel>
+			</file>
+		</distribution>
+	</distributions>
+</resource>
