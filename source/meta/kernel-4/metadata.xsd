@@ -619,13 +619,23 @@ Use the complete title of a license and include version information if applicabl
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="file" minOccurs="1" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>A container in a computer system for storing information. A file can either represent the entirety of the distribution, or a part of it</xs:documentation>
+                      </xs:annotation>
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element name="contentURL" minOccurs="1" maxOccurs="1">
+                            <xs:annotation>
+                              <xs:documentation>The URL leading to content provided by a repository using a valid protocol.</xs:documentation>
+                            </xs:annotation>
                             <xs:complexType>
                               <xs:simpleContent>
                                 <xs:extension base="xs:anyURI">
-                                  <xs:attribute name="byteSize" type="xs:unsignedInt" use="optional" />
+                                  <xs:attribute name="byteSize" type="xs:unsignedInt" use="optional">
+                                    <xs:annotation>
+                                      <xs:documentation>The size of a distribution in bytes. The value is related to the object in contentURL.  Must be a non-negative integer.</xs:documentation>
+                                    </xs:annotation>
+                                  </xs:attribute>
                                 </xs:extension>
                               </xs:simpleContent>
                             </xs:complexType>
@@ -634,10 +644,17 @@ Use the complete title of a license and include version information if applicabl
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element name="checksum" minOccurs="1" maxOccurs="unbounded">
+                                  <xs:annotation>
+                                    <xs:documentation>A value that allows the integrity of a file to be verified. The value is related to the object in contentURL.</xs:documentation>
+                                  </xs:annotation>
                                   <xs:complexType>
                                     <xs:simpleContent>
                                       <xs:extension base="xs:string">
-                                        <xs:attribute name="algorithm" type="xs:string" use="required" />
+                                        <xs:attribute name="algorithm" type="xs:string" use="required">
+                                          <xs:annotation>
+                                            <xs:documentation>Identifies the algorithm used to produce the checksum.</xs:documentation>
+                                          </xs:annotation>
+                                        </xs:attribute>
                                       </xs:extension>
                                     </xs:simpleContent>
                                   </xs:complexType>
@@ -646,6 +663,9 @@ Use the complete title of a license and include version information if applicabl
                             </xs:complexType>
                           </xs:element>
                           <xs:element name="accessLevel" minOccurs="0" maxOccurs="1">
+                            <xs:annotation>
+                              <xs:documentation>A statement that describes how the distribution is accessed.</xs:documentation>
+                            </xs:annotation>
                             <xs:complexType>
                                 <xs:simpleContent>
                                   <xs:extension base="xs:string">
@@ -656,7 +676,11 @@ Use the complete title of a license and include version information if applicabl
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="mediaType" use="required" />
+                        <xs:attribute name="mediaType" use="required">
+                          <xs:annotation>
+                            <xs:documentation>Media type expressed using a MIME format.</xs:documentation>
+                          </xs:annotation>
+                        </xs:attribute>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
