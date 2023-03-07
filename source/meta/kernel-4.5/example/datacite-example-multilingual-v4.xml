@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 ../metadata.xsd">
+    <identifier identifierType="DOI">10.82433/08QF-EE96</identifier>
+    <titles>
+        <title xml:lang="en">Advances in Chemistry</title>
+        <title xml:lang="es" titleType="TranslatedTitle">Avances en Química</title>
+        <title xml:lang="zh" titleType="TranslatedTitle">化学进展</title>
+    </titles>
+    <creators>
+        <creator>
+            <creatorName nameType="Personal">Zou, Jing</creatorName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0002-4553-2743</nameIdentifier>
+        </creator>
+    </creators>
+    <publisher xml:lang="zh">上海中醫藥雜誌社</publisher>
+    <publicationYear>2022</publicationYear>
+    <resourceType resourceTypeGeneral="JournalArticle"/>
+    <subjects>
+        <subject xml:lang="en">Chemistry</subject>
+        <subject xml:lang="es">Químicas</subject>
+        <subject xml:lang="zh">化学</subject>
+    </subjects>
+    <descriptions>
+        <description xml:lang="en" descriptionType="Abstract">This article reviews selected landmarks ocurred in Chemistry basic research in the last 5 years</description>
+        <description xml:lang="es" descriptionType="Abstract">El artículo repasa los principales avances en la investigación básica en Ciencias Químicas en los últimos 5 años</description>
+        <description xml:lang="zh" descriptionType="Abstract">本文综述了近5年来化学基础研究的一些里程碑</description>
+    </descriptions>
+    <language>en</language>
+    <rightsList>
+        <rights xml:lang="en">Embargoed article until 2024</rights>
+        <rights xml:lang="es">Artículo embargado hasta 2024</rights>
+        <rights xml:lang="zh">禁运物品至 2024 年</rights>
+    </rightsList>
+</resource>

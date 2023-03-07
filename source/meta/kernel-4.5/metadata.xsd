@@ -631,7 +631,7 @@ Use the complete title of a license and include version information if applicabl
                             <xs:complexType>
                               <xs:simpleContent>
                                 <xs:extension base="xs:anyURI">
-                                  <xs:attribute name="byteSize" type="xs:unsignedInt" use="optional">
+                                  <xs:attribute name="byteSize" type="xs:nonNegativeInteger" use="optional">
                                     <xs:annotation>
                                       <xs:documentation>The size of a distribution in bytes. The value is related to the object in contentURL.  Must be a non-negative integer.</xs:documentation>
                                     </xs:annotation>
