@@ -436,7 +436,7 @@
 **Closed issues:**
 
 - add more tests [\#25](https://github.com/datacite/schema/issues/25)
-- Adressing version issues in the documentation [\#21](https://github.com/datacite/schema/issues/21)
+- Addressing version issues in the documentation [\#21](https://github.com/datacite/schema/issues/21)
 - Update Citation in Documentation [\#20](https://github.com/datacite/schema/issues/20)
 - integrate testing of non-valid example [\#12](https://github.com/datacite/schema/issues/12)
 - provide changelog for schema versions [\#9](https://github.com/datacite/schema/issues/9)
@@ -485,7 +485,7 @@
 **Closed issues:**
 
 - make html pages valid [\#24](https://github.com/datacite/schema/issues/24)
-- Chage wording in documentation [\#15](https://github.com/datacite/schema/issues/15)
+- Change wording in documentation [\#15](https://github.com/datacite/schema/issues/15)
 
 ## [v.3.1.12](https://github.com/datacite/schema/tree/v.3.1.12) (2016-01-10)
 
