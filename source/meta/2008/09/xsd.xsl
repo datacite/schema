@@ -176,7 +176,7 @@
   <xsl:apply-templates/>
  </xsl:template>
 
- <!--* 3 Anotation *-->
+ <!--* 3 Annotation *-->
  <xsl:template match="xsd:annotation">
   <xsl:element name="div">
    <xsl:attribute name="class">annotation</xsl:attribute>

@@ -169,7 +169,7 @@ describe "validate geoLocation" do
     expect(errors).to be_empty
   end
 
-  it 'geoLocationBox mising points' do
+  it 'geoLocationBox missing points' do
     element = doc.at("geoLocations")
     element.replace (<<-EOT)
       <geoLocations>

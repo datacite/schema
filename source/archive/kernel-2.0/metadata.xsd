@@ -2,7 +2,7 @@
 <!-- Revision history
      2010-08-26   Complete revision according to new common specification by the metadata work group after review. AJH, DTIC
 	 2010-11-17 Revised to current state of kernel review, FZ, TIB 
-	 2011-01-17 Complete revsion after community review. FZ, TIB
+	 2011-01-17 Complete revision after community review. FZ, TIB
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xml:lang="EN">
 	<xs:include schemaLocation="include/datacite-namePart.xsd"/>
@@ -117,7 +117,7 @@
 						<xs:sequence>
 							<xs:element name="contributor" maxOccurs="unbounded">
 								<xs:annotation>
-									<xs:documentation>The institution or person responsible for collecting, creating, or otherwise contributing to the developement of the dataset.</xs:documentation>
+									<xs:documentation>The institution or person responsible for collecting, creating, or otherwise contributing to the development of the dataset.</xs:documentation>
 									<xs:documentation>The personal name format should be: Family, Given.</xs:documentation>
 								</xs:annotation>
 								<xs:complexType mixed="true">
