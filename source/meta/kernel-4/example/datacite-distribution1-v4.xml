@@ -26,7 +26,7 @@
 		<format>application/zip</format>
 	</formats>
 	<rightsList>
-		<rights rightsURI="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International</rights>
+		<rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
 	</rightsList>
 	<descriptions>
 		<description descriptionType="Abstract">This archive contains a cyclone simulation as png/csv files and as Unreal Engine 4.27 assets. 

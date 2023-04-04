@@ -164,7 +164,7 @@
     </formats>
     <version>1</version>
     <rightsList>
-        <rights rightsURI="https://creativecommons.org/licenses/publicdomain/">Creative Commons Public Domain Dedication and Certification</rights>
+        <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
     </rightsList>
     <descriptions>
         <description xml:lang="en" descriptionType="Abstract">Example Abstract</description>

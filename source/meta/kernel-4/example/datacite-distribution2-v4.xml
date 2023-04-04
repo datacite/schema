@@ -23,7 +23,7 @@
 		<size>40 GB</size>
 	</sizes>
 	<rightsList>
-		<rights rightsURI="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International</rights>
+		<rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
 	</rightsList>
 	<descriptions>
 		<description descriptionType="Abstract">This archive contains a cyclone simulation as png/csv files and as Unreal Engine 4.27 assets. 
@@ -32,15 +32,11 @@
 	<distributions>
 		<distribution>
 			<file mediaType="image/png">
-				<contentURL byteSize="9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999">https://example.org/data.csv</contentURL>
+				<contentURL byteSize="5000000000">https://example.org/image.png</contentURL>
 				<accessLevel xml:lang="en" accessLevelURI="http://purl.org/coar/access_right/c_abf2">open access</accessLevel>
 			</file>
 			<file mediaType="text/csv">
 				<contentURL byteSize="10000000000">https://example.org/data.csv</contentURL>
-				<accessLevel xml:lang="en" accessLevelURI="http://purl.org/coar/access_right/c_abf2">open access</accessLevel>
-			</file>
-			<file mediaType="model/uasset">
-				<contentURL byteSize="20000000000">https://example.org/data.csv</contentURL>
 				<accessLevel xml:lang="en" accessLevelURI="http://purl.org/coar/access_right/c_abf2">open access</accessLevel>
 			</file>
 		</distribution>
