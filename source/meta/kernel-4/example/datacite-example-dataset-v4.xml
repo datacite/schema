@@ -77,4 +77,12 @@
       <awardTitle>Integrating Platforms for the European Research Infrastructure ON Heritage Science</awardTitle>
     </fundingReference>
   </fundingReferences>
+  <distributions>
+    <distribution>
+      <file mediaType="application/json">
+        <contentURL byteSize="13555452">https://research.ng-london.org.uk/scientific/env/example-NG-Env-Dataset.json</contentURL>
+        <accessLevel xml:lang="en" accessLevelURI="http://purl.org/coar/access_right/c_abf2">open access</accessLevel>
+      </file>
+    </distribution>
+  </distributions>
 </resource>
