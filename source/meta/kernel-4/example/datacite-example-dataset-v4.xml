@@ -11,7 +11,7 @@
   <titles>
     <title xml:lang="en">External Environmental Data, 2010-2020, National Gallery</title>
   </titles>
-  <publisher>National Gallery</publisher>
+  <publisher xml:lang="en" publisherIdentifier="https://ror.org/043kfff89" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">National Gallery</publisher>
   <publicationYear>2022</publicationYear>
   <resourceType resourceTypeGeneral="Dataset">Environmental data</resourceType>
   <subjects>
