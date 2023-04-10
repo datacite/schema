@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Example for RelatedItem: Journal article in a journal (with ISSN) -->
 <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 ../metadata.xsd">
   <identifier identifierType="DOI">10.82433/Q54D-PF76</identifier>
   <creators>
@@ -36,7 +37,4 @@
       <publisher>Example Publisher</publisher>
     </relatedItem>
   </relatedItems>
-  <sizes/>
-  <formats/>
-  <version/>
 </resource>

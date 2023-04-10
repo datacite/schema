@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Example for Distribution property with an archive file format -->
 <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 ../metadata.xsd">
 	<identifier identifierType="DOI">10.7969/4VS4-MK10</identifier>
 	<creators>
@@ -26,7 +27,7 @@
 		<format>application/zip</format>
 	</formats>
 	<rightsList>
-		<rights rightsURI="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International</rights>
+		<rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
 	</rightsList>
 	<descriptions>
 		<description descriptionType="Abstract">This archive contains a cyclone simulation as png/csv files and as Unreal Engine 4.27 assets. 

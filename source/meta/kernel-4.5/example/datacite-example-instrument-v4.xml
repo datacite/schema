@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Example: Instrument -->
 <resource
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 ../metadata.xsd">
@@ -6,7 +7,7 @@
     <creators>
         <creator>
             <creatorName nameType="Organizational">DECTRIS</creatorName>
-            <nameIdentifier schemeURI="https://www.wikidata.org/" nameIdentifierScheme="Wikidata">Q107529885</nameIdentifier>
+            <nameIdentifier schemeURI="https://www.wikidata.org/wiki/" nameIdentifierScheme="Wikidata">Q107529885</nameIdentifier>
         </creator>
     </creators>
     <titles>
