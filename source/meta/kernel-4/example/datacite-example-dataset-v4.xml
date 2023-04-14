@@ -80,7 +80,7 @@
   <distributions>
     <distribution>
       <file mediaType="application/json">
-        <contentURL byteSize="13555452">https://research.ng-london.org.uk/scientific/env/example-NG-Env-Dataset.json</contentURL>
+        <contentURL byteSize="13555452">https://data.ng.ac.uk/media/files/2023/04/External_Environmental_Data_2010-2020_National_Gallery_v1.0.json</contentURL>
         <accessLevel xml:lang="en" accessLevelURI="http://purl.org/coar/access_right/c_abf2">open access</accessLevel>
       </file>
     </distribution>
