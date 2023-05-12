@@ -10,6 +10,7 @@
 
 **Closed issues:**
 
+- Fix config.rb for local builds [\#124](https://github.com/datacite/schema/issues/124)
 - How to use schema with non-standard formats [\#96](https://github.com/datacite/schema/issues/96)
 
 ## [4.4.16](https://github.com/datacite/schema/tree/4.4.16) (2022-12-07)
