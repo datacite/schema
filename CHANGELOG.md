@@ -10,6 +10,7 @@
 
 **Closed issues:**
 
+- Verify that links to the homepage are not broken when the new home page is launched [\#125](https://github.com/datacite/schema/issues/125)
 - Fix config.rb for local builds [\#124](https://github.com/datacite/schema/issues/124)
 - How to use schema with non-standard formats [\#96](https://github.com/datacite/schema/issues/96)
 
