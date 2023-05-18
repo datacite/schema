@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/datacite/schema/tree/HEAD)
+## [4.4.17](https://github.com/datacite/schema/tree/4.4.17) (2023-05-18)
 
-[Full Changelog](https://github.com/datacite/schema/compare/4.4.16...HEAD)
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.16...4.4.17)
 
 **Implemented enhancements:**
 
