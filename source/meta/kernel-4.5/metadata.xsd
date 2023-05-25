@@ -13,7 +13,7 @@
   2019-02-14 v4.2: Addition of dateType value "Withdrawn", relationType values "Obsoletes", "isObsoletedBy", addition of new subproperties for Rights: rightsIdentifier, rightsIdentifierScheme, schemeURI, addition of the XML language attribute to the properties Creator, Contributor and Publisher for organizational names, don't check format of DOI
   2019-07-13 v4.3: Addition of new subproperties for Affiliation: "affiliationIdentifier", "affiliationIdentifierScheme", "schemeURI", addition of new sub-property for funderIdentifier: "schemeURI", addition of new funderIdentifierScheme: "ROR", added documentation for nameIdentifier 
   2021-03-08 v4.4: Addition of new property relatedItem, relationType value "isPublishedIn", subject subproperty "classificationCode", controlled list "numberType", additional 13 properties for controlled list "resourceType" 
-  2023-??-?? v4.5: Addition of new property "Distribution"; addition of new subproperties for publisher: "publisherIdentifier", "publisherIdentifierScheme", and "schemeURI"; addition of new resourceTypeGeneral values "Instrument" and "StudyRegistration"; addition of new relationType values "Collects" and "IsCollectedBy".-->
+  2023-??-?? v4.5: Addition of new subproperties for publisher: "publisherIdentifier", "publisherIdentifierScheme", and "schemeURI"; addition of new resourceTypeGeneral values "Instrument" and "StudyRegistration"; addition of new relationType values "Collects" and "IsCollectedBy".-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified" xml:lang="EN">
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="include/xml.xsd" />
   <xs:include schemaLocation="include/datacite-titleType-v4.xsd" />
@@ -603,87 +603,6 @@ Use the complete title of a license and include version information if applicabl
                       <xs:documentation>Description of the relationship of the resource being registered (A) and the related resource (B).</xs:documentation>
                     </xs:annotation>
                   </xs:attribute>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="distributions" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="distribution" minOccurs="1" maxOccurs="unbounded">
-                <xs:annotation>
-                  <xs:documentation>Represents an accessible form of a resource such as downloadable files. This property can be repeated if different variations are available.</xs:documentation>
-                  <xs:documentation>The use of this property indicates directly downloadable distributions. Every distribution should represent the same resource in its entirety.</xs:documentation>
-                </xs:annotation>
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="file" minOccurs="1" maxOccurs="unbounded">
-                      <xs:annotation>
-                        <xs:documentation>A container in a computer system for storing information. A file can either represent the entirety of the distribution, or a part of it</xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="contentURL" minOccurs="1" maxOccurs="1">
-                            <xs:annotation>
-                              <xs:documentation>The URL leading to content provided by a repository using a valid protocol.</xs:documentation>
-                            </xs:annotation>
-                            <xs:complexType>
-                              <xs:simpleContent>
-                                <xs:extension base="xs:anyURI">
-                                  <xs:attribute name="byteSize" type="xs:unsignedLong" use="optional">
-                                    <xs:annotation>
-                                      <xs:documentation>The size of a distribution in bytes. The value is related to the object in contentURL.  Must be a non-negative integer.</xs:documentation>
-                                    </xs:annotation>
-                                  </xs:attribute>
-                                </xs:extension>
-                              </xs:simpleContent>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element name="checksums" minOccurs="0" maxOccurs="1">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="checksum" minOccurs="1" maxOccurs="unbounded">
-                                  <xs:annotation>
-                                    <xs:documentation>A value that allows the integrity of a file to be verified. The value is related to the object in contentURL.</xs:documentation>
-                                  </xs:annotation>
-                                  <xs:complexType>
-                                    <xs:simpleContent>
-                                      <xs:extension base="xs:string">
-                                        <xs:attribute name="algorithm" type="xs:string" use="required">
-                                          <xs:annotation>
-                                            <xs:documentation>Identifies the algorithm used to produce the checksum.</xs:documentation>
-                                          </xs:annotation>
-                                        </xs:attribute>
-                                      </xs:extension>
-                                    </xs:simpleContent>
-                                  </xs:complexType>
-                                </xs:element>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element name="accessLevel" minOccurs="0" maxOccurs="1">
-                            <xs:annotation>
-                              <xs:documentation>A statement that describes how the distribution is accessed.</xs:documentation>
-                            </xs:annotation>
-                            <xs:complexType>
-                                <xs:simpleContent>
-                                  <xs:extension base="xs:string">
-                                    <xs:attribute name="accessLevelURI" type="xs:anyURI" use="optional" />
-                                    <xs:attribute ref="xml:lang" />
-                                  </xs:extension>
-                                </xs:simpleContent>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                        <xs:attribute name="mediaType" use="required">
-                          <xs:annotation>
-                            <xs:documentation>Media type expressed using a MIME format.</xs:documentation>
-                          </xs:annotation>
-                        </xs:attribute>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>

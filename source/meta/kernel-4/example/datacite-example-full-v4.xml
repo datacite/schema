@@ -251,24 +251,5 @@
             </contributors>
         </relatedItem>
     </relatedItems>
-    <distributions>
-        <distribution>
-            <file mediaType="audio/mpeg">
-                <contentURL byteSize="1024">https://example.org/example.mp3</contentURL>
-                <checksums>
-                    <checksum algorithm="MD5">d41d8cd98f00b204e9800998ecf8427e</checksum>
-                </checksums>
-                <accessLevel xml:lang="en" accessLevelURI="http://purl.org/coar/access_right/c_abf2">open access</accessLevel>
-            </file>
-            <file mediaType="text/xml">
-                <contentURL>https://example.org/example.txt</contentURL>
-            </file>
-        </distribution>
-        <distribution>
-            <file mediaType="application/zip">
-                <contentURL byteSize="2048">https://example.org/example.zip</contentURL>
-            </file>
-        </distribution>
-    </distributions>
 </resource>
         

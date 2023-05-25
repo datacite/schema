@@ -44,14 +44,5 @@
             <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
             <rights xml:lang="es" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Atribución 4.0 Internacional</rights>
             <rights xml:lang="zh" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">署名 4.0 国际</rights>
-    </rightsList>
-    <distributions>
-            <distribution>
-                <file mediaType="application/pdf">
-                    <contentURL byteSize="1000000">https://example.org/example.pdf</contentURL>
-                    <accessLevel xml:lang="en" accessLevelURI=" http://purl.org/coar/access_right/c_f1cf">embargoed access</accessLevel>
-                </file>
-            </distribution>
-    </distributions>
-        
+    </rightsList>     
 </resource>
