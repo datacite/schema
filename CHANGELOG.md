@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/datacite/schema/tree/HEAD)
+## [4.4.17](https://github.com/datacite/schema/tree/4.4.17) (2023-05-18)
 
-[Full Changelog](https://github.com/datacite/schema/compare/4.4.16...HEAD)
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.16...4.4.17)
 
 **Implemented enhancements:**
 
@@ -10,7 +10,14 @@
 
 **Closed issues:**
 
+- Use shared assets from assets.datacite.org [\#126](https://github.com/datacite/schema/issues/126)
+- Verify that links to the homepage are not broken when the new home page is launched [\#125](https://github.com/datacite/schema/issues/125)
+- Fix config.rb for local builds [\#124](https://github.com/datacite/schema/issues/124)
 - How to use schema with non-standard formats [\#96](https://github.com/datacite/schema/issues/96)
+
+**Merged pull requests:**
+
+- Use shared assets from assets.datacite.org [\#127](https://github.com/datacite/schema/pull/127) ([svogt0511](https://github.com/svogt0511))
 
 ## [4.4.16](https://github.com/datacite/schema/tree/4.4.16) (2022-12-07)
 
