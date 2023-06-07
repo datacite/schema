@@ -32,20 +32,10 @@ DataCite Metadata Working Group. (2023). DataCite Metadata Schema for the Public
     * publisherIdentifier
     * publisherIdentifierScheme
     * schemeURI
-* Addition of a new Distribution property with sub-properties:
-  * file
-  * mediaType
-  * contentURL
-  * byteSize
-  * checkSum
-  * algorithm
-  * accessLevel
-  * accessLevelURI
 * Documentation changes:
   * Changes and additions to definitions support of instruments, and addition of a new mapping
   * Change to the definition of PhysicalObject in support of samples
-  * To enhance support for Distribution property, addition of a new guidance document
-  * Changes and addition to the sub-property definitions of RelatedItem
+  * Changes and additions to the sub-property definitions of RelatedItem
   * Other changes and corrections: see [Version 4.5 Update](https://datacite-metadata-schema.readthedocs.io/en/4.5_draft/introduction/version_update.html)
 
 
