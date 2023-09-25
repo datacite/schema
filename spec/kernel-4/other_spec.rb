@@ -159,6 +159,46 @@ describe "validate other elements" do
     end
   end
 
+  describe "relatedItemType" do
+    it 'relatedItemType Instrument' do
+      related_item = doc.search("relatedItems/relatedItem").first
+      related_item["relatedItemType"] = "Instrument"
+      element = doc.at("relatedItems/relatedItem")
+      element.replace related_item.to_s
+      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
+      expect(errors.length).to eq(0)
+    end
+
+    it 'relatedItemType StudyRegistration' do
+      related_item = doc.search("relatedItems/relatedItem").first
+      related_item["relatedItemType"] = "StudyRegistration"
+      element = doc.at("relatedItems/relatedItem")
+      element.replace related_item.to_s
+      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
+      expect(errors.length).to eq(0)
+    end
+  end
+
+  describe "relatedIdentifier resourceTypeGeneral" do
+    it 'relatedIdentifier resourceTypeGeneral Instrument' do
+      related_item = doc.search("relatedIdentifiers/relatedIdentifier").first
+      related_item["resourceTypeGeneral"] = "Instrument"
+      element = doc.at("relatedIdentifiers/relatedIdentifier")
+      element.replace related_item.to_s
+      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
+      expect(errors.length).to eq(0)
+    end
+
+    it 'relatedIdentifier resourceTypeGeneral StudyRegistration' do
+      related_item = doc.search("relatedIdentifiers/relatedIdentifier").first
+      related_item["resourceTypeGeneral"] = "StudyRegistration"
+      element = doc.at("relatedIdentifiers/relatedIdentifier")
+      element.replace related_item.to_s
+      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
+      expect(errors.length).to eq(0)
+    end
+  end
+
   describe "description" do
     it 'empty descriptions tag' do
       element = doc.at("descriptions")
