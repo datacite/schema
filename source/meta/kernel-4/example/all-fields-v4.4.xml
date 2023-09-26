@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    
+    This file exercises all elements (but not all attributes or attribute values) for the DataCite Version 4.4 schema.
+    The content of this file is schematically valid. The data are fabricated to be easily recognizable in test output.
+    The DataCite Version 4.4 schema set is referenced locally.
+    
+    Note that while the content is all schematically valid, in many cases no attempt has been made to make it logically valid.
+    In many cases this illustrates areas when there might be invalid assumptions about formatting and content constraint
+    on the part of users.
+-->
+
+<resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4.4/metadata.xsd">
+    <identifier identifierType="DOI">10.21399/test-data</identifier>
+    <creators>
+        <creator>
+            <creatorName nameType="Personal">Anne Raugh</creatorName>
+            <givenName>Anne</givenName>
+            <familyName>Raugh</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">0000-0002-8300-9443</nameIdentifier>
+            <nameIdentifier nameIdentifierScheme="SomeNameScheme" schemeURI="SomeNameSchemeURI">Annabelle</nameIdentifier>
+            <affiliation affiliationIdentifier="UMCP" affilicationIdentifierScheme="CampusAbbreviations" schemeURL="http://umd.edu">University of Maryland, College Park</affiliation>
+        </creator>
+    </creators>
+    <titles>
+        <title>Test Metadata</title>
+        <title titleType="Subtitle">for Metadata Schema Version 4.4</title>
+        <title titleType="TranslatedTitle" xml:lang="eo">Testu metadatojn</title>
+        <title titleType="AlternativeTitle">Fake Data</title>
+    </titles>
+    <publisher xml:lang="en">Publisher's Name</publisher>
+    <publicationYear>2020</publicationYear>
+    <resourceType resourceTypeGeneral="Dataset">Null Data Set</resourceType>
+    <subjects>
+        <subject subjectScheme="SubjectScheme" schemeURI="SubjectSchemeURI" valueURI="SubjectValueURI" xml:lang="en">Test Subject</subject>
+        <subject>Another Test Subject</subject>
+        <subject subjectScheme="Unified Astronomy Thesaurus" schemeURI="https://astrothesaurus.org" valueURI="http://astrothesaurus.org/uat/90">Astronomical Reference Materials</subject>
+        <subject subjectScheme="My Favorite Subjects" classificationCode="Anne-1">Comet Names</subject>
+    </subjects>
+    <contributors>
+        <contributor contributorType="DataCurator">
+            <contributorName nameType="Personal">Curator, Bob the</contributorName>
+            <givenName>Bob the</givenName>
+            <familyName>Curator</familyName>
+            <nameIdentifier nameIdentifierScheme="dataCuratorNameScheme" schemeURI="dataCuratorNameSchemeURI">Bobby C.</nameIdentifier>
+            <affiliation affiliationIdentifier="curatorsID" affiliationIdentifierScheme="curatorsIDScheme" schemeURI="curatorsIDSchemeURI">Curators Inc.</affiliation>
+        </contributor>
+        <contributor contributorType="HostingInstitution">
+            <contributorName nameType="Organizational">University Of Maryland, College Park</contributorName>
+            <givenName>College Park</givenName>
+            <familyName>University of Maryland</familyName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">047s2c258</nameIdentifier>
+        </contributor>
+        <contributor contributorType="HostingInstitution">
+            <contributorName nameType="Organizational">Astronomy Department</contributorName>
+            <affiliation affiliationIdentifier="047s2c258" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">University of Maryland, College Park</affiliation>
+        </contributor>
+    </contributors>
+    <dates>
+        <date dateType="Available">2020-04-01</date>
+        <date dateType="Other">2001-10-02</date>
+        <date dateType="Created">321 BCE</date>
+        <date dateType="Copyrighted">Yesterday</date>
+    </dates>
+    <language>en</language>
+    <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="altIDType1">Alternate ID 1</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="altIDType2">Second Alternate ID</alternateIdentifier>
+    </alternateIdentifiers>
+    <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="Cites">10.21399/not-real</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="Continues">http://not.a.real.url</relatedIdentifier>
+    </relatedIdentifiers>
+    <relatedItems>
+        <relatedItem relatedItemType="Book" relationType="IsPublishedIn">
+            <relatedItemIdentifier relatedItemIdentifierType="Handle">Big Blue Book on the Left</relatedItemIdentifier>
+            <creators>
+                <creator>
+                    <creatorName nameType="Personal">Raugh, Anne</creatorName>
+                    <givenName>Anne</givenName>
+                    <familyName>Raugh</familyName>
+                </creator>
+                <creator>
+                    <creatorName nameType="Organizational">Anne Raugh Foundation for Artisanal Programmers</creatorName>
+                </creator>
+            </creators>
+            <titles>
+                <title>Fake Data for All Occasions</title>
+                <title titleType="TranslatedTitle" xml:lang="eo">Falsaj Datumoj por Ĉiuj Okazoj</title>
+            </titles>
+            <publicationYear>1865</publicationYear>
+            <volume>3</volume>
+            <issue>January</issue>
+            <number numberType="Chapter">II.4</number>
+            <firstPage>CDIV</firstPage>
+            <lastPage>501</lastPage>
+            <publisher>Pointless Books, LLC</publisher>
+            <edition>First</edition>
+            <contributors>
+                <contributor contributorType="Editor">
+                    <contributorName>Hubbard, Old Mother</contributorName>
+                    <givenName>Old</givenName>
+                    <familyName>Hubbard</familyName>
+                </contributor>
+            </contributors>
+        </relatedItem>
+    </relatedItems>
+    <sizes>
+        <size>Big Honkin'</size>
+        <size>10 PB</size>
+        <size>1,000,006 files</size>
+    </sizes>
+    <formats>
+        <format>text/plain</format>
+        <format>Warm with melted cheese</format>
+    </formats>
+    <version>-1.0</version>
+    <rightsList>
+        <rights>Copyright © 2020 Anne Raugh, All Rights Reserved</rights>
+        <rights>All rights for this work are administered by My Evil Twin</rights>
+        <rights rightsURI="urn:rights:identifier" rightsIdentifier="rightsID" rightsIdentifierScheme="rightsIDScheme" schemeURI="rights:IDScheme:URI" xml:lang="eo">License granted for private use</rights>
+    </rightsList>
+    <descriptions>
+        <description descriptionType="Abstract">
+            This is test metadata.  There are no data.  Stop looking for data, because there aren't any.
+            <br />
+            Seriously, stop looking.
+        </description>
+        <description descriptionType="Abstract" xml:lang="eo">
+            Ĉi tio estas testaj metadatenoj. Ne estas datumoj. Ĉesu serĉi datumojn, ĉar ne ekzistas.
+            <br />
+            Grave, ĉesu rigardi.
+        </description>
+        <description descriptionType="SeriesInformation">
+            This fake metadata exercises all the elements comprising the DataCite Metadata Schema for the
+            version indicated. The content is schematically valid, though logically ridiculous. This 
+            particular description, however, does not fit the assumptions of the intake processing.
+        </description>
+        <description descriptionType="SeriesInformation"></description>
+        <description descriptionType="Other">
+            The two abstract fields are equivalent, but in different languages.
+        </description>
+    </descriptions>
+    <geoLocations>
+        <geoLocation>
+            <geoLocationBox>
+                <westBoundLongitude>-78.00</westBoundLongitude>
+                <eastBoundLongitude>-76.5</eastBoundLongitude>
+                <southBoundLatitude>38.25</southBoundLatitude>
+                <northBoundLatitude>78.5</northBoundLatitude>
+            </geoLocationBox>
+            <geoLocationPlace>Frederick, MD</geoLocationPlace>
+            <geoLocationPoint>
+                <pointLongitude>39.412327</pointLongitude>
+                <pointLatitude>-77.425461</pointLatitude>
+            </geoLocationPoint>
+            <geoLocationPolygon>
+                <polygonPoint>
+                    <pointLongitude>-74.0</pointLongitude>
+                    <pointLatitude>38.0</pointLatitude>
+                </polygonPoint>
+                <polygonPoint>
+                    <pointLongitude>-77.0</pointLongitude>
+                    <pointLatitude>40.0</pointLatitude>
+                </polygonPoint>
+                <polygonPoint>
+                    <pointLongitude>-80.0</pointLongitude>
+                    <pointLatitude>39.0</pointLatitude>
+                </polygonPoint>
+                <polygonPoint>
+                    <pointLongitude>-78.0</pointLongitude>
+                    <pointLatitude>36.0</pointLatitude>
+                </polygonPoint>
+                <polygonPoint>
+                    <pointLongitude>-75.0</pointLongitude>
+                    <pointLatitude>37.0</pointLatitude>
+                </polygonPoint>
+            </geoLocationPolygon>
+        </geoLocation>
+        <geoLocation>
+            <geoLocationPlace>Not Frederick, MD</geoLocationPlace>
+        </geoLocation>
+    </geoLocations>
+    <fundingReferences>
+        <fundingReference>
+            <funderName>My Pocket</funderName>
+            <funderIdentifier funderIdentifierType="Other">Money Source</funderIdentifier>
+            <awardNumber awardURI="some URI">00001</awardNumber>
+            <awardTitle>Money for Testing</awardTitle>
+        </fundingReference>
+        <fundingReference>
+            <funderName>NASA</funderName>
+            <funderIdentifier funderIdentifierType="Crossref Funder ID">10.13039/100000104</funderIdentifier>
+        </fundingReference>
+    </fundingReferences>
+</resource>
