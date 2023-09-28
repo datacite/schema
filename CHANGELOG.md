@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/datacite/schema/tree/HEAD)
+## [4.4.19](https://github.com/datacite/schema/tree/4.4.19) (2023-09-28)
 
-[Full Changelog](https://github.com/datacite/schema/compare/4.4.18...HEAD)
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.18...4.4.19)
 
 **Merged pull requests:**
 
