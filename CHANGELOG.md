@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/datacite/schema/tree/HEAD)
+
+[Full Changelog](https://github.com/datacite/schema/compare/4.4.18...HEAD)
+
+**Merged pull requests:**
+
+- Update footer template [\#130](https://github.com/datacite/schema/pull/130) ([KellyStathis](https://github.com/KellyStathis))
+
 ## [4.4.18](https://github.com/datacite/schema/tree/4.4.18) (2023-08-31)
 
 [Full Changelog](https://github.com/datacite/schema/compare/4.4.17...4.4.18)
@@ -292,6 +300,10 @@
 
 [Full Changelog](https://github.com/datacite/schema/compare/v.4.1.7...v.4.1.8)
 
+**Closed issues:**
+
+- Some errors in 4.1 changelog and docs [\#38](https://github.com/datacite/schema/issues/38)
+
 ## [v.4.1.7](https://github.com/datacite/schema/tree/v.4.1.7) (2018-04-25)
 
 [Full Changelog](https://github.com/datacite/schema/compare/v.4.1.6...v.4.1.7)
@@ -307,7 +319,6 @@
 
 **Closed issues:**
 
-- Some errors in 4.1 changelog and docs [\#38](https://github.com/datacite/schema/issues/38)
 - Fix language examples [\#37](https://github.com/datacite/schema/issues/37)
 
 ## [v.4.1.5](https://github.com/datacite/schema/tree/v.4.1.5) (2018-04-20)
