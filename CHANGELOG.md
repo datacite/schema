@@ -67,6 +67,7 @@
 **Merged pull requests:**
 
 - updates of dublic\_core [\#102](https://github.com/datacite/schema/pull/102) ([kjgarza](https://github.com/kjgarza))
+- Bump rack from 2.0.8 to 2.2.3 [\#81](https://github.com/datacite/schema/pull/81) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [4.4.12](https://github.com/datacite/schema/tree/4.4.12) (2021-07-08)
 
@@ -151,10 +152,6 @@
 ## [4.4](https://github.com/datacite/schema/tree/4.4) (2020-10-09)
 
 [Full Changelog](https://github.com/datacite/schema/compare/4.3.7...4.4)
-
-**Merged pull requests:**
-
-- Bump rack from 2.0.8 to 2.2.3 [\#81](https://github.com/datacite/schema/pull/81) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [4.3.7](https://github.com/datacite/schema/tree/4.3.7) (2020-07-01)
 
@@ -312,11 +309,15 @@
 
 - Typo in Table 4, Property 12 [\#45](https://github.com/datacite/schema/issues/45)
 -  DataCite Metadata Schema 4.1 documentation nameType attribute bug [\#44](https://github.com/datacite/schema/issues/44)
-- Fix language examples [\#37](https://github.com/datacite/schema/issues/37)
 
 ## [v.4.1.6](https://github.com/datacite/schema/tree/v.4.1.6) (2018-04-20)
 
 [Full Changelog](https://github.com/datacite/schema/compare/v.4.1.5...v.4.1.6)
+
+**Closed issues:**
+
+- Nokogiri version out of date [\#40](https://github.com/datacite/schema/issues/40)
+- Fix language examples [\#37](https://github.com/datacite/schema/issues/37)
 
 ## [v.4.1.5](https://github.com/datacite/schema/tree/v.4.1.5) (2018-04-20)
 
@@ -340,7 +341,6 @@
 
 **Closed issues:**
 
-- Nokogiri version out of date [\#40](https://github.com/datacite/schema/issues/40)
 - Use of xsd:all vs. xsd:sequence  [\#33](https://github.com/datacite/schema/issues/33)
 
 **Merged pull requests:**
