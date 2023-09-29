@@ -312,14 +312,11 @@
 
 - Typo in Table 4, Property 12 [\#45](https://github.com/datacite/schema/issues/45)
 -  DataCite Metadata Schema 4.1 documentation nameType attribute bug [\#44](https://github.com/datacite/schema/issues/44)
+- Fix language examples [\#37](https://github.com/datacite/schema/issues/37)
 
 ## [v.4.1.6](https://github.com/datacite/schema/tree/v.4.1.6) (2018-04-20)
 
 [Full Changelog](https://github.com/datacite/schema/compare/v.4.1.5...v.4.1.6)
-
-**Closed issues:**
-
-- Fix language examples [\#37](https://github.com/datacite/schema/issues/37)
 
 ## [v.4.1.5](https://github.com/datacite/schema/tree/v.4.1.5) (2018-04-20)
 
