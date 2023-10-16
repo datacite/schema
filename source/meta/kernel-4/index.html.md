@@ -41,4 +41,25 @@ DataCite Metadata Working Group. (2023). DataCite Metadata Schema for the Public
 
 ## Examples
 
-* to be added
+Demonstration Examples
+
+* Full DataCite metadata example: [XML](example/datacite-example-full-v4.xml)
+* Example for Dataset resourceTypeGeneral: [XML](example/datacite-example-dataset-v4.xml)
+* Example for Instrument resourceTypeGeneral: [XML](example/datacite-example-instrument-v4.xml)
+* Example showing multilingual metadata: [XML](example/datacite-example-multilingual-v4.xml)
+* Examples with RelatedItem:
+  * Journal article in a journal (with an ISSN): [XML](example/datacite-example-relateditem1-v4.xml)
+  * Digitized book chapter in a book (with no identifier): [XML](example/datacite-example-relateditem2-v4.xml)
+  * Digitized book chapter in a book (with an ISBN): [XML](example/datacite-example-relateditem3-v4.xml)
+
+Live Examples (real DOIs - metadata may change)
+
+* Example for Software resourceTypeGeneral: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.5281/zenodo.7635478), [JSON](https://api.datacite.org/dois/10.5281/zenodo.7635478)
+* Example with GeoLocation: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.1594/PANGAEA.770250), [JSON](https://api.datacite.org/dois/10.1594/PANGAEA.770250)
+* Example with (GeoLocation) Polygon: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.15129/3da7087a-91a3-40be-9a83-7e412156db59), [JSON](https://api.datacite.org/dois/10.15129/3da7087a-91a3-40be-9a83-7e412156db59)
+* Example with HasMetadata as related resource: [XML](https://api.datacite.org/application/vnd.datacite.datacite+json/10.26164/leopoldina_10_00390), [JSON](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.26164/leopoldina_10_00390)
+* Example with IsIdenticalTo as related resource: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.5282/oph.2), [JSON](https://api.datacite.org/dois/10.5282/oph.2)
+* Example with Contributor: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.4228/zalf.sy6a-xt12), [JSON](https://api.datacite.org/dois/10.4228/zalf.sy6a-xt12)
+* Example for Workflow resourceTypeGeneral : [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.48546/WORKFLOWHUB.WORKFLOW.412.1), [JSON](https://api.datacite.org/dois/10.48546/WORKFLOWHUB.WORKFLOW.412.1)
+* Example with FundingReference: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.5281/zenodo.47394), [JSON](https://api.datacite.org/dois/10.5281/zenodo.47394)
+
