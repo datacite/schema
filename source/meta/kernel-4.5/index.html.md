@@ -1,7 +1,7 @@
 ---
 title: DataCite Metadata Schema 4.5
 version: 4.5
-date: 2024-01-15
+date: 2024-01-22
 layout: schema
 schema_url: /meta/kernel-4.5/metadata.xsd
 documentation_url: https://datacite-metadata-schema.readthedocs.io/en/4.5/
