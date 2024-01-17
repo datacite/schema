@@ -5,12 +5,12 @@
       <div class="container">
         <div class="motto">
           <h1><%= current_page.data.title %></h1>
+          <% if current_page.data.deprecated? %>
+            <p>Deprecated</p>
+          <% end %>
           <p>Released <%= Date.parse(current_page.data.date.to_s).strftime("%-d %b %Y") %></p>
           <% if current_page.data.date_deprecation? %>
             <p>Deprecation: <%= Date.parse(current_page.data.date_deprecation.to_s).strftime("%-d %b %Y") %></p>
-          <% end %>
-          <% if current_page.data.deprecated? %>
-            <p>Deprecated</p>
           <% end %>
         </div>
       </div>
