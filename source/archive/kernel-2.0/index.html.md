@@ -2,6 +2,7 @@
 title: DataCite Metadata Schema 2.0
 version: 2.0
 date: 2011-01-24
+deprecated: true
 layout: schema
 schema_url: https://doi.org/10.5438/0002
 documentation_url: https://doi.org/10.5438/0001

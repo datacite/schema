@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Example: Dataset -->
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+  <identifier identifierType="DOI">10.82433/9184-DY35</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Organizational">National Gallery</creatorName>
+      <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/043kfff89</nameIdentifier>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">External Environmental Data, 2010-2020, National Gallery</title>
+  </titles>
+  <publisher xml:lang="en" publisherIdentifier="https://ror.org/043kfff89" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">National Gallery</publisher>
+  <publicationYear>2022</publicationYear>
+  <resourceType resourceTypeGeneral="Dataset">Environmental data</resourceType>
+  <subjects>
+    <subject subjectScheme="Fields of Science and Technology (FOS)" schemeURI="http://www.oecd.org/science/inno/38235147.pdf">FOS: Earth and related environmental sciences</subject>
+    <subject subjectScheme="Wikidata" schemeURI="https://www.wikidata.org/wiki" valueURI="https://www.wikidata.org/wiki/Q11466">temperature</subject>
+    <subject subjectScheme="Art and Architecture Thesaurus" schemeURI="http://vocab.getty.edu/aat" valueURI="http://vocab.getty.edu/aat/300192097">relative humidity</subject>
+    <subject subjectScheme="Wikidata" schemeURI="https://www.wikidata.org/wiki" valueURI="https://www.wikidata.org/wiki/Q194411">illuminance</subject>
+    <subject subjectScheme="Art and Architecture Thesaurus" schemeURI="http://vocab.getty.edu/aat" valueURI="http://vocab.getty.edu/aat/300379432">moisture content</subject>
+    <subject subjectScheme="FAST" schemeURI="http://id.worldcat.org/fast" valueURI="http://id.worldcat.org/fast/913214">Environmental monitoring</subject>
+  </subjects>
+  <contributors>
+    <contributor contributorType="ContactPerson">
+      <contributorName nameType="Personal">Padfield, Joseph</contributorName>
+      <givenName>Joseph</givenName>
+      <familyName>Padfield</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0002-2572-6428</nameIdentifier>
+      <affiliation affiliationIdentifier="https://ror.org/043kfff89" affiliationIdentifierScheme="ROR">National Gallery</affiliation>
+    </contributor>
+    <contributor contributorType="DataCollector">
+      <contributorName nameType="Organizational">Building Facilities Department</contributorName>
+      <affiliation affiliationIdentifier="https://ror.org/043kfff89" affiliationIdentifierScheme="ROR">National Gallery</affiliation>
+    </contributor>
+  </contributors>
+  <dates>
+    <date dateType="Collected">2010/2020</date>
+    <date dateType="Other" dateInformation="Coverage">2010/2020</date>
+    <date dateType="Issued">2022</date>
+  </dates>
+  <language>en</language>
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="URL" relationType="IsSupplementTo" resourceTypeGeneral="Report">https://www.nationalgallery.org.uk/research/research-resources/research-papers/improving-our-environment</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="URL" relationType="IsSourceOf" resourceTypeGeneral="InteractiveResource">https://research.ng-london.org.uk/scientific/env/</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementedBy" resourceTypeGeneral="JournalArticle">10.1080/00393630.2018.1504449/</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="IsDocumentedBy" resourceTypeGeneral="ConferencePaper">10.5281/zenodo.7629200</relatedIdentifier>
+  </relatedIdentifiers>
+  <sizes>
+    <size>13.6 MB</size>
+  </sizes>
+  <formats>
+    <format>application/json</format>
+  </formats>
+  <version>1.0</version>
+  <rightsList>
+    <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution Non Commercial 4.0 International</rights>
+  </rightsList>
+  <descriptions>
+    <description xml:lang="en" descriptionType="Abstract">The National Gallery houses one of the greatest ‒ and most visited ‒ collections of Western European painting, often welcoming more than 6 million visitors a year. The Scientific Department researches the history of materials and techniques and their degradation mechanisms (fading, darkening, etc.), through analysis using a range of micro-analytical and imaging methods. It also works in the fields of preventive conservation and environmental management of galleries (monitoring, lighting, vibration), as well as the development of a wide range of new instruments and methods (both analytical and imaging) for technical examination of artworks, most often in collaboration with universities. The examination of the environmental conditions within The National Gallery began soon after it was established in 1824. Early concerns often related to dust and pollution. The first electronic data logger, recording light levels, was introduced in 1975, with the regular logging of temperature and relative humidity followed soon after. Today the Gallery has hundreds of sensors, monitoring the environmental conditions in over hundreds of locations, 24/7. The National Gallery currently archives millions of environmental readings every year, which are used to monitor the Gallery conditions ensuring the on-going care of the collections. These readings are also used to examine long term environmental trends, manage additional events, and within the planning and management of preventive conservation work and research at the National Gallery. The National Gallery Environmental Database is an internal, bespoke system which has been developed, over the last 20 years, to act as an archive for all of these environmental readings. This dataset contains a selected range of the data gathered from a few of the external sensors that have been used to monitor ambient light levels, temperature, relative humidity and air moisture content 24 hours a day, 7 days a week over the last two decades.</description>
+  </descriptions>
+  <geoLocations>
+    <geoLocation>
+      <geoLocationPlace>Roof of National Gallery, London, UK</geoLocationPlace>
+      <geoLocationPoint>
+        <pointLatitude>51.50872</pointLatitude>
+        <pointLongitude>-0.12841</pointLongitude>
+      </geoLocationPoint>
+    </geoLocation>
+  </geoLocations>
+  <fundingReferences>
+    <fundingReference>
+      <funderName>H2020 Excellent Science</funderName>
+      <funderIdentifier funderIdentifierType="Crossref Funder ID">https://doi.org/10.13039/100010662</funderIdentifier>
+      <awardNumber awardURI="https://cordis.europa.eu/project/id/871034">871034</awardNumber>
+      <awardTitle>Integrating Platforms for the European Research Infrastructure ON Heritage Science</awardTitle>
+    </fundingReference>
+  </fundingReferences>
+</resource>

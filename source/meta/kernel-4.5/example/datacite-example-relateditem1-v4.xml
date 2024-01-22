@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Example for RelatedItem: Journal article in a journal (with ISSN) -->
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+  <identifier identifierType="DOI">10.82433/Q54D-PF76</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Garcia, Sofia</creatorName>
+      <givenName>Sofia</givenName>
+      <familyName>Garcia</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+      <affiliation affiliationIdentifier="https://ror.org/03efmqc40" schemeURI="https://ror.org">Arizona State University</affiliation>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">Example Article Title</title>
+  </titles>
+  <publisher>Example Publisher</publisher>
+  <publicationYear>2022</publicationYear>
+  <resourceType resourceTypeGeneral="JournalArticle">ScholarlyArticle</resourceType>
+  <dates>
+    <date dateType="Issued">2022</date>
+  </dates>
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="ISSN" relationType="IsPublishedIn">1234-5678</relatedIdentifier>
+  </relatedIdentifiers>
+  <relatedItems>
+    <relatedItem relatedItemType="Journal" relationType="IsPublishedIn">
+      <relatedItemIdentifier relatedItemIdentifierType="ISSN">1234-5678</relatedItemIdentifier>
+      <titles>
+        <title>Journal of Metadata Examples</title>
+      </titles>
+      <publicationYear>2022</publicationYear>
+      <volume>3</volume>
+      <issue>4</issue>
+      <firstPage>20</firstPage>
+      <lastPage>35</lastPage>
+      <publisher>Example Publisher</publisher>
+    </relatedItem>
+  </relatedItems>
+</resource>

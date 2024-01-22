@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Example for RelatedItem: Digitized book chapter in a book (with an ISBN) -->
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+  <identifier identifierType="DOI">10.82433/4FDH-RH04</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Garcia, Sofia</creatorName>
+      <givenName>Sofia</givenName>
+      <familyName>Garcia</familyName>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">Example Chapter Title</title>
+  </titles>
+  <publisher xml:lang="en">Example Publisher</publisher>
+  <publicationYear>2016</publicationYear>
+  <resourceType resourceTypeGeneral="BookChapter"/>
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="ISBN" relationType="IsPublishedIn">0-12-345678-1</relatedIdentifier>
+  </relatedIdentifiers>
+  <relatedItems>
+    <relatedItem relationType="IsPublishedIn" relatedItemType="Book">
+      <relatedItemIdentifier relatedItemIdentifierType="ISBN">0-12-345678-1</relatedItemIdentifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Garcia, Sofia</creatorName>
+          <givenName>Sofia</givenName>
+          <familyName>Garcia</familyName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Example Book Title</title>
+      </titles>
+      <publicationYear>2016</publicationYear>
+      <number numberType="Chapter">4</number>
+      <firstPage>45</firstPage>
+      <lastPage>63</lastPage>
+      <publisher>Example Publisher</publisher>
+    </relatedItem>
+  </relatedItems>
+</resource>

@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "full example" do
-  let(:root) { File.join(File.dirname(__FILE__), '../../source/meta/kernel-4') }
+  let(:root) { File.join(File.dirname(__FILE__), '../../source/meta/kernel-4.3') }
   let(:xsd) { Dir.chdir(root) { Nokogiri::XML::Schema(File.read("metadata.xsd")) }}
   let(:doc) { Dir.chdir(root) { Nokogiri::XML(File.read("example/datacite-example-full-v4.xml")) { |c| c.strict }}}
 
@@ -11,7 +11,7 @@ describe "full example" do
 
   it 'has givenName and familyName' do
     creators = doc.search("creator")
-    expect(creators.size).to eq(1)
+    expect(creators.size).to eq(3)
     creator = creators.first
     expect(creator.elements.size).to eq(5)
 
@@ -29,7 +29,7 @@ describe "full example" do
 
     name_identifier = creator.elements[3]
     expect(name_identifier.name).to eq("nameIdentifier")
-    expect(name_identifier["schemeURI"]).to eq("https://orcid.org/")
+    expect(name_identifier["schemeURI"]).to eq("http://orcid.org/")
     expect(name_identifier["nameIdentifierScheme"]).to eq("ORCID")
     expect(name_identifier.text).to eq("0000-0001-5000-0007")
   end

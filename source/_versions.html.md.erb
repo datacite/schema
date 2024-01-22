@@ -1,3 +1,14 @@
+#### DataCite Metadata Schema 4.4
+
+Released <%= Date.parse("2021-03-30").strftime("%-d %b %Y") %>. Changes in this version include:
+
+* Addition of the new subproperty “classificationCode” in the Subject property.
+* Addition of new values to the resourceTypeGeneral property: Book, BookChapter, ComputationalNotebook, ConferencePaper, ConferenceProceeding, Dissertation, Journal, JournalArticle, OutputManagementPlan, PeerReview, Preprint, Report, Standard
+* Addition of a new relationType: “isPublishedIn” (indicates that A is published in B)
+* Addition of a new relatedItem property, with subproperties to contain specific details for containing publication information previously encoded in a description field with descriptionType=”SeriesInformation” (for example, to define the journal name, volume, and page number for an article resource).
+
+<a href="/meta/kernel-4.4/" class="btn">More info</a>
+
 #### DataCite Metadata Schema 4.3
 
 Released <%= Date.parse("2019-08-16").strftime("%-d %b %Y") %>. Changes in this version include:
@@ -49,20 +60,19 @@ geoLocationBox)
 
 <a href="/meta/kernel-4.0/" class="btn">More info</a>
 
-#### DataCite Metadata Schema 3.1
-Released <%= Date.parse("2014-10-16").strftime("%-d %b %Y") %>. Changes in this version include:
+#### DataCite Metadata Schema 3
+<div class="alert alert-danger" role="alert" style="background-color: #f8d7da; color: #721c24;">
+  <p>DataCite Metadata Schema 3 (3.0 and 3.1) will be deprecated on January 1, 2025.</p>
+  <p>Please see the following for more information:</p>
+  <ul>
+  <li>Announcement: <a style="text-decoration: underline; color: #721c24;" href="https://doi.org/10.5438/hg83-q366">Deprecating Schema 3</a></li>
+  <li>Support documentation: <a style="text-decoration: underline; color: #721c24;" href="https://support.datacite.org/docs/updating-from-schema-3-to-schema-4">Updating from Schema 3 to Schema 4</a></li>
+  </ul>
+</div>
 
-* New affiliation attribute for Creator and Contributor
-* New relationType pairs IsReviewedBy/Reviews and IsDerivedFrom/IsSourceOf
-* New contributorType: DataCurator
-* New relatedIdentifier types: arXiv and bibcode
+* [DataCite Metadata Schema 3.1](/meta/kernel-3.1/) (<%= Date.parse("2014-10-16").strftime("%-d %b %Y") %>)
+* [DataCite Metadata Schema 3.0](/meta/kernel-3.0/) (<%= Date.parse("2013-07-24").strftime("%-d %b %Y") %>)
 
-<a href="/meta/kernel-3.1/" class="btn">More info</a>
-
-#### DataCite Metadata Schema 3.0
-Released <%= Date.parse("2013-07-24").strftime("%-d %b %Y") %>.
-
-<a href="/meta/kernel-3.0/" class="btn">More info</a>
 
 #### DataCite to Dublin Core Mapping 4.4
 Released <%= Date.parse("2021-07-08").strftime("%-d %b %Y") %>.
