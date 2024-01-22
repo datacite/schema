@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Fix for malformed link [\#133](https://github.com/datacite/schema/pull/133) ([codycooperross](https://github.com/codycooperross))
 - Adds tests for Schema 4.5 and modifies existing tests as needed [\#131](https://github.com/datacite/schema/pull/131) ([codycooperross](https://github.com/codycooperross))
 - Schema 4.5 [\#128](https://github.com/datacite/schema/pull/128) ([KellyStathis](https://github.com/KellyStathis))
 
