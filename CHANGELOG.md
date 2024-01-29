@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/datacite/schema/tree/HEAD)
+
+[Full Changelog](https://github.com/datacite/schema/compare/4.5.0...HEAD)
+
+**Closed issues:**
+
+- Should "identifiers" really be required in the json schema 4.3? [\#134](https://github.com/datacite/schema/issues/134)
+
 ## [4.5.0](https://github.com/datacite/schema/tree/4.5.0) (2024-01-22)
 
 [Full Changelog](https://github.com/datacite/schema/compare/4.4.19...4.5.0)
