@@ -8,14 +8,14 @@ documentation_url: https://datacite-metadata-schema.readthedocs.io/en/4.5/
 ---
 
 ## Documentation
-DataCite Metadata Working Group. (2024). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data and Other Research Outputs. Version 4.5. DataCite e.V. https://doi.org/10.14454/g8e5-6293
+DataCite Metadata Working Group. (2024). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data and Other Research Outputs. Version 4.5. DataCite e.V. [https://doi.org/10.14454/g8e5-6293](https://doi.org/10.14454/g8e5-6293)
 
 <div class="text-center"><a href="https://datacite-metadata-schema.readthedocs.io/en/4.5/" class="btn">Access documentation</a></div>
 <br>
 <div class="text-center"><a href="https://datacite-metadata-schema.readthedocs.io/_/downloads/en/4.5/pdf/" class="btn">Download PDF</a></div>
 
 ## Schema
-DataCite Metadata Working Group. (2024). DataCite Metadata Schema for the Publication and Citation of Research Data and Other Research Outputs. Version 4.5. DataCite e.V. https://doi.org/10.14454/znvd-6q68
+DataCite Metadata Working Group. (2024). DataCite Metadata Schema for the Publication and Citation of Research Data and Other Research Outputs. Version 4.5. DataCite e.V. [https://doi.org/10.14454/znvd-6q68](https://doi.org/10.14454/znvd-6q68)
 
 <div class="text-center"><a href="metadata.xsd" class="btn">View XSD</a></div>
 
