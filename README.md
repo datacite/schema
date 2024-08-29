@@ -10,7 +10,7 @@ It contains the schemas itself along with examples and documentation.
 ## Schemas
 
 Each schema has its own folder under `/source/meta`
-e.g. `/source/meta/kernel-2.0/`. This directory is allowed to contain
+e.g. `/source/meta/kernel-4/`. This directory is allowed to contain
 only one xsd. The directory structure is as follow:
 
     /source/meta/{schema-name}/{filename}.xsd   root xsd
@@ -20,15 +20,9 @@ only one xsd. The directory structure is as follow:
 
 The `/source/meta` directory will be published at http://schema.datacite.org, e.g.
 
-    http://schema.datacite.org/meta/kernel-2.0/metadata.xsd
+    https://schema.datacite.org/meta/kernel-4/metadata.xsd
 
 ## Feedback
-
-If you have any questions about the metadata schema, please contact support@datacite.org.
-
-If you have an idea for a change to the DataCite Metadata Schema, let us know through this form: [DataCite Metadata Schema Suggestions](https://forms.gle/jeLP7AnzW5RGvuz58).
-
-We recommend first reviewing the ideas on the [DataCite Metadata Schema Trello board](https://trello.com/b/mDWDeh20/datacite-metadata-schema) to see if a similar idea has already been proposed. If it has, you can contribute to the discussion by following the instructions on the card.
 
 Learn more about contributing to the DataCite Metadata Schema here: [DataCite Schema - Contribute](https://schema.datacite.org/contribute.html).
 
