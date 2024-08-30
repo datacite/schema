@@ -93,8 +93,21 @@
       a { 
         color: #0071b2;
       }
-      p > a { 
+      p > a, h4 > a, li > a {
         text-decoration: underline;
+      }
+      .nav li > a,
+      .footer li > a { 
+        text-decoration: none;
+      }
+      p > a:hover,
+      p > a:focus,
+      h4 > a:hover,
+      h4 > a:focus,
+      li > a:hover,
+      li > a:focus {
+        color: #0071b2;
+        text-decoration: none;
       }
       .btn {
         color: #34495e;
