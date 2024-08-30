@@ -78,11 +78,6 @@
       .navbar-default .navbar-nav>li>a:not(.btn) {
         color: #34495e;
       }
-      .navbar-default .navbar-nav>li>a:not(.btn):focus,
-      .navbar-default .navbar-nav>li>a:not(.btn):hover,
-      .footer a:hover, .footer a:focus  {
-        color: #0071b2;
-      }
       h2, h3, h4, p, li {
         color: #34495e;
       }
@@ -98,8 +93,21 @@
       a { 
         color: #0071b2;
       }
-      p > a { 
+      p > a, h4 > a, li > a {
         text-decoration: underline;
+      }
+      .nav li > a,
+      .footer li > a { 
+        text-decoration: none;
+      }
+      p > a:hover,
+      p > a:focus,
+      h4 > a:hover,
+      h4 > a:focus,
+      li > a:hover,
+      li > a:focus {
+        color: #0071b2;
+        text-decoration: none;
       }
       .btn {
         color: #34495e;
@@ -116,6 +124,11 @@
       .footer a, .footer a:visited,
       .footer h4 {
         color: #a3acb2;
+      }
+      .navbar-default .navbar-nav>li>a:not(.btn):focus,
+      .navbar-default .navbar-nav>li>a:not(.btn):hover,
+      .footer a:hover, .footer a:focus  {
+        color: #0071b2;
       }
     </style>
 
