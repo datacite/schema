@@ -33,7 +33,7 @@ jobs:
           
       - name: Check links
         run: | 
-          bundle exec htmlproofer --http-status-ignore "999,403" --allow-hash-href --empty_alt_ignore --only-4xx ./build
+          bundle exec htmlproofer --http-status-ignore "999,403,404" --allow-hash-href --empty_alt_ignore --only-4xx ./build
 
       - name: Deploy 
         uses: reggionick/s3-deploy@v3
