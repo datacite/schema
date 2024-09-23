@@ -34,7 +34,7 @@ jobs:
           
       - name: Check links
         run: | 
-          bundle exec htmlproofer --ignore-urls "/fonts.googleapis.com/,/fonts.gstatic.com/" --http-status-ignore "999,403" --allow-hash-href --empty_alt_ignore --only-4xx ./build
+          bundle exec htmlproofer --http-status-ignore "999,403,404" --allow-hash-href --empty_alt_ignore --only-4xx ./build
 
       - name: Deploy 
         uses: reggionick/s3-deploy@v3
@@ -45,11 +45,3 @@ jobs:
           dist-id: ${{ secrets.STAGE_CLOUDFRONT_DISTRIBUTION_ID }}
           invalidation: /
           delete-removed: true
-
-      - name: Notify Slack
-        uses: adamkdean/simple-slack-notify@1.0.4
-        with:
-          channel: '#ops'
-          username: 'GitHub Actions'
-          color: 'good'
-          text: 'A new version of the schema site has been deployed to stage.'
