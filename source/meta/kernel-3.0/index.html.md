@@ -19,12 +19,12 @@ documentation_url: http://doi.org/10.5438/0008
 </div>
 
 ## Documentation
-DataCite Metadata Working Group. (2013). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 3.0. DataCite e.V. http://doi.org/10.5438/0008
+DataCite Metadata Working Group. (2013). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 3.0. DataCite e.V. [https://doi.org/10.5438/0008](https://doi.org/10.5438/0008)
 
 <a href="doc/DataCite-MetadataKernel_v3.0.pdf" class="btn">Download PDF</a>
 
 ## Schema
-DataCite Metadata Working Group. (2013). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 3.0. DataCite e.V. http://doi.org/10.5438/0009
+DataCite Metadata Working Group. (2013). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 3.0. DataCite e.V. [https://doi.org/10.5438/0009](https://doi.org/10.5438/0009)
 
 <a href="metadata.xsd" class="btn">View XSD</a>
 
