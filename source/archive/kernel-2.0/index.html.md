@@ -10,12 +10,12 @@ alert: This version is only provided for archival purposes. It is no longer usab
 ---
 
 ## Documentation
-DataCite Metadata Working Group. (2011). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 2.0. DataCite e.V. http://doi.org/10.5438/0001
+DataCite Metadata Working Group. (2011). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 2.0. DataCite e.V. [https://doi.org/10.5438/0001](https://doi.org/10.5438/0001)
 
 <a href="doc/DataCite-MetadataKernel_v2.0.pdf" class="btn">Download PDF</a>
 
 ## Schema
-DataCite Metadata Working Group. (2011). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 2.0. DataCite e.V. http://doi.org/10.5438/0002
+DataCite Metadata Working Group. (2011). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 2.0. DataCite e.V. [https://doi.org/10.5438/0002](https://doi.org/10.5438/0002)
 
 <a href="metadata.xsd" class="btn">View XSD</a>
 

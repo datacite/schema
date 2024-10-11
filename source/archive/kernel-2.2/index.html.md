@@ -9,12 +9,12 @@ documentation_url: http://doi.org/10.5438/0005
 ---
 
 ## Documentation
-DataCite Metadata Working Group. (2011). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 2.2. DataCite e.V. http://doi.org/10.5438/0005
+DataCite Metadata Working Group. (2011). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data. Version 2.2. DataCite e.V. [https://doi.org/10.5438/0005](http://doi.org/10.5438/0005)
 
 <a href="doc/DataCite-MetadataKernel_v2.2.pdf" class="btn">Download PDF</a>
 
 ## Schema
-DataCite Metadata Working Group. (2011). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 2.2. DataCite e.V. http://doi.org/10.5438/0006
+DataCite Metadata Working Group. (2011). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 2.2. DataCite e.V. [https://doi.org/10.5438/0006](https://doi.org/10.5438/0006)
 
 <a href="metadata.xsd" class="btn">View XSD</a>
 
