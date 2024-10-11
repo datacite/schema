@@ -5,21 +5,15 @@ description: The DataCite Metadata Schema is a list of core metadata properties 
 
 <div class="wrapper">
   <!-- https://www.pexels.com/photo/camera-old-vintage-photos-35107/ -->
-  <div class="landing-header" style="margin-top: 0px; background-image: url('<%= ENV['CDN_URL'] %>/images/header2.jpg');">
-    <div class="container">
-      <div class="motto">
+  <div class="landing-header" id="tsparticles" style="margin-top: 0px;">
+    <div class="container-fluid">
+      <div class="col-md-5">
         <h1><%= current_page.data.title %></h1>
         <p><%= current_page.data.description %></p>
       </div>
-    </div>
-  </div>
-
-  <div class="section" style="background-color: #e7e7e7">
-    <div class="row row-section">
-      <div class="container-fluid">
-        <div class="col-md-8 col-md-offset-2">
-          <%= partial "four.html.md" %>
-        </div>
+      <div class="col-md-6 col-md-offset-1">
+        <div class="pill">latest</div>
+        <%= partial "four.html.md" %>
       </div>
     </div>
   </div>
