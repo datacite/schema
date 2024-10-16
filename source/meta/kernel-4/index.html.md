@@ -33,10 +33,12 @@ Demonstration Examples
 
 * Full DataCite metadata example: [XML](example/datacite-example-full-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/B09Z-4K37?publisher=true&affiliation=true)
 * Example for Dataset resourceTypeGeneral: [XML](example/datacite-example-dataset-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/9184-DY35?publisher=true&affiliation=true)
-* FIXME Example for Award resourceTypeGeneral: [XML](), [JSON]()
-* FIXME Example for Project resourceTypeGeneral: [XML](), [JSON]()
-* FIXME Example for Coverage dateType: [XML](), [JSON]()
-* FIXME Example for translation: [XML](), [JSON]()
+* FIXME Example for Award resourceTypeGeneral: [XML](example/datacite-example-award-v4.xml), [JSON]()
+* FIXME Example for Project resourceTypeGeneral: [XML](example/datacite-example-project-v4.xml), [JSON]()
+* FIXME Example for Coverage dateType: [XML](example/datacite-example-coverage-v4.xml), [JSON]()
+* FIXME Examples for connecting translations:
+  * FIXME Example of translation: [XML](example/datacite-example-translation1-v4.xml), [JSON]()
+  * FIXME Example of translated (original) work: [XML](example/datacite-example-translation2-v4.xml), [JSON]()
 * Example for Instrument resourceTypeGeneral: [XML](example/datacite-example-instrument-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/08qf-ee96?publisher=true&affiliation=true)
 * Example showing multilingual metadata: [XML](example/datacite-example-multilingual-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/byt7-2g42?publisher=true&affiliation=true)
 * Examples with RelatedItem:
