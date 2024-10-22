@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "full example" do
-  let(:root) { File.join(File.dirname(__FILE__), '../../source/meta/kernel-4') }
+  let(:root) { File.join(File.dirname(__FILE__), '../../source/meta/kernel-4.6') }
   let(:xsd) { Dir.chdir(root) { Nokogiri::XML::Schema(File.read("metadata.xsd")) }}
   let(:doc) { Dir.chdir(root) { Nokogiri::XML(File.read("example/datacite-example-full-v4.xml")) { |c| c.strict }}}
 
@@ -18,6 +18,26 @@ describe "full example" do
       expect(related_identifier["relatedIdentifierType"]).to eq("DOI")
       expect(related_identifier["resourceTypeGeneral"]).to eq("Other")
       expect(related_identifier.text).to eq("10.1016/j.epsl.2011.11.037")
+    end
+
+    it 'has relationType IsPublishedIn' do
+      related_identifiers = doc.search("relatedIdentifier[@relationType='IsPublishedIn']")
+      expect(related_identifiers.size).to eq(1)
+      related_identifier = related_identifiers.first
+      expect(related_identifier["relationType"]).to eq("IsPublishedIn")
+      expect(related_identifier["relatedIdentifierType"]).to eq("RRID")
+      expect(related_identifier["resourceTypeGeneral"]).to eq("Model")
+      expect(related_identifier.text).to eq("RRID:SCR_014641")  
+    end
+
+    it 'has relationType IsSupplementedBy' do
+      related_identifiers = doc.search("relatedIdentifier[@relationType='IsSupplementedBy']")
+      expect(related_identifiers.size).to eq(1)
+      related_identifier = related_identifiers.first
+      expect(related_identifier["relationType"]).to eq("IsSupplementedBy")
+      expect(related_identifier["relatedIdentifierType"]).to eq("CSTR")
+      expect(related_identifier["resourceTypeGeneral"]).to eq("BookChapter")
+      expect(related_identifier.text).to eq("31253.11.sciencedb.13238")  
     end
 
     it 'has relationType IsCollectedBy' do

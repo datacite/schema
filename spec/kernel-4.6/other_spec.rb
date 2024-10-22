@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "validate other elements" do
-  let(:root) { File.join(File.dirname(__FILE__), '../../source/meta/kernel-4') }
+  let(:root) { File.join(File.dirname(__FILE__), '../../source/meta/kernel-4.6') }
   let(:xsd) { Dir.chdir(root) { Nokogiri::XML::Schema(File.read("metadata.xsd")) }}
   let(:doc) { Dir.chdir(root) { Nokogiri::XML(File.read("example/datacite-example-full-v4.xml")) { |c| c.strict }}}
 
@@ -56,6 +56,20 @@ describe "validate other elements" do
     it 'resourceTypeGeneral Book' do
       element = doc.at("resourceType")
       element.replace '<resourceType resourceTypeGeneral="Book"></resourceType>'
+      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
+      expect(errors.length).to eq(0)
+    end
+
+    it 'resourceTypeGeneral Award' do
+      element = doc.at("resourceType")
+      element.replace '<resourceType resourceTypeGeneral="Award"></resourceType>'
+      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
+      expect(errors.length).to eq(0)
+    end
+
+    it 'resourceTypeGeneral Project' do
+      element = doc.at("resourceType")
+      element.replace '<resourceType resourceTypeGeneral="Award"></resourceType>'
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(0)
     end
