@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "validate other elements" do
-  let(:root) { File.join(File.dirname(__FILE__), '../../source/meta/kernel-4') }
+  let(:root) { File.join(File.dirname(__FILE__), '../../source/meta/kernel-4.5') }
   let(:xsd) { Dir.chdir(root) { Nokogiri::XML::Schema(File.read("metadata.xsd")) }}
   let(:doc) { Dir.chdir(root) { Nokogiri::XML(File.read("example/datacite-example-full-v4.xml")) { |c| c.strict }}}
 
@@ -35,7 +35,7 @@ describe "validate other elements" do
       element.replace '<resourceType resourceTypeGeneral="">Dataset</resourceType>'
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(1)
-      expect(errors.last).to include("26:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': [facet 'enumeration'] The value '' is not an element of the set {'Audiovisual', 'Award', 'Book', 'BookChapter', 'Collection', 'ComputationalNotebook', 'ConferencePaper', 'ConferenceProceeding', 'DataPaper', 'Dataset', 'Dissertation', 'Event', 'Image', 'Instrument', 'InteractiveResource', 'Journal', 'JournalArticle', 'Model', 'OutputManagementPlan', 'PeerReview', 'PhysicalObject', 'Preprint', 'Project', 'Report', 'Service', 'Software', 'Sound', 'Standard', 'StudyRegistration', 'Text', 'Workflow', 'Other'}.")
+      expect(errors.last).to include("26:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': [facet 'enumeration'] The value '' is not an element of the set {'Audiovisual', 'Book', 'BookChapter', 'Collection', 'ComputationalNotebook', 'ConferencePaper', 'ConferenceProceeding', 'DataPaper', 'Dataset', 'Dissertation', 'Event', 'Image', 'Instrument', 'InteractiveResource', 'Journal', 'JournalArticle', 'Model', 'OutputManagementPlan', 'PeerReview', 'PhysicalObject', 'Preprint', 'Report', 'Service', 'Software', 'Sound', 'Standard', 'StudyRegistration', 'Text', 'Workflow', 'Other'}.")
     end
 
     it 'empty resourceType' do
@@ -50,7 +50,7 @@ describe "validate other elements" do
       element.replace '<resourceType resourceTypeGeneral="Conference">Dataset</resourceType>'
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(1)
-      expect(errors.first).to include("26:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': [facet 'enumeration'] The value 'Conference' is not an element of the set {'Audiovisual', 'Award', 'Book', 'BookChapter', 'Collection', 'ComputationalNotebook', 'ConferencePaper', 'ConferenceProceeding', 'DataPaper', 'Dataset', 'Dissertation', 'Event', 'Image', 'Instrument', 'InteractiveResource', 'Journal', 'JournalArticle', 'Model', 'OutputManagementPlan', 'PeerReview', 'PhysicalObject', 'Preprint', 'Project', 'Report', 'Service', 'Software', 'Sound', 'Standard', 'StudyRegistration', 'Text', 'Workflow', 'Other'}.")
+      expect(errors.first).to include("26:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': [facet 'enumeration'] The value 'Conference' is not an element of the set {'Audiovisual', 'Book', 'BookChapter', 'Collection', 'ComputationalNotebook', 'ConferencePaper', 'ConferenceProceeding', 'DataPaper', 'Dataset', 'Dissertation', 'Event', 'Image', 'Instrument', 'InteractiveResource', 'Journal', 'JournalArticle', 'Model', 'OutputManagementPlan', 'PeerReview', 'PhysicalObject', 'Preprint', 'Report', 'Service', 'Software', 'Sound', 'Standard', 'StudyRegistration', 'Text', 'Workflow', 'Other'}.")
     end
 
     it 'resourceTypeGeneral Book' do
