@@ -321,8 +321,14 @@ describe "full example XML exhaustive validation" do
         { dateType: "Available", value: "2024-01-01" },
         { dateType: "Copyrighted", value: "2024-01-01" },
         { dateType: "Collected", value: "2024-01-01/2024-12-31" },
+        { dateType: "Coverage", value: "2024-01-01/2024-12-31" },
+        { dateType: "Created", value: "2024-01-01" },
+        { dateType: "Issued", value: "2024-01-01" },
+        { dateType: "Submitted", value: "2024-01-01" },
         { dateType: "Updated", value: "2024-01-01" },
-        { dateType: "Other", dateInformation: "ExampleDateInformation", value: "2024-01-01"}
+        { dateType: "Valid", value: "2024-01-01" },
+        { dateType: "Withdrawn", value: "2024-01-01" },
+        { dateType: "Other", dateInformation: "ExampleDateInformation", value: "2024-01-01" }
       ]
   
       expected_dates.each_with_index do |expected, index|
