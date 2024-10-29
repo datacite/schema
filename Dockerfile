@@ -1,38 +1,65 @@
-FROM phusion/passenger-full:0.9.19
-MAINTAINER Martin Fenner "mfenner@datacite.org"
+# Dockerfile
 
-# Set correct environment variables.
-ENV HOME /home/app
+FROM ruby:2.6.3
 
-# Set env defaults, can be overridden
-ENV LC_ALL en_US.UTF-8
-ENV LANG en_US.UTF-8
-ENV RACK_ENV development
+WORKDIR /app
 
-# Use baseimage-docker's init process.
-# CMD ["/sbin/my_init"]
+# Can use npm or yarn.
+RUN curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh  && \
+    bash nodesource_setup.sh && \
+    apt install nodejs && \
+    apt-get install -y pandoc && \
+    apt-get install -y pandoc-citeproc libssl-dev && \
+    npm install -g yarn
 
-# Update installed APT packages
-RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold" && \
-    apt-get install -y pandoc
+# Install the latest bundler
+RUN gem install bundler -v 2.4.22
 
-# Install bundler
-RUN gem install bundler
+# Copy Ruby and Node dependencies
+#COPY Gemfile Gemfile.lock package.json package-lock.json ./
+COPY . .
 
-# Prepare app folder
-RUN mkdir /home/app/webapp
-ADD . /home/app/webapp
-RUN chown -R app:app /home/app/webapp && \
-    chmod -R 755 /home/app/webapp
+# Install dependencies
+RUN bundle install --without debug && npm install
 
-# Install Ruby gems via bundler, run as app user
-WORKDIR /home/app/webapp
-RUN /sbin/setuser app bundle install --path vendor/bundle --without development
-
-# Clean up APT when done.
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-CMD ["bundle", "exec", "middleman"]
-
-# Expose web
 EXPOSE 4567
+
+
+# FROM phusion/passenger-full:0.9.19
+# MAINTAINER Martin Fenner "mfenner@datacite.org"
+
+# # Set correct environment variables.
+# ENV HOME /home/app
+
+# # Set env defaults, can be overridden
+# ENV LC_ALL en_US.UTF-8
+# ENV LANG en_US.UTF-8
+# ENV RACK_ENV development
+
+# # Use baseimage-docker's init process.
+# # CMD ["/sbin/my_init"]
+
+# # Update installed APT packages
+# RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold" && \
+#     apt-get install -y pandoc
+
+# # Install bundler
+# RUN gem install bundler
+
+# # Prepare app folder
+# RUN mkdir /home/app/webapp
+# ADD . /home/app/webapp
+# RUN chown -R app:app /home/app/webapp && \
+#     chmod -R 755 /home/app/webapp
+
+# # Install Ruby gems via bundler, run as app user
+# WORKDIR /home/app/webapp
+# RUN /sbin/setuser app bundle install --path vendor/bundle --without development
+
+# # Clean up APT when done.
+# RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# CMD ["bundle", "exec", "middleman"]
+
+# # Expose web
+# EXPOSE 4567

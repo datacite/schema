@@ -1,14 +1,39 @@
-version: '2'
+# version: '2'
 
-# when sharing the host folder, you need to reinstall Ruby gems
-# into the vendor folder
+# # when sharing the host folder, you need to reinstall Ruby gems
+# # into the vendor folder
+
+# services:
+#   schema:
+#     env_file:
+#       - .env
+#     image: datacite/schema
+#     ports:
+#       - "8020:4567"
+#     volumes:
+#       - .:/home/app/webapp
+
+
+# docker-compose.yml
+
+version: '3.7'
 
 services:
-  schema:
-    env_file:
-      - .env
-    image: datacite/schema
-    ports:
-      - "8020:4567"
+  web:
+    build: .
+    command: bundle exec middleman server
     volumes:
-      - .:/home/app/webapp
+      - '.:/app'
+      - 'node_modules:/app/node_modules'
+    ports:
+      - '8888:4567'
+      - '1235:1234'
+    networks:
+      - assets_datacite
+
+volumes:
+  node_modules:
+
+networks:
+  assets_datacite:
+    external: true

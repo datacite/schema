@@ -28,8 +28,7 @@ end
 
 # Set markdown template engine
 set :markdown_engine, :pandoc
-set :markdown, smartypants: true,
-               csl: "styles/apa.csl",
+set :markdown, csl: "styles/apa.csl",
                bibliography: "bibliography/references.bib"
 
 # put configuration variables into .env file
