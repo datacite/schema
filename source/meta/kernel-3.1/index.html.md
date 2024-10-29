@@ -24,7 +24,7 @@ DataCite Metadata Working Group. (2014). DataCite Metadata Schema Documentation 
 <a href="doc/DataCite-MetadataKernel_v3.1.pdf" class="btn">Download PDF</a>
 
 ## Schema
-DataCite Metadata Working Group. (2014). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 3.1. DataCite e.V. [http://doi.org/10.5438/0011](http://doi.org/10.5438/0011)
+DataCite Metadata Working Group. (2014). DataCite Metadata Schema for the Publication and Citation of Research Data. Version 3.1. DataCite e.V. [https://doi.org/10.5438/0011](https://doi.org/10.5438/0011)
 
 <a href="metadata.xsd" class="btn">View XSD</a>
 
