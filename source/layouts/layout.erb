@@ -155,7 +155,49 @@
         .landing-header .motto p {
             width: auto;
         }
+
+        .navbar-toggle {
+            float:left;
+            margin-top: 1rem!important;
+            margin-bottom: 0px!important;
+            margin-right:40px!important;
+        }
         
+        .navbar-default .navbar-toggle .icon-bar {
+            width:24px;
+            margin-bottom:6px;
+            background-color: #fff!important;
+        }
+
+        @media (max-width: 767px) {
+            .nav.navbar-nav.navbar-right {
+                background-color: #fff !important;
+                opacity: 1!important;
+            }
+
+            .navbar-collapse {
+                top:1rem;
+                left:-2.2rem;
+                width:100vw;
+                position:relative;
+            }
+        }
+
+        .navbar-collapse.collapse, 
+        .navbar-collapse.collapsing {
+            border-top:none!important;
+        }
+        .navbar-collapse.collapse:before,
+        .navbar-collapse.collapse:after,
+        .nav.navbar-nav.navbar-right:before {
+            display: none!important;
+        }
+
+        .navbar-default .navbar-toggle .icon-bar:last-child {
+            width:16px;
+            margin-right:8px;
+        }
+
         .navbar .navbar-nav > li > a {
             margin-top: 5px;
             margin-bottom: 5px;
@@ -176,11 +218,21 @@
         }
         
         .navbar-default .navbar-nav > li > a:not(.btn) {
-            color: #fff !important;
+            rgba(170, 170, 170, 0.8);
+        }
+
+        @media (max-width: 767px) {
+            .navbar-default .navbar-nav > li > a:not(.btn) {
+                color:rgb(36, 59, 84)!important;
+                opacity: 1!important;
+                font-weight:bold;
+                border-bottom: 1px solid rgba(36, 59, 84, .16);
+            }
         }
         
         .navbar-default .navbar-nav > li:hover > a:not(.btn) {
-            color: rgb(29, 129, 187) !important;
+            color: #fff !important;
+            
         }
         
         h1,
