@@ -37,88 +37,567 @@
     <meta property="og:image" content="/images/datacite.png" />
     <meta property="og:type" content="blog" />
 
-    <link href='//fonts.googleapis.com/css?family=Raleway:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
-        <link
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='//fonts.googleapis.com/css2?family=Barlow%3Aital%2Cwght%400%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900&#038;display=swap&#038;ver=6.6.2' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css2?family=DM+Sans%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C700%3B1%2C400%3B1%2C500%3B1%2C700&#038;display=swap&#038;ver=6.6.2' rel='stylesheet' type='text/css'>
+    <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       rel="stylesheet"
       crossorigin="anonymous" />
-
       
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <link href="<%= ENV['CDN_URL'] %>/stylesheets/datacite.css" rel='stylesheet' type='text/css'>
+    <style type="text/css" >
+        html body {
+            margin-bottom: 0 !important;
+        }
+        
+        .navbar {
+            padding: 21px !important;
+            z-index: 1001;
+        }
 
+        .landing-header.start {
+            height: auto;
+            padding-top: 150px!important;
+
+            @media (min-width: 992px) {
+                padding-top: 200px !important;
+                height: 700px !important;
+            }
+
+            @media (min-width: 1200px) {
+                padding-top: 250px !important;
+            }
+        }
+
+        .landing-header {
+            background-color: #243b54 !important;
+            position: relative !important;
+            padding-top: 100px !important;
+        }
+        
+        .landing-header p {
+            width: 60%;
+        }
+        
+        .landing-header p,
+        .landing-header h1 {
+            color: white !important;
+        }
+        
+        .landing-header .tsparticles-canvas-el {
+            position: absolute !important;
+            top: 0 !important;
+        }
+        
+        .landing-header .container-fluid div:nth-child(2) {
+            z-index: 1000;
+            position: relative;
+            background: rgba(250, 250, 250, 0.03) !important;
+            opacity: 1 !important;
+            left:-15px;
+            min-width: 100vw;
+            padding: 25px 80px !important;
+            margin-top: 80px;
+            @media (min-width: 992px) {
+                min-width: 0;
+                padding: 15px 30px !important;
+                left:auto;
+                margin-top: auto;
+            }
+        }
+        
+        .landing-header .container-fluid div:nth-child(2) .pill {
+            position: absolute;
+            background-color: rgb(29, 129, 187);
+            color: #fff;
+            border-radius: 5px;
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            @media (min-width: 992px) {
+                top: 15px;
+                right: 15px;
+            }
+            padding: 3px 10px;
+            font-size: 0.75em;
+        }
+        
+        .landing-header .container-fluid div:nth-child(2) ul {
+            margin-bottom: 20px;
+        }
+        
+        .landing-header h2,
+        .landing-header h3,
+        .landing-header h4,
+        .landing-header p,
+        .landing-header li,
+        .landing-header a {
+            color: #fff;
+        }
+        
+        .landing-header .container {
+            background-color: transparent !important;
+        }
+        
+        .navbar .navbar-collapse.collapse.in,
+        .navbar .navbar-collapse.collapsing {
+            display: block !important;
+        }
+        
+        .landing-header .motto {
+            padding-top: 50px !important;
+        }
+        
+        .landing-header .motto p {
+            width: auto;
+        }
+
+        .navbar-toggle {
+            float:left;
+            margin-top: 1rem!important;
+            margin-bottom: 0px!important;
+            margin-right:40px!important;
+        }
+        
+        .navbar-default .navbar-toggle .icon-bar {
+            width:24px;
+            margin-bottom:6px;
+            background-color: #fff!important;
+        }
+
+        @media (max-width: 767px) {
+            .nav.navbar-nav.navbar-right {
+                background-color: #fff !important;
+                opacity: 1!important;
+            }
+
+            .navbar-collapse {
+                top:1rem;
+                left:-2.2rem;
+                width:100vw;
+                position:relative;
+            }
+        }
+
+        .navbar-collapse.collapse, 
+        .navbar-collapse.collapsing {
+            border-top:none!important;
+        }
+        .navbar-collapse.collapse:before,
+        .navbar-collapse.collapse:after,
+        .nav.navbar-nav.navbar-right:before {
+            display: none!important;
+        }
+
+        .navbar-default .navbar-toggle .icon-bar:last-child {
+            width:16px;
+            margin-right:8px;
+        }
+
+        .navbar .navbar-nav > li > a {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .navbar .navbar-brand {
+            margin: 0px;
+            display: flex !important;
+            align-items: center;
+            padding: 0;
+        }
+        .navbar .navbar-brand span {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        
+        .navbar-header #navbar-brand-fix {
+            color: #fff !important;
+        }
+        
+        .navbar-default .navbar-nav > li > a:not(.btn) {
+            rgba(170, 170, 170, 0.8);
+        }
+
+        @media (max-width: 767px) {
+            .navbar-default .navbar-nav > li > a:not(.btn) {
+                color:rgb(36, 59, 84)!important;
+                opacity: 1!important;
+                font-weight:bold;
+                border-bottom: 1px solid rgba(36, 59, 84, .16);
+            }
+        }
+        
+        .navbar-default .navbar-nav > li:hover > a:not(.btn) {
+            color: #fff !important;
+            
+        }
+        
+        h1,
+        h2,
+        h3 {
+            margin-bottom: 0.4em;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        li {
+            color: rgb(36, 59, 84);
+        }
+        
+        h1,
+        h2,
+        h3,
+        h3 > a,
+        h4 > a,
+        h4,
+        h5,
+        h6 {
+            font-family: "DM Sans", sans-serif;
+        }
+        
+        h1 {
+            font-size: 48px;
+        }
+        
+        p,
+        li,
+        a {
+            font-family: "Barlow", sans-serif;
+        }
+        
+        h1 {
+            font-weight: 700;
+        }
+        
+        a {
+            color: rgb(0, 113, 178);
+        }
+        
+        p > a,
+        h3 > a,
+        h4 > a,
+        li > a {
+            text-decoration: underline;
+        }
+        
+        .nav li > a,
+        .footer li > a {
+            text-decoration: none;
+        }
+        
+        p > a:hover,
+        p > a:focus,
+        h3 > a:hover,
+        h3 > a:focus,
+        h4 > a:hover,
+        h4 > a:focus,
+        li > a:hover,
+        li > a:focus {
+            color: #0071b2;
+            text-decoration: none;
+        }
+        
+        .btn {
+            color: #fff;
+            border: 1px solid #fff;
+            text-decoration: none;
+        }
+        
+        .btn:hover,
+        .btn:active,
+        .btn:focus {
+            background-color: #0071b2;
+            border-color: #0071b2;
+            color: #fff;
+        }
+
+        .section .btn {
+            color: #fff;
+            background-color: #0071b2;
+            border: 1px solid #0071b2;
+            text-decoration: none;
+        }
+
+        .section .btn:hover,
+        .section .btn:active,
+        .section .btn:focus {
+            background-color: #fff;
+            border-color: #0071b2;
+            color: #0071b2;
+        }
+        
+        .footer,
+        .navbar-default {
+            background-color: #243b54 !important;
+        }
+        
+        .footer a,
+        .footer a:visited,
+        .footer h4 {
+            color: hsla(0, 0%, 66.7%, 0.8);
+            font-size: 14px;
+        }
+        
+        .footer h4 {
+            color: #fff;
+        }
+        
+        .navbar-default .navbar-nav > li > a:not(.btn):focus,
+        .navbar-default .navbar-nav > li > a:not(.btn):hover,
+        .footer a:hover,
+        .footer a:focus {
+            color: #fff;
+        }
+        
+        .section {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        
+        .footer {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            height: auto !important;
+            position: static !important;
+        }
+        
+        .footer .contact {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid hsla(0, 0%, 66.7%, 0.3);
+            display: flex;
+            align-items: center;
+            //flex-wrap: wrap;
+            flex-direction: column;
+
+            @media (min-width: 1024px) {
+                flex-direction: row;
+            }
+        }
+        
+        .footer .contact > a {
+            
+            margin-top: 40px;
+            width: 80%;
+            text-align: center;
+
+            @media (min-width: 1024px) {
+                margin-top: 0;
+                margin-left: auto;
+                width:auto;
+                text-align: right;
+            }
+
+            @media (min-width: 450px) {
+                text-indent: 20px;
+            }
+        }
+        
+        .footer .contact > a .color-description {
+            font-size: 14px;
+        }
+        
+        .footer .socials {
+            display: flex;
+            margin-right: 1%;
+            @media (min-width: 1024px) {
+                margin-right: 60px;
+            }
+
+            margin-top: 40px;
+
+            @media (min-width: 600px) {
+                margin-top: 0;
+            }
+        }
+        
+        .footer .socials a {
+            margin-right: 15px;
+        }
+        
+        .footer .share {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+            @media (min-width: 1024px) {
+                margin-top: 0!important;
+                flex: 1;
+            }
+            @media (min-width: 450px) {
+                flex-direction: row;
+            }
+        }
+        
+        .footer .share li {
+            justify-content: center;
+            margin:auto;
+            @media (min-width: 1024px) {
+                margin-right: 60px;
+                margin-left: 0;
+                margin-top: 0!important;
+            }
+
+            margin-top: 10px;
+            @media (min-width: 600px) {
+                
+            }
+
+            @media (min-width: 450px) {
+                margin-top: 40px;
+            }
+        }
+        
+    </style>
 
     <link href="<%= ENV['CDN_URL'] %>/images/favicon.ico" rel="icon" type="image/ico" />
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.3/dist/tsparticles.min.js"></script>
+    <script>
+      var loadedParticles = false;
+      setInterval(function() {
+          if (loadedParticles) {
+              return;
+          }
+          tsParticles.load("tsparticles", {
+              fps_limit: 60,
+              interactivity: {
+                  detect_on: "canvas",
+                  events: {
+                      onclick: {
+                          enable: true,
+                          mode: "pause"
+                      },
+                      resize: true
+                  },
+                  modes: {
+                      bubble: {
+                          distance: 400,
+                          duration: 2,
+                          opacity: 0.2,
+                          size: 40,
+                          speed: 3
+                      },
+                      grab: {
+                          distance: 400,
+                          line_linked: {
+                              opacity: 0.2
+                          }
+                      },
+                      push: {
+                          particles_nb: 4
+                      },
+                      remove: {
+                          particles_nb: 2
+                      },
+                      repulse: {
+                          distance: 200,
+                          duration: 0.4
+                      }
+                  }
+              },
+              particles: {
+                  color: {
+                      value: "#E4F4FA"
+                  },
+                  line_linked: {
+                      color: "#E4F4FA",
+                      distance: 150,
+                      enable: true,
+                      opacity: 0.2,
+                      width: 1
+                  },
+                  move: {
+                      attract: {
+                          enable: false,
+                          rotateX: 600,
+                          rotateY: 1200
+                      },
+                      bounce: false,
+                      direction: "none",
+                      enable: true,
+                      out_mode: "out",
+                      random: false,
+                      speed: 2,
+                      straight: false
+                  },
+                  number: {
+                      density: {
+                          enable: true,
+                          value_area: 800
+                      },
+                      value: 80
+                  },
+                  opacity: {
+                      anim: {
+                          enable: false,
+                          opacity_min: 0.1,
+                          speed: 1,
+                          sync: false
+                      },
+                      random: false,
+                      value: 0.2
+                  },
+                  shape: {
+                      character: {
+                          fill: false,
+                          font: "Verdana",
+                          style: "",
+                          value: "*",
+                          weight: "400"
+                      },
+                      image: {
+                          height: 100,
+                          replace_color: true,
+                          src: "images/github.svg",
+                          width: 100
+                      },
+                      polygon: {
+                          nb_sides: 5
+                      },
+                      stroke: {
+                          color: "#000000",
+                          width: 0
+                      },
+                      type: "circle"
+                  },
+                  size: {
+                      anim: {
+                          enable: false,
+                          size_min: 0.1,
+                          speed: 40,
+                          sync: false
+                      },
+                      random: true,
+                      value: 5
+                  }
+              },
+              polygon: {
+                  draw: {
+                      enable: false,
+                      lineColor: "#E4F4FA",
+                      lineWidth: 0.5
+                  },
+                  move: {
+                      radius: 10
+                  },
+                  scale: 1,
+                  type: "none",
+                  url: ""
+              },
+              retina_detect: true
+          });
+          loadedParticles = true;
+      }, 250);
+    </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.10/es5-shim.js"></script>
     <script async defer data-domain="schema.datacite.org" src="https://plausible.io/js/plausible.js"></script>
-
-    <style>
-      .navbar .navbar-collapse.collapse.in, .navbar .navbar-collapse.collapsing {
-          display: block !important;
-      }
-      .landing-header .motto {
-        padding-top: 150px;
-        padding-bottom: 10px;
-      }
-      .navbar .navbar-nav>li>a {
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
-      .navbar .navbar-brand {
-        margin: 0px
-      }
-      #navbar-brand-fix {
-        color: #34495e !important;
-      }
-      .navbar-default .navbar-nav>li>a:not(.btn) {
-        color: #34495e;
-      }
-      .navbar-default .navbar-nav>li>a:not(.btn):focus,
-      .navbar-default .navbar-nav>li>a:not(.btn):hover,
-      .footer a:hover, .footer a:focus  {
-        color: #0071b2;
-      }
-      h2, h3, h4, p, li {
-        color: #34495e;
-      }
-      h1, h2, h3, h4, p, li, a {
-        font-family: "Source Sans 3", sans-serif;
-      }
-      h1 {
-        font-weight: 600;
-      }
-      .motto > p {
-        color: white;
-      }
-      a { 
-        color: #0071b2;
-      }
-      p > a { 
-        text-decoration: underline;
-      }
-      .btn {
-        color: #34495e;
-        border-color: #34495e;
-        text-decoration: none;
-      }
-      .btn:hover, .btn:active, .btn:focus {
-        background-color: #0071b2;
-        border-color: #0071b2;
-      }
-      .footer, .navbar-default {
-        background-color: #f9fafa;
-       }
-      .footer a, .footer a:visited,
-      .footer h4 {
-        color: #a3acb2;
-      }
-    </style>
-
 
   </head>
   <body>

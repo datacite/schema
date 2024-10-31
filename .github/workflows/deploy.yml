@@ -45,11 +45,3 @@ jobs:
           dist-id: ${{ secrets.STAGE_CLOUDFRONT_DISTRIBUTION_ID }}
           invalidation: /
           delete-removed: true
-
-      - name: Notify Slack
-        uses: adamkdean/simple-slack-notify@1.0.4
-        with:
-          channel: '#ops'
-          username: 'GitHub Actions'
-          color: 'good'
-          text: 'A new version of the schema site has been deployed to stage.'

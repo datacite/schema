@@ -1,4 +1,6 @@
-#### Metadata Schema 4.5
+## DataCite Metadata Schema 4
+
+### [DataCite Metadata Schema 4.5](/meta/kernel-4.5/)
 
 Released <%= Date.parse("2024-01-22").strftime("%-d %b %Y") %>. Changes in this version include:
 
@@ -6,10 +8,7 @@ Released <%= Date.parse("2024-01-22").strftime("%-d %b %Y") %>. Changes in this 
 * Addition of new relationType pair: IsCollectedBy and Collects
 * Addition of new sub-properties in the Publisher property
 
-<a href="/meta/kernel-4.5/" class="btn">More info</a>
-
-
-#### DataCite Metadata Schema 4.4
+### [DataCite Metadata Schema 4.4](/meta/kernel-4.4/)
 
 Released <%= Date.parse("2021-03-30").strftime("%-d %b %Y") %>. Changes in this version include:
 
@@ -18,9 +17,9 @@ Released <%= Date.parse("2021-03-30").strftime("%-d %b %Y") %>. Changes in this 
 * Addition of a new relationType: “isPublishedIn” (indicates that A is published in B)
 * Addition of a new relatedItem property, with subproperties to contain specific details for containing publication information previously encoded in a description field with descriptionType=”SeriesInformation” (for example, to define the journal name, volume, and page number for an article resource).
 
-<a href="/meta/kernel-4.4/" class="btn">More info</a>
+<hr/>
 
-#### DataCite Metadata Schema 4.3
+### [DataCite Metadata Schema 4.3](/meta/kernel-4.3/)
 
 Released <%= Date.parse("2019-08-16").strftime("%-d %b %Y") %>. Changes in this version include:
 
@@ -28,9 +27,9 @@ Released <%= Date.parse("2019-08-16").strftime("%-d %b %Y") %>. Changes in this 
 * Addition of optional "schemeURI" for funderIdentifier
 * Addition of "ROR" to allowed values for funderIdentifierType
 
-<a href="/meta/kernel-4.3/" class="btn">More info</a>
+<hr/>
 
-#### DataCite Metadata Schema 4.2
+### [DataCite Metadata Schema 4.2](/meta/kernel-4.2/)
 Released <%= Date.parse("2019-03-20").strftime("%-d %b %Y") %>. Changes in this version include:
 
 *	Addition of new dateType “Withdrawn”
@@ -42,9 +41,9 @@ Released <%= Date.parse("2019-03-20").strftime("%-d %b %Y") %>. Changes in this 
   *	schemeURI
 *	Addition of the XML language attribute to the properties Creator, Contributor and Publisher for organizational names.
 
-<a href="/meta/kernel-4.2/" class="btn">More info</a>
+<hr/>
 
-#### DataCite Metadata Schema 4.1
+### [DataCite Metadata Schema 4.1](/meta/kernel-4.1/)
 Released <%= Date.parse("2017-10-23").strftime("%-d %b %Y") %>. Changes in this version include:
 
 * Allowing multiple polygons per GeoLocation
@@ -57,9 +56,9 @@ Released <%= Date.parse("2017-10-23").strftime("%-d %b %Y") %>. Changes in this 
 * Addition of a new optional "resourceTypeGeneral" attribute for relatedIdentifier. Controlled list is identical to existing resourceTypeGeneral attribute
 * Addition of optional lang attribute to Rights property
 
-<a href="/meta/kernel-4.1/" class="btn">More info</a>
+<hr/>
 
-#### DataCite Metadata Schema 4.0
+### [DataCite Metadata Schema 4.0](/meta/kernel-4.0/)
 Released <%= Date.parse("2016-09-19").strftime("%-d %b %Y") %>. Changes in this version include:
 
 * Changing resourceTypeGeneral from optional to mandatory
@@ -69,9 +68,9 @@ Released <%= Date.parse("2016-09-19").strftime("%-d %b %Y") %>. Changes in this 
 * Addition of a new subproperty for GeoLocation "geoLocationPolygon", and changing the definition of the existing GeoLocation subproperties (geoLocationPoint and
 geoLocationBox)
 
-<a href="/meta/kernel-4.0/" class="btn">More info</a>
+<hr/>
 
-#### DataCite Metadata Schema 3
+## DataCite Metadata Schema 3
 <div class="alert alert-danger" role="alert" style="background-color: #f8d7da; color: #721c24;">
   <p>DataCite Metadata Schema 3 (3.0 and 3.1) will be deprecated on January 1, 2025.</p>
   <p>Please see the following for more information:</p>
@@ -84,13 +83,9 @@ geoLocationBox)
 * [DataCite Metadata Schema 3.1](/meta/kernel-3.1/) (<%= Date.parse("2014-10-16").strftime("%-d %b %Y") %>)
 * [DataCite Metadata Schema 3.0](/meta/kernel-3.0/) (<%= Date.parse("2013-07-24").strftime("%-d %b %Y") %>)
 
+<hr/>
 
-#### DataCite to Dublin Core Mapping 4.4
-Released <%= Date.parse("2021-07-08").strftime("%-d %b %Y") %>.
-
-<a href="/dc/" class="btn">More info</a>
-
-#### Versioning
+## Versioning
 
 For our [Metadata store](https://mds.datacite.org) all these versions are valid, although only one version is considered *preferred* at any given moment of time. Starting with version 3.0 only major releases will have a new namespace.
 
@@ -105,7 +100,9 @@ Each incoming Metadata store XML document should indicate the schema location in
 
 Each available version of a schema is a subdirectory containing a set of files. These files constitute a single metadata version. They include all the required xsd files, sample xml files and documentation. The files don't reference any other files outside of their version subdirectory.
 
-#### Obsolete Versions
+<hr/>
+
+## Obsolete Versions
 
 These versions are no longer accepted by the DataCite MDS.
 
