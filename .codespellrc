@@ -1,3 +1,3 @@
 [codespell]
-skip = .git,*.pdf,*.svg,*v2.2.xml
+skip = .git,*.pdf,*.svg,*v2.2.xml,kernel-4.[12345]*,kernel-3*
 # ignore-words-list = 
