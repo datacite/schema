@@ -1,3 +1,4 @@
 [codespell]
 skip = .git,*.pdf,*.svg,*v2.2.xml,kernel-4.[12345]*,kernel-3*
+ignore-regex = .*xml:lang="(?!en\b)[a-zA-Z]{2}".*|\bSimon Hart\b
 # ignore-words-list = 
