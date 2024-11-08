@@ -33,13 +33,13 @@ Demonstration Examples
 
 * Full DataCite metadata example: [XML](example/datacite-example-full-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/B09Z-4K37?publisher=true&affiliation=true)
 * Example for Dataset resourceTypeGeneral: [XML](example/datacite-example-dataset-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/9184-DY35?publisher=true&affiliation=true)
-* FIXME Example for Award resourceTypeGeneral: [XML](example/datacite-example-award-v4.xml), [JSON]()
+* Example for Award resourceTypeGeneral: [XML](example/datacite-example-award-v4.xml), [JSON]()
 * Example for Project resourceTypeGeneral: [XML](example/datacite-example-project-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/84dj-am41?publisher=true&affiliation=true)
 * Example for Coverage dateType: [XML](example/datacite-example-coverage-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/pgk2-ar97?publisher=true&affiliation=true)
-* FIXME Examples for connecting translations:
-  * FIXME Example of translation: [XML](example/datacite-example-translation1-v4.xml), [JSON]()
-  * FIXME Example of translated (original) work: [XML](example/datacite-example-translation2-v4.xml), [JSON]()
-* Example for Instrument resourceTypeGeneral: [XML](example/datacite-example-instrument-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/08qf-ee96?publisher=true&affiliation=true)
+* Example connecting a translation to the original work:
+  * Example of a translation: [XML](example/datacite-example-translation-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/45e5-xy14?publisher=true&affiliation=true)
+  * Example of the original (translated) work: [XML](example/datacite-example-original-translated-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/pma6-nf93?publisher=true&affiliation=true)
+* Example of a document containing two languages in parallel: [XML](example/datacite-example-parallel-languages-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/4r08-sa38?publisher=true&affiliation=true)
 * Example showing multilingual metadata: [XML](example/datacite-example-multilingual-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/byt7-2g42?publisher=true&affiliation=true)
 * Examples with RelatedItem:
   * Journal article in a journal (with an ISSN): [XML](example/datacite-example-relateditem1-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/q54d-pf76?publisher=true&affiliation=true)

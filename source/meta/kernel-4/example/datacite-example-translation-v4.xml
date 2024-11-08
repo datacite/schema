@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+    <identifier identifierType="DOI">10.82433/45e5-xy14</identifier>
+    <creators>
+        <creator>
+            <creatorName nameType="Personal">Garcia, Sofia</creatorName>
+            <givenName>Sofia</givenName>
+            <familyName>Garcia</familyName>
+            <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/03efmqc40" affiliationIdentifierScheme="ROR" SchemeURI="https://ror.org">Arizona State University</affiliation>
+        </creator>
+    </creators>
+    <titles>
+        <title xml:lang="en">TITLE IN ENGLISH</title>
+    </titles>
+    <publisher publisherIdentifier="https://ror.org/RORID" publisherIdentifierScheme="ROR" schemeURI="https://ror.org">PUBLISHER NAME</publisher>
+    <publicationYear>2024</publicationYear>
+    <dates>
+        <date dateType="Issued">2024-09-15</date>
+    </dates>
+    <resourceType resourceTypeGeneral="Report"></resourceType>
+    <language>en</language>
+    <contributors>
+        <contributor contributorType="Translator">
+            <contributorName nameType="Personal">NAME</contributorName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"></nameIdentifier>
+            <affiliation/>
+        </contributor>
+    </contributors>
+    <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsTranslationOf">10.82433/pma6-nf93</relatedIdentifier>
+    </relatedIdentifiers>
+    <descriptions>
+        <description xml:lang="en" descriptionType="Abstract">DESCRIPTION IN ENGLISH</description>
+    </descriptions>
+</resource>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+    <identifier identifierType="DOI">10.82433/4r08-sa38</identifier>
+    <creators>
+        <creator>
+            <creatorName nameType="Organizational">CREATOR NAME</creatorName>
+        </creator>
+    </creators>
+    <titles>
+        <title xml:lang="en">TITLE IN ENGLISH</title>
+        <title xml:lang="en">TITLE IN FRENCH</title>
+    </titles>
+    <publisher>PUBLISHER NAME</publisher>
+    <publicationYear>2024</publicationYear>
+    <dates>
+        <date dateType="Issued">2024</date>
+    </dates>
+    <resourceType resourceTypeGeneral="Other">Instruction manual</resourceType>
+    <language>mul</language>
+    <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="Describes">INSTRUMENT DOI</relatedIdentifier>
+    </relatedIdentifiers>
+    <descriptions>
+        <description xml:lang="en" descriptionType="Abstract">DESCRIPTION IN ENGLISH</description>
+        <description xml:lang="fr" descriptionType="Abstract">DESCRIPTION IN FRENCH</description>
+    </descriptions>
+</resource>
