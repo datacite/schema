@@ -56,4 +56,6 @@ Live Examples (real DOIs - metadata may change)
 * Example with Contributor: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.4228/zalf.sy6a-xt12), [JSON](https://api.datacite.org/dois/10.4228/zalf.sy6a-xt12?publisher=true&affiliation=true)
 * Example for Workflow resourceTypeGeneral : [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.48546/WORKFLOWHUB.WORKFLOW.412.1), [JSON](https://api.datacite.org/dois/10.48546/WORKFLOWHUB.WORKFLOW.412.1?publisher=true&affiliation=true)
 * Example with FundingReference: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.5281/zenodo.47394), [JSON](https://api.datacite.org/dois/10.5281/zenodo.47394?publisher=true&affiliation=true)
-
+* Example of a blog post published simultaneously in two languages:
+  * Blog post in Spanish: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.5438/S7C0-Y897), [JSON](https://api.datacite.org/dois/10.5438/S7C0-Y897?publisher=true&affiliation=true)
+  * Blog post in English: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.5438/1HG2-BF13), [JSON](https://api.datacite.org/dois/10.5438/1HG2-BF13?publisher=true&affiliation=true)
