@@ -24,7 +24,11 @@ DataCite Metadata Working Group. (2024). DataCite Metadata Schema for the Public
 #### See [Version 4.6 Update](https://datacite-metadata-schema.readthedocs.io/en/4.6/introduction/version-update) for full details.
 
 
-* FIXME
+* Addition of new resourceTypeGeneral values: Award and Project
+* Addition of new relatedIdentifierType values: CSTR and RRID
+* Addition of new relationType pair: IsTranslationOf and HasTranslation
+* Addition of new contributorType: Translator
+* Addition of new dateType: Coverage
 
 
 ## Examples
