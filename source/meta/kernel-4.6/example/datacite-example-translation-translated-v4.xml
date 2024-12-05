@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+    <identifier identifierType="DOI">10.82433/45e5-xy14</identifier>
+    <creators>
+        <creator>
+            <creatorName nameType="Personal">Green, Simon</creatorName>
+        </creator>
+    </creators>
+    <titles>
+        <title xml:lang="en">Climate Change and Adaptation Strategies</title>
+    </titles>
+    <publisher>Institute for Environmental Research</publisher>
+    <publicationYear>2024</publicationYear>
+    <dates>
+        <date dateType="Issued">2024-09-15</date>
+    </dates>
+    <resourceType resourceTypeGeneral="Report"></resourceType>
+    <language>en</language>
+    <contributors>
+        <contributor contributorType="Translator">
+            <contributorName nameType="Personal">Schneider, Anna</contributorName>
+        </contributor>
+    </contributors>
+    <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsTranslationOf">10.82433/pma6-nf93</relatedIdentifier>
+    </relatedIdentifiers>
+    <descriptions>
+        <description xml:lang="en" descriptionType="Abstract">This report examines the impacts of climate change and explores potential adaptation strategies. It addresses issues such as extreme weather events, adaptation measures for urban and rural areas, and policy recommendations to mitigate climate risks.</description>
+    </descriptions>
+</resource>

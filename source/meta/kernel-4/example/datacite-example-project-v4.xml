@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+  <identifier identifierType="DOI">10.82433/84dj-am41</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Habermann, Ted</creatorName>
+      <givenName>Ted</givenName>
+      <familyName>Habermann</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0003-3585-6733</nameIdentifier>
+      <affiliation affiliationIdentifier="https://ror.org/05bp8ka05" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Metadata Game Changers (United States)</affiliation>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">EAGER: INFORMATE: Improving networks for organizational repositories through metadata augmentation, transformation and evolution</title>
+    <title titleType="AlternativeTitle" xml:lang="en">INFORMATE</title>
+  </titles>
+  <publisher publisherIdentifier="https://ror.org/05bp8ka05" publisherIdentifierScheme="ROR" schemeURI="https://ror.org">Metadata Game Changers (United States)</publisher>
+  <publicationYear>2023</publicationYear>
+  <resourceType resourceTypeGeneral="Project">Collaboration</resourceType>
+  <subjects>
+    <subject>informate</subject>
+    <subject>CHORUS</subject>
+    <subject>global research infrastructure</subject>
+    <subject xml:lang="en" subjectScheme="ANZSRC Fields of Research" schemeURI="https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc" classificationCode="460999">Information systems not elsewhere classified</subject>
+  </subjects>
+  <contributors>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Jones, Jamaica</contributorName>
+      <givenName>Jamaica</givenName>
+      <familyName>Jones</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0002-1969-2508</nameIdentifier>
+      <affiliation affiliationIdentifier="https://ror.org/01an3r305" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">University of Pittsburgh</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectLeader">
+      <contributorName nameType="Personal">Habermann, Ted</contributorName>
+      <givenName>Ted</givenName>
+      <familyName>Habermann</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0003-3585-6733</nameIdentifier>
+      <affiliation affiliationIdentifier="https://ror.org/05bp8ka05" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Metadata Game Changers (United States)</affiliation>
+    </contributor>
+    <contributor contributorType="ContactPerson">
+      <contributorName nameType="Personal">Habermann, Ted</contributorName>
+      <givenName>Ted</givenName>
+      <familyName>Habermann</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0003-3585-6733</nameIdentifier>
+      <affiliation affiliationIdentifier="https://ror.org/05bp8ka05" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Metadata Game Changers (United States)</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Ratner, Howard</contributorName>
+      <givenName>Howard</givenName>
+      <familyName>Ratner</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0002-2123-6317</nameIdentifier>
+      <affiliation>CHORUS</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Packer, Tara</contributorName>
+      <givenName>Tara</givenName>
+      <familyName>Packer</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/https://orcid.org/0009-0009-0223-2917</nameIdentifier>
+      <affiliation>CHORUS</affiliation>
+    </contributor>
+  </contributors>
+  <dates>
+    <date dateType="Coverage">2023-08-15/2024-12-31</date>
+  </dates>
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasPart" resourceTypeGeneral="ConferencePaper">https://doi.org/10.6084/m9.figshare.25139354.v1</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasPart" resourceTypeGeneral="Text">https://doi.org/10.59350/77zs1-hz764</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasPart" resourceTypeGeneral="Text">https://doi.org/10.59350/cnkm2-18f84</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasPart" resourceTypeGeneral="Text">https://doi.org/10.59350/ksgzn-a6w37</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasPart" resourceTypeGeneral="Text">https://doi.org/10.59350/yqkat-59f79</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasPart" resourceTypeGeneral="Text">https://doi.org/10.54900/vnevh-vaw22</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasPart" resourceTypeGeneral="Text">https://doi.org/10.54900/08pke-hyy45</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="URL" relationType="HasPart" resourceTypeGeneral="Audiovisual">https://www.youtube.com/watch?v=bsDzsxJPHrI</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasPart" resourceTypeGeneral="ConferencePaper">https://doi.org/10.17605/OSF.IO/CYABT</relatedIdentifier>
+  </relatedIdentifiers>
+  <descriptions>
+    <description xml:lang="en" descriptionType="Abstract">The Global Research Infrastructure (GRI) is made up of the repositories and organizations that provide persistent identifiers (PIDs) and detailed metadata about many kinds of research objects: preprints, published papers, datasets, dissertations, proposals, reviews, … and connect these objects to funders, research institutions, researchers, and one another using PIDs. Together, this infrastructure currently contains millions of objects and is growing rapidly in almost every possible direction. How can this infrastructure increase understanding of the myriad contributions made to global knowledge by funders like the National Science Foundation and other federal agencies? How can we use this infrastructure to increase understanding of connections across the U.S. and global research landscape? How can this infrastructure be used to increase completeness, consistency, and connectivity within agency repositories and search tools? These are the kinds of questions we will explore in this project.</description>
+  </descriptions>
+  <fundingReferences>
+    <fundingReference>
+      <funderName>U.S. National Science Foundation</funderName>
+      <funderIdentifier funderIdentifierType="ROR">https://ror.org/021nxhr62</funderIdentifier>
+      <awardNumber awardURI="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2334426">2334426</awardNumber>
+      <awardTitle>EAGER: INFORMATE: Improving networks for organizational repositories through metadata augmentation, transformation and evolution</awardTitle>
+    </fundingReference>
+  </fundingReferences>
+</resource>
