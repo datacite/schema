@@ -1,7 +1,7 @@
 ---
 title: DataCite Metadata Schema 3.0
 date: 2013-07-24
-date_deprecation: 2025-01-01
+deprecated: true
 layout: schema
 version: 3.0
 schema_url: http://doi.org/10.5438/0009
@@ -9,13 +9,8 @@ documentation_url: http://doi.org/10.5438/0008
 ---
 
 <div class="alert alert-danger" role="alert" style="background-color: #f8d7da; color: #721c24;">
-  <h2>Deprecation notice</h2>
-  <p>DataCite Metadata Schema 3 (3.0 and 3.1) will be deprecated on January 1, 2025.</p>
-  <p>Please see the following for more information:</p>
-  <ul>
-  <li>Announcement: <a style="text-decoration: underline; color: #721c24;" href="https://doi.org/10.5438/hg83-q366">Deprecating Schema 3</a></li>
-  <li>Support documentation: <a style="text-decoration: underline; color: #721c24;" href="https://support.datacite.org/docs/updating-from-schema-3-to-schema-4">Updating from Schema 3 to Schema 4</a></li>
-  </ul>
+  <p>DataCite Metadata Schema 3 (3.0 and 3.1) was deprecated in January 2025.</p>
+  <p>Please see the <a style="text-decoration: underline; color: #721c24;" href="https://support.datacite.org/docs/updating-from-schema-3-to-schema-4">support documentation</a> for more information.</p>
 </div>
 
 ## Documentation
