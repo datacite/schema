@@ -37,7 +37,7 @@ Demonstration Examples
 
 * Full DataCite metadata example: [XML](example/datacite-example-full-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/B09Z-4K37?publisher=true&affiliation=true)
 * Example for Dataset resourceTypeGeneral: [XML](example/datacite-example-dataset-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/9184-DY35?publisher=true&affiliation=true)
-* Example for Award resourceTypeGeneral: [XML](example/datacite-example-award-v4.xml), [JSON]()
+* Example for Award resourceTypeGeneral: [XML](example/datacite-example-award-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/p1zt-4c67?publisher=true&affiliation=true)
 * Example for Project resourceTypeGeneral: [XML](example/datacite-example-project-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/84dj-am41?publisher=true&affiliation=true)
 * Example for Coverage dateType: [XML](example/datacite-example-coverage-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/pgk2-ar97?publisher=true&affiliation=true)
 * Example connecting a translation to the original work:
