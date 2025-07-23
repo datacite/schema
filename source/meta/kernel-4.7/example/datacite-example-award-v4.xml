@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+    <identifier identifierType="DOI">10.82433/p1zt-4c67</identifier>
+    <creators>
+        <creator>
+            <creatorName nameType="Organizational">The Research Trust</creatorName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/12abcde34</nameIdentifier>
+        </creator>
+    </creators>
+    <titles>
+        <title>Enhancing metadata for inclusive research on entrenched disadvantage</title>
+    </titles>
+    <publisher publisherIdentifier="https://ror.org/12abcde34" publisherIdentifierScheme="ROR" schemeURI="https://ror.org">The Research Trust</publisher>
+    <publicationYear>2024</publicationYear>
+    <resourceType resourceTypeGeneral="Award">Grant</resourceType>
+    <contributors>
+        <contributor contributorType="ProjectLeader">
+            <contributorName nameType="Personal">Garcia, Sofia</contributorName>
+            <givenName>Sofia</givenName>
+            <familyName>Garcia</familyName>
+            <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/03efmqc40" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Arizona State University</affiliation>
+        </contributor>
+        <contributor contributorType="ProjectLeader">
+            <contributorName nameType="Organizational">Arizona State University</contributorName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/03efmqc40</nameIdentifier>
+        </contributor>
+    </contributors>
+    <dates>
+        <date dateType="Issued">2024-08-01</date>
+        <date dateType="Valid">2025-01-01/2027-12-31</date>
+        <date dateType="Updated" dateInformation="Extended">2028-01-01/2029-12-31</date>
+    </dates>
+    <sizes>
+        <size>900000 USD</size>
+    </sizes>
+    <descriptions>
+        <description descriptionType="Abstract">This funding award supports a project aimed at improving metadata practices to facilitate inclusive research on issues of entrenched disadvantage. The project focuses on creating robust, standardized metadata that accurately represents diverse populations and contexts.</description>
+    </descriptions>
+    <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URL">https://grants.net/123456</alternateIdentifier>
+    </alternateIdentifiers>
+    <fundingReferences>
+        <fundingReference>
+            <funderName>The Research Trust</funderName>
+            <funderIdentifier funderIdentifierType="Crossref Funder ID">https://doi.org/10.13039/501100012345</funderIdentifier>
+            <awardNumber>123456</awardNumber>
+            <awardTitle>Enhancing metadata for inclusive research on entrenched disadvantage</awardTitle>
+        </fundingReference>
+    </fundingReferences>
+</resource>
