@@ -1,39 +1,37 @@
 ---
-title: DataCite Metadata Schema 4.6
-version: 4.6
-date: 2024-12-05
+title: DataCite Metadata Schema 4.7
+version: 4.7
+date: 2025-12-31
 layout: schema
-schema_url: /meta/kernel-4.6/metadata.xsd
-documentation_url: https://datacite-metadata-schema.readthedocs.io/en/4.6/
+schema_url: /meta/kernel-4.7/metadata.xsd
+documentation_url: https://datacite-metadata-schema.readthedocs.io/en/4.7/
 ---
 
 ## Documentation
-DataCite Metadata Working Group. (2024). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data and Other Research Outputs. Version 4.6. DataCite e.V. [https://doi.org/10.14454/mzv1-5b55](https://doi.org/10.14454/mzv1-5b55)
+DataCite Metadata Working Group. (2025). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data and Other Research Outputs. Version 4.7. DataCite e.V. [https://doi.org/10.14454/qdd3-ps68](https://doi.org/10.14454/qdd3-ps68)
 
-<div class="text-center"><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/" class="btn">Access documentation</a></div>
+<div class="text-center"><a href="https://datacite-metadata-schema.readthedocs.io/en/4.7/" class="btn">Access documentation</a></div>
 <br>
-<div class="text-center"><a href="https://datacite-metadata-schema.readthedocs.io/_/downloads/en/4.6/pdf/" class="btn">Download PDF</a></div>
+<div class="text-center"><a href="https://datacite-metadata-schema.readthedocs.io/_/downloads/en/4.7/pdf/" class="btn">Download PDF</a></div>
 
 ## Schema
-DataCite Metadata Working Group. (2024). DataCite Metadata Schema for the Publication and Citation of Research Data and Other Research Outputs. Version 4.6. DataCite e.V. [https://doi.org/10.14454/csba-e454](https://doi.org/10.14454/csba-e454)
+DataCite Metadata Working Group. (2025). DataCite Metadata Schema for the Publication and Citation of Research Data and Other Research Outputs. Version 4.7. DataCite e.V. [https://doi.org/0.14454/28a4-kd32](https://doi.org/10.14454/28a4-kd32)
 
 <div class="text-center"><a href="metadata.xsd" class="btn">View XSD</a></div>
 
 ## Changes
 
-#### See [Version 4.6 Update](https://datacite-metadata-schema.readthedocs.io/en/4.6/introduction/version-update) for full details.
+#### See [Version 4.7 Update](https://datacite-metadata-schema.readthedocs.io/en/4.7/introduction/version-update) for full details.
 
 
-* Addition of new resourceTypeGeneral values: Award and Project
-* Addition of new relatedIdentifierType values: CSTR and RRID
-* Addition of new relationType pair: IsTranslationOf and HasTranslation
-* Addition of new contributorType: Translator
-* Addition of new dateType: Coverage
+* Addition of new resourceTypeGeneral values: Poster and Presentation
+* Addition of new relationType value: Other
+* Addition of new relationTypeInformation sub-property of RelatedIdentifier and RelatedItem 
 
 
 ## Examples
 
-Demonstration Examples
+Demonstration Examples - FIXME
 
 * Full DataCite metadata example: [XML](example/datacite-example-full-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/B09Z-4K37?publisher=true&affiliation=true)
 * Example for Dataset resourceTypeGeneral: [XML](example/datacite-example-dataset-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/9184-DY35?publisher=true&affiliation=true)
@@ -50,7 +48,7 @@ Demonstration Examples
     * Digitized book chapter in a book (with no identifier): [XML](example/datacite-example-relateditem2-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/eck0-f231?publisher=true&affiliation=true)
     * Digitized book chapter in a book (with an ISBN): [XML](example/datacite-example-relateditem3-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/4fdh-rh04?publisher=true&affiliation=true)
 
-Live Examples (real DOIs - metadata may change)
+Live Examples (real DOIs - metadata may change) - FIXME
 
 * Example for Software resourceTypeGeneral: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.5281/zenodo.7635478), [JSON](https://api.datacite.org/dois/10.5281/zenodo.7635478?publisher=true&affiliation=true)
 * Example with GeoLocation: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.1594/PANGAEA.770250), [JSON](https://api.datacite.org/dois/10.1594/PANGAEA.770250?publisher=true&affiliation=true)
