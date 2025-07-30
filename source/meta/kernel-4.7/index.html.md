@@ -24,7 +24,9 @@ DataCite Metadata Working Group. (2025). DataCite Metadata Schema for the Public
 #### See [Version 4.7 Update](https://datacite-metadata-schema.readthedocs.io/en/4.7/introduction/version-update) for full details.
 
 
-* FIXME
+* Addition of new resourceTypeGeneral values: Poster and Presentation
+* Addition of new relationType value: Other
+* Addition of new relationTypeInformation sub-property of RelatedIdentifier and RelatedItem 
 
 
 ## Examples
