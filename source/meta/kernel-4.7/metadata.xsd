@@ -251,6 +251,7 @@
                       <xs:attribute name="relatedMetadataScheme" use="optional" />
                       <xs:attribute name="schemeURI" type="xs:anyURI" use="optional" />
                       <xs:attribute name="schemeType" use="optional" />
+                      <xs:attribute name="relationTypeInformation" use="optional" />
                     </xs:extension>
                   </xs:simpleContent>
                 </xs:complexType>
@@ -604,6 +605,7 @@ Use the complete title of a license and include version information if applicabl
                       <xs:documentation>Description of the relationship of the resource being registered (A) and the related resource (B).</xs:documentation>
                     </xs:annotation>
                   </xs:attribute>
+                  <xs:attribute name="relationTypeInformation" use="optional" />
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
