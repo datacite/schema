@@ -40,7 +40,7 @@ Demonstration Examples
 * Example for Audiovisual resourceTypeGeneral: [XML](example/datacite-example-audiovisual-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/9jbk-4c28?publisher=true&affiliation=true)
 * Example for Award resourceTypeGeneral: [XML](example/datacite-example-award-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/p1zt-4c67?publisher=true&affiliation=true)
 * Example for Project resourceTypeGeneral: [XML](example/datacite-example-project-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/84dj-am41?publisher=true&affiliation=true)
-* Example for relationTypeInformation attribute with relationType "Other": [XML](example/datacite-example-relationtypeinformation-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/10.82433/0320-9g16?publisher=true&affiliation=true)
+* Example for relationTypeInformation attribute with relationType "Other": [XML](example/datacite-example-relationtypeinformation-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/0320-9g16?publisher=true&affiliation=true)
 * Example for Coverage dateType: [XML](example/datacite-example-coverage-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/pgk2-ar97?publisher=true&affiliation=true)
 * Example connecting a translation to the original work:
     * Example of a translation: [XML](example/datacite-example-translation-translated-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/45e5-xy14?publisher=true&affiliation=true)
