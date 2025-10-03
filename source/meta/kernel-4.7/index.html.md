@@ -31,12 +31,16 @@ DataCite Metadata Working Group. (2025). DataCite Metadata Schema for the Public
 
 ## Examples
 
-Demonstration Examples - FIXME
+Demonstration Examples
 
 * Full DataCite metadata example: [XML](example/datacite-example-full-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/B09Z-4K37?publisher=true&affiliation=true)
 * Example for Dataset resourceTypeGeneral: [XML](example/datacite-example-dataset-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/9184-DY35?publisher=true&affiliation=true)
+* Example for Poster resourceTypeGeneral: [XML](example/datacite-example-poster-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/q80x-4z58?publisher=true&affiliation=true)
+* Example for Presentation resourceTypeGeneral: [XML](example/datacite-example-presentation-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/v14f-gk24?publisher=true&affiliation=true)
+* Example for Audiovisual resourceTypeGeneral: [XML](example/datacite-example-audiovisual-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/9jbk-4c28?publisher=true&affiliation=true)
 * Example for Award resourceTypeGeneral: [XML](example/datacite-example-award-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/p1zt-4c67?publisher=true&affiliation=true)
 * Example for Project resourceTypeGeneral: [XML](example/datacite-example-project-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/84dj-am41?publisher=true&affiliation=true)
+* Example for relationTypeInformation attribute with relationType "Other": [XML](example/datacite-example-relationtypeinformation-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/10.82433/0320-9g16?publisher=true&affiliation=true)
 * Example for Coverage dateType: [XML](example/datacite-example-coverage-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/pgk2-ar97?publisher=true&affiliation=true)
 * Example connecting a translation to the original work:
     * Example of a translation: [XML](example/datacite-example-translation-translated-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/45e5-xy14?publisher=true&affiliation=true)
@@ -48,7 +52,7 @@ Demonstration Examples - FIXME
     * Digitized book chapter in a book (with no identifier): [XML](example/datacite-example-relateditem2-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/eck0-f231?publisher=true&affiliation=true)
     * Digitized book chapter in a book (with an ISBN): [XML](example/datacite-example-relateditem3-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/4fdh-rh04?publisher=true&affiliation=true)
 
-Live Examples (real DOIs - metadata may change) - FIXME
+Live Examples (real DOIs - metadata may change)
 
 * Example for Software resourceTypeGeneral: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.5281/zenodo.7635478), [JSON](https://api.datacite.org/dois/10.5281/zenodo.7635478?publisher=true&affiliation=true)
 * Example with GeoLocation: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.1594/PANGAEA.770250), [JSON](https://api.datacite.org/dois/10.1594/PANGAEA.770250?publisher=true&affiliation=true)
