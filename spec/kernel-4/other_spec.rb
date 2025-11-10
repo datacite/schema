@@ -35,7 +35,7 @@ describe "validate other elements" do
       element.replace '<resourceType resourceTypeGeneral="">Dataset</resourceType>'
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(1)
-      expect(errors.last).to include("26:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': [facet 'enumeration'] The value '' is not an element of the set {'Audiovisual', 'Award', 'Book', 'BookChapter', 'Collection', 'ComputationalNotebook', 'ConferencePaper', 'ConferenceProceeding', 'DataPaper', 'Dataset', 'Dissertation', 'Event', 'Image', 'Instrument', 'InteractiveResource', 'Journal', 'JournalArticle', 'Model', 'OutputManagementPlan', 'PeerReview', 'PhysicalObject', 'Poster', 'Preprint', 'Presentation', 'Project', 'Report', 'Service', 'Software', 'Sound', 'Standard', 'StudyRegistration', 'Text', 'Workflow', 'Other'}.")
+      expect(errors.last).to include("26:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': [facet 'enumeration'] The value '' is not an element of the set {'Audiovisual', 'Award', 'Book', 'BookChapter', 'Collection', 'ComputationalNotebook', 'ConferencePaper', 'ConferenceProceeding', 'DataPaper', 'Dataset', 'Dissertation', 'Event', 'Image', 'Instrument', 'InteractiveResource', 'Journal', 'JournalArticle', 'Model', 'OutputManagementPlan', 'PeerReview', 'PhysicalObject', 'Preprint', 'Project', 'Report', 'Service', 'Software', 'Sound', 'Standard', 'StudyRegistration', 'Text', 'Workflow', 'Other'}")
     end
 
     it 'empty resourceType' do
@@ -50,7 +50,7 @@ describe "validate other elements" do
       element.replace '<resourceType resourceTypeGeneral="Conference">Dataset</resourceType>'
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(1)
-      expect(errors.first).to include("26:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': [facet 'enumeration'] The value 'Conference' is not an element of the set {'Audiovisual', 'Award', 'Book', 'BookChapter', 'Collection', 'ComputationalNotebook', 'ConferencePaper', 'ConferenceProceeding', 'DataPaper', 'Dataset', 'Dissertation', 'Event', 'Image', 'Instrument', 'InteractiveResource', 'Journal', 'JournalArticle', 'Model', 'OutputManagementPlan', 'PeerReview', 'PhysicalObject', 'Poster', 'Preprint', 'Presentation', 'Project', 'Report', 'Service', 'Software', 'Sound', 'Standard', 'StudyRegistration', 'Text', 'Workflow', 'Other'}.")
+      expect(errors.first).to include("26:0: ERROR: Element '{http://datacite.org/schema/kernel-4}resourceType', attribute 'resourceTypeGeneral': [facet 'enumeration'] The value 'Conference' is not an element of the set {'Audiovisual', 'Award', 'Book', 'BookChapter', 'Collection', 'ComputationalNotebook', 'ConferencePaper', 'ConferenceProceeding', 'DataPaper', 'Dataset', 'Dissertation', 'Event', 'Image', 'Instrument', 'InteractiveResource', 'Journal', 'JournalArticle', 'Model', 'OutputManagementPlan', 'PeerReview', 'PhysicalObject', 'Preprint', 'Project', 'Report', 'Service', 'Software', 'Sound', 'Standard', 'StudyRegistration', 'Text', 'Workflow', 'Other'}.")
     end
 
     it 'resourceTypeGeneral Book' do
@@ -157,20 +157,6 @@ describe "validate other elements" do
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(0)
     end
-
-    it 'resourceTypeGeneral Poster' do
-      element = doc.at("resourceType")
-      element.replace '<resourceType resourceTypeGeneral="Poster"></resourceType>'
-      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-      expect(errors.length).to eq(0)
-    end
-
-    it 'resourceTypeGeneral Presentation' do
-      element = doc.at("resourceType")
-      element.replace '<resourceType resourceTypeGeneral="Presentation"></resourceType>'
-      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-      expect(errors.length).to eq(0)
-    end
   end
 
   describe "relatedItemType" do
@@ -186,24 +172,6 @@ describe "validate other elements" do
     it 'relatedItemType StudyRegistration' do
       related_item = doc.search("relatedItems/relatedItem").first
       related_item["relatedItemType"] = "StudyRegistration"
-      element = doc.at("relatedItems/relatedItem")
-      element.replace related_item.to_s
-      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-      expect(errors.length).to eq(0)
-    end
-
-    it 'relatedItemType Poster' do
-      related_item = doc.search("relatedItems/relatedItem").first
-      related_item["relatedItemType"] = "Poster"
-      element = doc.at("relatedItems/relatedItem")
-      element.replace related_item.to_s
-      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-      expect(errors.length).to eq(0)
-    end
-
-    it 'relatedItemType Presentation' do
-      related_item = doc.search("relatedItems/relatedItem").first
-      related_item["relatedItemType"] = "Presentation"
       element = doc.at("relatedItems/relatedItem")
       element.replace related_item.to_s
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
@@ -225,36 +193,6 @@ describe "validate other elements" do
       related_item = doc.search("relatedIdentifiers/relatedIdentifier").first
       related_item["resourceTypeGeneral"] = "StudyRegistration"
       element = doc.at("relatedIdentifiers/relatedIdentifier")
-      element.replace related_item.to_s
-      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-      expect(errors.length).to eq(0)
-    end
-
-    it 'relatedIdentifier resourceTypeGeneral Poster' do
-      related_item = doc.search("relatedIdentifiers/relatedIdentifier").first
-      related_item["resourceTypeGeneral"] = "Poster"
-      element = doc.at("relatedIdentifiers/relatedIdentifier")
-      element.replace related_item.to_s
-      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-      expect(errors.length).to eq(0)
-    end
-
-    it 'relatedIdentifier resourceTypeGeneral Presentation' do
-      related_item = doc.search("relatedIdentifiers/relatedIdentifier").first
-      related_item["resourceTypeGeneral"] = "Presentation"
-      element = doc.at("relatedIdentifiers/relatedIdentifier")
-      element.replace related_item.to_s
-      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
-      expect(errors.length).to eq(0)
-    end
-  end
-
-  describe 'relatedItem' do
-    it 'relatedItem with relationTypeInformation and relationType Other' do
-      related_item = doc.search("relatedItems/relatedItem").first
-      related_item['relationType'] = 'Other'
-      related_item['relationTypeInformation'] = 'is output of'
-      element = doc.at("relatedItems/relatedItem")
       element.replace related_item.to_s
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
       expect(errors.length).to eq(0)
