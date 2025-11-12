@@ -26,7 +26,7 @@
     <resourceType resourceTypeGeneral="Presentation">Conference presentation</resourceType>
     <relatedIdentifiers>
         <relatedIdentifier relatedIdentifierType="URL" relationType="Other"
-            relationTypeInformation="is output of" resourceTypeGeneral="Event">https://example.org/metadata-forum-2025</relatedIdentifier>
+            relationTypeInformation="was presented at" resourceTypeGeneral="Event">https://example.org/metadata-forum-2025</relatedIdentifier>
         <relatedIdentifier relatedIdentifierType="DOI" relationType="IsVariantFormOf"
             resourceTypeGeneral="Audiovisual">10.82433/9jbk-4c28</relatedIdentifier>
     </relatedIdentifiers>

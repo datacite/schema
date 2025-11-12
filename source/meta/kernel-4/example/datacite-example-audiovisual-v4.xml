@@ -25,8 +25,8 @@
     </dates>
     <resourceType resourceTypeGeneral="Audiovisual">Conference presentation recording</resourceType>
     <relatedIdentifiers>
-        <relatedIdentifier relatedIdentifierType="URL" relationType="IsPartOf"
-            resourceTypeGeneral="Event">https://example.org/metadata-forum-2025</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="Other"
+            relationTypeInformation="was presented at">https://example.org/metadata-forum-2025</relatedIdentifier>
         <relatedIdentifier relatedIdentifierType="DOI" relationType="IsVariantFormOf"
             resourceTypeGeneral="Presentation">10.82433/v14f-gk24</relatedIdentifier>
     </relatedIdentifiers>
