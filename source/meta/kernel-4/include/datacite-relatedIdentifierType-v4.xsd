@@ -27,7 +27,9 @@
       <xs:enumeration value="LSID" />
       <xs:enumeration value="PMID" />
       <xs:enumeration value="PURL" />
+      <xs:enumeration value="RAiD" />
       <xs:enumeration value="RRID" />
+      <xs:enumeration value="SWHID" />
       <xs:enumeration value="UPC" />
       <xs:enumeration value="URL" />
       <xs:enumeration value="URN" />
