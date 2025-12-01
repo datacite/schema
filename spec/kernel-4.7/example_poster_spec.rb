@@ -18,6 +18,6 @@ describe "poster example" do
   it 'has relatedIdentifier with relationType Other and relationTypeInformation' do
     related_identifier = doc.search("relatedIdentifiers/relatedIdentifier").first
     expect(related_identifier['relationType']).to eq('Other')
-    expect(related_identifier['relationTypeInformation']).to eq('is output of')
+    expect(related_identifier['relationTypeInformation']).to eq('was presented at')
   end
 end

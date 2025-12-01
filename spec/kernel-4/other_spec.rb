@@ -249,11 +249,53 @@ describe "validate other elements" do
     end
   end
 
+  describe "relatedIdentifier relatedIdentifierType" do
+    it 'RAiD' do
+      related_identifier = doc.search("relatedIdentifiers/relatedIdentifier").first
+      related_identifier["relatedIdentifierType"] = "RAiD"
+      element = doc.at("relatedIdentifiers/relatedIdentifier")
+      element.replace related_identifier.to_s
+      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
+      expect(errors.length).to eq(0)
+    end
+
+    it 'SWHID' do
+      related_identifier = doc.search("relatedIdentifiers/relatedIdentifier").first
+      related_identifier["relatedIdentifierType"] = "SWHID"
+      element = doc.at("relatedIdentifiers/relatedIdentifier")
+      element.replace related_identifier.to_s
+      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
+      expect(errors.length).to eq(0)
+    end
+  end  
+
   describe 'relatedItem' do
-    it 'relatedItem with relationTypeInformation and relationType Other' do
+    it 'with relationTypeInformation and relationType Other' do
       related_item = doc.search("relatedItems/relatedItem").first
       related_item['relationType'] = 'Other'
       related_item['relationTypeInformation'] = 'is output of'
+      element = doc.at("relatedItems/relatedItem")
+      element.replace related_item.to_s
+      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
+      expect(errors.length).to eq(0)
+    end
+  end
+
+  describe 'relatedItem relatedItemIdentifierType' do
+    it 'RAiD' do
+      related_item = doc.search("relatedItems/relatedItem").first
+      related_item_identifier = related_item.at("relatedItemIdentifier")
+      related_item_identifier['relatedItemIdentifierType'] = 'RAiD'
+      element = doc.at("relatedItems/relatedItem")
+      element.replace related_item.to_s
+      errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
+      expect(errors.length).to eq(0)
+    end
+
+    it 'SWHID' do
+      related_item = doc.search("relatedItems/relatedItem").first
+      related_item_identifier = related_item.at("relatedItemIdentifier")
+      related_item_identifier['relatedItemIdentifierType'] = 'SWHID'
       element = doc.at("relatedItems/relatedItem")
       element.replace related_item.to_s
       errors = xsd.validate(Nokogiri::XML(doc.to_xml)).map { |error| error.to_s }
