@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Example with all properties -->
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+    <identifier identifierType="DOI">10.82433/B09Z-4K37</identifier>
+    <creators>
+        <creator>
+            <creatorName nameType="Personal">ExampleFamilyName, ExampleGivenName</creatorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </creator>
+        <creator>
+            <creatorName xml:lang="en" nameType="Organizational">ExampleOrganization</creatorName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/04wxnsj81</nameIdentifier>
+        </creator>
+    </creators>
+    <titles>
+        <title xml:lang="en">Example Title</title>
+        <title titleType="Subtitle" xml:lang="en">Example Subtitle</title>
+        <title titleType="TranslatedTitle" xml:lang="fr">Example TranslatedTitle</title>
+        <title titleType="AlternativeTitle" xml:lang="en">Example AlternativeTitle</title>
+    </titles>
+    <publisher xml:lang="en" publisherIdentifier="https://ror.org/04z8jg394" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">Example Publisher</publisher>
+    <publicationYear>2024</publicationYear>
+    <resourceType resourceTypeGeneral="Dataset">Example ResourceType</resourceType>
+    <subjects>
+        <subject subjectScheme="Fields of Science and Technology (FOS)" schemeURI="http://www.oecd.org/science/inno" valueURI="http://www.oecd.org/science/inno/38235147.pdf">FOS: Computer and information sciences</subject>
+        <subject subjectScheme="Australian and New Zealand Standard Research Classification (ANZSRC), 2020" schemeURI="https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc" classificationCode="461001">Digital curation and preservation</subject>
+        <subject>Example Subject</subject>
+    </subjects>
+    <contributors>
+        <contributor contributorType="ContactPerson">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="DataCollector">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="DataCurator">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="DataManager">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="Distributor">
+            <contributorName nameType="Organizational">ExampleOrganization</contributorName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/03yrm5c26</nameIdentifier>
+        </contributor>
+        <contributor contributorType="Editor">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="HostingInstitution">
+            <contributorName nameType="Organizational">ExampleOrganization</contributorName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/03yrm5c26</nameIdentifier>
+        </contributor>
+        <contributor contributorType="Producer">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="ProjectLeader">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="ProjectManager">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="ProjectMember">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="RegistrationAgency">
+            <contributorName nameType="Organizational">DataCite</contributorName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/04wxnsj81</nameIdentifier>
+        </contributor>
+        <contributor contributorType="RegistrationAuthority">
+            <contributorName nameType="Organizational">International DOI Foundation</contributorName>
+        </contributor>
+        <contributor contributorType="RelatedPerson">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="Researcher">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="ResearchGroup">
+            <contributorName>ExampleContributor</contributorName>
+            <affiliation affiliationIdentifier="https://ror.org/03yrm5c26" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleOrganization</affiliation>
+        </contributor>
+        <contributor contributorType="RightsHolder">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="Sponsor">
+            <contributorName>ExampleContributor</contributorName>
+            <affiliation affiliationIdentifier="https://ror.org/03yrm5c26" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/03yrm5c26</affiliation>
+        </contributor>
+        <contributor contributorType="Supervisor">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="Translator">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="WorkPackageLeader">
+            <contributorName nameType="Organizational">ExampleOrganization</contributorName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/03yrm5c26</nameIdentifier>
+        </contributor>
+        <contributor contributorType="Other">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+    </contributors>
+    <dates>
+        <date dateType="Accepted">2024-01-01</date>
+        <date dateType="Available">2024-01-01</date>
+        <date dateType="Copyrighted">2024-01-01</date>
+        <date dateType="Collected">2024-01-01/2024-12-31</date>
+        <date dateType="Coverage">2024-01-01/2024-12-31</date>
+        <date dateType="Created">2024-01-01</date>
+        <date dateType="Issued">2024-01-01</date>
+        <date dateType="Submitted">2024-01-01</date>
+        <date dateType="Updated">2024-01-01</date>
+        <date dateType="Valid">2024-01-01</date>
+        <date dateType="Withdrawn">2024-01-01</date>
+        <date dateType="Other" dateInformation="ExampleDateInformation">2024-01-01</date>
+    </dates>
+    <language>en</language>
+    <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="Local accession number">12345</alternateIdentifier>
+    </alternateIdentifiers>
+    <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="ARK" relationType="IsCitedBy" resourceTypeGeneral="Audiovisual">ark:/13030/tqb3kh97gh8w</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="arXiv" relationType="Cites" resourceTypeGeneral="Award">arXiv:0706.0001</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="bibcode" relationType="IsSupplementTo" resourceTypeGeneral="Book">2018AGUFM.A24K..07S</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="CSTR" relationType="IsSupplementedBy" resourceTypeGeneral="BookChapter">31253.11.sciencedb.13238</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsContinuedBy" resourceTypeGeneral="Collection">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="EAN13" relationType="Continues" resourceTypeGeneral="ComputationalNotebook">9783468111242</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="EISSN" relationType="Describes" resourceTypeGeneral="ConferencePaper">1562-6865</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="Handle" relationType="IsDescribedBy" resourceTypeGeneral="ConferenceProceeding">10013/epic.10033</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="IGSN" relationType="HasMetadata" resourceTypeGeneral="DataPaper">IECUR0097</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="ISBN" relationType="IsMetadataFor" resourceTypeGeneral="Dataset">978-3-905673-82-1</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="ISSN" relationType="HasVersion" resourceTypeGeneral="Dissertation">0077-5606</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="ISTC" relationType="IsVersionOf" resourceTypeGeneral="Event">0A9 2002 12B4A105 7</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="LISSN" relationType="IsNewVersionOf" resourceTypeGeneral="Image">1188-1534</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="LSID" relationType="IsPreviousVersionOf" resourceTypeGeneral="InteractiveResource">urn:lsid:ubio.org:namebank:11815</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="PMID" relationType="IsPartOf" resourceTypeGeneral="Journal">12082125</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="PURL" relationType="HasPart" resourceTypeGeneral="JournalArticle">http://purl.oclc.org/foo/bar</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="RRID" relationType="IsPublishedIn" resourceTypeGeneral="Model">RRID:SCR_014641</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="UPC" relationType="IsReferencedBy" resourceTypeGeneral="OutputManagementPlan">123456789999</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="References" resourceTypeGeneral="PeerReview">http://www.heatflow.und.edu/index2.html</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="URN" relationType="IsDocumentedBy" resourceTypeGeneral="PhysicalObject">urn:nbn:de:101:1-201102033592</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="w3id" relationType="Documents" resourceTypeGeneral="Preprint">https://w3id.org/games/spec/coil#Coil_Bomb_Die_Of_Age</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsCompiledBy" resourceTypeGeneral="Project">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="Compiles" resourceTypeGeneral="Report">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsVariantFormOf" resourceTypeGeneral="Service">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsOriginalFormOf" resourceTypeGeneral="Software">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsIdenticalTo" resourceTypeGeneral="Sound">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsReviewedBy" resourceTypeGeneral="Standard">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="Reviews" resourceTypeGeneral="Text">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsDerivedFrom" resourceTypeGeneral="Workflow">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsSourceOf" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsRequiredBy" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="Requires" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="Obsoletes" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsObsoletedBy" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="Collects" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsCollectedBy" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="HasTranslation" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsTranslationOf" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+    </relatedIdentifiers>
+    <sizes>
+        <size>1 MB</size>
+        <size>90 pages</size>
+    </sizes>
+    <formats>
+        <format>application/xml</format>
+        <format>text/plain</format>
+    </formats>
+    <version>1</version>
+    <rightsList>
+        <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
+    </rightsList>
+    <descriptions>
+        <description xml:lang="en" descriptionType="Abstract">Example Abstract</description>
+        <description xml:lang="en" descriptionType="Methods">Example Methods</description>
+        <description xml:lang="en" descriptionType="SeriesInformation">Example SeriesInformation</description>
+        <description xml:lang="en" descriptionType="TableOfContents">Example TableOfContents</description>
+        <description xml:lang="en" descriptionType="TechnicalInfo">Example TechnicalInfo</description>
+        <description xml:lang="en" descriptionType="Other">Example Other</description>
+    </descriptions>
+    <geoLocations>
+        <geoLocation>
+            <geoLocationPlace>Vancouver, British Columbia, Canada</geoLocationPlace>
+            <geoLocationPoint>
+                <pointLatitude>49.2827</pointLatitude>
+                <pointLongitude>-123.1207</pointLongitude>
+            </geoLocationPoint>
+            <geoLocationBox>
+                <westBoundLongitude>-123.27</westBoundLongitude>
+                <eastBoundLongitude>-123.02</eastBoundLongitude>
+                <southBoundLatitude>49.195</southBoundLatitude>
+                <northBoundLatitude>49.315</northBoundLatitude>
+            </geoLocationBox>
+            <geoLocationPolygon>
+                <polygonPoint>
+                  <pointLatitude>41.991</pointLatitude>
+                  <pointLongitude>-71.032</pointLongitude>
+                </polygonPoint>
+                <polygonPoint>
+                  <pointLatitude>42.893</pointLatitude>
+                  <pointLongitude>-69.622</pointLongitude>
+                </polygonPoint>
+                <polygonPoint>
+                  <pointLatitude>41.991</pointLatitude>
+                  <pointLongitude>-68.211</pointLongitude>
+                </polygonPoint>
+                <polygonPoint>
+                  <pointLatitude>41.090</pointLatitude>
+                  <pointLongitude>-69.622</pointLongitude>
+                </polygonPoint>
+                <polygonPoint>
+                  <pointLatitude>41.991</pointLatitude>
+                  <pointLongitude>-71.032</pointLongitude>
+                </polygonPoint>
+              </geoLocationPolygon>
+        </geoLocation>
+    </geoLocations>
+    <fundingReferences>
+        <fundingReference>
+            <funderName>Example Funder</funderName>
+            <funderIdentifier funderIdentifierType="Crossref Funder ID">https://doi.org/10.13039/501100000780</funderIdentifier>
+            <awardNumber awardURI="https://example.com/example-award-uri">12345</awardNumber>
+            <awardTitle>Example AwardTitle</awardTitle>
+        </fundingReference>
+    </fundingReferences>
+    <relatedItems>
+        <relatedItem relatedItemType="Text" relationType="Cites">
+            <relatedItemIdentifier relatedItemIdentifierType="ISSN">1234-5678</relatedItemIdentifier>
+            <creators>
+                <creator>
+                    <creatorName nameType="Personal">ExampleFamilyName, ExampleGivenName</creatorName>
+                    <givenName>ExampleGivenName</givenName>
+                    <familyName>ExampleFamilyName</familyName>
+                </creator>
+            </creators>
+            <titles>
+                <title>Example RelatedItem Title</title>
+                <title titleType="TranslatedTitle">Example RelatedItem TranslatedTitle</title>
+            </titles>
+            <publicationYear>1990</publicationYear>
+            <volume>1</volume>
+            <issue>2</issue>
+            <number numberType="Other">1</number>
+            <firstPage>1</firstPage>
+            <lastPage>100</lastPage>
+            <publisher>Example RelatedItem Publisher</publisher>
+            <edition>Example RelatedItem Edition</edition>
+            <contributors>
+                <contributor contributorType="Other">
+                    <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+                    <givenName>ExampleGivenName</givenName>
+                    <familyName>ExampleFamilyName</familyName>
+                </contributor>
+            </contributors>
+        </relatedItem>
+    </relatedItems>
+</resource>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://datacite.org/schema/kernel-4"
+    xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+    <identifier identifierType="DOI">10.82433/v14f-gk24</identifier>
+    <creators>
+        <creator>
+            <creatorName nameType="Personal">Garcia, Sofia</creatorName>
+            <givenName>Sofia</givenName>
+            <familyName>Garcia</familyName>
+            <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">
+                https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/03efmqc40"
+                affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Arizona State
+                University</affiliation>
+        </creator>
+    </creators>
+    <titles>
+        <title xml:lang="en">DOIs in Action: Making Presentations More Discoverable</title>
+    </titles>
+    <publisher>International Metadata Forum</publisher>
+    <publicationYear>2025</publicationYear>
+    <dates>
+        <date dateType="Issued">2025-08-11</date>
+    </dates>
+    <resourceType resourceTypeGeneral="Presentation">Conference presentation</resourceType>
+    <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="Other"
+            relationTypeInformation="was presented at" resourceTypeGeneral="Event">https://example.org/metadata-forum-2025</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsVariantFormOf"
+            resourceTypeGeneral="Audiovisual">10.82433/9jbk-4c28</relatedIdentifier>
+    </relatedIdentifiers>
+    <language>en</language>
+    <rightsList>
+        <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX"
+            rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
+    </rightsList>
+    <descriptions>
+        <description xml:lang="en" descriptionType="Abstract">Conference presentations are often
+            overlooked in discovery and citation systems. This presentation demonstrates practical
+            workflows for assigning DOIs to presentations, linking them to related datasets and
+            publications, and embedding identifiers in slide decks for easy sharing. By applying
+            these strategies, researchers can increase the visibility, impact, and reusability of
+            their talks beyond the event itself.</description>
+    </descriptions>
+</resource>
