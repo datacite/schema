@@ -8,7 +8,7 @@
   2021-03-05 v4.4: Addition of value "IsPublishedIn" 
   2024-01-22 v4.5: Addition of values "Collects, "IsCollectedBy"
   2024-12-05 v4.6: Addition of values "HasTranslation", "IsTranslationOf"
-  2025-12-31 v4.7: Addition of value "Other"-->
+  2026-03-31 v4.7: Addition of value "Other"-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-4" targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified">
   <xs:simpleType name="relationType" id="relationType">
     <xs:annotation>
