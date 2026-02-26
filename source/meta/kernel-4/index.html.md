@@ -1,7 +1,7 @@
 ---
 title: DataCite Metadata Schema 4.7
 version: 4.7
-date: 2026-03-31
+date: 2026-03-03
 layout: schema
 schema_url: /meta/kernel-4.7/metadata.xsd
 documentation_url: https://datacite-metadata-schema.readthedocs.io/en/4.7/
