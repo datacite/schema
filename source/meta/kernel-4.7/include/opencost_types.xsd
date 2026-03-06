@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="https://opencost.de"
+xmlns="https://opencost.de"
+elementFormDefault="qualified">
+
+<xs:complexType name="data_type">
+  <xs:choice maxOccurs="unbounded">
+    <xs:element name="publication" type="publication_type" maxOccurs="unbounded" />
+    <xs:element name="contract" type="contract_type" maxOccurs="unbounded" />
+  </xs:choice>
+</xs:complexType>
+
+<xs:complexType name="publication_type">
+  <xs:all>
+    <xs:element name="primary_identifier" type="publication_primary_identifier" />
+    <xs:element name="secondary_identifiers" type="publication_secondary_identifiers" minOccurs="0" />
+    <xs:element name="institution" type="institution_type" />
+    <xs:element name="publication_type" type="coar_publication_type" />
+    <xs:element name="external_costsplitting" type="xs:boolean" minOccurs="0" />
+    <xs:element name="cost_data" type="publication_cost_data_type" />
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="contract_type">
+  <xs:all>
+    <xs:element name="contract_name" type="non_empty_string" />
+    <xs:element name="institution" type="institution_type" />
+    <xs:element name="participation" type="participation_type" />
+    <xs:element name="primary_identifier" type="contract_primary_identifier_type" />
+    <xs:element name="secondary_identifiers" type="contract_secondary_identifiers_type" minOccurs="0" />
+    <xs:element name="cost_data" type="contract_cost_data_type"/>
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="participation_type">
+  <xs:all>
+    <xs:element name="to" type="date_format" />
+    <xs:element name="from" type="date_format" />
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="contract_cost_data_type">
+  <xs:sequence>
+    <xs:element name="invoice_group" type="contract_invoice_group_type" minOccurs="1" maxOccurs="unbounded" />
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="contract_invoice_group_type">
+  <xs:sequence>
+    <xs:sequence minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="invoice" type="contract_invoice_type" />
+    </xs:sequence>
+    <xs:choice>
+      <xs:sequence>
+        <xs:element name="group_id" type="non_empty_string" />
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="invoice" type="contract_invoice_type" />
+        </xs:sequence>
+        <xs:element name="invoices_period" type="contract_invoice_period_type" />
+      </xs:sequence>
+      <xs:sequence>
+        <xs:element name="invoices_period" type="contract_invoice_period_type" />
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="invoice" type="contract_invoice_type" />
+        </xs:sequence>
+        <xs:element name="group_id" type="non_empty_string" />
+      </xs:sequence>
+    </xs:choice>
+    <xs:sequence minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="invoice" type="contract_invoice_type" />
+    </xs:sequence>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="contract_invoice_type">
+  <xs:all>
+    <xs:element name="amount_invoice" type="amount_invoice" minOccurs="0" />
+    <xs:element name="invoice_number" type="non_empty_string" minOccurs="0" />
+    <xs:element name="creditor" type="non_empty_string" minOccurs="0" />
+    <xs:element name="dates" type="dates" />
+    <xs:element name="amounts_paid">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="amount_paid" minOccurs="1" maxOccurs="unbounded" type="contract_amount_paid_type" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="part_of_contract_type">
+  <xs:all>
+    <xs:element name="group_id" type="non_empty_string" minOccurs="0" />
+    <xs:element name="primary_identifier" type="contract_primary_identifier_type" />
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="publication_cost_data_type">
+  <xs:choice>
+    <xs:sequence>
+      <xs:element name="invoice" type="publication_invoice_type" minOccurs="1" maxOccurs="unbounded" />
+      <xs:sequence minOccurs="0">
+        <xs:element name="part_of_contract" type="part_of_contract_type" />
+        <xs:element name="invoice" type="publication_invoice_type" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:sequence>
+    <xs:sequence>
+      <xs:element name="part_of_contract" type="part_of_contract_type" />
+      <xs:element name="invoice" type="publication_invoice_type" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:choice>
+</xs:complexType>
+
+<xs:complexType name="publication_invoice_type">
+  <xs:all>
+    <xs:element name="amount_invoice" minOccurs="0" type="amount_invoice" />
+    <xs:element name="invoice_number" type="non_empty_string" minOccurs="0"/>
+    <xs:element name="amounts_paid">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="amount_paid" minOccurs="1" maxOccurs="unbounded" type="publication_amount_paid_type" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    <xs:element name="dates" type="dates"/>
+    <xs:element name="creditor" type="non_empty_string" minOccurs="0"/>
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="publication_primary_identifier">
+    <xs:choice>
+        <xs:element name="doi" type="non_empty_string" />
+        <xs:element name="bibliographic_information" type="bibliographic_information" />
+    </xs:choice>
+</xs:complexType>
+
+<xs:complexType name="publication_secondary_identifiers">
+  <xs:sequence>
+    <xs:element name="id" minOccurs="1" maxOccurs="unbounded" type="publication_secondary_id_type" />
+  </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="relevant_publication_date_type">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="submission" />
+    <xs:enumeration value="acceptance" />
+    <xs:enumeration value="publication" />
+    <xs:enumeration value="publication print" />
+    <xs:enumeration value="publication online" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="contract_invoice_period_type">
+  <xs:all>
+    <xs:element name="from" type="date_format"/>
+    <xs:element name="to" type="date_format"/>
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="contract_primary_identifier_type">
+  <xs:all>
+    <xs:element name="value" type="non_empty_string" />
+    <xs:element name="type">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="ESAC" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="contract_secondary_identifiers_type">
+  <xs:sequence>
+    <xs:element name="id" minOccurs="1" maxOccurs="unbounded" type="contract_secondary_id_type" />
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="contract_secondary_id_type">
+  <xs:all>
+    <xs:element name="value" type="non_empty_string" />
+    <xs:element name="type">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="oai" />
+          <xs:enumeration value="ezb" />
+          <xs:enumeration value="local" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="publication_secondary_id_type">
+  <xs:all>
+    <xs:element name="value" type="non_empty_string" />
+    <xs:element name="type">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="doi" />
+          <xs:enumeration value="handle" />
+          <xs:enumeration value="urn" />
+          <xs:enumeration value="isbn" />
+          <xs:enumeration value="pmid" />
+          <xs:enumeration value="pmc" />
+          <xs:enumeration value="arxiv" />
+          <xs:enumeration value="oai" />
+          <xs:enumeration value="local" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="bibliographic_information">
+  <xs:all>
+    <xs:element name="Title" type="non_empty_string" minOccurs="1" />
+    <xs:element name="Publisher" type="non_empty_string" minOccurs="1" />
+    <xs:element name="isPartOf" type="non_empty_string" minOccurs="1" />
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="institution_name">
+  <xs:all>
+    <xs:element name="value" type="non_empty_string" />
+    <xs:element name="type">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="full" />
+          <xs:enumeration value="short" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="institution_id">
+  <xs:all>
+    <xs:element name="value" type="non_empty_string" />
+    <xs:element name="type">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="ror" />
+          <xs:enumeration value="isni" />
+          <xs:enumeration value="ringold" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="institution_type">
+  <xs:sequence>
+    <xs:choice minOccurs="1" maxOccurs="unbounded">
+      <xs:element name="name" type="institution_name" />
+      <xs:element name="id" type="institution_id" />
+    </xs:choice>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="amount_invoice">
+  <xs:all>
+    <xs:element name="currency" type="currency" />
+    <xs:element name="amount" type="xs:decimal" />
+  </xs:all>
+</xs:complexType>
+
+<xs:simpleType name="publication_cost_type">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="gold-oa" />
+    <xs:enumeration value="vat" />
+    <xs:enumeration value="colour charge" />
+    <xs:enumeration value="cover charge" />
+    <xs:enumeration value="hybrid-oa" />
+    <xs:enumeration value="other" />
+    <xs:enumeration value="page charge" />
+    <xs:enumeration value="permission" />
+    <xs:enumeration value="publication charge" />
+    <xs:enumeration value="reprint" />
+    <xs:enumeration value="submission fee" />
+    <xs:enumeration value="payment fee" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="publication_amount_paid_type">
+  <xs:all>
+    <xs:element name="currency" type="currency" />
+    <xs:element name="amount" type="xs:decimal" />
+    <xs:element name="cost_type" type="publication_cost_type" />
+    <xs:element name="vat" type="xs:decimal" minOccurs="0" />
+  </xs:all>
+</xs:complexType>
+
+<xs:simpleType name="contract_cost_type">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="publish" />
+    <xs:enumeration value="read" />
+    <xs:enumeration value="publish and read" />
+    <xs:enumeration value="service fee" />
+    <xs:enumeration value="vat" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="contract_amount_paid_type">
+  <xs:all>
+    <xs:element name="currency" type="currency" />
+    <xs:element name="amount" type="xs:decimal" />
+    <xs:element name="cost_type" type="contract_cost_type" />
+    <xs:element name="vat" type="xs:decimal" minOccurs="0" />
+  </xs:all>
+</xs:complexType>
+
+<xs:simpleType name="currency">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[A-Z]{3}"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="dates">
+  <xs:choice>
+    <xs:sequence>
+     <xs:element name="invoice" type="date_format" minOccurs="1"/>
+     <xs:element name="paid" type="date_format" minOccurs="0"/>
+    </xs:sequence>
+    <xs:sequence>
+     <xs:element name="paid" type="date_format" minOccurs="1"/>
+     <xs:element name="invoice" type="date_format" minOccurs="0"/>
+    </xs:sequence>
+  </xs:choice>
+</xs:complexType>
+
+<xs:simpleType name="date_format">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[0-9]{4}|[0-9]{4}-[0-9]{2}|[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="non_empty_string">
+  <xs:restriction base="xs:string">
+    <xs:minLength value="1"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="coar_publication_type">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="cartographic material" />
+    <xs:enumeration value="map" />
+    <xs:enumeration value="dataset" />
+    <xs:enumeration value="aggregated data" />
+    <xs:enumeration value="clinical trial data" />
+    <xs:enumeration value="compiled data" />
+    <xs:enumeration value="encoded data" />
+    <xs:enumeration value="experimental data" />
+    <xs:enumeration value="genomic data" />
+    <xs:enumeration value="geospatial data" />
+    <xs:enumeration value="laboratory notebook" />
+    <xs:enumeration value="measurement and test data" />
+    <xs:enumeration value="observational data" />
+    <xs:enumeration value="recorded data" />
+    <xs:enumeration value="simulation data" />
+    <xs:enumeration value="survey data" />
+    <xs:enumeration value="design" />
+    <xs:enumeration value="industrial design" />
+    <xs:enumeration value="layout design" />
+    <xs:enumeration value="image" />
+    <xs:enumeration value="moving image" />
+    <xs:enumeration value="video" />
+    <xs:enumeration value="still image" />
+    <xs:enumeration value="interactive resource" />
+    <xs:enumeration value="website" />
+    <xs:enumeration value="learning object" />
+    <xs:enumeration value="other" />
+    <xs:enumeration value="patent" />
+    <xs:enumeration value="PCT application" />
+    <xs:enumeration value="design patent" />
+    <xs:enumeration value="plant patent" />
+    <xs:enumeration value="plant variety protection" />
+    <xs:enumeration value="software patent" />
+    <xs:enumeration value="utility model" />
+    <xs:enumeration value="software" />
+    <xs:enumeration value="research software" />
+    <xs:enumeration value="source code" />
+    <xs:enumeration value="sound" />
+    <xs:enumeration value="musical composition" />
+    <xs:enumeration value="text" />
+    <xs:enumeration value="annotation" />
+    <xs:enumeration value="bibliography" />
+    <xs:enumeration value="blog post" />
+    <xs:enumeration value="book" />
+    <xs:enumeration value="book part" />
+    <xs:enumeration value="conference output" />
+    <xs:enumeration value="conference paper not in proceedings" />
+    <xs:enumeration value="conference poster not in proceedings" />
+    <xs:enumeration value="conference presentation" />
+    <xs:enumeration value="conference proceedings" />
+    <xs:enumeration value="conference paper" />
+    <xs:enumeration value="conference poster" />
+    <xs:enumeration value="journal" />
+    <xs:enumeration value="editorial" />
+    <xs:enumeration value="journal article" />
+    <xs:enumeration value="corrigendum" />
+    <xs:enumeration value="data paper" />
+    <xs:enumeration value="research article" />
+    <xs:enumeration value="review article" />
+    <xs:enumeration value="software paper" />
+    <xs:enumeration value="letter to the editor" />
+    <xs:enumeration value="lecture" />
+    <xs:enumeration value="letter" />
+    <xs:enumeration value="magazine" />
+    <xs:enumeration value="manuscript" />
+    <xs:enumeration value="musical notation" />
+    <xs:enumeration value="newspaper" />
+    <xs:enumeration value="newspaper article" />
+    <xs:enumeration value="other periodical" />
+    <xs:enumeration value="preprint" />
+    <xs:enumeration value="report" />
+    <xs:enumeration value="clinical study" />
+    <xs:enumeration value="data management plan" />
+    <xs:enumeration value="memorandum" />
+    <xs:enumeration value="policy report" />
+    <xs:enumeration value="project deliverable" />
+    <xs:enumeration value="research protocol" />
+    <xs:enumeration value="research report" />
+    <xs:enumeration value="technical report" />
+    <xs:enumeration value="research proposal" />
+    <xs:enumeration value="review" />
+    <xs:enumeration value="book review" />
+    <xs:enumeration value="commentary" />
+    <xs:enumeration value="peer review" />
+    <xs:enumeration value="technical documentation" />
+    <xs:enumeration value="thesis" />
+    <xs:enumeration value="bachelor thesis" />
+    <xs:enumeration value="doctoral thesis" />
+    <xs:enumeration value="master thesis" />
+    <xs:enumeration value="transcription" />
+    <xs:enumeration value="working paper" />
+    <xs:enumeration value="trademark" />
+    <xs:enumeration value="workflow" />
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<datacite:resource xmlns:datacite="http://datacite.org/schema/kernel-4" xmlns:opencost="https://opencost.de">
+  <datacite:identifier identifierType="DOI">10.1364/OPTICA.3.000816</datacite:identifier>
+  <datacite:creators>
+    <datacite:creator>
+      <datacite:creatorName></datacite:creatorName>
+    </datacite:creator>
+  </datacite:creators>
+  <datacite:titles>
+    <datacite:title>Kagome-fiber-based pulse compression of mid-infrared picosecond pulses from a Ho:YLF amplifier </datacite:title>
+  </datacite:titles>
+  <datacite:publisher>Optica</datacite:publisher>
+  <datacite:publicationYear>2024</datacite:publicationYear>
+  <datacite:resourceType resourceTypeGeneral="JournalArticle"></datacite:resourceType>
+  <datacite:fundingReferences>
+    <datacite:fundingReference>
+      <datacite:awardTitle>6211 - Extreme States of Matter: From Cold Ions to Hot Plasmas (POF3-621)</datacite:awardTitle>
+      <datacite:funderIdentifier funderIdentifierType="ROR">https://ror.org/0281dp749</datacite:funderIdentifier>
+      <datacite:funderName>Helmholtz Association of German Research Centres</datacite:funderName>
+      <datacite:awardNumber>POF3-621</datacite:awardNumber>
+    </datacite:fundingReference>
+    <datacite:fundingReference>
+      <datacite:awardTitle>AXSIS - Frontiers in Attosecond X-ray Science: Imaging and Spectroscopy (609920)</datacite:awardTitle>
+      <datacite:funderIdentifier funderIdentifierType="ROR">https://ror.org/019w4f821</datacite:funderIdentifier>
+      <datacite:funderName>European Union</datacite:funderName>
+      <datacite:awardNumber>609920</datacite:awardNumber>
+    </datacite:fundingReference>
+    <datacite:fundingReference>
+      <datacite:awardTitle>CUI - Hamburger Zentrum f&#xFC;r ultraschnelle Beobachtung (194651731)</datacite:awardTitle>
+      <datacite:funderIdentifier funderIdentifierType="ROR">https://ror.org/018mejw64</datacite:funderIdentifier>
+      <datacite:funderName>Deutsche Forschungsgemeinschaft</datacite:funderName>
+      <datacite:awardNumber awardURI="https://gepris.dfg.de/gepris/projekt/194651731">194651731</datacite:awardNumber>
+    </datacite:fundingReference>
+    <datacite:fundingReference>
+      <datacite:awardTitle>ACHIP - Laser Accelerators on a Chip (ACHIP_2015-10-01)</datacite:awardTitle>
+      <datacite:funderIdentifier funderIdentifierType="ROR">https://ror.org/0281dp749</datacite:funderIdentifier>
+      <datacite:funderName>Helmholtz Association of German Research Centres</datacite:funderName>
+      <datacite:awardNumber>ACHIP_2015-10-01</datacite:awardNumber>
+    </datacite:fundingReference>
+  </datacite:fundingReferences>
+  <datacite:subjects>
+    <datacite:subject subjectScheme="dfg" xml:lang="de">Naturwissenschaften</datacite:subject>
+  </datacite:subjects>
+  <datacite:publicationCostData>
+    <opencost:institution>
+      <opencost:id>
+        <opencost:value>https://ror.org/01js2sh04</opencost:value>
+        <opencost:type>ror</opencost:type>
+      </opencost:id>
+      <opencost:name>
+        <opencost:value>desy</opencost:value>
+        <opencost:type>short</opencost:type>
+      </opencost:name>
+    </opencost:institution>
+    <opencost:primary_identifier>
+      <opencost:doi>10.1364/OPTICA.3.000816</opencost:doi>
+    </opencost:primary_identifier>
+    <opencost:publication_type>journal article</opencost:publication_type>
+    <opencost:secondary_identifiers>
+      <opencost:id>
+        <opencost:value>PUBDB-2016-02671</opencost:value>
+        <opencost:type>local</opencost:type>
+      </opencost:id>
+      <opencost:id>
+        <opencost:value>oai:bib-pubdb1.desy.de:301439</opencost:value>
+        <opencost:type>oai</opencost:type>
+      </opencost:id>
+      <opencost:id>
+        <opencost:value>10.1364/OPTICA.3.000816</opencost:value>
+        <opencost:type>doi</opencost:type>
+      </opencost:id>
+      <opencost:id>
+        <opencost:value>10.3204/PUBDB-2016-02671</opencost:value>
+        <opencost:type>doi</opencost:type>
+      </opencost:id>
+    </opencost:secondary_identifiers>
+    <opencost:cost_data>
+      <opencost:invoice>
+        <opencost:amount_invoice>
+          <opencost:currency>USD</opencost:currency>
+          <opencost:amount>1350.0</opencost:amount>
+        </opencost:amount_invoice>
+        <opencost:amounts_paid>
+          <opencost:amount_paid>
+            <opencost:amount>1234.95</opencost:amount>
+            <opencost:currency>EUR</opencost:currency>
+            <opencost:cost_type>gold-oa</opencost:cost_type>
+          </opencost:amount_paid>
+        </opencost:amounts_paid>
+        <opencost:creditor>OSA</opencost:creditor>
+        <opencost:dates>
+          <opencost:paid>2017-01-16</opencost:paid>
+          <opencost:invoice>2016-07-13</opencost:invoice>
+        </opencost:dates>
+        <opencost:invoice_number>729761</opencost:invoice_number>
+      </opencost:invoice>
+    </opencost:cost_data>
+  </datacite:publicationCostData>
+</datacite:resource>
