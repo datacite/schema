@@ -1,36 +1,38 @@
 ---
-title: DataCite Metadata Schema 4.7
-version: 4.7
-date: 2026-03-03
+title: DataCite Metadata Schema 4.8
+version: 4.8
+date: 2026-12-31
 layout: schema
-schema_url: /meta/kernel-4.7/metadata.xsd
-documentation_url: https://datacite-metadata-schema.readthedocs.io/en/4.7/
+schema_url: /meta/kernel-4.8/metadata.xsd
+documentation_url: https://datacite-metadata-schema.readthedocs.io/en/4.8/
 ---
 
 ## Documentation
-DataCite Metadata Working Group. (2026). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data and Other Research Outputs. Version 4.7. DataCite e.V. [https://doi.org/10.14454/qdd3-ps68](https://doi.org/10.14454/qdd3-ps68)
+DataCite Metadata Working Group. (2026). DataCite Metadata Schema Documentation for the Publication and Citation of Research Data and Other Research Outputs. Version 4.8. DataCite e.V. [https://doi.org/10.14454/kwsj-rh55](https://doi.org/10.14454/kwsj-rh55)
 
-<div class="text-center"><a href="https://datacite-metadata-schema.readthedocs.io/en/4.7/" class="btn">Access documentation</a></div>
+<div class="text-center"><a href="https://datacite-metadata-schema.readthedocs.io/en/4.8/" class="btn">Access documentation</a></div>
 <br>
-<div class="text-center"><a href="https://datacite-metadata-schema.readthedocs.io/_/downloads/en/4.7/pdf/" class="btn">Download PDF</a></div>
+<div class="text-center"><a href="https://datacite-metadata-schema.readthedocs.io/_/downloads/en/4.8/pdf/" class="btn">Download PDF</a></div>
 
 ## Schema
-DataCite Metadata Working Group. (2026). DataCite Metadata Schema for the Publication and Citation of Research Data and Other Research Outputs. Version 4.7. DataCite e.V. [https://doi.org/0.14454/28a4-kd32](https://doi.org/10.14454/28a4-kd32)
+DataCite Metadata Working Group. (2026). DataCite Metadata Schema for the Publication and Citation of Research Data and Other Research Outputs. Version 4.7. DataCite e.V. [https://doi.org/10.14454/hdw9-et53](https://doi.org/10.14454/hdw9-et53)
 
 <div class="text-center"><a href="metadata.xsd" class="btn">View XSD</a></div>
 
 ## Changes
 
-### See [Version 4.7 Update](https://datacite-metadata-schema.readthedocs.io/en/4.7/introduction/version-update) for full details.
+### See [Version 4.8 Update](https://datacite-metadata-schema.readthedocs.io/en/4.8/introduction/version-update) for full details.
 
 
-* Addition of new resourceTypeGeneral values: Poster and Presentation
-* Addition of new relatedIdentifierType values: RAiD and SWHID
-* Addition of new relationType value: Other
-* Addition of new relationTypeInformation sub-property of RelatedIdentifier and RelatedItem 
+* Addition of a new Distribution property
+* Addition of a new Access property
+* Addition of new resourceTypeGeneral value: BlogPost
+* Addition of new relatedIdentifierType value: PatentNUmber
+* Addition of new relationType pair: IsOutputOf and HasOutput
+* Addition of new contributorType value: Reviewer 
 
 
-## Examples
+## Examples - FIXME
 
 Demonstration Examples
 
