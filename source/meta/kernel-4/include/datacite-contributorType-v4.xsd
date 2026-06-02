@@ -3,8 +3,10 @@
    2013-05 v3.0: Addition of ID to simpleType element, added values "ResearchGroup" & "Other"
    2014-08-20 v3.1: Addition of value "DataCurator"
    2015-05-14 v4.0 dropped value "Funder", use new "funderReference"
-   2024-12-05 v4.6: Addition of value "Translator" -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-4" targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified">
+   2024-12-05 v4.6: Addition of value "Translator"
+   2026-12-31 v4.8: Addition of value "Reviewer" -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-4"
+  targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified">
   <xs:simpleType name="contributorType" id="contributorType">
     <xs:annotation>
       <xs:documentation>The type of contributor of the resource.</xs:documentation>
@@ -26,6 +28,7 @@
       <xs:enumeration value="RegistrationAuthority" />
       <xs:enumeration value="RelatedPerson" />
       <xs:enumeration value="ResearchGroup" />
+      <xs:enumeration value="Reviewer" />
       <xs:enumeration value="RightsHolder" />
       <xs:enumeration value="Researcher" />
       <xs:enumeration value="Sponsor" />
