@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Example: Instrument -->
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+    <identifier identifierType="DOI">10.82433/08QF-EE96</identifier>
+    <creators>
+        <creator>
+            <creatorName nameType="Organizational">DECTRIS</creatorName>
+            <nameIdentifier schemeURI="https://www.wikidata.org/wiki/" nameIdentifierScheme="Wikidata">Q107529885</nameIdentifier>
+        </creator>
+    </creators>
+    <titles>
+        <title xml:lang="en-US">Pilatus detector at MX station 14.1</title>
+    </titles>
+    <publisher xml:lang="en">Helmholtz Centre Potsdam - GFZ German Research Centre for Geosciences</publisher>
+    <publicationYear>2022</publicationYear>
+    <contributors>
+        <contributor contributorType="HostingInstitution">
+            <contributorName nameType="Organizational">Helmholtz-Zentrum Berlin für Materialien und Energie</contributorName>
+            <nameIdentifier schemeURI="https://ror.org/" nameIdentifierScheme="ROR">https://ror.org/02aj13c28</nameIdentifier>
+        </contributor>
+    </contributors>
+    <resourceType resourceTypeGeneral="Instrument">Raster image pixel detector</resourceType>
+    <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="SerialNumber">1234567</alternateIdentifier>
+    </alternateIdentifiers>
+    <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="Handle" relationType="IsPartOf" resourceTypeGeneral="Instrument">1234.1675</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="IsDescribedBy" resourceTypeGeneral="Text">https://www.dectris.com/products/pilatus3/pilatus3-s-for-synchrotron/details/pilatus3-s-6m</relatedIdentifier>
+    </relatedIdentifiers>
+    <descriptions>
+        <description xml:lang="en-US" descriptionType="Abstract">The Pilatus 6M pixel-detector at the MX station 14.1</description>
+        <description xml:lang="en-US" descriptionType="TechnicalInfo">Model Name: PILATUS3 S 6M. Instrument type: Raster image pixel detector. Measured variables: X-ray.</description>
+    </descriptions>
+</resource>

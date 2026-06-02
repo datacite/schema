@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Example with metadata in multiple languages -->
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+    <identifier identifierType="DOI">10.82433/BYT7-2G42</identifier>
+    <titles>
+        <title xml:lang="en">Advances in Chemistry</title>
+        <title xml:lang="es" titleType="TranslatedTitle">Avances en Química</title>
+        <title xml:lang="zh" titleType="TranslatedTitle">化学进展</title>
+    </titles>
+    <creators>
+        <creator>
+            <creatorName nameType="Personal">Zou, Jing</creatorName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0002-4553-2743</nameIdentifier>
+        </creator>
+        <creator>
+            <creatorName xml:lang="en" nameType="Organizational">DataCite</creatorName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/04wxnsj81</nameIdentifier>
+        </creator>
+    </creators>
+    <publisher xml:lang="en" publisherIdentifier="https://ror.org/04wxnsj81" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">DataCite</publisher>
+    <publicationYear>2022</publicationYear>
+    <resourceType resourceTypeGeneral="BookChapter"/>
+    <subjects>
+        <subject xml:lang="en">Chemistry</subject>
+        <subject xml:lang="es">Químicas</subject>
+        <subject xml:lang="zh">化学</subject>
+    </subjects>
+    <dates>
+        <date dateType="Available">2024-01-01</date>
+    </dates>      
+    <descriptions>
+        <description xml:lang="en" descriptionType="Abstract">This chapter reviews selected landmarks occurred in Chemistry basic research in the last 5 years</description>
+        <description xml:lang="es" descriptionType="Abstract">El capítulo repasa los principales avances en la investigación básica en Ciencias Químicas en los últimos 5 años</description>
+        <description xml:lang="zh" descriptionType="Abstract">本章回顾了过去5年中在化学基础研究中发生的一些里程碑式的事件</description>
+    </descriptions>      
+    <language>en</language>
+    <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="arXiv" relationType="IsPartOf" resourceTypeGeneral="Book">arXiv:0706.0001</relatedIdentifier>
+    </relatedIdentifiers>
+    <rightsList>
+  
+            <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
+            <rights xml:lang="es" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Atribución 4.0 Internacional</rights>
+            <rights xml:lang="zh" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">署名 4.0 国际</rights>
+    </rightsList>     
+</resource>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+    <identifier identifierType="DOI">10.82433/pgk2-ar97</identifier>
+    <creators>
+        <creator>
+            <creatorName nameType="Organizational">European Social Fund/DABURH, Department of History, Leiden University</creatorName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/027bh9e22</nameIdentifier>
+        </creator>
+    </creators>
+    <titles>
+        <title xml:lang="en">Amsterdam immigrants, 1578-1810</title>
+        <title xml:lang="en" titleType="AlternativeTitle">Simon Hart database</title>
+    </titles>
+    <publisher>DANS Data Station Social Sciences and Humanities</publisher>
+    <publicationYear>1995</publicationYear>
+    <resourceType resourceTypeGeneral="Dataset" />
+    <subjects>
+        <subject>historical demography</subject>
+        <subject>immigration</subject>
+        <subject>Arts and Humanities</subject>
+    </subjects>
+    <descriptions>
+        <description descriptionType="Abstract">This dataset contains information about the number and origin of the Amsterdam immigrants in the period 1578-1810. The data are subdivided in total, male and female, per region or place of origin. The dataset is based on lists compiled by the Amsterdam archivist dr. Simon Hart and his colleagues between 1960 and 1979.</description>
+    </descriptions>
+    <contributors>
+        <contributor contributorType="ContactPerson">
+            <contributorName>Data Station Admin</contributorName>
+            <affiliation affiliationIdentifier="https://ror.org/008pnp284" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">Data Archiving and Networked Services (DANS)</affiliation>
+        </contributor>
+    </contributors>
+    <dates>
+        <date dateType="Coverage">1578-01-01/1810-12-31</date>
+        <date dateType="Collected">1995-03-01/1995-11-29</date>
+    </dates>
+    <language>nl</language>
+    <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="NHDA">D0049</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="DANS-KNAW">easy-dataset:36690</alternateIdentifier>
+    </alternateIdentifiers>
+    <geoLocations>
+        <geoLocation>
+            <geoLocationPlace>Amsterdam</geoLocationPlace>
+            <geoLocationPoint>
+                <pointLatitude>52.377956</pointLatitude>
+                <pointLongitude>4.897070</pointLongitude>
+            </geoLocationPoint>
+        </geoLocation>
+    </geoLocations>
+</resource>
