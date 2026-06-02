@@ -613,6 +613,45 @@ Use the complete title of a license and include version information if applicabl
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="distributions" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="distribution" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Represents a form of a resource that can be accessed or retrieved, such as downloadable files. This property can be repeated if different variations are available.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="contentURL" minOccurs="1" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="byteSize" type="xs:unsignedInt" use="optional" />
+                            <xs:attribute name="mediaType" type="xs:string" use="optional" />
+                            <xs:attribute name="accessType" type="accessType" use="optional" />
+                            <xs:attribute name="contentName" type="xs:string" use="optional" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="access" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>The type of access for which the resource is available.</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="accessType" type="accessType" use="required" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
       </xs:all>
     </xs:complexType>
   </xs:element>
