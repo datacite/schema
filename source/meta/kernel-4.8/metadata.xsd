@@ -28,6 +28,7 @@
   <xs:include schemaLocation="include/datacite-descriptionType-v4.xsd" />
   <xs:include schemaLocation="include/datacite-nameType-v4.xsd" />
   <xs:include schemaLocation="include/datacite-numberType-v4.xsd" />
+  <xs:include schemaLocation="include/datacite-accessType-v4.xsd" />
   <xs:element name="resource">
     <xs:annotation>
       <xs:documentation>
