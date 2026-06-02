@@ -9,7 +9,8 @@
 "Report"
      2024-01-22 v4.5: Addition of values "Instrument", "StudyRegistration"
      2024-12-05 v4.6: Addition of values "Award", "Project"
-     2026-03-03 v4.7: Addition of values "Poster", "Presentation"-->
+     2026-03-03 v4.7: Addition of values "Poster", "Presentation"
+     2026-??-?? v4.8: Addition of value "BlogPost"-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://datacite.org/schema/kernel-4"
   targetNamespace="http://datacite.org/schema/kernel-4" elementFormDefault="qualified">
   <xs:simpleType name="resourceType" id="resourceType">
@@ -19,6 +20,7 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="Audiovisual" />
       <xs:enumeration value="Award" />
+      <xs:enumeration value="BlogPost" />
       <xs:enumeration value="Book" />
       <xs:enumeration value="BookChapter" />
       <xs:enumeration value="Collection" />
