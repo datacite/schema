@@ -15,7 +15,7 @@ DataCite Metadata Working Group. (2026). DataCite Metadata Schema Documentation 
 <div class="text-center"><a href="https://datacite-metadata-schema.readthedocs.io/_/downloads/en/4.8/pdf/" class="btn">Download PDF</a></div>
 
 ## Schema
-DataCite Metadata Working Group. (2026). DataCite Metadata Schema for the Publication and Citation of Research Data and Other Research Outputs. Version 4.7. DataCite e.V. [https://doi.org/10.14454/hdw9-et53](https://doi.org/10.14454/hdw9-et53)
+DataCite Metadata Working Group. (2026). DataCite Metadata Schema for the Publication and Citation of Research Data and Other Research Outputs. Version 4.8. DataCite e.V. [https://doi.org/10.14454/hdw9-et53](https://doi.org/10.14454/hdw9-et53)
 
 <div class="text-center"><a href="metadata.xsd" class="btn">View XSD</a></div>
 
@@ -54,10 +54,12 @@ Demonstration Examples
     * Journal article in a journal (with an ISSN): [XML](example/datacite-example-relateditem1-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/q54d-pf76?publisher=true&affiliation=true)
     * Digitized book chapter in a book (with no identifier): [XML](example/datacite-example-relateditem2-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/eck0-f231?publisher=true&affiliation=true)
     * Digitized book chapter in a book (with an ISBN): [XML](example/datacite-example-relateditem3-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/4fdh-rh04?publisher=true&affiliation=true)
+* Example with Distribution and Access: [XML](example/datacite-example-distribution-access-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/gn9x-q865?publisher=true&affiliation=true)
 
 Live Examples (real DOIs - metadata may change)
 
 * Example for Software resourceTypeGeneral: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.5281/zenodo.7635478), [JSON](https://api.datacite.org/dois/10.5281/zenodo.7635478?publisher=true&affiliation=true)
+* Example for BlogPost resourceTypeGeneral: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.5438/6qc3-bz91), [JSON](https://api.datacite.org/dois/10.5438/6qc3-bz91?affiliation=true&publisher=true)
 * Example with GeoLocation: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.1594/PANGAEA.770250), [JSON](https://api.datacite.org/dois/10.1594/PANGAEA.770250?publisher=true&affiliation=true)
 * Example with (GeoLocation) Polygon: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.15129/3da7087a-91a3-40be-9a83-7e412156db59), [JSON](https://api.datacite.org/dois/10.15129/3da7087a-91a3-40be-9a83-7e412156db59?publisher=true&affiliation=true)
 * Example with HasMetadata as related resource: [XML](https://api.datacite.org/dois/application/vnd.datacite.datacite+xml/10.26164/leopoldina_10_00390), [JSON](https://api.datacite.org/dois/10.26164/leopoldina_10_00390?publisher=true&affiliation=true)
