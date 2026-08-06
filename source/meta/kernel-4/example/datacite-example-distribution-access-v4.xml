@@ -1,51 +1,36 @@
-<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="http://datacite.org/schema/kernel-4"
-    xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
     <identifier identifierType="DOI">10.82433/GN9X-Q865</identifier>
     <creators>
         <creator>
             <creatorName nameType="Personal">Garcia, Sofia</creatorName>
             <givenName>Sofia</givenName>
             <familyName>Garcia</familyName>
-            <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">
-                https://orcid.org/0000-0001-5727-2427</nameIdentifier>
-            <affiliation affiliationIdentifier="https://ror.org/03efmqc40"
-                affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Arizona State
-                University</affiliation>
+            <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/03efmqc40" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Arizona State University</affiliation>
         </creator>
     </creators>
     <titles>
         <title xml:lang="en">Public Library Usage and Reading Habits Survey Data</title>
     </titles>
-    <publisher xml:lang="en" publisherIdentifier="https://ror.org/03efmqc40"
-        publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">Arizona State University</publisher>
+    <publisher xml:lang="en" publisherIdentifier="https://ror.org/03efmqc40" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">Arizona State University</publisher>
     <publicationYear>2026</publicationYear>
     <resourceType resourceTypeGeneral="Dataset">Survey data</resourceType>
     <language>en</language>
     <rightsList>
-        <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX"
-            rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
+        <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
     </rightsList>
     <descriptions>
-        <description xml:lang="en" descriptionType="Abstract">This dataset contains de-identified
-            responses from a survey of 1,842 public library patrons conducted in 2022, examining
-            borrowing habits, preferred formats (print, digital, audiobook), frequency of visits,
-            and satisfaction with library programs and services.</description>
+        <description xml:lang="en" descriptionType="Abstract">This dataset contains de-identified responses from a survey of 1,842 public library patrons conducted in 2022, examining borrowing habits, preferred formats (print, digital, audiobook), frequency of visits, and satisfaction with library programs and services.</description>
     </descriptions>
     <distributions>
         <distribution>
-            <contentURL byteSize="838861" mediaType="text/plain" accessType="Public"
-                contentName="readme.txt">https://example.org/readme.txt</contentURL>
-            <contentURL byteSize="524288" mediaType="text/csv" accessType="Public"
-                contentName="codebook.csv">https://example.org/codebook.csv</contentURL>
-            <contentURL byteSize="6081741" mediaType="text/csv" accessType="Public"
-                contentName="library-usage-survey_2022_deidentified.csv">
-                https://example.org/library-usage-survey_2022_deidentified.csv</contentURL>
+            <contentURL byteSize="838861" mediaType="text/plain" accessType="Public" contentName="readme.txt">https://example.org/readme.txt</contentURL>
+            <contentURL byteSize="524288" mediaType="text/csv" accessType="Public" contentName="codebook.csv">https://example.org/codebook.csv</contentURL>
+            <contentURL byteSize="6081741" mediaType="text/csv" accessType="Public" contentName="library-usage-survey_2022_deidentified.csv">https://example.org/library-usage-survey_2022_deidentified.csv</contentURL>
         </distribution>
         <distribution>
-            <contentURL byteSize="6987132" mediaType="application/zip" accessType="Public"
-                contentName="library-usage-survey_2022_full-package.zip">
-                https://example.org/library-usage-survey_2022_full-package.zip</contentURL>
+            <contentURL byteSize="6987132" mediaType="application/zip" accessType="Public" contentName="library-usage-survey_2022_full-package.zip">https://example.org/library-usage-survey_2022_full-package.zip</contentURL>
         </distribution>
     </distributions>
     <access accessType="Public" />
