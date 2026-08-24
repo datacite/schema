@@ -27,7 +27,7 @@
       <contributorName nameType="Personal">Padfield, Joseph</contributorName>
       <givenName>Joseph</givenName>
       <familyName>Padfield</familyName>
-      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0002-2572-6428</nameIdentifier>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0002-2572-6428</nameIdentifier>
       <affiliation affiliationIdentifier="https://ror.org/043kfff89" affiliationIdentifierScheme="ROR">National Gallery</affiliation>
     </contributor>
     <contributor contributorType="DataCollector">
