@@ -4,13 +4,13 @@
     <creators>
         <creator>
             <creatorName nameType="Organizational">The Research Trust</creatorName>
-            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/12abcde34</nameIdentifier>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/01abcde23</nameIdentifier>
         </creator>
     </creators>
     <titles>
         <title>Enhancing metadata for inclusive research on entrenched disadvantage</title>
     </titles>
-    <publisher publisherIdentifier="https://ror.org/12abcde34" publisherIdentifierScheme="ROR" schemeURI="https://ror.org">The Research Trust</publisher>
+    <publisher publisherIdentifier="https://ror.org/01abcde23" publisherIdentifierScheme="ROR" schemeURI="https://ror.org">The Research Trust</publisher>
     <publicationYear>2024</publicationYear>
     <resourceType resourceTypeGeneral="Award">Grant</resourceType>
     <contributors>
@@ -27,7 +27,9 @@
         </contributor>
         <contributor contributorType="Reviewer">
             <contributorName nameType="Personal">Nakamura, Yuki</contributorName>
-            <affiliation>The Research Trust</affiliation>
+            <givenName>Yuki</givenName>
+            <familyName>Nakamura</familyName>
+            <affiliation affiliationIdentifier="https://ror.org/01abcde23" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">The Research Trust</affiliation>
         </contributor>
     </contributors>
     <dates>
@@ -47,7 +49,7 @@
     <fundingReferences>
         <fundingReference>
             <funderName>The Research Trust</funderName>
-            <funderIdentifier funderIdentifierType="Crossref Funder ID">https://doi.org/10.13039/501100012345</funderIdentifier>
+            <funderIdentifier funderIdentifierType="ROR">https://ror.org/01abcde23</funderIdentifier>
             <awardNumber>123456</awardNumber>
             <awardTitle>Enhancing metadata for inclusive research on entrenched disadvantage</awardTitle>
         </fundingReference>
