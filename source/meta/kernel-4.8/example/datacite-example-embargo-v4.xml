@@ -6,21 +6,21 @@
             <creatorName nameType="Personal">Beardsmore, Graeme</creatorName>
             <givenName>Graeme</givenName>
             <familyName>Beardsmore</familyName>
-            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0003-4812-1146</nameIdentifier>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0003-4812-1146</nameIdentifier>
             <affiliation affiliationIdentifier="https://ror.org/01ej9dk98" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">The University of Melbourne</affiliation>
         </creator>
         <creator>
             <creatorName nameType="Personal">Hamad, Joe</creatorName>
             <givenName>Joe</givenName>
             <familyName>Hamad</familyName>
-            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0009-0009-1060-7117</nameIdentifier>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0009-0009-1060-7117</nameIdentifier>
             <affiliation affiliationIdentifier="https://ror.org/01ej9dk98" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">The University of Melbourne</affiliation>
         </creator>
         <creator>
             <creatorName nameType="Personal">Ricard, Ludovic</creatorName>
             <givenName>Ludovic</givenName>
             <familyName>Ricard</familyName>
-            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0002-0134-5866</nameIdentifier>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0002-0134-5866</nameIdentifier>
             <affiliation affiliationIdentifier="https://ror.org/03qn8fb07" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">Commonwealth Scientific and Industrial Research Organisation</affiliation>
         </creator>
     </creators>

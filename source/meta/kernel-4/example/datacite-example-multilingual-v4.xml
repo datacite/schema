@@ -14,7 +14,7 @@
         </creator>
         <creator>
             <creatorName xml:lang="en" nameType="Organizational">DataCite</creatorName>
-            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/04wxnsj81</nameIdentifier>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org/">https://ror.org/04wxnsj81</nameIdentifier>
         </creator>
     </creators>
     <publisher xml:lang="en" publisherIdentifier="https://ror.org/04wxnsj81" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">DataCite</publisher>

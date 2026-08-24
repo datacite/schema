@@ -4,13 +4,13 @@
     <creators>
         <creator>
             <creatorName nameType="Organizational">The Research Trust</creatorName>
-            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/01abcde23</nameIdentifier>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org/">https://ror.org/01abcde23</nameIdentifier>
         </creator>
     </creators>
     <titles>
         <title>Enhancing metadata for inclusive research on entrenched disadvantage</title>
     </titles>
-    <publisher publisherIdentifier="https://ror.org/01abcde23" publisherIdentifierScheme="ROR" schemeURI="https://ror.org">The Research Trust</publisher>
+    <publisher publisherIdentifier="https://ror.org/01abcde23" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">The Research Trust</publisher>
     <publicationYear>2024</publicationYear>
     <resourceType resourceTypeGeneral="Award">Grant</resourceType>
     <contributors>
@@ -19,17 +19,17 @@
             <givenName>Sofia</givenName>
             <familyName>Garcia</familyName>
             <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
-            <affiliation affiliationIdentifier="https://ror.org/03efmqc40" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Arizona State University</affiliation>
+            <affiliation affiliationIdentifier="https://ror.org/03efmqc40" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">Arizona State University</affiliation>
         </contributor>
         <contributor contributorType="ProjectLeader">
             <contributorName nameType="Organizational">Arizona State University</contributorName>
-            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/03efmqc40</nameIdentifier>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org/">https://ror.org/03efmqc40</nameIdentifier>
         </contributor>
         <contributor contributorType="Reviewer">
             <contributorName nameType="Personal">Nakamura, Yuki</contributorName>
             <givenName>Yuki</givenName>
             <familyName>Nakamura</familyName>
-            <affiliation affiliationIdentifier="https://ror.org/01abcde23" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">The Research Trust</affiliation>
+            <affiliation affiliationIdentifier="https://ror.org/01abcde23" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">The Research Trust</affiliation>
         </contributor>
     </contributors>
     <dates>

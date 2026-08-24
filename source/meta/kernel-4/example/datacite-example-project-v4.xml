@@ -6,15 +6,15 @@
       <creatorName nameType="Personal">Habermann, Ted</creatorName>
       <givenName>Ted</givenName>
       <familyName>Habermann</familyName>
-      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0003-3585-6733</nameIdentifier>
-      <affiliation affiliationIdentifier="https://ror.org/05bp8ka05" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Metadata Game Changers (United States)</affiliation>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0003-3585-6733</nameIdentifier>
+      <affiliation affiliationIdentifier="https://ror.org/05bp8ka05" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">Metadata Game Changers (United States)</affiliation>
     </creator>
   </creators>
   <titles>
     <title xml:lang="en">EAGER: INFORMATE: Improving networks for organizational repositories through metadata augmentation, transformation and evolution</title>
     <title titleType="AlternativeTitle" xml:lang="en">INFORMATE</title>
   </titles>
-  <publisher publisherIdentifier="https://ror.org/05bp8ka05" publisherIdentifierScheme="ROR" schemeURI="https://ror.org">Metadata Game Changers (United States)</publisher>
+  <publisher publisherIdentifier="https://ror.org/05bp8ka05" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">Metadata Game Changers (United States)</publisher>
   <publicationYear>2023</publicationYear>
   <resourceType resourceTypeGeneral="Project">Collaboration</resourceType>
   <subjects>
@@ -28,35 +28,35 @@
       <contributorName nameType="Personal">Jones, Jamaica</contributorName>
       <givenName>Jamaica</givenName>
       <familyName>Jones</familyName>
-      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0002-1969-2508</nameIdentifier>
-      <affiliation affiliationIdentifier="https://ror.org/01an3r305" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">University of Pittsburgh</affiliation>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0002-1969-2508</nameIdentifier>
+      <affiliation affiliationIdentifier="https://ror.org/01an3r305" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">University of Pittsburgh</affiliation>
     </contributor>
     <contributor contributorType="ProjectLeader">
       <contributorName nameType="Personal">Habermann, Ted</contributorName>
       <givenName>Ted</givenName>
       <familyName>Habermann</familyName>
-      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0003-3585-6733</nameIdentifier>
-      <affiliation affiliationIdentifier="https://ror.org/05bp8ka05" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Metadata Game Changers (United States)</affiliation>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0003-3585-6733</nameIdentifier>
+      <affiliation affiliationIdentifier="https://ror.org/05bp8ka05" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">Metadata Game Changers (United States)</affiliation>
     </contributor>
     <contributor contributorType="ContactPerson">
       <contributorName nameType="Personal">Habermann, Ted</contributorName>
       <givenName>Ted</givenName>
       <familyName>Habermann</familyName>
-      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0003-3585-6733</nameIdentifier>
-      <affiliation affiliationIdentifier="https://ror.org/05bp8ka05" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Metadata Game Changers (United States)</affiliation>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0003-3585-6733</nameIdentifier>
+      <affiliation affiliationIdentifier="https://ror.org/05bp8ka05" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">Metadata Game Changers (United States)</affiliation>
     </contributor>
     <contributor contributorType="ProjectMember">
       <contributorName nameType="Personal">Ratner, Howard</contributorName>
       <givenName>Howard</givenName>
       <familyName>Ratner</familyName>
-      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0002-2123-6317</nameIdentifier>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0002-2123-6317</nameIdentifier>
       <affiliation>CHORUS</affiliation>
     </contributor>
     <contributor contributorType="ProjectMember">
       <contributorName nameType="Personal">Packer, Tara</contributorName>
       <givenName>Tara</givenName>
       <familyName>Packer</familyName>
-      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0009-0009-0223-2917</nameIdentifier>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0009-0009-0223-2917</nameIdentifier>
       <affiliation>CHORUS</affiliation>
     </contributor>
   </contributors>
