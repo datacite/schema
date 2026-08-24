@@ -50,7 +50,7 @@ Demonstration Examples
     * Example of the original (translated) work: [XML](example/datacite-example-translation-original-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/pma6-nf93?publisher=true&affiliation=true)
 * Example of a document containing two languages in parallel: [XML](example/datacite-example-parallel-languages-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/4r08-sa38?publisher=true&affiliation=true)
 * Example showing multilingual metadata: [XML](example/datacite-example-multilingual-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/byt7-2g42?publisher=true&affiliation=true)
-* Example with embargo date: [XML](example/datacite-example-embargo-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/10.82433/13mc-zr18?publisher=true&affiliation=true)
+* Example with embargo date: [XML](example/datacite-example-embargo-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/13mc-zr18?publisher=true&affiliation=true)
 * Examples with RelatedItem:
     * Journal article in a journal (with an ISSN): [XML](example/datacite-example-relateditem1-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/q54d-pf76?publisher=true&affiliation=true)
     * Digitized book chapter in a book (with no identifier): [XML](example/datacite-example-relateditem2-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/eck0-f231?publisher=true&affiliation=true)
