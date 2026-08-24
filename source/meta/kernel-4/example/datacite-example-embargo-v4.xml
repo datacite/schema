@@ -20,7 +20,7 @@
             <creatorName nameType="Personal">Ricard, Ludovic</creatorName>
             <givenName>Ludovic</givenName>
             <familyName>Ricard</familyName>
-            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0002-0134-5866</nameIdentifier>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0002-0134-5866</nameIdentifier>
             <affiliation affiliationIdentifier="https://ror.org/03qn8fb07" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">Commonwealth Scientific and Industrial Research Organisation</affiliation>
         </creator>
     </creators>
