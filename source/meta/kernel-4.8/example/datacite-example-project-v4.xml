@@ -64,15 +64,15 @@
     <date dateType="Coverage">2023-08-15/2024-12-31</date>
   </dates>
   <relatedIdentifiers>
-    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="ConferencePaper">https://doi.org/10.6084/m9.figshare.25139354.v1</relatedIdentifier>
-    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="Text">https://doi.org/10.59350/77zs1-hz764</relatedIdentifier>
-    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="Text">https://doi.org/10.59350/cnkm2-18f84</relatedIdentifier>
-    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="Text">https://doi.org/10.59350/ksgzn-a6w37</relatedIdentifier>
-    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="Text">https://doi.org/10.59350/yqkat-59f79</relatedIdentifier>
-    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="Text">https://doi.org/10.54900/vnevh-vaw22</relatedIdentifier>
-    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="Text">https://doi.org/10.54900/08pke-hyy45</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="ConferencePaper">10.6084/m9.figshare.25139354.v1</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="Text">10.59350/77zs1-hz764</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="Text">10.59350/cnkm2-18f84</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="Text">10.59350/ksgzn-a6w37</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="Text">10.59350/yqkat-59f79</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="Text">10.54900/vnevh-vaw22</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="Text">10.54900/08pke-hyy45</relatedIdentifier>
     <relatedIdentifier relatedIdentifierType="URL" relationType="HasOutput" resourceTypeGeneral="Audiovisual">https://www.youtube.com/watch?v=bsDzsxJPHrI</relatedIdentifier>
-    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="ConferencePaper">https://doi.org/10.17605/OSF.IO/CYABT</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="ConferencePaper">10.17605/OSF.IO/CYABT</relatedIdentifier>
   </relatedIdentifiers>
   <descriptions>
     <description xml:lang="en" descriptionType="Abstract">The Global Research Infrastructure (GRI) is made up of the repositories and organizations that provide persistent identifiers (PIDs) and detailed metadata about many kinds of research objects: preprints, published papers, datasets, dissertations, proposals, reviews, … and connect these objects to funders, research institutions, researchers, and one another using PIDs. Together, this infrastructure currently contains millions of objects and is growing rapidly in almost every possible direction. How can this infrastructure increase understanding of the myriad contributions made to global knowledge by funders like the National Science Foundation and other federal agencies? How can we use this infrastructure to increase understanding of connections across the U.S. and global research landscape? How can this infrastructure be used to increase completeness, consistency, and connectivity within agency repositories and search tools? These are the kinds of questions we will explore in this project.</description>

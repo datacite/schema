@@ -38,7 +38,7 @@
         <date dateType="Updated" dateInformation="Extended">2028-01-01/2029-12-31</date>
     </dates>
     <relatedIdentifiers>
-        <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="JournalArticle">https://doi.org/10.21384/mw2e-x008</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="HasOutput" resourceTypeGeneral="JournalArticle">10.21384/mw2e-x008</relatedIdentifier>
     </relatedIdentifiers>
     <sizes>
         <size>900000 USD</size>
