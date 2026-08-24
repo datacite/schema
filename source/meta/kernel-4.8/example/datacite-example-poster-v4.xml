@@ -20,7 +20,7 @@
     </dates>
     <resourceType resourceTypeGeneral="Poster">Conference poster</resourceType>
     <relatedIdentifiers>
-        <relatedIdentifier relatedIdentifierType="URL" relationType="Other" relationTypeInformation="was presented at" resourceTypeGeneral="Event">https://example.org/metadata-forum-2025</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="URL" relationType="Other" relationTypeInformation="was presented at" resourceTypeGeneral="Event">https://example.org/metadata-forum-2025</relatedIdentifier>
     </relatedIdentifiers>
     <language>en</language>
     <descriptions>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+    <identifier identifierType="DOI">10.82433/4r08-sa38</identifier>
+    <creators>
+        <creator>
+            <creatorName nameType="Organizational">Global Seismology Research Center</creatorName>
+        </creator>
+    </creators>
+    <titles>
+        <title xml:lang="en">Seismometer User Manual</title>
+        <title xml:lang="fr">Manuel d'utilisation du sismomètre</title>
+    </titles>
+    <publisher>Global Seismology Research Center</publisher>
+    <publicationYear>2023</publicationYear>
+    <dates>
+        <date dateType="Issued">2023</date>
+    </dates>
+    <resourceType resourceTypeGeneral="Other">Manual</resourceType>
+    <language>mul</language>
+    <descriptions>
+        <description xml:lang="en" descriptionType="Abstract">This manual provides comprehensive instructions on the installation, calibration, and maintenance of the Global Seismology Research Center's seismometer models.</description>
+        <description xml:lang="fr" descriptionType="Abstract">Ce manuel fournit des instructions complètes pour l'installation, l'étalonnage et l'entretien des modèles de sismomètres du Centre de recherche sismologique mondial.</description>
+    </descriptions>
+</resource>
