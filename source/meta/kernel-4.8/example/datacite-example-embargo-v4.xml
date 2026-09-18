@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+    <identifier identifierType="DOI">10.82433/13MC-ZR18</identifier>
+    <creators>
+        <creator>
+            <creatorName nameType="Personal">Beardsmore, Graeme</creatorName>
+            <givenName>Graeme</givenName>
+            <familyName>Beardsmore</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0003-4812-1146</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/01ej9dk98" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">The University of Melbourne</affiliation>
+        </creator>
+        <creator>
+            <creatorName nameType="Personal">Hamad, Joe</creatorName>
+            <givenName>Joe</givenName>
+            <familyName>Hamad</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0009-0009-1060-7117</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/01ej9dk98" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">The University of Melbourne</affiliation>
+        </creator>
+        <creator>
+            <creatorName nameType="Personal">Ricard, Ludovic</creatorName>
+            <givenName>Ludovic</givenName>
+            <familyName>Ricard</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0002-0134-5866</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/03qn8fb07" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">Commonwealth Scientific and Industrial Research Organisation</affiliation>
+        </creator>
+    </creators>
+    <titles>
+        <title xml:lang="en">Gippsland and Murray Basin Fiber Optic Distributed Temperature Sensing Data</title>
+    </titles>
+    <publisher xml:lang="en" publisherIdentifier="https://ror.org/04s1m4564" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">AuScope</publisher>
+    <publicationYear>2025</publicationYear>
+    <subjects>
+        <subject>Distributed Temperature Sensing</subject>
+        <subject>DTS</subject>
+        <subject>Fiber Optics</subject>
+        <subject>Borehole</subject>
+        <subject>Murray Basin</subject>
+        <subject>Gippsland Basin</subject>
+        <subject subjectScheme="GCMD Science Keywords" schemeURI="https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords" valueURI="https://gcmd.earthdata.nasa.gov/kms/concept/cacfd8f0-b83a-46b7-b324-52ce1b55baa9">GEOTHERMAL TEMPERATURE</subject>
+        <subject subjectScheme="ANZSRC Fields of Research" schemeURI="https://linked.data.gov.au/def/anzsrc-for/2020" classificationCode="370605" valueURI="https://linked.data.gov.au/def/anzsrc-for/2020/370605">Geothermics and radiometrics</subject>
+    </subjects>
+    <dates>
+        <date dateType="Collected">2022-01-01/2023-06-01</date>
+        <date dateType="Submitted">2024-06-18</date>
+        <date dateType="Available">2025-01-03</date>
+    </dates>
+    <language>en</language>
+    <resourceType resourceTypeGeneral="Dataset">Borehole temperature dataset</resourceType>
+    <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="References" resourceTypeGeneral="Other">https://www.vvg.org.au/vvg_map.php</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="References" resourceTypeGeneral="Other">https://minerals.sarig.sa.gov.au</relatedIdentifier>
+    </relatedIdentifiers>
+    <version>1.0</version>
+    <rightsList>
+        <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
+    </rightsList>
+    <descriptions>
+        <description descriptionType="Abstract"> This dataset contains both raw and processed data files. The data consists of temperature-depth profiles collected from boreholes using AP Sensing N4386B and Silixa XT-DTS Distributed Temperature Sensing (DTS) instruments. The data were collected to compare DTS with conventional thermistor-based wireline logging methods and assess DTS as an alternative or complementary technique for measuring borehole temperatures. </description>
+        <description descriptionType="Methods"> The data were collected using Distributed Temperature Sensing instruments. Calibration used a calibrated reference thermometer in a surface calibration bath, with part of the DTS cable coiled within the bath for comparison and correction of temperature offsets. Data were collected through the borehole depth, excluding sections affected by fibre-optic cable damage or excessive noise. Raw measurements underwent post-field calibration. Measurements were generally acquired at intervals between one and five minutes to support stacking and noise reduction. The DTS spatial resolution was one metre with measurement intervals of 0.2 metres. </description>
+        <description descriptionType="Other"> Anyone downloading and presenting or republishing these data should acknowledge AuScope. These data were enabled by AuScope and the Australian Government via the National Collaborative Research Infrastructure Strategy (NCRIS). </description>
+    </descriptions>
+    <geoLocations>
+        <geoLocation>
+            <geoLocationPlace>Gippsland and Murray Basin, Australia</geoLocationPlace>
+            <geoLocationBox>
+                <westBoundLongitude>139.8738474</westBoundLongitude>
+                <eastBoundLongitude>147.467546</eastBoundLongitude>
+                <southBoundLatitude>-38.530582</southBoundLatitude>
+                <northBoundLatitude>-34.7661707</northBoundLatitude>
+            </geoLocationBox>
+        </geoLocation>
+    </geoLocations>
+    <fundingReferences>
+        <fundingReference>
+            <funderName>AuScope</funderName>
+            <funderIdentifier funderIdentifierType="ROR" schemeURI="https://ror.org/">https://ror.org/04s1m4564</funderIdentifier>
+            <awardNumber>3.122</awardNumber>
+            <awardTitle>Managing and Enhancing Australia's Heat Flow Data</awardTitle>
+        </fundingReference>
+        <fundingReference>
+            <funderName>Australian Society of Exploration Geophysicists (ASEG) Research Foundation</funderName>
+            <funderIdentifier funderIdentifierType="ROR" schemeURI="https://ror.org/">https://ror.org/04m6sw526</funderIdentifier>
+            <awardNumber>RF21P02</awardNumber>
+            <awardTitle>Utilisation and comparison of conventional wireline precision temperature sensing, DTS and aDTS to detect and quantify subsurface geothermal anomalies in the on-shore Gippsland Basin</awardTitle>
+        </fundingReference>
+    </fundingReferences>
+    <access accessType="Restricted">Embargoed until 3 January 2025</access>
+</resource>
