@@ -24,7 +24,6 @@ DataCite Metadata Working Group. (2026). DataCite Metadata Schema for the Public
 ### See [Version 4.8 Update](https://datacite-metadata-schema.readthedocs.io/en/4.8/introduction/version-update) for full details.
 
 
-* Addition of a new Distribution property
 * Addition of a new Access property
 * Addition of new resourceTypeGeneral value: BlogPost
 * Addition of new relatedIdentifierType value: PatentNUmber
@@ -55,7 +54,6 @@ Demonstration Examples
     * Journal article in a journal (with an ISSN): [XML](example/datacite-example-relateditem1-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/q54d-pf76?publisher=true&affiliation=true)
     * Digitized book chapter in a book (with no identifier): [XML](example/datacite-example-relateditem2-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/eck0-f231?publisher=true&affiliation=true)
     * Digitized book chapter in a book (with an ISBN): [XML](example/datacite-example-relateditem3-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/4fdh-rh04?publisher=true&affiliation=true)
-* Example with Distribution and Access: [XML](example/datacite-example-distribution-access-v4.xml), [JSON](https://api.test.datacite.org/dois/10.82433/gn9x-q865?publisher=true&affiliation=true)
 
 Live Examples (real DOIs - metadata may change)
 
