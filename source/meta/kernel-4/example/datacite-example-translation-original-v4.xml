@@ -14,7 +14,7 @@
     <dates>
         <date dateType="Issued">2022-07-07</date>
     </dates>
-    <resourceType resourceTypeGeneral="Report"></resourceType>
+    <resourceType resourceTypeGeneral="Report"/>
     <language>de</language>
     <relatedIdentifiers>
         <relatedIdentifier relatedIdentifierType="DOI" relationType="HasTranslation">10.82433/45e5-xy14</relatedIdentifier>

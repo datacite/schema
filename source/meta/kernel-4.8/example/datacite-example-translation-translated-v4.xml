@@ -14,7 +14,7 @@
     <dates>
         <date dateType="Issued">2024-09-15</date>
     </dates>
-    <resourceType resourceTypeGeneral="Report"></resourceType>
+    <resourceType resourceTypeGeneral="Report"/>
     <language>en</language>
     <contributors>
         <contributor contributorType="Translator">
