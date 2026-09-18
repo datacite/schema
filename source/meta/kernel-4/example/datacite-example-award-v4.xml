@@ -49,12 +49,4 @@
     <alternateIdentifiers>
         <alternateIdentifier alternateIdentifierType="URL">https://grants.net/123456</alternateIdentifier>
     </alternateIdentifiers>
-    <fundingReferences>
-        <fundingReference>
-            <funderName>The Research Trust</funderName>
-            <funderIdentifier funderIdentifierType="ROR">https://ror.org/01abcde23</funderIdentifier>
-            <awardNumber>123456</awardNumber>
-            <awardTitle>Enhancing metadata for inclusive research on entrenched disadvantage</awardTitle>
-        </fundingReference>
-    </fundingReferences>
 </resource>
